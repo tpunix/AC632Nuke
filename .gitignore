@@ -1,0 +1,13 @@
+
+/mboot/*.o
+/mboot/*.bin
+/mboot/*.boot
+/mboot/*.dump
+/mboot/*.lz4
+/mboot/tools/jl_isd.bin
+/mboot/tools/jl_isd.fw
+/mboot/tools/*.exe
+
+/myhid/objs
+
+
