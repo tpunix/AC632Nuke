@@ -4,6 +4,7 @@
 /mboot/*.boot
 /mboot/*.dump
 /mboot/*.lz4
+/mboot/*.elf
 /mboot/tools/jl_isd.bin
 /mboot/tools/jl_isd.fw
 /mboot/tools/*.exe
