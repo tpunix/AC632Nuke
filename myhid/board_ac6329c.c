@@ -1,7 +1,7 @@
 
 #include "app_config.h"
-
 #include "system/includes.h"
+#include "bt_common.h"
 
 
 /*************************************************************************************************/
@@ -92,6 +92,7 @@ static void board_devices_init(void)
 {
 	keyio_pd(IO_PORTA_07);
 	keyio_pd(IO_PORTA_08);
+	keyio_pd(IO_PORTA_09);
 }
 
 
@@ -114,6 +115,8 @@ void board_init(void)
 	adc_vbg_init();
 	printf("-- adc_init --\n");
 	adc_init();
+
+	cfg_file_parse(0);
 
 	printf("-- devices_init --\n");
 	devices_init();

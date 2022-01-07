@@ -1,6 +1,7 @@
+
 #include "system/includes.h"
 #include "app_config.h"
-
+#include "btcontroller_config.h"
 
 //======================================================================================//
 //                                 		BTIF配置项表                               		//
@@ -41,6 +42,31 @@ char *bt_get_pin_code()
 {
 	printf("bt_get_pin_code\n");
     return "0000";
+}
+
+
+//======================================================================================//
+
+void bt_max_pwr_set(u8 pwr, u8 pg_pwr, u8 iq_pwr, u8 ble_pwr);
+
+void lp_winsize_init(struct lp_ws_t *lp);
+struct lp_ws_t lp_winsize = {
+	.lrc_ws_inc = 480,      //260
+	.lrc_ws_init = 400,
+	.bt_osc_ws_inc = 480,
+	.bt_osc_ws_init = 140,
+	.osc_change_mode = 1,
+};
+
+
+void cfg_file_parse(u8 idx)
+{
+
+
+	bt_max_pwr_set(10, 5, 8, 6);
+
+	lp_winsize_init(&lp_winsize);
+
 }
 
 

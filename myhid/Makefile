@@ -21,6 +21,7 @@ CC    := clang.exe
 CXX   := clang.exe
 LD    := q32s-lto-wrapper.exe
 AR    := q32s-lto-ar.exe
+OBJDUMP := llvm-objdump
 MKDIR := mkdir -p
 RM    := rm -rf
 
@@ -47,6 +48,9 @@ SYS_INC_DIR := $(TOOL_DIR)/../include
 POST_SCRIPT     := $(CPU_DIR)/tools/download.sh
 RUN_POST_SCRIPT := bash $(POST_SCRIPT)
 endif
+
+
+DUMPFLAGS = -disassemble-all -address-mask=0x1ffffff  -print-imm-hex -s -print-dbg
 
 
 # 输出文件设置
@@ -164,6 +168,7 @@ c_SRC_FILES := \
 	$(APP_DIR)/app_main.c \
 	$(APP_DIR)/app_kbd.c \
 	$(APP_DIR)/bt_edr.c \
+	$(APP_DIR)/edr_hid.c \
 	$(APP_DIR)/board_ac6329c.c \
 	$(CPU_DIR)/adc_api.c \
 	$(CPU_DIR)/setup.c \
@@ -257,11 +262,13 @@ clean:
 	$(QUITE) $(RM) $(OUT_ELF)
 	$(QUITE) $(RM) $(OBJS)
 	$(QUITE) $(RM) $(DEP_FILES)
+	$(QUITE) $(RM) sdk.s
 
 $(OUT_ELF): $(OBJS)
 	@echo +LINK $@
 	$(file >$(OBJ_FILE), $(OBJS))
 	$(QUITE) $(LD) -o $(OUT_ELF) @$(OBJ_FILE) $(LFLAGS) $(LIBPATHS) $(LIBS)
+	$(OBJDUMP) $(DUMPFLAGS) $(OUT_ELF) > sdk.s
 
 $(BUILD_DIR)/%.c.o : $(ROOT_DIR)/%.c
 	@echo +CC $<

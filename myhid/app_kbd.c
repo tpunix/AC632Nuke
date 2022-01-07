@@ -19,7 +19,7 @@
 
 #include "btstack/avctp_user.h"
 
-#include "bt_edr_common.h"
+#include "bt_common.h"
 
 /*************************************************************************************************/
 
@@ -33,19 +33,14 @@ typedef struct {
 	u8 pos;
 }IOKEY;
 
-static IOKEY iokeys[] = {
-	{
-		"MUTE",
-		(u32)&JL_PORTA->IN,
-		7, 0, 0, 3,
-	},
 
-	{
-		"VOL-",
-		(u32)&JL_PORTA->IN,
-		8, 0, 0, 1,
-	},
+static IOKEY iokeys[] = {
+	{"MUTE", (u32)&JL_PORTA->IN, 7, 0, 0, 3, },
+	{"VOL-", (u32)&JL_PORTA->IN, 8, 0, 0, 1, },
+	{"VOL+", (u32)&JL_PORTA->IN, 9, 0, 0, 0, },
 };
+
+
 static int iokeys_num = sizeof(iokeys)/sizeof(IOKEY);
 
 static int hidkey = 0, old_hidkey = 0;
@@ -105,7 +100,10 @@ static void key_timer_handle(void)
 
 	if(old_hidkey != hidkey){
 		// Send
-		user_hid_send_data(&hidkey, 2);
+		hid_ibuf[0] = 1;
+		hid_ibuf[1] = hidkey&0xff;
+		hid_ibuf[2] = (hidkey>>8)&0xff;
+		user_hidd_send_input(hid_ibuf, 3);
 		old_hidkey = hidkey;
 	}
 }
@@ -113,18 +111,50 @@ static void key_timer_handle(void)
 
 /*************************************************************************************************/
 
+static u8 kbd_report_map[] = {
+    0x05, 0x0C,        // Usage Page (Consumer)
+    0x09, 0x01,        // Usage (Consumer Control)
+    0xA1, 0x01,        // Collection (Application)
+    0x85, 0x01,        //   Report ID (1)
+    0x09, 0xE9,        //   Usage (Volume Increment)
+    0x09, 0xEA,        //   Usage (Volume Decrement)
+    0x09, 0xCD,        //   Usage (Play/Pause)
+    0x09, 0xE2,        //   Usage (Mute)
+    0x09, 0xB6,        //   Usage (Scan Previous Track)
+    0x09, 0xB5,        //   Usage (Scan Next Track)
+    0x09, 0xB3,        //   Usage (Fast Forward)
+    0x09, 0xB4,        //   Usage (Rewind)
+    0x15, 0x00,        //   Logical Minimum (0)
+    0x25, 0x01,        //   Logical Maximum (1)
+    0x75, 0x01,        //   Report Size (1)
+    0x95, 0x10,        //   Report Count (16)
+    0x81, 0x02,        //   Input (Data,Var,Abs,No Wrap,Linear,Preferred State,No Null Position)
+    0xC0,              // End Collection
+    // 35 bytes
+};
 
-extern void bt_pll_para(u32 osc, u32 sys, u8 low_power, u8 xosc);
+static const hid_cfg_t kbd_hid_config = {
+	.class_type = BD_CLASS_KEYBOARD,
+	.report_map = kbd_report_map,
+	.report_size = sizeof(kbd_report_map),
+};
+
+
 
 static const edr_init_cfg_t kbd_edr_config = {
-	.class_type = BD_CLASS_KEYBOARD,
 	.page_timeout = 80000,
 	.super_timeout = 80000,
 	.io_capabilities = 3,
 	.authentication_req = 2,
 	.oob_data = 0,
+	.profile_data = &kbd_hid_config,
 };
 
+
+/*************************************************************************************************/
+
+
+extern void bt_pll_para(u32 osc, u32 sys, u8 low_power, u8 xosc);
 
 // app 入口
 static void kbd_app_start()

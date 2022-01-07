@@ -9,15 +9,15 @@
 #include "btstack/avctp_user.h"
 #include "btstack/btstack_task.h"
 
-#include "bt_edr_common.h"
+#include "bt_common.h"
 
 
 
 
-
+u8 connect_last_device_from_vm(void);
 
 static u8 edr_remote_address[6];
-
+static edr_init_cfg_t *global_cfg;
 
 /*************************************************************************************************/
 
@@ -37,127 +37,22 @@ void bt_wait_connect(u8 enable)
 /*************************************************************************************************/
 
 
-#define HID_DATA         0xA0     /*Device&host*/
-#define HID_DATC         0xB0     /*Device&host  DEPRECATED*/
-
-/*DATA*/
-#define DATA_OTHER       0x00
-#define DATA_INPUT       0x01
-#define DATA_OUTPUT      0x02
-#define DATA_FEATURE     0x03
-
-
-void hid_diy_regiest_callback(void *cb, void *interrupt_cb);
-void hid_sdp_init(const u8 *hid_descriptor, u16 size);
-
-
-static u8 kbd_report_map[] = {
-    0x05, 0x0C,        // Usage Page (Consumer)
-    0x09, 0x01,        // Usage (Consumer Control)
-    0xA1, 0x01,        // Collection (Application)
-    0x85, 0x01,        //   Report ID (1)
-    0x09, 0xE9,        //   Usage (Volume Increment)
-    0x09, 0xEA,        //   Usage (Volume Decrement)
-    0x09, 0xCD,        //   Usage (Play/Pause)
-    0x09, 0xE2,        //   Usage (Mute)
-    0x09, 0xB6,        //   Usage (Scan Previous Track)
-    0x09, 0xB5,        //   Usage (Scan Next Track)
-    0x09, 0xB3,        //   Usage (Fast Forward)
-    0x09, 0xB4,        //   Usage (Rewind)
-    0x15, 0x00,        //   Logical Minimum (0)
-    0x25, 0x01,        //   Logical Maximum (1)
-    0x75, 0x01,        //   Report Size (1)
-    0x95, 0x10,        //   Report Count (16)
-    0x81, 0x02,        //   Input (Data,Var,Abs,No Wrap,Linear,Preferred State,No Null Position)
-    0xC0,              // End Collection
-    // 35 bytes
-};
-
-
-static int hid_data_ch = 0;
-static int hid_ctrl_ch = 0;
-static u8  hid_tbuf[64];
-
-int user_hid_send_data(u8 *buf, u32 len)
-{
-	int ret;
-	hid_s_param_t s_par;
-
-	if (hid_data_ch==0) {
-		return -1;
-	}
-
-	hid_tbuf[0] = HID_DATA | DATA_INPUT;
-	hid_tbuf[1] = 1; // report_id
-	memcpy(hid_tbuf+2, buf, len);
-
-	s_par.chl_id = hid_data_ch;
-	s_par.data_len = len+2;
-	s_par.data_ptr = hid_tbuf;
-	ret = user_send_cmd_prepare(USER_CTRL_HID_SEND_DATA, sizeof(hid_s_param_t), (u8 *)&s_par);
-	if (ret) {
-		printf("########  hid send fail!!! %d\n", ret);
-	}
-
-	return ret;
-}
-
-
-static void user_hid_msg_handler(u32 msg, u8 *packet, u32 packet_size)
-{
-	switch (msg) {
-	case 1:
-		printf("########  hid connect! ctrl_ch:%d data_ch:%d\n", hid_ctrl_ch, hid_data_ch);
-		hid_ctrl_ch = *(u16*)(packet+0);
-		hid_data_ch = *(u16*)(packet+2);
-		break;
-	case 2:
-		printf("########  hid disconnect!\n");
-		hid_ctrl_ch = 0;
-		hid_data_ch = 0;
-		break;
-	case 3:
-		int ch = *(u16*)(packet+0);
-		if(ch == hid_data_ch){
-			printf("######## hid send ok!\n");
-		}
-		break;
-	default:
-		printf("hid unknow: %08x\n", msg);
-		break;
-	}
-}
-
-
-void user_hid_output_handler(u8 *packet, u16 size, u16 channel)
-{
-	printf("user_hid_output_handler ... size=%d ch=%d\n", size, channel);
-	if(size)
-		printf("  %02x %02x\n", packet[0], packet[1]);
-}
-
-
-/*************************************************************************************************/
-
-
-
-
 void bt_edr_start(const edr_init_cfg_t *cfg, int param)
 {
 	printf("bt_edr_start ...\n");
 
+	global_cfg = cfg;
+
     __set_user_ctrl_conn_num(1);
     __bt_set_update_battery_time(0);
-
     /*回连搜索时间长度设置,可使用该函数注册使用，ms单位,u16*/
     __set_page_timeout_value(cfg->page_timeout);
     /*回连时超时参数设置。ms单位。做主机有效*/
     __set_super_timeout_value(cfg->super_timeout);
 
-	// HID profile
-    __change_hci_class_type(cfg->class_type);//default icon
-	hid_diy_regiest_callback(user_hid_msg_handler, user_hid_output_handler);
-	hid_sdp_init(kbd_report_map, sizeof(kbd_report_map));
+
+	// profile init
+	edr_hidd_init((hid_cfg_t*)cfg->profile_data);
 
     //io_capabilities ; /*0: Display only 1: Display YesNo 2: KeyboardOnly 3: NoInputNoOutput*/
     //authentication_requirements: 0:not protect  1 :protect
@@ -168,8 +63,15 @@ void bt_edr_start(const edr_init_cfg_t *cfg, int param)
 	printf("bt_edr_start done.\n");
 }
 
+
 void bt_edr_start_post(void)
 {
+	printf("Try to connect last device ...\n");
+	if(connect_last_device_from_vm()){
+		printf("Connect to last device.\n");
+		return;
+	}
+
 	bt_wait_connect(1);
 }
 
@@ -319,30 +221,10 @@ static void bt_hci_event_connection_exist(struct bt_event *bt)
  *  \note
  */
 /*************************************************************************************************/
-extern void set_remote_test_flag(u8 own_remote_test);
 int bt_comm_edr_hci_event_handler(struct bt_event *bt)
 {
     //对应原来的蓝牙连接上断开处理函数  ,bt->value=reason
     printf("--------%s reason %x %x", __FUNCTION__, bt->event, bt->value);
-
-    if (bt->event == HCI_EVENT_VENDOR_REMOTE_TEST) {
-        printf("TEST_BOX:%d", bt->value);
-        switch (bt->value) {
-        case VENDOR_TEST_DISCONNECTED:
-            set_remote_test_flag(0);
-            printf("clear_test_box_flag");
-            cpu_reset();
-            return 0;
-            break;
-
-        case VENDOR_TEST_LEGACY_CONNECTED_BY_BT_CLASSIC:
-            break;
-
-        default:
-            break;
-        }
-        return 0;
-    }
 
     switch (bt->event) {
     case HCI_EVENT_INQUIRY_COMPLETE:
@@ -385,11 +267,13 @@ int bt_comm_edr_hci_event_handler(struct bt_event *bt)
             printf(" ERROR_CODE_SUCCESS  \n");
             bt_hci_event_connection(bt);
             break;
-        case ERROR_CODE_PIN_OR_KEY_MISSING:
+
+		case ERROR_CODE_PIN_OR_KEY_MISSING:
             printf(" ERROR_CODE_PIN_OR_KEY_MISSING \n");
             bt_hci_event_linkkey_missing(bt);
+			break;
 
-        case ERROR_CODE_SYNCHRONOUS_CONNECTION_LIMIT_TO_A_DEVICE_EXCEEDED :
+		case ERROR_CODE_SYNCHRONOUS_CONNECTION_LIMIT_TO_A_DEVICE_EXCEEDED :
         case ERROR_CODE_CONNECTION_REJECTED_DUE_TO_LIMITED_RESOURCES:
         case ERROR_CODE_CONNECTION_REJECTED_DUE_TO_UNACCEPTABLE_BD_ADDR:
         case ERROR_CODE_CONNECTION_ACCEPT_TIMEOUT_EXCEEDED  :
@@ -426,5 +310,136 @@ int bt_comm_edr_hci_event_handler(struct bt_event *bt)
     }
     return 0;
 }
+
+
+/*************************************************************************************************/
+
+
+void sdp_desc_init(SDP_DESC *sdp, u8 *sdp_buf)
+{
+	sdp->buf = sdp_buf;
+	sdp->p = 0;
+	sdp->sp = 0;
+}
+
+
+static void sdp_put_u8(SDP_DESC *sdp, u8 val)
+{
+	if(sdp->buf){
+		sdp->buf[sdp->p] = val;
+	}
+	sdp->p += 1;
+}
+
+
+static void sdp_put_u16(SDP_DESC *sdp, u16 val)
+{
+	if(sdp->buf){
+		sdp->buf[sdp->p+0] = (val>>8)&0xff;
+		sdp->buf[sdp->p+1] = (val&0xff);
+	}
+	sdp->p += 2;
+}
+
+
+static void sdp_put_u32(SDP_DESC *sdp, u32 val)
+{
+	if(sdp->buf){
+		sdp->buf[sdp->p+0] = (val>>24)&0xff;
+		sdp->buf[sdp->p+1] = (val>>16)&0xff;
+		sdp->buf[sdp->p+2] = (val>>8)&0xff;
+		sdp->buf[sdp->p+3] = (val&0xff);
+	}
+	sdp->p += 4;
+}
+
+
+static void sdp_seq(SDP_DESC *sdp, int type)
+{
+	int size = type&0x07;
+
+	sdp->stack[sdp->sp] = sdp->p;
+	sdp->sp += 1;
+
+	sdp_put_u8(sdp, type);
+	if(size==5)
+		sdp->p += 1;
+	else if(size==6)
+		sdp->p += 2;
+	else if(size==7)
+		sdp->p += 4;
+}
+
+
+void sdp_seq8 (SDP_DESC *sdp){sdp_seq(sdp, 0x35);}
+void sdp_seq16(SDP_DESC *sdp){sdp_seq(sdp, 0x36);}
+
+
+void sdp_end(SDP_DESC *sdp)
+{
+	int save_p = sdp->p;
+	int p;
+
+	sdp->sp -= 1;
+	p = sdp->stack[sdp->sp];
+	sdp->p = p+1;
+	if(sdp->buf){
+		if(sdp->buf[p]==0x35){
+			sdp_put_u8(sdp, save_p-p-2);
+		}else if(sdp->buf[p]==0x36){
+			sdp_put_u16(sdp, save_p-p-3);
+		}
+	}
+
+	sdp->p = save_p;
+}
+
+
+static void sdp_data(SDP_DESC *sdp, int type, int val)
+{
+	int size = type&0x07;
+
+	sdp_put_u8(sdp, type);
+	if(size==0){
+		sdp_put_u8(sdp, val);
+	}else if(size==1){
+		sdp_put_u16(sdp, val);
+	}else if(size==2){
+		sdp_put_u32(sdp, val);
+	}
+}
+
+
+void sdp_uint8 (SDP_DESC *sdp,  u8 val){sdp_data(sdp, 0x08, val);}
+void sdp_uint16(SDP_DESC *sdp, u16 val){sdp_data(sdp, 0x09, val);}
+void sdp_uint32(SDP_DESC *sdp, u32 val){sdp_data(sdp, 0x0a, val);}
+void sdp_uuid16(SDP_DESC *sdp, u16 val){sdp_data(sdp, 0x19, val);}
+void sdp_attr  (SDP_DESC *sdp, u16 val){sdp_data(sdp, 0x09, val);}
+void sdp_bool  (SDP_DESC *sdp, int val){sdp_data(sdp, 0x28, val);}
+
+
+void sdp_binary(SDP_DESC *sdp, int len, char *ptr)
+{
+	if(len<256){
+		sdp_put_u8(sdp, 0x25);
+		sdp_put_u8(sdp, len);
+		memcpy(sdp->buf+sdp->p, ptr, len);
+		sdp->p += len;
+	}else{
+		sdp_put_u8(sdp, 0x26);
+		sdp_put_u16(sdp, len);
+		memcpy(sdp->buf+sdp->p, ptr, len);
+		sdp->p += len;
+	}
+}
+
+
+void sdp_string(SDP_DESC *sdp, char *str)
+{
+	sdp_binary(sdp, strlen(str), str);
+}
+
+
+/*************************************************************************************************/
 
 
