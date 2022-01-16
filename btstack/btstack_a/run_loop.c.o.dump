@@ -1,0 +1,256 @@
+temp.o:	file format ELF32-i386
+
+.debug_info contents:
+0x00000000: Compile Unit: length = 0x000001a6 version = 0x0004 abbr_offset = 0x0000 addr_size = 0x04 (next unit at 0x000001aa)
+
+0x0000000b: DW_TAG_compile_unit
+              DW_AT_producer	("clang version 4.0.1 (git@192.168.8.109:huangzhenyu/clang.git d97b416c061747718623e97046d5e7dcb4c75555) (git@192.168.8.109:huangzhenyu/llvm.git 64c6917899f78226b6d3cf2b78db54d02abf7c85)")
+              DW_AT_language	(DW_LANG_C99)
+              DW_AT_name	("../btcommon/run_loop.c")
+              DW_AT_stmt_list	(0x00000000)
+              DW_AT_comp_dir	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make")
+              DW_AT_GNU_pubnames	(true)
+              DW_AT_low_pc	(0x0000000000000000)
+              DW_AT_high_pc	(0x00000000000000ad)
+
+0x00000026:   DW_TAG_variable
+                DW_AT_name	("stack_run_loop_head")
+                DW_AT_type	(cu + 0x0037 "btstack_linked_list_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/run_loop.c")
+                DW_AT_decl_line	(12)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x00000037:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0042 "btstack_linked_item_t*")
+                DW_AT_name	("btstack_linked_list_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_linked_list.h")
+                DW_AT_decl_line	(58)
+
+0x00000042:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0047 "btstack_linked_item_t")
+
+0x00000047:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0052 "btstack_linked_item")
+                DW_AT_name	("btstack_linked_item_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_linked_list.h")
+                DW_AT_decl_line	(55)
+
+0x00000052:   DW_TAG_structure_type
+                DW_AT_name	("btstack_linked_item")
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_linked_list.h")
+                DW_AT_decl_line	(53)
+
+0x0000005a:     DW_TAG_member
+                  DW_AT_name	("next")
+                  DW_AT_type	(cu + 0x0067 "btstack_linked_item*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_linked_list.h")
+                  DW_AT_decl_line	(54)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000066:     NULL
+
+0x00000067:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0052 "btstack_linked_item")
+
+0x0000006c:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0071 "run_loop")
+
+0x00000071:   DW_TAG_structure_type
+                DW_AT_name	("run_loop")
+                DW_AT_byte_size	(0x0c)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/run_loop.h")
+                DW_AT_decl_line	(9)
+
+0x00000079:     DW_TAG_member
+                  DW_AT_name	("entry")
+                  DW_AT_type	(cu + 0x0047 "btstack_linked_item_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/run_loop.h")
+                  DW_AT_decl_line	(10)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000085:     DW_TAG_member
+                  DW_AT_name	("run")
+                  DW_AT_type	(cu + 0x009e "subroutine *")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/run_loop.h")
+                  DW_AT_decl_line	(11)
+                  DW_AT_data_member_location	(0x04)
+
+0x00000091:     DW_TAG_member
+                  DW_AT_name	("var")
+                  DW_AT_type	(cu + 0x00aa "*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/run_loop.h")
+                  DW_AT_decl_line	(12)
+                  DW_AT_data_member_location	(0x08)
+
+0x0000009d:     NULL
+
+0x0000009e:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x00a3 "subroutine ")
+
+0x000000a3:   DW_TAG_subroutine_type
+                DW_AT_prototyped	(true)
+
+0x000000a4:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x006c "run_loop*")
+
+0x000000a9:     NULL
+
+0x000000aa:   DW_TAG_pointer_type
+
+0x000000ab:   DW_TAG_subprogram
+                DW_AT_name	("__run_loop_register")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/run_loop.c")
+                DW_AT_decl_line	(16)
+                DW_AT_prototyped	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x000000b3:     DW_TAG_formal_parameter
+                  DW_AT_name	("head")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/run_loop.c")
+                  DW_AT_decl_line	(16)
+                  DW_AT_type	(cu + 0x00e0 "btstack_linked_list_t*")
+
+0x000000be:     DW_TAG_formal_parameter
+                  DW_AT_name	("loop")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/run_loop.c")
+                  DW_AT_decl_line	(16)
+                  DW_AT_type	(cu + 0x006c "run_loop*")
+
+0x000000c9:     DW_TAG_formal_parameter
+                  DW_AT_name	("run")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/run_loop.c")
+                  DW_AT_decl_line	(17)
+                  DW_AT_type	(cu + 0x009e "subroutine *")
+
+0x000000d4:     DW_TAG_formal_parameter
+                  DW_AT_name	("var")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/run_loop.c")
+                  DW_AT_decl_line	(17)
+                  DW_AT_type	(cu + 0x00aa "*")
+
+0x000000df:     NULL
+
+0x000000e0:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0037 "btstack_linked_list_t")
+
+0x000000e5:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x000000000000002a)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("stack_run_loop_register")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/run_loop.c")
+                DW_AT_decl_line	(44)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x000000f6:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000000
+                     0x0000000000000000 - 0x0000000000000025: DW_OP_reg2 EDX)
+                  DW_AT_name	("loop")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/run_loop.c")
+                  DW_AT_decl_line	(44)
+                  DW_AT_type	(cu + 0x006c "run_loop*")
+
+0x00000105:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000013
+                     0x0000000000000000 - 0x0000000000000025: DW_OP_reg1 ECX)
+                  DW_AT_name	("run")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/run_loop.c")
+                  DW_AT_decl_line	(44)
+                  DW_AT_type	(cu + 0x009e "subroutine *")
+
+0x00000114:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000026
+                     0x0000000000000000 - 0x0000000000000017: DW_OP_reg0 EAX)
+                  DW_AT_name	("var")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/run_loop.c")
+                  DW_AT_decl_line	(44)
+                  DW_AT_type	(cu + 0x00aa "*")
+
+0x00000123:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x00ab "__run_loop_register")
+                  DW_AT_low_pc	(0x000000000000000f)
+                  DW_AT_high_pc	(0x0000000000000025)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/run_loop.c")
+                  DW_AT_call_line	(49)
+
+0x00000132:     NULL
+
+0x00000133:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000002a)
+                DW_AT_high_pc	(0x000000000000004b)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("stack_run_loop_remove")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/run_loop.c")
+                DW_AT_decl_line	(52)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000144:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000039
+                     0x000000000000002a - 0x0000000000000043: DW_OP_reg0 EAX)
+                  DW_AT_name	("loop")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/run_loop.c")
+                  DW_AT_decl_line	(52)
+                  DW_AT_type	(cu + 0x006c "run_loop*")
+
+0x00000153:     NULL
+
+0x00000154:   DW_TAG_subprogram
+                DW_AT_name	("__run_loop_schedule")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/run_loop.c")
+                DW_AT_decl_line	(27)
+                DW_AT_prototyped	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x0000015c:     DW_TAG_formal_parameter
+                  DW_AT_name	("head")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/run_loop.c")
+                  DW_AT_decl_line	(27)
+                  DW_AT_type	(cu + 0x00e0 "btstack_linked_list_t*")
+
+0x00000167:     DW_TAG_variable
+                  DW_AT_name	("it")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/run_loop.c")
+                  DW_AT_decl_line	(30)
+                  DW_AT_type	(cu + 0x0042 "btstack_linked_item_t*")
+
+0x00000172:     DW_TAG_variable
+                  DW_AT_name	("p")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/run_loop.c")
+                  DW_AT_decl_line	(29)
+                  DW_AT_type	(cu + 0x006c "run_loop*")
+
+0x0000017d:     NULL
+
+0x0000017e:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000004b)
+                DW_AT_high_pc	(0x00000000000000ad)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("bt_profile_loop")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/run_loop.c")
+                DW_AT_decl_line	(57)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x0000018f:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0154 "__run_loop_schedule")
+                  DW_AT_low_pc	(0x000000000000004e)
+                  DW_AT_high_pc	(0x00000000000000a3)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/run_loop.c")
+                  DW_AT_call_line	(59)
+
+0x0000019e:       DW_TAG_variable
+                    DW_AT_location	(0x0000004c
+                       0x000000000000005b - 0x0000000000000061: DW_OP_reg0 EAX
+                       0x0000000000000061 - 0x0000000000000097: DW_OP_breg5 EBP-4
+                       0x0000000000000097 - 0x000000000000009d: DW_OP_reg1 ECX
+                       0x000000000000009d - 0x00000000000000ad: DW_OP_breg5 EBP-8)
+                    DW_AT_abstract_origin	(cu + 0x0167 "it")
+
+0x000001a7:       NULL
+
+0x000001a8:     NULL
+
+0x000001a9:   NULL

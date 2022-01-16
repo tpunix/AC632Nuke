@@ -1,0 +1,1957 @@
+temp.o:	file format ELF32-i386
+
+.debug_info contents:
+0x00000000: Compile Unit: length = 0x00000c20 version = 0x0004 abbr_offset = 0x0000 addr_size = 0x04 (next unit at 0x00000c24)
+
+0x0000000b: DW_TAG_compile_unit
+              DW_AT_producer	("clang version 4.0.1 (git@192.168.8.109:huangzhenyu/clang.git d97b416c061747718623e97046d5e7dcb4c75555) (git@192.168.8.109:huangzhenyu/llvm.git 64c6917899f78226b6d3cf2b78db54d02abf7c85)")
+              DW_AT_language	(DW_LANG_C99)
+              DW_AT_name	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+              DW_AT_stmt_list	(0x00000000)
+              DW_AT_comp_dir	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make")
+              DW_AT_GNU_pubnames	(true)
+              DW_AT_low_pc	(0x0000000000000000)
+              DW_AT_ranges	(0x00000000
+                 [0x00000000 - 0x0000174f)
+                 [0x0000174f - 0x00001a1f)
+                 [0x00000000 - 0x00000009))
+
+0x00000026:   DW_TAG_variable
+                DW_AT_name	("app_info_debug_enable")
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/profile_stack_debug.h")
+                DW_AT_decl_line	(190)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x00000037:   DW_TAG_base_type
+                DW_AT_name	("int")
+                DW_AT_encoding	(DW_ATE_signed)
+                DW_AT_byte_size	(0x04)
+
+0x0000003e:   DW_TAG_variable
+                DW_AT_name	("att_s_hdl")
+                DW_AT_type	(cu + 0x004f "att_ctl_t*")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(63)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x0000004f:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0054 "att_ctl_t")
+
+0x00000054:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x005f "structure ")
+                DW_AT_name	("att_ctl_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(60)
+
+0x0000005f:   DW_TAG_structure_type
+                DW_AT_byte_size	(0xbc)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(51)
+
+0x00000063:     DW_TAG_member
+                  DW_AT_name	("user_send_cbuf")
+                  DW_AT_type	(cu + 0x00c4 "cbuffer_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(52)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000006f:     DW_TAG_member
+                  DW_AT_name	("ready_send_head")
+                  DW_AT_type	(cu + 0x0192 "user_send_head_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(53)
+                  DW_AT_data_member_location	(0x24)
+
+0x0000007b:     DW_TAG_member
+                  DW_AT_name	("client_configuration")
+                  DW_AT_type	(cu + 0x01ea "server_ccc_cfg_t[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(54)
+                  DW_AT_data_member_location	(0x2a)
+
+0x00000087:     DW_TAG_member
+                  DW_AT_name	("dev_hdl_ctrl")
+                  DW_AT_type	(cu + 0x0242 "dev_hdl_t[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(55)
+                  DW_AT_data_member_location	(0x8a)
+
+0x00000093:     DW_TAG_member
+                  DW_AT_name	("att_send_data")
+                  DW_AT_type	(cu + 0x02a2 "u8*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(56)
+                  DW_AT_data_member_location	(0xac)
+
+0x0000009f:     DW_TAG_member
+                  DW_AT_name	("att_sendbuf_size")
+                  DW_AT_type	(cu + 0x0297 "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(57)
+                  DW_AT_data_member_location	(0xb0)
+
+0x000000ab:     DW_TAG_member
+                  DW_AT_name	("send_lock")
+                  DW_AT_type	(cu + 0x02b2 "volatile u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(58)
+                  DW_AT_data_member_location	(0xb2)
+
+0x000000b7:     DW_TAG_member
+                  DW_AT_name	("reserved")
+                  DW_AT_type	(cu + 0x02b7 "u8[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(59)
+                  DW_AT_data_member_location	(0xb3)
+
+0x000000c3:     NULL
+
+0x000000c4:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x00cf "_cbuffer")
+                DW_AT_name	("cbuffer_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/generic/circular_buf.h")
+                DW_AT_decl_line	(26)
+
+0x000000cf:   DW_TAG_structure_type
+                DW_AT_name	("_cbuffer")
+                DW_AT_byte_size	(0x24)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/generic/circular_buf.h")
+                DW_AT_decl_line	(16)
+
+0x000000d7:     DW_TAG_member
+                  DW_AT_name	("begin")
+                  DW_AT_type	(cu + 0x0144 "u8*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/generic/circular_buf.h")
+                  DW_AT_decl_line	(17)
+                  DW_AT_data_member_location	(0x00)
+
+0x000000e3:     DW_TAG_member
+                  DW_AT_name	("end")
+                  DW_AT_type	(cu + 0x0144 "u8*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/generic/circular_buf.h")
+                  DW_AT_decl_line	(18)
+                  DW_AT_data_member_location	(0x04)
+
+0x000000ef:     DW_TAG_member
+                  DW_AT_name	("read_ptr")
+                  DW_AT_type	(cu + 0x0144 "u8*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/generic/circular_buf.h")
+                  DW_AT_decl_line	(19)
+                  DW_AT_data_member_location	(0x08)
+
+0x000000fb:     DW_TAG_member
+                  DW_AT_name	("write_ptr")
+                  DW_AT_type	(cu + 0x0144 "u8*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/generic/circular_buf.h")
+                  DW_AT_decl_line	(20)
+                  DW_AT_data_member_location	(0x0c)
+
+0x00000107:     DW_TAG_member
+                  DW_AT_name	("tmp_ptr")
+                  DW_AT_type	(cu + 0x0144 "u8*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/generic/circular_buf.h")
+                  DW_AT_decl_line	(21)
+                  DW_AT_data_member_location	(0x10)
+
+0x00000113:     DW_TAG_member
+                  DW_AT_name	("tmp_len")
+                  DW_AT_type	(cu + 0x015b "u32")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/generic/circular_buf.h")
+                  DW_AT_decl_line	(22)
+                  DW_AT_data_member_location	(0x14)
+
+0x0000011f:     DW_TAG_member
+                  DW_AT_name	("data_len")
+                  DW_AT_type	(cu + 0x015b "u32")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/generic/circular_buf.h")
+                  DW_AT_decl_line	(23)
+                  DW_AT_data_member_location	(0x18)
+
+0x0000012b:     DW_TAG_member
+                  DW_AT_name	("total_len")
+                  DW_AT_type	(cu + 0x015b "u32")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/generic/circular_buf.h")
+                  DW_AT_decl_line	(24)
+                  DW_AT_data_member_location	(0x1c)
+
+0x00000137:     DW_TAG_member
+                  DW_AT_name	("lock")
+                  DW_AT_type	(cu + 0x016d "spinlock_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/generic/circular_buf.h")
+                  DW_AT_decl_line	(25)
+                  DW_AT_data_member_location	(0x20)
+
+0x00000143:     NULL
+
+0x00000144:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0149 "u8")
+
+0x00000149:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0154 "unsigned char")
+                DW_AT_name	("u8")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(11)
+
+0x00000154:   DW_TAG_base_type
+                DW_AT_name	("unsigned char")
+                DW_AT_encoding	(DW_ATE_unsigned_char)
+                DW_AT_byte_size	(0x01)
+
+0x0000015b:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0166 "unsigned int")
+                DW_AT_name	("u32")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(15)
+
+0x00000166:   DW_TAG_base_type
+                DW_AT_name	("unsigned int")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x04)
+
+0x0000016d:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0178 "__spinlock")
+                DW_AT_name	("spinlock_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/spinlock.h")
+                DW_AT_decl_line	(13)
+
+0x00000178:   DW_TAG_structure_type
+                DW_AT_name	("__spinlock")
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/spinlock.h")
+                DW_AT_decl_line	(9)
+
+0x00000180:     DW_TAG_member
+                  DW_AT_name	("rwlock")
+                  DW_AT_type	(cu + 0x018d "volatile u32")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/spinlock.h")
+                  DW_AT_decl_line	(10)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000018c:     NULL
+
+0x0000018d:   DW_TAG_volatile_type
+                DW_AT_type	(cu + 0x015b "u32")
+
+0x00000192:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x019d "structure ")
+                DW_AT_name	("user_send_head_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/att_send.h")
+                DW_AT_decl_line	(15)
+
+0x0000019d:   DW_TAG_structure_type
+                DW_AT_byte_size	(0x06)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/att_send.h")
+                DW_AT_decl_line	(10)
+
+0x000001a1:     DW_TAG_member
+                  DW_AT_name	("conn_handle")
+                  DW_AT_type	(cu + 0x01d8 "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/att_send.h")
+                  DW_AT_decl_line	(11)
+                  DW_AT_data_member_location	(0x00)
+
+0x000001ad:     DW_TAG_member
+                  DW_AT_name	("send_handle")
+                  DW_AT_type	(cu + 0x01d8 "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/att_send.h")
+                  DW_AT_decl_line	(12)
+                  DW_AT_data_member_location	(0x02)
+
+0x000001b9:     DW_TAG_member
+                  DW_AT_name	("send_len")
+                  DW_AT_type	(cu + 0x01d8 "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/att_send.h")
+                  DW_AT_decl_line	(13)
+                  DW_AT_byte_size	(0x02)
+                  DW_AT_bit_size	(0x0c)
+                  DW_AT_bit_offset	(0x04)
+                  DW_AT_data_member_location	(0x04)
+
+0x000001c8:     DW_TAG_member
+                  DW_AT_name	("send_type")
+                  DW_AT_type	(cu + 0x01d8 "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/att_send.h")
+                  DW_AT_decl_line	(14)
+                  DW_AT_byte_size	(0x02)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x04)
+
+0x000001d7:     NULL
+
+0x000001d8:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x01e3 "unsigned short")
+                DW_AT_name	("u16")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(13)
+
+0x000001e3:   DW_TAG_base_type
+                DW_AT_name	("unsigned short")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x02)
+
+0x000001ea:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x01f6 "server_ccc_cfg_t")
+
+0x000001ef:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x023b "sizetype")
+                  DW_AT_count	(0x18)
+
+0x000001f5:     NULL
+
+0x000001f6:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0201 "structure ")
+                DW_AT_name	("server_ccc_cfg_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(41)
+
+0x00000201:   DW_TAG_structure_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(37)
+
+0x00000205:     DW_TAG_member
+                  DW_AT_name	("handle")
+                  DW_AT_type	(cu + 0x0230 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(38)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000211:     DW_TAG_member
+                  DW_AT_name	("cfg")
+                  DW_AT_type	(cu + 0x0230 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(39)
+                  DW_AT_byte_size	(0x02)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x0c)
+                  DW_AT_data_member_location	(0x02)
+
+0x00000220:     DW_TAG_member
+                  DW_AT_name	("conn_handle")
+                  DW_AT_type	(cu + 0x0230 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(40)
+                  DW_AT_byte_size	(0x02)
+                  DW_AT_bit_size	(0x0c)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x02)
+
+0x0000022f:     NULL
+
+0x00000230:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x01e3 "unsigned short")
+                DW_AT_name	("uint16_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(46)
+
+0x0000023b:   DW_TAG_base_type
+                DW_AT_name	("sizetype")
+                DW_AT_byte_size	(0x08)
+                DW_AT_encoding	(DW_ATE_unsigned)
+
+0x00000242:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x024e "dev_hdl_t")
+
+0x00000247:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x023b "sizetype")
+                  DW_AT_count	(0x08)
+
+0x0000024d:     NULL
+
+0x0000024e:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0259 "structure ")
+                DW_AT_name	("dev_hdl_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(49)
+
+0x00000259:   DW_TAG_structure_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(44)
+
+0x0000025d:     DW_TAG_member
+                  DW_AT_name	("conn_role")
+                  DW_AT_type	(cu + 0x0297 "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(45)
+                  DW_AT_byte_size	(0x02)
+                  DW_AT_bit_size	(0x02)
+                  DW_AT_bit_offset	(0x0e)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000026c:     DW_TAG_member
+                  DW_AT_name	("conn_index")
+                  DW_AT_type	(cu + 0x0297 "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(46)
+                  DW_AT_byte_size	(0x02)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x0a)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000027b:     DW_TAG_member
+                  DW_AT_name	("conn_handle")
+                  DW_AT_type	(cu + 0x0297 "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(47)
+                  DW_AT_byte_size	(0x02)
+                  DW_AT_bit_size	(0x0a)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000028a:     DW_TAG_member
+                  DW_AT_name	("att_payload_size")
+                  DW_AT_type	(cu + 0x0297 "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(48)
+                  DW_AT_data_member_location	(0x02)
+
+0x00000296:     NULL
+
+0x00000297:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x01e3 "unsigned short")
+                DW_AT_name	("u16")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(46)
+
+0x000002a2:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x02a7 "u8")
+
+0x000002a7:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0154 "unsigned char")
+                DW_AT_name	("u8")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(44)
+
+0x000002b2:   DW_TAG_volatile_type
+                DW_AT_type	(cu + 0x02a7 "u8")
+
+0x000002b7:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x02a7 "u8")
+
+0x000002bc:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x023b "sizetype")
+                  DW_AT_count	(0x06)
+
+0x000002c2:     NULL
+
+0x000002c3:   DW_TAG_enumeration_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/ble_api.h")
+                DW_AT_decl_line	(89)
+
+0x000002c7:     DW_TAG_enumerator
+                  DW_AT_name	("BLE_CMD_RET_SUCESS")
+                  DW_AT_const_value	(0)
+
+0x000002cd:     DW_TAG_enumerator
+                  DW_AT_name	("BLE_CMD_RET_BUSY")
+                  DW_AT_const_value	(-100)
+
+0x000002d4:     DW_TAG_enumerator
+                  DW_AT_name	("BLE_CMD_PARAM_OVERFLOW")
+                  DW_AT_const_value	(-99)
+
+0x000002db:     DW_TAG_enumerator
+                  DW_AT_name	("BLE_CMD_OPT_FAIL")
+                  DW_AT_const_value	(-98)
+
+0x000002e2:     DW_TAG_enumerator
+                  DW_AT_name	("BLE_BUFFER_FULL")
+                  DW_AT_const_value	(-97)
+
+0x000002e9:     DW_TAG_enumerator
+                  DW_AT_name	("BLE_BUFFER_ERROR")
+                  DW_AT_const_value	(-96)
+
+0x000002f0:     DW_TAG_enumerator
+                  DW_AT_name	("BLE_CMD_PARAM_ERROR")
+                  DW_AT_const_value	(-95)
+
+0x000002f7:     DW_TAG_enumerator
+                  DW_AT_name	("BLE_CMD_STACK_NOT_RUN")
+                  DW_AT_const_value	(-94)
+
+0x000002fe:     DW_TAG_enumerator
+                  DW_AT_name	("BLE_CMD_CCC_FAIL")
+                  DW_AT_const_value	(-93)
+
+0x00000305:     NULL
+
+0x00000306:   DW_TAG_enumeration_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                DW_AT_decl_line	(45)
+
+0x0000030a:     DW_TAG_enumerator
+                  DW_AT_name	("ATT_OP_AUTO_READ_CCC")
+                  DW_AT_const_value	(0)
+
+0x00000310:     DW_TAG_enumerator
+                  DW_AT_name	("ATT_OP_NOTIFY")
+                  DW_AT_const_value	(1)
+
+0x00000316:     DW_TAG_enumerator
+                  DW_AT_name	("ATT_OP_INDICATE")
+                  DW_AT_const_value	(2)
+
+0x0000031c:     DW_TAG_enumerator
+                  DW_AT_name	("ATT_OP_READ")
+                  DW_AT_const_value	(3)
+
+0x00000322:     DW_TAG_enumerator
+                  DW_AT_name	("ATT_OP_READ_LONG")
+                  DW_AT_const_value	(4)
+
+0x00000328:     DW_TAG_enumerator
+                  DW_AT_name	("ATT_OP_WRITE")
+                  DW_AT_const_value	(5)
+
+0x0000032e:     DW_TAG_enumerator
+                  DW_AT_name	("ATT_OP_WRITE_WITHOUT_RESPOND")
+                  DW_AT_const_value	(6)
+
+0x00000334:     DW_TAG_enumerator
+                  DW_AT_name	("ATT_OP_CMD_MAX")
+                  DW_AT_const_value	(15)
+
+0x0000033a:     NULL
+
+0x0000033b:   DW_TAG_pointer_type
+
+0x0000033c:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x0000000000000047)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x03eb "att_ccc_config_init")
+
+0x0000034b:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000047)
+                DW_AT_high_pc	(0x000000000000017d)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("att_set_ccc_config")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(142)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x0000035c:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000000
+                     0x0000000000000047 - 0x0000000000000067: DW_OP_reg1 ECX
+                     0x0000000000000067 - 0x000000000000017d: DW_OP_breg5 EBP-8)
+                  DW_AT_name	("handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(142)
+                  DW_AT_type	(cu + 0x0230 "uint16_t")
+
+0x0000036b:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000001f
+                     0x0000000000000047 - 0x0000000000000063: DW_OP_reg0 EAX
+                     0x0000000000000063 - 0x000000000000017d: DW_OP_breg5 EBP-6)
+                  DW_AT_name	("cfg")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(142)
+                  DW_AT_type	(cu + 0x0230 "uint16_t")
+
+0x0000037a:     DW_TAG_variable
+                  DW_AT_location	(0x0000003e
+                     0x0000000000000056 - 0x0000000000000067: DW_OP_reg1 ECX
+                     0x0000000000000067 - 0x000000000000017d: DW_OP_breg5 EBP-8)
+                  DW_AT_name	("find_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(145)
+                  DW_AT_type	(cu + 0x0230 "uint16_t")
+
+0x00000389:     DW_TAG_variable
+                  DW_AT_location	(0x0000005d
+                     0x0000000000000078 - 0x0000000000000080: DW_OP_reg1 ECX
+                     0x0000000000000080 - 0x00000000000000e8: DW_OP_breg5 EBP-20
+                     0x00000000000000e8 - 0x00000000000000f4: DW_OP_reg0 EAX
+                     0x00000000000000f4 - 0x00000000000000fd: DW_OP_breg5 EBP-16
+                     0x00000000000000fd - 0x00000000000000fd: DW_OP_reg0 EAX
+                     0x00000000000000fd - 0x000000000000015d: DW_OP_breg5 EBP-20
+                     0x000000000000015d - 0x0000000000000169: DW_OP_reg0 EAX
+                     0x0000000000000169 - 0x0000000000000172: DW_OP_breg5 EBP-36
+                     0x0000000000000172 - 0x0000000000000172: DW_OP_reg0 EAX
+                     0x0000000000000172 - 0x000000000000017d: DW_OP_breg5 EBP-20)
+                  DW_AT_name	("pt")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(146)
+                  DW_AT_type	(cu + 0x0c1e "server_ccc_cfg_t*")
+
+0x00000398:     DW_TAG_variable
+                  DW_AT_location	(0x000000d8
+                     0x0000000000000078 - 0x00000000000000ee: DW_OP_consts +0, DW_OP_stack_value
+                     0x00000000000000ee - 0x00000000000000f7: DW_OP_reg1 ECX
+                     0x00000000000000f7 - 0x00000000000000fd: DW_OP_breg5 EBP-24
+                     0x00000000000000fd - 0x0000000000000110: DW_OP_reg1 ECX
+                     0x0000000000000163 - 0x000000000000016c: DW_OP_reg1 ECX
+                     0x000000000000016c - 0x0000000000000172: DW_OP_breg5 EBP-40
+                     0x0000000000000172 - 0x0000000000000172: DW_OP_breg5 EBP-24
+                     0x0000000000000172 - 0x0000000000000177: DW_OP_reg1 ECX)
+                  DW_AT_name	("cnt")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(144)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000003a7:     NULL
+
+0x000003a8:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000017d)
+                DW_AT_high_pc	(0x0000000000000216)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("att_get_ccc_config")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(182)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0c08 "uint16_t")
+                DW_AT_external	(true)
+
+0x000003bd:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000013d
+                     0x000000000000017d - 0x0000000000000199: DW_OP_reg0 EAX
+                     0x0000000000000199 - 0x0000000000000216: DW_OP_breg5 EBP-2)
+                  DW_AT_name	("handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(182)
+                  DW_AT_type	(cu + 0x0230 "uint16_t")
+
+0x000003cc:     DW_TAG_variable
+                  DW_AT_location	(0x0000015c
+                     0x00000000000001ae - 0x00000000000001b1: DW_OP_reg1 ECX
+                     0x00000000000001b1 - 0x00000000000001b4: DW_OP_breg5 EBP-16
+                     0x00000000000001b4 - 0x00000000000001ba: DW_OP_reg1 ECX
+                     0x00000000000001e7 - 0x00000000000001f3: DW_OP_reg0 EAX
+                     0x00000000000001f3 - 0x00000000000001fc: DW_OP_breg5 EBP-16
+                     0x00000000000001fc - 0x00000000000001fe: DW_OP_reg0 EAX)
+                  DW_AT_name	("pt")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(190)
+                  DW_AT_type	(cu + 0x0c1e "server_ccc_cfg_t*")
+
+0x000003db:     DW_TAG_variable
+                  DW_AT_location	(0x000001a8
+                     0x00000000000001ae - 0x00000000000001ed: DW_OP_consts +0, DW_OP_stack_value
+                     0x00000000000001ed - 0x00000000000001f6: DW_OP_reg1 ECX
+                     0x00000000000001f6 - 0x00000000000001fc: DW_OP_breg5 EBP-20
+                     0x00000000000001fc - 0x0000000000000201: DW_OP_reg1 ECX)
+                  DW_AT_name	("cnt")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(184)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000003ea:     NULL
+
+0x000003eb:   DW_TAG_subprogram
+                DW_AT_name	("att_ccc_config_init")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(135)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x000003f3:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000216)
+                DW_AT_high_pc	(0x000000000000025d)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("multi_att_ccc_config_init")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(202)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000404:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x03eb "att_ccc_config_init")
+                  DW_AT_low_pc	(0x0000000000000219)
+                  DW_AT_high_pc	(0x0000000000000258)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_call_line	(204)
+
+0x00000413:     NULL
+
+0x00000414:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000025d)
+                DW_AT_high_pc	(0x00000000000003d5)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("multi_att_set_ccc_config")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(208)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000425:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000001df
+                     0x000000000000025d - 0x0000000000000287: DW_OP_reg2 EDX
+                     0x0000000000000287 - 0x00000000000003d5: DW_OP_breg5 EBP-18)
+                  DW_AT_name	("conn_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(208)
+                  DW_AT_type	(cu + 0x0230 "uint16_t")
+
+0x00000434:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000001fe
+                     0x000000000000025d - 0x0000000000000283: DW_OP_reg1 ECX
+                     0x0000000000000283 - 0x00000000000003d5: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("att_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(208)
+                  DW_AT_type	(cu + 0x0230 "uint16_t")
+
+0x00000443:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000021d
+                     0x000000000000025d - 0x000000000000027f: DW_OP_reg0 EAX
+                     0x000000000000027f - 0x00000000000003d5: DW_OP_breg5 EBP-14)
+                  DW_AT_name	("cfg")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(208)
+                  DW_AT_type	(cu + 0x0230 "uint16_t")
+
+0x00000452:     DW_TAG_variable
+                  DW_AT_location	(0x0000023c
+                     0x0000000000000272 - 0x0000000000000283: DW_OP_reg1 ECX
+                     0x0000000000000283 - 0x00000000000003d5: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("find_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(211)
+                  DW_AT_type	(cu + 0x0230 "uint16_t")
+
+0x00000461:     DW_TAG_variable
+                  DW_AT_location	(0x0000025b
+                     0x0000000000000298 - 0x00000000000002a0: DW_OP_reg1 ECX
+                     0x00000000000002a0 - 0x0000000000000333: DW_OP_breg5 EBP-32
+                     0x0000000000000333 - 0x000000000000033f: DW_OP_reg0 EAX
+                     0x000000000000033f - 0x0000000000000348: DW_OP_breg5 EBP-28
+                     0x0000000000000348 - 0x0000000000000348: DW_OP_reg0 EAX
+                     0x0000000000000348 - 0x00000000000003b3: DW_OP_breg5 EBP-32
+                     0x00000000000003b3 - 0x00000000000003bf: DW_OP_reg0 EAX
+                     0x00000000000003bf - 0x00000000000003c8: DW_OP_breg5 EBP-56
+                     0x00000000000003c8 - 0x00000000000003c8: DW_OP_reg0 EAX
+                     0x00000000000003c8 - 0x00000000000003d5: DW_OP_breg5 EBP-32)
+                  DW_AT_name	("pt")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(212)
+                  DW_AT_type	(cu + 0x0c1e "server_ccc_cfg_t*")
+
+0x00000470:     DW_TAG_variable
+                  DW_AT_location	(0x000002d6
+                     0x0000000000000298 - 0x0000000000000339: DW_OP_consts +0, DW_OP_stack_value
+                     0x0000000000000339 - 0x0000000000000342: DW_OP_reg1 ECX
+                     0x0000000000000342 - 0x0000000000000348: DW_OP_breg5 EBP-36
+                     0x0000000000000348 - 0x000000000000035b: DW_OP_reg1 ECX
+                     0x00000000000003b9 - 0x00000000000003c2: DW_OP_reg1 ECX
+                     0x00000000000003c2 - 0x00000000000003c8: DW_OP_breg5 EBP-60
+                     0x00000000000003c8 - 0x00000000000003c8: DW_OP_breg5 EBP-36
+                     0x00000000000003c8 - 0x00000000000003cd: DW_OP_reg1 ECX)
+                  DW_AT_name	("cnt")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(210)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x0000047f:     NULL
+
+0x00000480:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000003d5)
+                DW_AT_high_pc	(0x0000000000000496)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("multi_att_get_ccc_config")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(252)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0c08 "uint16_t")
+                DW_AT_external	(true)
+
+0x00000495:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000033b
+                     0x00000000000003d5 - 0x00000000000003fb: DW_OP_reg1 ECX
+                     0x00000000000003fb - 0x0000000000000496: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("conn_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(252)
+                  DW_AT_type	(cu + 0x0230 "uint16_t")
+
+0x000004a4:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000035a
+                     0x00000000000003d5 - 0x00000000000003f7: DW_OP_reg0 EAX
+                     0x00000000000003f7 - 0x0000000000000496: DW_OP_breg5 EBP-10)
+                  DW_AT_name	("att_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(252)
+                  DW_AT_type	(cu + 0x0230 "uint16_t")
+
+0x000004b3:     DW_TAG_variable
+                  DW_AT_location	(0x00000379
+                     0x0000000000000410 - 0x0000000000000413: DW_OP_reg1 ECX
+                     0x0000000000000413 - 0x0000000000000416: DW_OP_breg5 EBP-24
+                     0x0000000000000416 - 0x000000000000041c: DW_OP_reg1 ECX
+                     0x0000000000000465 - 0x0000000000000471: DW_OP_reg0 EAX
+                     0x0000000000000471 - 0x000000000000047a: DW_OP_breg5 EBP-24
+                     0x000000000000047a - 0x000000000000047c: DW_OP_reg0 EAX)
+                  DW_AT_name	("pt")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(260)
+                  DW_AT_type	(cu + 0x0c1e "server_ccc_cfg_t*")
+
+0x000004c3:     DW_TAG_variable
+                  DW_AT_location	(0x000003c5
+                     0x0000000000000410 - 0x000000000000046b: DW_OP_consts +0, DW_OP_stack_value
+                     0x000000000000046b - 0x0000000000000474: DW_OP_reg1 ECX
+                     0x0000000000000474 - 0x000000000000047a: DW_OP_breg5 EBP-28
+                     0x000000000000047a - 0x000000000000047f: DW_OP_reg1 ECX)
+                  DW_AT_name	("cnt")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(254)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000004d2:     NULL
+
+0x000004d3:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000496)
+                DW_AT_high_pc	(0x0000000000000528)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("multi_att_clear_ccc_config")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(270)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x000004e9:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000003fc
+                     0x0000000000000496 - 0x00000000000004af: DW_OP_reg0 EAX
+                     0x00000000000004af - 0x0000000000000528: DW_OP_breg5 EBP-10)
+                  DW_AT_name	("conn_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(270)
+                  DW_AT_type	(cu + 0x0230 "uint16_t")
+
+0x000004f9:     DW_TAG_variable
+                  DW_AT_location	(0x0000041b
+                     0x00000000000004c0 - 0x00000000000004c3: DW_OP_reg1 ECX
+                     0x00000000000004c3 - 0x00000000000004c6: DW_OP_breg5 EBP-20
+                     0x00000000000004c6 - 0x00000000000004cc: DW_OP_reg1 ECX
+                     0x0000000000000505 - 0x0000000000000511: DW_OP_reg0 EAX
+                     0x0000000000000511 - 0x000000000000051a: DW_OP_breg5 EBP-20
+                     0x000000000000051a - 0x000000000000051f: DW_OP_reg0 EAX)
+                  DW_AT_name	("pt")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(278)
+                  DW_AT_type	(cu + 0x0c1e "server_ccc_cfg_t*")
+
+0x00000509:     DW_TAG_variable
+                  DW_AT_location	(0x00000467
+                     0x00000000000004c0 - 0x000000000000050b: DW_OP_consts +0, DW_OP_stack_value
+                     0x000000000000050b - 0x0000000000000514: DW_OP_reg1 ECX
+                     0x0000000000000514 - 0x000000000000051a: DW_OP_breg5 EBP-24
+                     0x000000000000051a - 0x000000000000051f: DW_OP_reg1 ECX)
+                  DW_AT_name	("cnt")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(272)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000519:     NULL
+
+0x0000051a:   DW_TAG_subprogram
+                DW_AT_name	("just_att_handle_connected")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(123)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0297 "u16")
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000526:     DW_TAG_formal_parameter
+                  DW_AT_name	("start")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(123)
+                  DW_AT_type	(cu + 0x02a7 "u8")
+
+0x00000531:     DW_TAG_formal_parameter
+                  DW_AT_name	("end")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(123)
+                  DW_AT_type	(cu + 0x02a7 "u8")
+
+0x0000053c:     DW_TAG_lexical_block
+
+0x0000053d:       DW_TAG_variable
+                    DW_AT_name	("i")
+                    DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                    DW_AT_decl_line	(125)
+                    DW_AT_type	(cu + 0x0037 "int")
+
+0x00000548:       NULL
+
+0x00000549:     NULL
+
+0x0000054a:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000528)
+                DW_AT_high_pc	(0x000000000000061c)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("att_request_can_send_now_event")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(295)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x0000055c:     DW_TAG_variable
+                  DW_AT_name	("tmp_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(299)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x00000568:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x051a "just_att_handle_connected")
+                  DW_AT_low_pc	(0x0000000000000541)
+                  DW_AT_high_pc	(0x0000000000000576)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_call_line	(299)
+
+0x00000578:       DW_TAG_lexical_block
+                    DW_AT_low_pc	(0x0000000000000541)
+                    DW_AT_high_pc	(0x0000000000000576)
+
+0x00000581:         DW_TAG_variable
+                      DW_AT_location	(0x0000049e
+                         0x0000000000000549 - 0x0000000000000549: DW_OP_breg5 EBP-12
+                         0x0000000000000569 - 0x0000000000000570: DW_OP_reg0 EAX
+                         0x0000000000000570 - 0x000000000000061c: DW_OP_breg5 EBP-12)
+                      DW_AT_abstract_origin	(cu + 0x053d "i")
+
+0x0000058a:         NULL
+
+0x0000058b:       NULL
+
+0x0000058c:     NULL
+
+0x0000058d:   DW_TAG_subprogram
+                DW_AT_name	("get_att_handle_index")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(113)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x02a7 "u8")
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000599:     DW_TAG_formal_parameter
+                  DW_AT_name	("conn_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(113)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x000005a4:     DW_TAG_lexical_block
+
+0x000005a5:       DW_TAG_variable
+                    DW_AT_name	("i")
+                    DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                    DW_AT_decl_line	(115)
+                    DW_AT_type	(cu + 0x0037 "int")
+
+0x000005b0:       NULL
+
+0x000005b1:     NULL
+
+0x000005b2:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000061c)
+                DW_AT_high_pc	(0x000000000000078d)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("user_data_cbuf_is_write_able")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(324)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x015b "u32")
+                DW_AT_external	(true)
+
+0x000005c8:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000004c9
+                     0x000000000000061c - 0x000000000000063e: DW_OP_reg1 ECX
+                     0x000000000000063e - 0x000000000000078d: DW_OP_breg5 EBP-18)
+                  DW_AT_name	("conn_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(324)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x000005d8:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000004e8
+                     0x000000000000061c - 0x000000000000063a: DW_OP_reg0 EAX
+                     0x000000000000063a - 0x000000000000078d: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(324)
+                  DW_AT_type	(cu + 0x06a7 "u32")
+
+0x000005e8:     DW_TAG_variable
+                  DW_AT_location	(0x00000507
+                     0x000000000000062e - 0x00000000000006b6: DW_OP_constu 0x14, DW_OP_stack_value
+                     0x00000000000006b6 - 0x00000000000006c1: DW_OP_reg2 EDX)
+                  DW_AT_name	("mtu_size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(327)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x000005f8:     DW_TAG_variable
+                  DW_AT_location	(0x00000546
+                     0x0000000000000697 - 0x00000000000006b6: DW_OP_reg2 EDX)
+                  DW_AT_name	("cur_index")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(333)
+                  DW_AT_type	(cu + 0x02a7 "u8")
+
+0x00000608:     DW_TAG_variable
+                  DW_AT_location	(0x00000559
+                     0x00000000000006d1 - 0x000000000000078d: DW_OP_constu 0x6, DW_OP_stack_value)
+                  DW_AT_name	("head_size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(339)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x00000618:     DW_TAG_variable
+                  DW_AT_location	(0x0000056e
+                     0x00000000000006f3 - 0x00000000000006f9: DW_OP_reg2 EDX
+                     0x00000000000006f9 - 0x0000000000000747: DW_OP_breg5 EBP-52
+                     0x0000000000000747 - 0x0000000000000750: DW_OP_reg2 EDX
+                     0x0000000000000750 - 0x0000000000000759: DW_OP_breg5 EBP-68
+                     0x0000000000000759 - 0x000000000000078d: DW_OP_breg5 EBP-52)
+                  DW_AT_name	("buf_space")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(326)
+                  DW_AT_type	(cu + 0x06a7 "u32")
+
+0x00000628:     DW_TAG_variable
+                  DW_AT_location	(0x000005b1
+                     0x0000000000000721 - 0x0000000000000724: DW_OP_reg0 EAX
+                     0x0000000000000724 - 0x0000000000000739: DW_OP_breg5 EBP-56
+                     0x0000000000000739 - 0x000000000000073f: DW_OP_reg0 EAX
+                     0x000000000000073f - 0x0000000000000764: DW_OP_breg5 EBP-64
+                     0x0000000000000764 - 0x0000000000000767: DW_OP_reg0 EAX
+                     0x0000000000000767 - 0x000000000000076c: DW_OP_breg5 EBP-56
+                     0x000000000000076c - 0x000000000000076c: DW_OP_reg0 EAX
+                     0x000000000000076c - 0x0000000000000774: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x0000000000000774 - 0x0000000000000777: DW_OP_reg0 EAX
+                     0x0000000000000777 - 0x000000000000078d: DW_OP_breg5 EBP-72)
+                  DW_AT_name	("w_len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(326)
+                  DW_AT_type	(cu + 0x06a7 "u32")
+
+0x00000638:     DW_TAG_variable
+                  DW_AT_name	("pack_size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(340)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x00000644:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x058d "get_att_handle_index")
+                  DW_AT_low_pc	(0x000000000000064c)
+                  DW_AT_high_pc	(0x0000000000000697)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_call_line	(333)
+
+0x00000654:       DW_TAG_lexical_block
+                    DW_AT_low_pc	(0x000000000000064c)
+                    DW_AT_high_pc	(0x0000000000000697)
+
+0x0000065d:         DW_TAG_variable
+                      DW_AT_location	(0x00000527
+                         0x000000000000067c - 0x0000000000000682: DW_OP_reg0 EAX
+                         0x0000000000000682 - 0x000000000000078d: DW_OP_breg5 EBP-32)
+                      DW_AT_abstract_origin	(cu + 0x05a5 "i")
+
+0x00000666:         NULL
+
+0x00000667:       NULL
+
+0x00000668:     NULL
+
+0x00000669:   DW_TAG_subprogram
+                DW_AT_name	("user_data_att_send_sub")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(367)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x06a7 "u32")
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000676:     DW_TAG_formal_parameter
+                  DW_AT_name	("head")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(367)
+                  DW_AT_type	(cu + 0x06b2 "user_send_head_t*")
+
+0x00000682:     DW_TAG_formal_parameter
+                  DW_AT_name	("data")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(367)
+                  DW_AT_type	(cu + 0x02a2 "u8*")
+
+0x0000068e:     DW_TAG_variable
+                  DW_AT_name	("head_size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(370)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x0000069a:     DW_TAG_variable
+                  DW_AT_name	("wlen")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(369)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x000006a6:     NULL
+
+0x000006a7:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0166 "unsigned int")
+                DW_AT_name	("u32")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(48)
+
+0x000006b2:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0192 "user_send_head_t")
+
+0x000006b7:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000078d)
+                DW_AT_high_pc	(0x0000000000000b4b)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("user_data_att_send")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(383)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x000006cd:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000062e
+                     0x000000000000078d - 0x00000000000007d3: DW_OP_reg7 EDI
+                     0x00000000000007d3 - 0x0000000000000b4b: DW_OP_breg5 EBP-48)
+                  DW_AT_name	("conn_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(383)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x000006dd:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000064d
+                     0x000000000000078d - 0x00000000000007cf: DW_OP_reg6 ESI
+                     0x00000000000007cf - 0x0000000000000b4b: DW_OP_breg5 EBP-46)
+                  DW_AT_name	("handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(383)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x000006ed:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000066c
+                     0x000000000000078d - 0x00000000000007cb: DW_OP_reg2 EDX
+                     0x00000000000007cb - 0x0000000000000b00: DW_OP_breg5 EBP-44
+                     0x0000000000000b00 - 0x0000000000000b16: DW_OP_reg2 EDX
+                     0x0000000000000b16 - 0x0000000000000b1c: DW_OP_breg5 EBP-108
+                     0x0000000000000b1c - 0x0000000000000b1c: DW_OP_breg5 EBP-44
+                     0x0000000000000b1c - 0x0000000000000b26: DW_OP_reg2 EDX)
+                  DW_AT_name	("data")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(383)
+                  DW_AT_type	(cu + 0x02a2 "u8*")
+
+0x000006fd:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000006ba
+                     0x000000000000078d - 0x00000000000007c8: DW_OP_reg1 ECX
+                     0x00000000000007c8 - 0x0000000000000af8: DW_OP_breg5 EBP-38
+                     0x0000000000000af8 - 0x0000000000000b13: DW_OP_reg0 EAX
+                     0x0000000000000b13 - 0x0000000000000b1c: DW_OP_breg5 EBP-104
+                     0x0000000000000b1c - 0x0000000000000b1c: DW_OP_reg0 EAX
+                     0x0000000000000b1c - 0x0000000000000b4b: DW_OP_breg5 EBP-38)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(383)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x0000070d:     DW_TAG_formal_parameter
+                  DW_AT_location	(DW_OP_fbreg -25)
+                  DW_AT_name	("send_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(383)
+                  DW_AT_type	(cu + 0x02a7 "u8")
+
+0x0000071c:     DW_TAG_variable
+                  DW_AT_location	(0x00000708
+                     0x00000000000007b6 - 0x0000000000000a88: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x0000000000000a88 - 0x0000000000000b00: DW_OP_constu 0xffffff9f, DW_OP_stack_value
+                     0x0000000000000b00 - 0x0000000000000b29: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x0000000000000b29 - 0x0000000000000b2f: DW_OP_reg0 EAX
+                     0x0000000000000b2f - 0x0000000000000b4b: DW_OP_breg5 EBP-144)
+                  DW_AT_name	("ret_val")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(386)
+                  DW_AT_type	(cu + 0x06a7 "u32")
+
+0x0000072c:     DW_TAG_variable
+                  DW_AT_location	(0x00000753
+                     0x00000000000008e2 - 0x000000000000094a: DW_OP_constu 0x14, DW_OP_stack_value
+                     0x000000000000094a - 0x000000000000094e: DW_OP_reg2 EDX
+                     0x000000000000094e - 0x0000000000000964: DW_OP_breg5 EBP-86
+                     0x0000000000000964 - 0x0000000000000974: DW_OP_reg0 EAX
+                     0x0000000000000974 - 0x0000000000000b4b: DW_OP_breg5 EBP-88)
+                  DW_AT_name	("mtu_size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(414)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x0000073c:     DW_TAG_variable
+                  DW_AT_location	(0x000007d9
+                     0x000000000000092a - 0x000000000000094a: DW_OP_reg2 EDX)
+                  DW_AT_name	("cur_index")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(415)
+                  DW_AT_type	(cu + 0x02a7 "u8")
+
+0x0000074c:     DW_TAG_variable
+                  DW_AT_location	(0x000007ec
+                     0x0000000000000a03 - 0x0000000000000a3c: DW_OP_reg3 EBX
+                     0x0000000000000a3c - 0x0000000000000b4b: DW_OP_breg5 EBP-116)
+                  DW_AT_name	("wlen")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(385)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x0000075c:     DW_TAG_variable
+                  DW_AT_name	("send_head")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(387)
+                  DW_AT_type	(cu + 0x0192 "user_send_head_t")
+
+0x00000768:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x058d "get_att_handle_index")
+                  DW_AT_low_pc	(0x00000000000008eb)
+                  DW_AT_high_pc	(0x000000000000092a)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_call_line	(415)
+
+0x00000778:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000798
+                       0x00000000000008e2 - 0x0000000000000b4b: DW_OP_breg5 EBP-48)
+                    DW_AT_abstract_origin	(cu + 0x0599 "conn_handle")
+
+0x00000781:       DW_TAG_lexical_block
+                    DW_AT_low_pc	(0x00000000000008eb)
+                    DW_AT_high_pc	(0x000000000000092a)
+
+0x0000078a:         DW_TAG_variable
+                      DW_AT_location	(0x000007ac
+                         0x00000000000008e2 - 0x0000000000000910: DW_OP_consts +0, DW_OP_stack_value
+                         0x0000000000000910 - 0x0000000000000916: DW_OP_reg0 EAX
+                         0x0000000000000916 - 0x0000000000000b4b: DW_OP_breg5 EBP-80)
+                      DW_AT_abstract_origin	(cu + 0x05a5 "i")
+
+0x00000793:         NULL
+
+0x00000794:       NULL
+
+0x00000795:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0669 "user_data_att_send_sub")
+                  DW_AT_low_pc	(0x0000000000000a19)
+                  DW_AT_high_pc	(0x0000000000000a92)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_call_line	(432)
+
+0x000007a5:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x0000080c
+                       0x0000000000000a19 - 0x0000000000000a34: DW_OP_reg0 EAX
+                       0x0000000000000a34 - 0x0000000000000b4b: DW_OP_breg5 EBP-112)
+                    DW_AT_abstract_origin	(cu + 0x0682 "data")
+
+0x000007ae:       DW_TAG_variable
+                    DW_AT_const_value	(6)
+                    DW_AT_abstract_origin	(cu + 0x068e "head_size")
+
+0x000007b4:       NULL
+
+0x000007b5:     NULL
+
+0x000007b6:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000b4b)
+                DW_AT_high_pc	(0x0000000000000bcc)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("check_le_pakcet_sent_finish_flag")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(527)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x02a7 "u8")
+                DW_AT_external	(true)
+
+0x000007cc:     DW_TAG_variable
+                  DW_AT_location	(0x00000873
+                     0x0000000000000b99 - 0x0000000000000bcc: DW_OP_breg5 EBP-14)
+                  DW_AT_name	("tmp_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(530)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x000007dc:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x051a "just_att_handle_connected")
+                  DW_AT_low_pc	(0x0000000000000b59)
+                  DW_AT_high_pc	(0x0000000000000b99)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_call_line	(530)
+
+0x000007ec:       DW_TAG_formal_parameter
+                    DW_AT_const_value	(0)
+                    DW_AT_abstract_origin	(cu + 0x0526 "start")
+
+0x000007f2:       DW_TAG_formal_parameter
+                    DW_AT_const_value	(8)
+                    DW_AT_abstract_origin	(cu + 0x0531 "end")
+
+0x000007f8:       DW_TAG_lexical_block
+                    DW_AT_low_pc	(0x0000000000000b59)
+                    DW_AT_high_pc	(0x0000000000000b99)
+
+0x00000801:         DW_TAG_variable
+                      DW_AT_location	(0x0000082c
+                         0x0000000000000b53 - 0x0000000000000b53: DW_OP_consts +0, DW_OP_stack_value, DW_OP_piece 0x1
+                         0x0000000000000b53 - 0x0000000000000b64: DW_OP_consts +0, DW_OP_stack_value
+                         0x0000000000000b64 - 0x0000000000000b64: DW_OP_breg5 EBP-12
+                         0x0000000000000b88 - 0x0000000000000b93: DW_OP_reg0 EAX
+                         0x0000000000000b93 - 0x0000000000000bcc: DW_OP_breg5 EBP-12)
+                      DW_AT_abstract_origin	(cu + 0x053d "i")
+
+0x0000080a:         NULL
+
+0x0000080b:       NULL
+
+0x0000080c:     NULL
+
+0x0000080d:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000bcc)
+                DW_AT_high_pc	(0x0000000000000c5b)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("check_le_conn_disconnet_flag")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(544)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x02a7 "u8")
+                DW_AT_external	(true)
+
+0x00000823:     DW_TAG_variable
+                  DW_AT_location	(0x000008b2
+                     0x0000000000000c28 - 0x0000000000000c5b: DW_OP_breg5 EBP-18)
+                  DW_AT_name	("tmp_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(550)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x00000833:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x051a "just_att_handle_connected")
+                  DW_AT_low_pc	(0x0000000000000beb)
+                  DW_AT_high_pc	(0x0000000000000c28)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_call_line	(550)
+
+0x00000843:       DW_TAG_lexical_block
+                    DW_AT_low_pc	(0x0000000000000beb)
+                    DW_AT_high_pc	(0x0000000000000c28)
+
+0x0000084c:         DW_TAG_variable
+                      DW_AT_location	(0x00000887
+                         0x0000000000000bf3 - 0x0000000000000bf3: DW_OP_breg5 EBP-16
+                         0x0000000000000c17 - 0x0000000000000c22: DW_OP_reg0 EAX
+                         0x0000000000000c22 - 0x0000000000000c5b: DW_OP_breg5 EBP-16)
+                      DW_AT_abstract_origin	(cu + 0x053d "i")
+
+0x00000855:         NULL
+
+0x00000856:       NULL
+
+0x00000857:     NULL
+
+0x00000858:   DW_TAG_subprogram
+                DW_AT_name	("user_att_send_streamer")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(565)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000865:     DW_TAG_variable
+                  DW_AT_name	("ret_val")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(567)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000871:     DW_TAG_variable
+                  DW_AT_name	("user_head")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(568)
+                  DW_AT_type	(cu + 0x0192 "user_send_head_t")
+
+0x0000087d:     NULL
+
+0x0000087e:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000c5b)
+                DW_AT_high_pc	(0x0000000000000e59)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("att_send_schedule")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(601)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000890:     DW_TAG_variable
+                  DW_AT_location	(0x000008c6
+                     0x0000000000000c64 - 0x0000000000000ce0: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x0000000000000ce0 - 0x0000000000000cf5: DW_OP_constu 0x1, DW_OP_stack_value
+                     0x0000000000000cf5 - 0x0000000000000cfb: DW_OP_reg0 EAX
+                     0x0000000000000cfb - 0x0000000000000e3b: DW_OP_breg5 EBP-48
+                     0x0000000000000e3b - 0x0000000000000e3b: DW_OP_constu 0x1, DW_OP_stack_value
+                     0x0000000000000e3b - 0x0000000000000e59: DW_OP_breg5 EBP-48)
+                  DW_AT_name	("can_send_flag")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(603)
+                  DW_AT_type	(cu + 0x06a7 "u32")
+
+0x000008a0:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0858 "user_att_send_streamer")
+                  DW_AT_low_pc	(0x0000000000000d0c)
+                  DW_AT_high_pc	(0x0000000000000e3b)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_call_line	(614)
+
+0x000008b0:       DW_TAG_variable
+                    DW_AT_location	(0x00000918
+                       0x0000000000000d0c - 0x0000000000000e13: DW_OP_consts +0, DW_OP_stack_value
+                       0x0000000000000e13 - 0x0000000000000e21: DW_OP_reg0 EAX
+                       0x0000000000000e31 - 0x0000000000000e59: DW_OP_consts +2, DW_OP_stack_value)
+                    DW_AT_abstract_origin	(cu + 0x0865 "ret_val")
+
+0x000008b9:       NULL
+
+0x000008ba:     NULL
+
+0x000008bb:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000e59)
+                DW_AT_high_pc	(0x000000000000119c)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("att_operation_cmd_send")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(452)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+
+0x000008d1:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000945
+                     0x0000000000000e59 - 0x0000000000000e81: DW_OP_reg0 EAX
+                     0x0000000000000e81 - 0x000000000000119c: DW_OP_breg5 EBP-18)
+                  DW_AT_name	("conn_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(452)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x000008e1:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000964
+                     0x0000000000000e59 - 0x0000000000000e84: DW_OP_reg3 EBX
+                     0x0000000000000e84 - 0x000000000000119c: DW_OP_breg5 EBP-19)
+                  DW_AT_name	("send_type_flag")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(452)
+                  DW_AT_type	(cu + 0x02a7 "u8")
+
+0x000008f1:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000983
+                     0x0000000000000e59 - 0x0000000000000e8f: DW_OP_reg7 EDI
+                     0x0000000000000e8f - 0x000000000000119c: DW_OP_breg5 EBP-30)
+                  DW_AT_name	("send_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(452)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x00000901:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000009a2
+                     0x0000000000000e59 - 0x0000000000000e77: DW_OP_reg1 ECX
+                     0x0000000000000e77 - 0x000000000000119c: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("buf")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(452)
+                  DW_AT_type	(cu + 0x02a2 "u8*")
+
+0x00000911:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000009c1
+                     0x0000000000000e59 - 0x0000000000000e88: DW_OP_reg6 ESI
+                     0x0000000000000e88 - 0x000000000000119c: DW_OP_breg5 EBP-22)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(452)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x00000921:     DW_TAG_variable
+                  DW_AT_location	(0x000009e0
+                     0x0000000000000e74 - 0x0000000000000f89: DW_OP_consts +0, DW_OP_stack_value
+                     0x0000000000000f89 - 0x0000000000000f8c: DW_OP_reg0 EAX
+                     0x0000000000000f8c - 0x0000000000000fbd: DW_OP_breg5 EBP-64
+                     0x0000000000000fbd - 0x0000000000000fc0: DW_OP_reg0 EAX
+                     0x0000000000000fc0 - 0x0000000000000ff4: DW_OP_breg5 EBP-64
+                     0x0000000000000ff4 - 0x0000000000000ff7: DW_OP_reg1 ECX
+                     0x0000000000000ff7 - 0x0000000000001035: DW_OP_breg5 EBP-64
+                     0x0000000000001035 - 0x0000000000001038: DW_OP_reg7 EDI
+                     0x0000000000001038 - 0x0000000000001064: DW_OP_breg5 EBP-64
+                     0x0000000000001064 - 0x0000000000001067: DW_OP_reg6 ESI
+                     0x0000000000001067 - 0x0000000000001093: DW_OP_breg5 EBP-64
+                     0x0000000000001093 - 0x0000000000001096: DW_OP_reg6 ESI
+                     0x0000000000001096 - 0x0000000000001096: DW_OP_breg5 EBP-64
+                     0x0000000000001096 - 0x000000000000109e: DW_OP_breg5 EBP-68
+                     0x000000000000109e - 0x00000000000010a5: DW_OP_reg0 EAX
+                     0x00000000000010a5 - 0x0000000000001123: DW_OP_breg5 EBP-68
+                     0x0000000000001123 - 0x000000000000112e: DW_OP_consts +0, DW_OP_stack_value
+                     0x000000000000112e - 0x000000000000119c: DW_OP_breg5 EBP-68)
+                  DW_AT_name	("ret_val")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(454)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000931:     DW_TAG_variable
+                  DW_AT_name	("param1")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(455)
+                  DW_AT_type	(cu + 0x06a7 "u32")
+
+0x0000093d:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x058d "get_att_handle_index")
+                  DW_AT_low_pc	(0x0000000000000e95)
+                  DW_AT_high_pc	(0x0000000000000ed6)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_call_line	(457)
+
+0x0000094d:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000abe
+                       0x0000000000000e74 - 0x0000000000000e81: DW_OP_reg0 EAX
+                       0x0000000000000e81 - 0x000000000000119c: DW_OP_breg5 EBP-18)
+                    DW_AT_abstract_origin	(cu + 0x0599 "conn_handle")
+
+0x00000956:       DW_TAG_lexical_block
+                    DW_AT_low_pc	(0x0000000000000e95)
+                    DW_AT_high_pc	(0x0000000000000ed6)
+
+0x0000095f:         DW_TAG_variable
+                      DW_AT_location	(0x00000add
+                         0x0000000000000e74 - 0x0000000000000eba: DW_OP_consts +0, DW_OP_stack_value
+                         0x0000000000000eba - 0x0000000000000ec0: DW_OP_reg0 EAX
+                         0x0000000000000ec0 - 0x000000000000119c: DW_OP_breg5 EBP-36)
+                      DW_AT_abstract_origin	(cu + 0x05a5 "i")
+
+0x00000968:         NULL
+
+0x00000969:       NULL
+
+0x0000096a:     NULL
+
+0x0000096b:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000119c)
+                DW_AT_high_pc	(0x0000000000001295)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("att_send_set_mtu_size")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(624)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x0000097d:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000b09
+                     0x000000000000119c - 0x00000000000011bd: DW_OP_reg1 ECX
+                     0x00000000000011bd - 0x0000000000001295: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("conn_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(624)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x0000098d:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000b28
+                     0x000000000000119c - 0x00000000000011b9: DW_OP_reg0 EAX
+                     0x00000000000011b9 - 0x0000000000001295: DW_OP_breg5 EBP-10)
+                  DW_AT_name	("mtu_size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(624)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x0000099d:     DW_TAG_variable
+                  DW_AT_location	(0x00000b66
+                     0x000000000000120e - 0x0000000000001224: DW_OP_reg1 ECX)
+                  DW_AT_name	("cur_index")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(629)
+                  DW_AT_type	(cu + 0x02a7 "u8")
+
+0x000009ad:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x058d "get_att_handle_index")
+                  DW_AT_low_pc	(0x00000000000011c8)
+                  DW_AT_high_pc	(0x000000000000120e)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_call_line	(629)
+
+0x000009bd:       DW_TAG_lexical_block
+                    DW_AT_low_pc	(0x00000000000011c8)
+                    DW_AT_high_pc	(0x000000000000120e)
+
+0x000009c6:         DW_TAG_variable
+                      DW_AT_location	(0x00000b47
+                         0x00000000000011f8 - 0x00000000000011fe: DW_OP_reg0 EAX
+                         0x00000000000011fe - 0x0000000000001295: DW_OP_breg5 EBP-20)
+                      DW_AT_abstract_origin	(cu + 0x05a5 "i")
+
+0x000009cf:         NULL
+
+0x000009d0:       NULL
+
+0x000009d1:     NULL
+
+0x000009d2:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000001295)
+                DW_AT_high_pc	(0x00000000000012ea)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x0a6d "att_send_need_bufszie")
+
+0x000009e1:     DW_TAG_variable
+                  DW_AT_const_value	(214)
+                  DW_AT_abstract_origin	(cu + 0x0a7a "size")
+
+0x000009e8:     NULL
+
+0x000009e9:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000012ea)
+                DW_AT_high_pc	(0x00000000000012f4)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("att_need_ctrl_ramsize")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(656)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x06a7 "u32")
+                DW_AT_external	(true)
+
+0x000009ff:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000012f4)
+                DW_AT_high_pc	(0x0000000000001339)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x0a87 "att_set_default_conn_handle")
+
+0x00000a0e:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000b79
+                     0x00000000000012f4 - 0x000000000000130b: DW_OP_reg0 EAX
+                     0x000000000000130b - 0x0000000000001339: DW_OP_breg5 EBP-2)
+                  DW_AT_abstract_origin	(cu + 0x0a90 "handle")
+
+0x00000a17:     NULL
+
+0x00000a18:   DW_TAG_subprogram
+                DW_AT_name	("get_att_handle_is_conn")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(92)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0297 "u16")
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000a24:     DW_TAG_lexical_block
+
+0x00000a25:       DW_TAG_variable
+                    DW_AT_name	("i")
+                    DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                    DW_AT_decl_line	(94)
+                    DW_AT_type	(cu + 0x0037 "int")
+
+0x00000a30:       NULL
+
+0x00000a31:     NULL
+
+0x00000a32:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000001339)
+                DW_AT_high_pc	(0x00000000000013b5)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("att_get_default_conn_handle")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(671)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x01d8 "u16")
+                DW_AT_external	(true)
+
+0x00000a48:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0a18 "get_att_handle_is_conn")
+                  DW_AT_low_pc	(0x000000000000135b)
+                  DW_AT_high_pc	(0x00000000000013a1)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_call_line	(676)
+
+0x00000a58:       DW_TAG_lexical_block
+                    DW_AT_low_pc	(0x000000000000135b)
+                    DW_AT_high_pc	(0x00000000000013a1)
+
+0x00000a61:         DW_TAG_variable
+                      DW_AT_location	(0x00000b98
+                         0x0000000000001363 - 0x0000000000001368: DW_OP_breg5 EBP-16
+                         0x0000000000001390 - 0x0000000000001397: DW_OP_reg0 EAX
+                         0x0000000000001397 - 0x00000000000013b5: DW_OP_breg5 EBP-16)
+                      DW_AT_abstract_origin	(cu + 0x0a25 "i")
+
+0x00000a6a:         NULL
+
+0x00000a6b:       NULL
+
+0x00000a6c:     NULL
+
+0x00000a6d:   DW_TAG_subprogram
+                DW_AT_name	("att_send_need_bufszie")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(648)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x015b "u32")
+                DW_AT_external	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000a7a:     DW_TAG_variable
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(650)
+                  DW_AT_type	(cu + 0x06a7 "u32")
+
+0x00000a86:     NULL
+
+0x00000a87:   DW_TAG_subprogram
+                DW_AT_name	("att_set_default_conn_handle")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(662)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000a90:     DW_TAG_formal_parameter
+                  DW_AT_name	("handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(662)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x00000a9c:     NULL
+
+0x00000a9d:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000013b5)
+                DW_AT_high_pc	(0x000000000000174f)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("att_send_init")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(680)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000aaf:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000bc3
+                     0x00000000000013b5 - 0x00000000000013fb: DW_OP_reg6 ESI
+                     0x00000000000013fb - 0x000000000000174f: DW_OP_breg5 EBP-22)
+                  DW_AT_name	("conn_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(680)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x00000abf:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000be2
+                     0x00000000000013b5 - 0x00000000000013f7: DW_OP_reg2 EDX
+                     0x00000000000013f7 - 0x00000000000015ce: DW_OP_breg5 EBP-20
+                     0x00000000000015ce - 0x00000000000015ed: DW_OP_reg2 EDX
+                     0x00000000000015ed - 0x0000000000001615: DW_OP_breg5 EBP-116
+                     0x0000000000001615 - 0x0000000000001660: DW_OP_breg5 EBP-20
+                     0x0000000000001660 - 0x000000000000168f: DW_OP_reg6 ESI
+                     0x000000000000168f - 0x00000000000016d8: DW_OP_breg5 EBP-136
+                     0x00000000000016d8 - 0x000000000000174f: DW_OP_breg5 EBP-20)
+                  DW_AT_name	("tmp_buf")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(680)
+                  DW_AT_type	(cu + 0x02a2 "u8*")
+
+0x00000acf:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000c49
+                     0x00000000000013b5 - 0x00000000000013f4: DW_OP_reg1 ECX
+                     0x00000000000013f4 - 0x0000000000001667: DW_OP_breg5 EBP-16
+                     0x0000000000001667 - 0x0000000000001696: DW_OP_reg2 EDX
+                     0x0000000000001696 - 0x00000000000016d8: DW_OP_breg5 EBP-138
+                     0x00000000000016d8 - 0x000000000000174f: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("buf_size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(680)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x00000adf:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000c8c
+                     0x00000000000013b5 - 0x00000000000013f0: DW_OP_reg0 EAX
+                     0x00000000000013f0 - 0x000000000000174f: DW_OP_breg5 EBP-14)
+                  DW_AT_name	("local_sendbuf_size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(680)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x00000aef:     DW_TAG_variable
+                  DW_AT_location	(0x00000cab
+                     0x000000000000160c - 0x000000000000163c: DW_OP_consts +0, DW_OP_stack_value
+                     0x000000000000163c - 0x0000000000001642: DW_OP_reg0 EAX
+                     0x0000000000001642 - 0x0000000000001648: DW_OP_breg5 EBP-124
+                     0x0000000000001648 - 0x000000000000164a: DW_OP_reg0 EAX)
+                  DW_AT_name	("i")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(682)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000aff:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0a6d "att_send_need_bufszie")
+                  DW_AT_low_pc	(0x0000000000001422)
+                  DW_AT_high_pc	(0x000000000000144e)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_call_line	(690)
+
+0x00000b0f:       DW_TAG_variable
+                    DW_AT_const_value	(214)
+                    DW_AT_abstract_origin	(cu + 0x0a7a "size")
+
+0x00000b16:       NULL
+
+0x00000b17:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0a6d "att_send_need_bufszie")
+                  DW_AT_low_pc	(0x0000000000001486)
+                  DW_AT_high_pc	(0x00000000000014b5)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_call_line	(691)
+
+0x00000b27:       DW_TAG_variable
+                    DW_AT_const_value	(214)
+                    DW_AT_abstract_origin	(cu + 0x0a7a "size")
+
+0x00000b2e:       NULL
+
+0x00000b2f:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x03eb "att_ccc_config_init")
+                  DW_AT_low_pc	(0x0000000000001667)
+                  DW_AT_high_pc	(0x000000000000169b)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_call_line	(721)
+
+0x00000b3f:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0a87 "att_set_default_conn_handle")
+                  DW_AT_low_pc	(0x00000000000016d8)
+                  DW_AT_high_pc	(0x000000000000170f)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_call_line	(726)
+
+0x00000b4f:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg -22)
+                    DW_AT_abstract_origin	(cu + 0x0a90 "handle")
+
+0x00000b57:       NULL
+
+0x00000b58:     NULL
+
+0x00000b59:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x0000000000000009)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("cpu_reset")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(145)
+                DW_AT_prototyped	(true)
+
+0x00000b6a:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000174f)
+                DW_AT_high_pc	(0x0000000000001968)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("att_set_conn_handle")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(734)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x00000b80:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000ce3
+                     0x000000000000174f - 0x0000000000001778: DW_OP_reg2 EDX
+                     0x0000000000001778 - 0x0000000000001968: DW_OP_breg5 EBP-22)
+                  DW_AT_name	("conn_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(734)
+                  DW_AT_type	(cu + 0x0297 "u16")
+
+0x00000b90:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000d02
+                     0x000000000000174f - 0x0000000000001774: DW_OP_reg1 ECX
+                     0x0000000000001774 - 0x0000000000001968: DW_OP_breg5 EBP-20)
+                  DW_AT_name	("handle_index")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(734)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000ba0:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000d21
+                     0x000000000000174f - 0x0000000000001771: DW_OP_reg0 EAX
+                     0x0000000000001771 - 0x0000000000001968: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("role")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(734)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000bb0:     DW_TAG_variable
+                  DW_AT_location	(0x00000d40
+                     0x0000000000001781 - 0x000000000000194f: DW_OP_consts +0, DW_OP_stack_value
+                     0x000000000000194f - 0x0000000000001952: DW_OP_reg0 EAX
+                     0x0000000000001952 - 0x0000000000001968: DW_OP_breg5 EBP-72)
+                  DW_AT_name	("ret")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(741)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000bc0:     DW_TAG_variable
+                  DW_AT_location	(0x00000d6d
+                     0x00000000000017c1 - 0x000000000000182a: DW_OP_consts +0, DW_OP_stack_value
+                     0x000000000000182a - 0x0000000000001830: DW_OP_reg0 EAX
+                     0x0000000000001830 - 0x0000000000001893: DW_OP_breg5 EBP-40
+                     0x0000000000001893 - 0x0000000000001898: DW_OP_reg0 EAX
+                     0x00000000000018eb - 0x00000000000018f1: DW_OP_reg0 EAX
+                     0x00000000000018f1 - 0x000000000000193f: DW_OP_breg5 EBP-60
+                     0x000000000000193f - 0x000000000000193f: DW_OP_breg5 EBP-40
+                     0x000000000000193f - 0x0000000000001944: DW_OP_reg0 EAX)
+                  DW_AT_name	("i")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(740)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000bd0:     NULL
+
+0x00000bd1:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000001968)
+                DW_AT_high_pc	(0x0000000000001a1f)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("att_send_check_multi_dev")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                DW_AT_decl_line	(790)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x00000be7:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000dd2
+                     0x0000000000001968 - 0x0000000000001997: DW_OP_reg1 ECX)
+                  DW_AT_name	("server_max")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(790)
+                  DW_AT_type	(cu + 0x02a7 "u8")
+
+0x00000bf7:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000de5
+                     0x0000000000001968 - 0x0000000000001992: DW_OP_reg0 EAX)
+                  DW_AT_name	("client_max")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/att_send.c")
+                  DW_AT_decl_line	(790)
+                  DW_AT_type	(cu + 0x02a7 "u8")
+
+0x00000c07:     NULL
+
+0x00000c08:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0c13 "__uint16_t")
+                DW_AT_name	("uint16_t")
+                DW_AT_decl_file	("/opt/q32s/include/sys/_stdint.h")
+                DW_AT_decl_line	(26)
+
+0x00000c13:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x01e3 "unsigned short")
+                DW_AT_name	("__uint16_t")
+                DW_AT_decl_file	("/opt/q32s/include/machine/_default_types.h")
+                DW_AT_decl_line	(43)
+
+0x00000c1e:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x01f6 "server_ccc_cfg_t")
+
+0x00000c23:   NULL

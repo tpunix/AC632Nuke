@@ -1,0 +1,810 @@
+temp.o:	file format ELF32-i386
+
+.debug_info contents:
+0x00000000: Compile Unit: length = 0x00000522 version = 0x0004 abbr_offset = 0x0000 addr_size = 0x04 (next unit at 0x00000526)
+
+0x0000000b: DW_TAG_compile_unit
+              DW_AT_producer	("clang version 4.0.1 (git@192.168.8.109:huangzhenyu/clang.git d97b416c061747718623e97046d5e7dcb4c75555) (git@192.168.8.109:huangzhenyu/llvm.git 64c6917899f78226b6d3cf2b78db54d02abf7c85)")
+              DW_AT_language	(DW_LANG_C99)
+              DW_AT_name	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+              DW_AT_stmt_list	(0x00000000)
+              DW_AT_comp_dir	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make")
+              DW_AT_GNU_pubnames	(true)
+              DW_AT_low_pc	(0x0000000000000000)
+              DW_AT_high_pc	(0x0000000000000425)
+
+0x00000026:   DW_TAG_variable
+                DW_AT_name	("app_info_debug_enable")
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/profile_stack_debug.h")
+                DW_AT_decl_line	(190)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x00000037:   DW_TAG_base_type
+                DW_AT_name	("int")
+                DW_AT_encoding	(DW_ATE_signed)
+                DW_AT_byte_size	(0x04)
+
+0x0000003e:   DW_TAG_variable
+                DW_AT_name	("bt_3th_spp_callback")
+                DW_AT_type	(cu + 0x004f "JL_PRO_CB")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                DW_AT_decl_line	(11)
+                DW_AT_location	(DW_OP_addr 0x8)
+
+0x0000004f:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x005a "__JL_PRO_CB")
+                DW_AT_name	("JL_PRO_CB")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/rcsp/JL_rcsp_protocol.h")
+                DW_AT_decl_line	(177)
+
+0x0000005a:   DW_TAG_structure_type
+                DW_AT_name	("__JL_PRO_CB")
+                DW_AT_byte_size	(0x2c)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/rcsp/JL_rcsp_protocol.h")
+                DW_AT_decl_line	(163)
+
+0x00000062:     DW_TAG_member
+                  DW_AT_name	("priv")
+                  DW_AT_type	(cu + 0x00e7 "*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/rcsp/JL_rcsp_protocol.h")
+                  DW_AT_decl_line	(165)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000006e:     DW_TAG_member
+                  DW_AT_name	("fw_ready")
+                  DW_AT_type	(cu + 0x00e8 "subroutine bool*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/rcsp/JL_rcsp_protocol.h")
+                  DW_AT_decl_line	(166)
+                  DW_AT_data_member_location	(0x04)
+
+0x0000007a:     DW_TAG_member
+                  DW_AT_name	("fw_send")
+                  DW_AT_type	(cu + 0x010a "subroutine s32*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/rcsp/JL_rcsp_protocol.h")
+                  DW_AT_decl_line	(167)
+                  DW_AT_data_member_location	(0x08)
+
+0x00000086:     DW_TAG_member
+                  DW_AT_name	("CMD_resp")
+                  DW_AT_type	(cu + 0x0141 "subroutine *")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/rcsp/JL_rcsp_protocol.h")
+                  DW_AT_decl_line	(169)
+                  DW_AT_data_member_location	(0x0c)
+
+0x00000092:     DW_TAG_member
+                  DW_AT_name	("DATA_resp")
+                  DW_AT_type	(cu + 0x0141 "subroutine *")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/rcsp/JL_rcsp_protocol.h")
+                  DW_AT_decl_line	(170)
+                  DW_AT_data_member_location	(0x10)
+
+0x0000009e:     DW_TAG_member
+                  DW_AT_name	("CMD_no_resp")
+                  DW_AT_type	(cu + 0x0171 "subroutine *")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/rcsp/JL_rcsp_protocol.h")
+                  DW_AT_decl_line	(171)
+                  DW_AT_data_member_location	(0x14)
+
+0x000000aa:     DW_TAG_member
+                  DW_AT_name	("DATA_no_resp")
+                  DW_AT_type	(cu + 0x0171 "subroutine *")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/rcsp/JL_rcsp_protocol.h")
+                  DW_AT_decl_line	(172)
+                  DW_AT_data_member_location	(0x18)
+
+0x000000b6:     DW_TAG_member
+                  DW_AT_name	("CMD_recieve_resp")
+                  DW_AT_type	(cu + 0x0141 "subroutine *")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/rcsp/JL_rcsp_protocol.h")
+                  DW_AT_decl_line	(173)
+                  DW_AT_data_member_location	(0x1c)
+
+0x000000c2:     DW_TAG_member
+                  DW_AT_name	("DATA_recieve_resp")
+                  DW_AT_type	(cu + 0x0141 "subroutine *")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/rcsp/JL_rcsp_protocol.h")
+                  DW_AT_decl_line	(174)
+                  DW_AT_data_member_location	(0x20)
+
+0x000000ce:     DW_TAG_member
+                  DW_AT_name	("wait_resp_timeout")
+                  DW_AT_type	(cu + 0x018c "subroutine u8*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/rcsp/JL_rcsp_protocol.h")
+                  DW_AT_decl_line	(175)
+                  DW_AT_data_member_location	(0x24)
+
+0x000000da:     DW_TAG_member
+                  DW_AT_name	("auth_pass_callback")
+                  DW_AT_type	(cu + 0x01a6 "subroutine *")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/rcsp/JL_rcsp_protocol.h")
+                  DW_AT_decl_line	(176)
+                  DW_AT_data_member_location	(0x28)
+
+0x000000e6:     NULL
+
+0x000000e7:   DW_TAG_pointer_type
+
+0x000000e8:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x00ed "subroutine bool")
+
+0x000000ed:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x00f8 "bool")
+                DW_AT_prototyped	(true)
+
+0x000000f2:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x00e7 "*")
+
+0x000000f7:     NULL
+
+0x000000f8:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0103 "unsigned char")
+                DW_AT_name	("bool")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(11)
+
+0x00000103:   DW_TAG_base_type
+                DW_AT_name	("unsigned char")
+                DW_AT_encoding	(DW_ATE_unsigned_char)
+                DW_AT_byte_size	(0x01)
+
+0x0000010a:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x010f "subroutine s32")
+
+0x0000010f:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x0124 "s32")
+                DW_AT_prototyped	(true)
+
+0x00000114:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x00e7 "*")
+
+0x00000119:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x00e7 "*")
+
+0x0000011e:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x012f "u16")
+
+0x00000123:     NULL
+
+0x00000124:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_name	("s32")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(16)
+
+0x0000012f:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x013a "unsigned short")
+                DW_AT_name	("u16")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(13)
+
+0x0000013a:   DW_TAG_base_type
+                DW_AT_name	("unsigned short")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x02)
+
+0x00000141:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0146 "subroutine ")
+
+0x00000146:   DW_TAG_subroutine_type
+                DW_AT_prototyped	(true)
+
+0x00000147:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x00e7 "*")
+
+0x0000014c:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x0161 "u8")
+
+0x00000151:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x0161 "u8")
+
+0x00000156:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x016c "u8*")
+
+0x0000015b:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x012f "u16")
+
+0x00000160:     NULL
+
+0x00000161:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0103 "unsigned char")
+                DW_AT_name	("u8")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(11)
+
+0x0000016c:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0161 "u8")
+
+0x00000171:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0176 "subroutine ")
+
+0x00000176:   DW_TAG_subroutine_type
+                DW_AT_prototyped	(true)
+
+0x00000177:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x00e7 "*")
+
+0x0000017c:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x0161 "u8")
+
+0x00000181:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x016c "u8*")
+
+0x00000186:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x012f "u16")
+
+0x0000018b:     NULL
+
+0x0000018c:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0191 "subroutine u8")
+
+0x00000191:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x0161 "u8")
+                DW_AT_prototyped	(true)
+
+0x00000196:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x00e7 "*")
+
+0x0000019b:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x0161 "u8")
+
+0x000001a0:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x0161 "u8")
+
+0x000001a5:     NULL
+
+0x000001a6:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x01ab "subroutine ")
+
+0x000001ab:   DW_TAG_subroutine_type
+                DW_AT_prototyped	(true)
+
+0x000001ac:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x00e7 "*")
+
+0x000001b1:     NULL
+
+0x000001b2:   DW_TAG_variable
+                DW_AT_name	("bt_3th_ble_callback")
+                DW_AT_type	(cu + 0x004f "JL_PRO_CB")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                DW_AT_decl_line	(12)
+                DW_AT_location	(DW_OP_addr 0x34)
+
+0x000001c3:   DW_TAG_variable
+                DW_AT_name	("g_bt_3th_user_pro")
+                DW_AT_type	(cu + 0x01d4 "BT_3TH_USER_CB*")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                DW_AT_decl_line	(13)
+                DW_AT_location	(DW_OP_addr 0x4)
+
+0x000001d4:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x01d9 "BT_3TH_USER_CB")
+
+0x000001d9:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x01e4 "__BT_3TH_USER_CB")
+                DW_AT_name	("BT_3TH_USER_CB")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/common/btstack_3th_protocol_user.h")
+                DW_AT_decl_line	(48)
+
+0x000001e4:   DW_TAG_structure_type
+                DW_AT_name	("__BT_3TH_USER_CB")
+                DW_AT_byte_size	(0x40)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/common/btstack_3th_protocol_user.h")
+                DW_AT_decl_line	(41)
+
+0x000001ec:     DW_TAG_member
+                  DW_AT_name	("type")
+                  DW_AT_type	(cu + 0x0037 "int")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/common/btstack_3th_protocol_user.h")
+                  DW_AT_decl_line	(42)
+                  DW_AT_data_member_location	(0x00)
+
+0x000001f8:     DW_TAG_member
+                  DW_AT_name	("bt_config")
+                  DW_AT_type	(cu + 0x0037 "int")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/common/btstack_3th_protocol_user.h")
+                  DW_AT_decl_line	(43)
+                  DW_AT_data_member_location	(0x04)
+
+0x00000204:     DW_TAG_member
+                  DW_AT_name	("bt_3th_handler")
+                  DW_AT_type	(cu + 0x004f "JL_PRO_CB")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/common/btstack_3th_protocol_user.h")
+                  DW_AT_decl_line	(44)
+                  DW_AT_data_member_location	(0x08)
+
+0x00000210:     DW_TAG_member
+                  DW_AT_name	("BT_3TH_event_handler")
+                  DW_AT_type	(cu + 0x0235 "subroutine *")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/common/btstack_3th_protocol_user.h")
+                  DW_AT_decl_line	(45)
+                  DW_AT_data_member_location	(0x34)
+
+0x0000021c:     DW_TAG_member
+                  DW_AT_name	("BT_3TH_data_handler")
+                  DW_AT_type	(cu + 0x024b "subroutine *")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/common/btstack_3th_protocol_user.h")
+                  DW_AT_decl_line	(46)
+                  DW_AT_data_member_location	(0x38)
+
+0x00000228:     DW_TAG_member
+                  DW_AT_name	("BT_3TH_spp_state_specific")
+                  DW_AT_type	(cu + 0x025c "subroutine int*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/common/btstack_3th_protocol_user.h")
+                  DW_AT_decl_line	(47)
+                  DW_AT_data_member_location	(0x3c)
+
+0x00000234:     NULL
+
+0x00000235:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x023a "subroutine ")
+
+0x0000023a:   DW_TAG_subroutine_type
+                DW_AT_prototyped	(true)
+
+0x0000023b:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x012f "u16")
+
+0x00000240:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x016c "u8*")
+
+0x00000245:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x0000024a:     NULL
+
+0x0000024b:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0250 "subroutine ")
+
+0x00000250:   DW_TAG_subroutine_type
+                DW_AT_prototyped	(true)
+
+0x00000251:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x016c "u8*")
+
+0x00000256:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x0000025b:     NULL
+
+0x0000025c:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0261 "subroutine int")
+
+0x00000261:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_prototyped	(true)
+
+0x00000266:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x0161 "u8")
+
+0x0000026b:     NULL
+
+0x0000026c:   DW_TAG_variable
+                DW_AT_name	("JL_bt_chl")
+                DW_AT_type	(cu + 0x027d "volatile u8")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                DW_AT_decl_line	(10)
+                DW_AT_location	(DW_OP_addr 0x60)
+
+0x0000027d:   DW_TAG_volatile_type
+                DW_AT_type	(cu + 0x0161 "u8")
+
+0x00000282:   DW_TAG_variable
+                DW_AT_name	("g_bt_3th_lib_pro")
+                DW_AT_type	(cu + 0x0293 "BT_3TH_PROTOCOL_CB*")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                DW_AT_decl_line	(14)
+                DW_AT_location	(DW_OP_addr 0x64)
+
+0x00000293:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0298 "BT_3TH_PROTOCOL_CB")
+
+0x00000298:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x02a3 "__BT_3TH_PROTOCOL_CB")
+                DW_AT_name	("BT_3TH_PROTOCOL_CB")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/common/btstack_3th_protocol_user.h")
+                DW_AT_decl_line	(55)
+
+0x000002a3:   DW_TAG_structure_type
+                DW_AT_name	("__BT_3TH_PROTOCOL_CB")
+                DW_AT_byte_size	(0x10)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/common/btstack_3th_protocol_user.h")
+                DW_AT_decl_line	(50)
+
+0x000002ab:     DW_TAG_member
+                  DW_AT_name	("type")
+                  DW_AT_type	(cu + 0x0037 "int")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/common/btstack_3th_protocol_user.h")
+                  DW_AT_decl_line	(51)
+                  DW_AT_data_member_location	(0x00)
+
+0x000002b7:     DW_TAG_member
+                  DW_AT_name	("BT_3TH_type_dev_select")
+                  DW_AT_type	(cu + 0x02dc "subroutine *")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/common/btstack_3th_protocol_user.h")
+                  DW_AT_decl_line	(52)
+                  DW_AT_data_member_location	(0x04)
+
+0x000002c3:     DW_TAG_member
+                  DW_AT_name	("resume")
+                  DW_AT_type	(cu + 0x02e8 "subroutine *")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/common/btstack_3th_protocol_user.h")
+                  DW_AT_decl_line	(53)
+                  DW_AT_data_member_location	(0x08)
+
+0x000002cf:     DW_TAG_member
+                  DW_AT_name	("recieve")
+                  DW_AT_type	(cu + 0x02ee "subroutine *")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/common/btstack_3th_protocol_user.h")
+                  DW_AT_decl_line	(54)
+                  DW_AT_data_member_location	(0x0c)
+
+0x000002db:     NULL
+
+0x000002dc:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x02e1 "subroutine ")
+
+0x000002e1:   DW_TAG_subroutine_type
+                DW_AT_prototyped	(true)
+
+0x000002e2:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x0161 "u8")
+
+0x000002e7:     NULL
+
+0x000002e8:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x02ed "subroutine ")
+
+0x000002ed:   DW_TAG_subroutine_type
+                DW_AT_prototyped	(true)
+
+0x000002ee:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x02f3 "subroutine ")
+
+0x000002f3:   DW_TAG_subroutine_type
+                DW_AT_prototyped	(true)
+
+0x000002f4:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x00e7 "*")
+
+0x000002f9:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x00e7 "*")
+
+0x000002fe:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x012f "u16")
+
+0x00000303:     NULL
+
+0x00000304:   DW_TAG_enumeration_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/third_party/common/btstack_3th_protocol_user.h")
+                DW_AT_decl_line	(35)
+
+0x00000308:     DW_TAG_enumerator
+                  DW_AT_name	("RCSP_BLE")
+                  DW_AT_const_value	(0)
+
+0x0000030e:     DW_TAG_enumerator
+                  DW_AT_name	("RCSP_SPP")
+                  DW_AT_const_value	(1)
+
+0x00000314:     NULL
+
+0x00000315:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x0000000000000035)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_3th_protocol_open")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                DW_AT_decl_line	(27)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x0000032a:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000000
+                     0x0000000000000000 - 0x000000000000002e: DW_OP_reg0 EAX)
+                  DW_AT_name	("type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                  DW_AT_decl_line	(27)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000339:     NULL
+
+0x0000033a:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000035)
+                DW_AT_high_pc	(0x000000000000015c)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_3th_protocol_user_init")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                DW_AT_decl_line	(51)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x0000034f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000013
+                     0x0000000000000035 - 0x0000000000000046: DW_OP_reg0 EAX
+                     0x0000000000000046 - 0x000000000000015c: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("protocol_user_callback")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                  DW_AT_decl_line	(51)
+                  DW_AT_type	(cu + 0x01d4 "BT_3TH_USER_CB*")
+
+0x0000035e:     NULL
+
+0x0000035f:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000015c)
+                DW_AT_high_pc	(0x00000000000001a2)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("bt_3th_spp_state_handle")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                DW_AT_decl_line	(78)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000370:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000032
+                     0x000000000000015c - 0x0000000000000171: DW_OP_reg0 EAX
+                     0x0000000000000171 - 0x00000000000001a2: DW_OP_breg5 EBP-1)
+                  DW_AT_name	("type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                  DW_AT_decl_line	(78)
+                  DW_AT_type	(cu + 0x0161 "u8")
+
+0x0000037f:     NULL
+
+0x00000380:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000001a2)
+                DW_AT_high_pc	(0x00000000000001af)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("bt_3th_set_spp_callback_priv")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                DW_AT_decl_line	(85)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000391:     DW_TAG_formal_parameter
+                  DW_AT_location	(DW_OP_reg0 EAX)
+                  DW_AT_name	("priv")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                  DW_AT_decl_line	(85)
+                  DW_AT_type	(cu + 0x00e7 "*")
+
+0x0000039e:     NULL
+
+0x0000039f:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000001af)
+                DW_AT_high_pc	(0x00000000000001ba)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("bt_3th_get_spp_callback")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                DW_AT_decl_line	(90)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0520 "JL_PRO_CB*")
+                DW_AT_external	(true)
+
+0x000003b4:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000001ba)
+                DW_AT_high_pc	(0x00000000000001c7)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("bt_3th_set_ble_callback_priv")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                DW_AT_decl_line	(96)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x000003c5:     DW_TAG_formal_parameter
+                  DW_AT_location	(DW_OP_reg0 EAX)
+                  DW_AT_name	("priv")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                  DW_AT_decl_line	(96)
+                  DW_AT_type	(cu + 0x00e7 "*")
+
+0x000003d2:     NULL
+
+0x000003d3:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000001c7)
+                DW_AT_high_pc	(0x00000000000001d2)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("bt_3th_get_ble_callback")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                DW_AT_decl_line	(101)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0520 "JL_PRO_CB*")
+                DW_AT_external	(true)
+
+0x000003e8:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000001d2)
+                DW_AT_high_pc	(0x00000000000001df)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("bt_3th_get_cur_bt_channel_sel")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                DW_AT_decl_line	(107)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0161 "u8")
+                DW_AT_external	(true)
+
+0x000003fd:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000001df)
+                DW_AT_high_pc	(0x0000000000000222)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x0416 "bt_3th_type_dev_switch")
+
+0x0000040c:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000051
+                     0x00000000000001df - 0x00000000000001f4: DW_OP_reg0 EAX
+                     0x00000000000001f4 - 0x0000000000000222: DW_OP_breg5 EBP-1)
+                  DW_AT_abstract_origin	(cu + 0x041e "type")
+
+0x00000415:     NULL
+
+0x00000416:   DW_TAG_subprogram
+                DW_AT_name	("bt_3th_type_dev_switch")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                DW_AT_decl_line	(112)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x0000041e:     DW_TAG_formal_parameter
+                  DW_AT_name	("type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                  DW_AT_decl_line	(112)
+                  DW_AT_type	(cu + 0x0161 "u8")
+
+0x00000429:     NULL
+
+0x0000042a:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000222)
+                DW_AT_high_pc	(0x000000000000034d)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("bt_3th_type_dev_select")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                DW_AT_decl_line	(120)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x0000043b:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000070
+                     0x0000000000000222 - 0x0000000000000238: DW_OP_reg0 EAX
+                     0x0000000000000238 - 0x000000000000034d: DW_OP_breg5 EBP-5)
+                  DW_AT_name	("type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                  DW_AT_decl_line	(120)
+                  DW_AT_type	(cu + 0x0161 "u8")
+
+0x0000044a:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0416 "bt_3th_type_dev_switch")
+                  DW_AT_low_pc	(0x0000000000000296)
+                  DW_AT_high_pc	(0x00000000000002cf)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                  DW_AT_call_line	(129)
+
+0x00000459:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg -5)
+                    DW_AT_abstract_origin	(cu + 0x041e "type")
+
+0x00000461:       NULL
+
+0x00000462:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0416 "bt_3th_type_dev_switch")
+                  DW_AT_low_pc	(0x0000000000000316)
+                  DW_AT_high_pc	(0x0000000000000347)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                  DW_AT_call_line	(136)
+
+0x00000471:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg -5)
+                    DW_AT_abstract_origin	(cu + 0x041e "type")
+
+0x00000479:       NULL
+
+0x0000047a:     NULL
+
+0x0000047b:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000034d)
+                DW_AT_high_pc	(0x0000000000000365)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("bt_3th_dev_type_spp")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                DW_AT_decl_line	(141)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x0000048c:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000365)
+                DW_AT_high_pc	(0x0000000000000376)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_3th_protocol_lib_init")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                DW_AT_decl_line	(154)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x000004a1:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000008f
+                     0x0000000000000365 - 0x0000000000000374: DW_OP_reg0 EAX)
+                  DW_AT_name	("protocol_lib_callback")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                  DW_AT_decl_line	(154)
+                  DW_AT_type	(cu + 0x0293 "BT_3TH_PROTOCOL_CB*")
+
+0x000004b0:     NULL
+
+0x000004b1:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000376)
+                DW_AT_high_pc	(0x00000000000003d8)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("bt_3th_event_send_to_user")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                DW_AT_decl_line	(161)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x000004c2:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000000a2
+                     0x0000000000000376 - 0x000000000000039a: DW_OP_reg2 EDX
+                     0x000000000000039a - 0x00000000000003d8: DW_OP_breg5 EBP-14)
+                  DW_AT_name	("opcode")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                  DW_AT_decl_line	(161)
+                  DW_AT_type	(cu + 0x012f "u16")
+
+0x000004d1:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000000c1
+                     0x0000000000000376 - 0x0000000000000396: DW_OP_reg1 ECX
+                     0x0000000000000396 - 0x00000000000003d8: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                  DW_AT_decl_line	(161)
+                  DW_AT_type	(cu + 0x016c "u8*")
+
+0x000004e0:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000000e0
+                     0x0000000000000376 - 0x0000000000000393: DW_OP_reg0 EAX
+                     0x0000000000000393 - 0x00000000000003d8: DW_OP_breg5 EBP-8)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                  DW_AT_decl_line	(161)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000004ef:     NULL
+
+0x000004f0:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000003d8)
+                DW_AT_high_pc	(0x0000000000000425)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("bt_3th_data_send_to_user")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                DW_AT_decl_line	(168)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000501:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000000ff
+                     0x00000000000003d8 - 0x00000000000003f3: DW_OP_reg1 ECX
+                     0x00000000000003f3 - 0x0000000000000425: DW_OP_breg5 EBP-8)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                  DW_AT_decl_line	(168)
+                  DW_AT_type	(cu + 0x016c "u8*")
+
+0x00000510:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000011e
+                     0x00000000000003d8 - 0x00000000000003f0: DW_OP_reg0 EAX
+                     0x00000000000003f0 - 0x0000000000000425: DW_OP_breg5 EBP-4)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/third_party_profile/common/btstack_3th_protocol_user.c")
+                  DW_AT_decl_line	(168)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x0000051f:     NULL
+
+0x00000520:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x004f "JL_PRO_CB")
+
+0x00000525:   NULL

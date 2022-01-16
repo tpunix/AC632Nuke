@@ -1,0 +1,973 @@
+temp.o:	file format ELF32-i386
+
+.debug_info contents:
+0x00000000: Compile Unit: length = 0x00000622 version = 0x0004 abbr_offset = 0x0000 addr_size = 0x04 (next unit at 0x00000626)
+
+0x0000000b: DW_TAG_compile_unit
+              DW_AT_producer	("clang version 4.0.1 (git@192.168.8.109:huangzhenyu/clang.git d97b416c061747718623e97046d5e7dcb4c75555) (git@192.168.8.109:huangzhenyu/llvm.git 64c6917899f78226b6d3cf2b78db54d02abf7c85)")
+              DW_AT_language	(DW_LANG_C99)
+              DW_AT_name	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BR_EDR/bt_audio.c")
+              DW_AT_stmt_list	(0x00000000)
+              DW_AT_comp_dir	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make")
+              DW_AT_GNU_pubnames	(true)
+              DW_AT_low_pc	(0x0000000000000000)
+              DW_AT_high_pc	(0x0000000000000441)
+
+0x00000026:   DW_TAG_variable
+                DW_AT_name	("app_info_debug_enable")
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/profile_stack_debug.h")
+                DW_AT_decl_line	(190)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x00000037:   DW_TAG_base_type
+                DW_AT_name	("int")
+                DW_AT_encoding	(DW_ATE_signed)
+                DW_AT_byte_size	(0x04)
+
+0x0000003e:   DW_TAG_variable
+                DW_AT_name	("disable_sco_timer")
+                DW_AT_type	(cu + 0x004f "u16")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BR_EDR/bt_audio.c")
+                DW_AT_decl_line	(109)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x0000004f:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x005a "unsigned short")
+                DW_AT_name	("u16")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(13)
+
+0x0000005a:   DW_TAG_base_type
+                DW_AT_name	("unsigned short")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x02)
+
+0x00000061:   DW_TAG_enumeration_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/avctp_user.h")
+                DW_AT_decl_line	(299)
+
+0x00000066:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_POWER_ON")
+                  DW_AT_const_value	(1)
+
+0x0000006c:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_POWER_OFF")
+                  DW_AT_const_value	(2)
+
+0x00000072:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_INIT_OK")
+                  DW_AT_const_value	(3)
+
+0x00000078:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_EXIT_OK")
+                  DW_AT_const_value	(4)
+
+0x0000007e:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_START_CONNECTED")
+                  DW_AT_const_value	(5)
+
+0x00000084:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_FIRST_CONNECTED")
+                  DW_AT_const_value	(6)
+
+0x0000008a:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_SECOND_CONNECTED")
+                  DW_AT_const_value	(7)
+
+0x00000090:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_ENCRY_COMPLETE")
+                  DW_AT_const_value	(8)
+
+0x00000096:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_FIRST_DISCONNECT")
+                  DW_AT_const_value	(9)
+
+0x0000009c:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_SECOND_DISCONNECT")
+                  DW_AT_const_value	(10)
+
+0x000000a2:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_PHONE_INCOME")
+                  DW_AT_const_value	(11)
+
+0x000000a8:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_PHONE_NUMBER")
+                  DW_AT_const_value	(12)
+
+0x000000ae:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_PHONE_MANUFACTURER")
+                  DW_AT_const_value	(13)
+
+0x000000b4:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_PHONE_OUT")
+                  DW_AT_const_value	(14)
+
+0x000000ba:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_PHONE_ACTIVE")
+                  DW_AT_const_value	(15)
+
+0x000000c0:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_PHONE_HANGUP")
+                  DW_AT_const_value	(16)
+
+0x000000c6:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_BEGIN_AUTO_CON")
+                  DW_AT_const_value	(17)
+
+0x000000cc:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_MUSIC_SOUND_COME")
+                  DW_AT_const_value	(18)
+
+0x000000d2:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_MUSIC_SOUND_GO")
+                  DW_AT_const_value	(19)
+
+0x000000d8:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_RESUME")
+                  DW_AT_const_value	(20)
+
+0x000000de:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_RESUME_BTSTACK")
+                  DW_AT_const_value	(21)
+
+0x000000e4:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_SUSPEND")
+                  DW_AT_const_value	(22)
+
+0x000000ea:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_LAST_CALL_TYPE_CHANGE")
+                  DW_AT_const_value	(23)
+
+0x000000f0:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_CALL_VOL_CHANGE")
+                  DW_AT_const_value	(24)
+
+0x000000f6:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_SCO_STATUS_CHANGE")
+                  DW_AT_const_value	(25)
+
+0x000000fc:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_CONNECT_WITHOUT_LINKKEY")
+                  DW_AT_const_value	(26)
+
+0x00000102:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_PHONE_BATTERY_CHANGE")
+                  DW_AT_const_value	(27)
+
+0x00000108:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_RECONNECT_LINKKEY_LOST")
+                  DW_AT_const_value	(28)
+
+0x0000010e:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_RECONN_OR_CONN")
+                  DW_AT_const_value	(29)
+
+0x00000114:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_BT_TEST_BOX_CMD")
+                  DW_AT_const_value	(30)
+
+0x0000011a:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_BT_TWS_CONNECT_CMD")
+                  DW_AT_const_value	(31)
+
+0x00000120:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_SNIFF_STATE_UPDATE")
+                  DW_AT_const_value	(32)
+
+0x00000126:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_TONE_BY_FILE_NAME")
+                  DW_AT_const_value	(33)
+
+0x0000012c:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_PHONE_DATE_AND_TIME")
+                  DW_AT_const_value	(34)
+
+0x00000132:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_INBAND_RINGTONE")
+                  DW_AT_const_value	(35)
+
+0x00000138:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_VOICE_RECOGNITION")
+                  DW_AT_const_value	(36)
+
+0x0000013e:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_AVRCP_INCOME_OPID")
+                  DW_AT_const_value	(37)
+
+0x00000144:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_HFP_SERVICE_LEVEL_CONNECTION_OK")
+                  DW_AT_const_value	(38)
+
+0x0000014a:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_CONN_A2DP_CH")
+                  DW_AT_const_value	(39)
+
+0x00000150:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_CONN_HFP_CH")
+                  DW_AT_const_value	(40)
+
+0x00000156:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_INQUIRY_TIMEOUT")
+                  DW_AT_const_value	(41)
+
+0x0000015c:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_INITING")
+                  DW_AT_const_value	(42)
+
+0x00000162:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_WAITINT_CONN")
+                  DW_AT_const_value	(43)
+
+0x00000168:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_AUTO_CONNECTINT")
+                  DW_AT_const_value	(44)
+
+0x0000016e:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_CONNECTING")
+                  DW_AT_const_value	(45)
+
+0x00000174:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_TAKEING_PHONE")
+                  DW_AT_const_value	(46)
+
+0x0000017a:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_PLAYING_MUSIC")
+                  DW_AT_const_value	(47)
+
+0x00000180:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_A2DP_MEDIA_START")
+                  DW_AT_const_value	(48)
+
+0x00000186:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_A2DP_MEDIA_STOP")
+                  DW_AT_const_value	(49)
+
+0x0000018c:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_BROADCAST_STATE")
+                  DW_AT_const_value	(50)
+
+0x00000192:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_TRIM_OVER")
+                  DW_AT_const_value	(51)
+
+0x00000198:     NULL
+
+0x00000199:   DW_TAG_enumeration_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/avctp_user.h")
+                DW_AT_decl_line	(575)
+
+0x0000019e:     DW_TAG_enumerator
+                  DW_AT_name	("BD_ESCO_IDLE")
+                  DW_AT_const_value	(0)
+
+0x000001a4:     DW_TAG_enumerator
+                  DW_AT_name	("BD_ESCO_BUSY_CURRENT")
+                  DW_AT_const_value	(1)
+
+0x000001aa:     DW_TAG_enumerator
+                  DW_AT_name	("BD_ESCO_BUSY_OTHER")
+                  DW_AT_const_value	(2)
+
+0x000001b0:     NULL
+
+0x000001b1:   DW_TAG_enumeration_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/avctp_user.h")
+                DW_AT_decl_line	(12)
+
+0x000001b5:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_START_CONNECTION")
+                  DW_AT_const_value	(0)
+
+0x000001bb:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_START_CONNEC_VIA_ADDR")
+                  DW_AT_const_value	(1)
+
+0x000001c1:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_START_CONNEC_VIA_ADDR_MANUALLY")
+                  DW_AT_const_value	(2)
+
+0x000001c7:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_START_CONNEC_SPP_VIA_ADDR")
+                  DW_AT_const_value	(3)
+
+0x000001cd:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_DISCONNECTION_HCI")
+                  DW_AT_const_value	(4)
+
+0x000001d3:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_CONNECTION_CANCEL")
+                  DW_AT_const_value	(5)
+
+0x000001d9:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_READ_REMOTE_NAME")
+                  DW_AT_const_value	(6)
+
+0x000001df:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_PAUSE_MUSIC")
+                  DW_AT_const_value	(7)
+
+0x000001e5:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_SCO_LINK")
+                  DW_AT_const_value	(8)
+
+0x000001eb:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_CONN_SCO")
+                  DW_AT_const_value	(9)
+
+0x000001f1:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_DISCONN_SCO")
+                  DW_AT_const_value	(10)
+
+0x000001f7:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_DISCONN_SDP_MASTER")
+                  DW_AT_const_value	(11)
+
+0x000001fd:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_WRITE_SCAN_DISABLE")
+                  DW_AT_const_value	(12)
+
+0x00000203:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_WRITE_SCAN_ENABLE")
+                  DW_AT_const_value	(13)
+
+0x00000209:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_WRITE_CONN_DISABLE")
+                  DW_AT_const_value	(14)
+
+0x0000020f:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_WRITE_CONN_ENABLE")
+                  DW_AT_const_value	(15)
+
+0x00000215:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_SEARCH_DEVICE")
+                  DW_AT_const_value	(16)
+
+0x0000021b:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_INQUIRY_CANCEL")
+                  DW_AT_const_value	(17)
+
+0x00000221:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_PAGE_CANCEL")
+                  DW_AT_const_value	(18)
+
+0x00000227:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_SNIFF_IN")
+                  DW_AT_const_value	(19)
+
+0x0000022d:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_SNIFF_EXIT")
+                  DW_AT_const_value	(20)
+
+0x00000233:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_ALL_SNIFF_EXIT")
+                  DW_AT_const_value	(21)
+
+0x00000239:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_CMD_BEGIN")
+                  DW_AT_const_value	(22)
+
+0x0000023f:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_CALL_VOLUME_UP")
+                  DW_AT_const_value	(23)
+
+0x00000245:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_CALL_VOLUME_DOWN")
+                  DW_AT_const_value	(24)
+
+0x0000024b:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_CALL_SET_VOLUME")
+                  DW_AT_const_value	(25)
+
+0x00000251:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_CALL_GET_VOLUME")
+                  DW_AT_const_value	(26)
+
+0x00000257:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_CALL_ANSWER")
+                  DW_AT_const_value	(27)
+
+0x0000025d:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_CALL_HANGUP")
+                  DW_AT_const_value	(28)
+
+0x00000263:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_CALL_LAST_NO")
+                  DW_AT_const_value	(29)
+
+0x00000269:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_CALL_CURRENT")
+                  DW_AT_const_value	(30)
+
+0x0000026f:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_DTMF_TONES")
+                  DW_AT_const_value	(31)
+
+0x00000275:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_DIAL_NUMBER")
+                  DW_AT_const_value	(32)
+
+0x0000027b:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_SEND_BATTERY")
+                  DW_AT_const_value	(33)
+
+0x00000281:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_GET_SIRI_STATUS")
+                  DW_AT_const_value	(34)
+
+0x00000287:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_GET_SIRI_OPEN")
+                  DW_AT_const_value	(35)
+
+0x0000028d:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_GET_SIRI_CLOSE")
+                  DW_AT_const_value	(36)
+
+0x00000293:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_GET_PHONE_DATE_TIME")
+                  DW_AT_const_value	(37)
+
+0x00000299:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_CMD_SEND_BIA")
+                  DW_AT_const_value	(38)
+
+0x0000029f:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_CMD_GET_MANUFACTURER")
+                  DW_AT_const_value	(39)
+
+0x000002a5:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_CMD_UPDATE_BATTARY")
+                  DW_AT_const_value	(40)
+
+0x000002ab:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_THREE_WAY_ANSWER1")
+                  DW_AT_const_value	(41)
+
+0x000002b1:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_THREE_WAY_ANSWER2")
+                  DW_AT_const_value	(42)
+
+0x000002b7:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_THREE_WAY_ANSWER1X")
+                  DW_AT_const_value	(43)
+
+0x000002bd:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_THREE_WAY_ANSWER2X")
+                  DW_AT_const_value	(44)
+
+0x000002c3:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_THREE_WAY_ANSWER3")
+                  DW_AT_const_value	(45)
+
+0x000002c9:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_THREE_WAY_REJECT")
+                  DW_AT_const_value	(46)
+
+0x000002cf:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_DISCONNECT")
+                  DW_AT_const_value	(47)
+
+0x000002d5:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HFP_CMD_END")
+                  DW_AT_const_value	(48)
+
+0x000002db:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_AVCTP_CMD_BEGIN")
+                  DW_AT_const_value	(49)
+
+0x000002e1:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_AVCTP_OPID_PLAY")
+                  DW_AT_const_value	(50)
+
+0x000002e7:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_AVCTP_OPID_PAUSE")
+                  DW_AT_const_value	(51)
+
+0x000002ed:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_AVCTP_OPID_STOP")
+                  DW_AT_const_value	(52)
+
+0x000002f3:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_AVCTP_OPID_NEXT")
+                  DW_AT_const_value	(53)
+
+0x000002f9:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_AVCTP_OPID_PREV")
+                  DW_AT_const_value	(54)
+
+0x000002ff:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_AVCTP_OPID_FORWARD")
+                  DW_AT_const_value	(55)
+
+0x00000305:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_AVCTP_OPID_REWIND")
+                  DW_AT_const_value	(56)
+
+0x0000030b:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_AVCTP_OPID_REPEAT_MODE")
+                  DW_AT_const_value	(57)
+
+0x00000311:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_AVCTP_OPID_SHUFFLE_MODE")
+                  DW_AT_const_value	(58)
+
+0x00000317:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_AVCTP_OPID_GET_PLAY_TIME")
+                  DW_AT_const_value	(59)
+
+0x0000031d:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_AVCTP_OPID_SEND_VOL")
+                  DW_AT_const_value	(60)
+
+0x00000323:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_AVCTP_DISCONNECT")
+                  DW_AT_const_value	(61)
+
+0x00000329:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_AVCTP_CONN")
+                  DW_AT_const_value	(62)
+
+0x0000032f:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_AVCTP_CMD_END")
+                  DW_AT_const_value	(63)
+
+0x00000335:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_A2DP_CMD_BEGIN")
+                  DW_AT_const_value	(64)
+
+0x0000033c:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_AUTO_CONN_A2DP")
+                  DW_AT_const_value	(65)
+
+0x00000343:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_CONN_A2DP")
+                  DW_AT_const_value	(66)
+
+0x0000034a:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_DISCONN_A2DP")
+                  DW_AT_const_value	(67)
+
+0x00000351:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_A2DP_CMD_START")
+                  DW_AT_const_value	(68)
+
+0x00000358:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_A2DP_CMD_CLOSE")
+                  DW_AT_const_value	(69)
+
+0x0000035f:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_A2DP_CMD_SUSPEND")
+                  DW_AT_const_value	(70)
+
+0x00000366:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_A2DP_CMD_GET_CONFIGURATION")
+                  DW_AT_const_value	(71)
+
+0x0000036d:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_A2DP_CMD_ABORT")
+                  DW_AT_const_value	(72)
+
+0x00000374:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_A2DP_CMD_END")
+                  DW_AT_const_value	(73)
+
+0x0000037b:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_POWER_OFF")
+                  DW_AT_const_value	(74)
+
+0x00000382:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_POWER_ON")
+                  DW_AT_const_value	(75)
+
+0x00000389:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HID_CMD_BEGIN")
+                  DW_AT_const_value	(76)
+
+0x00000390:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HID_CONN")
+                  DW_AT_const_value	(77)
+
+0x00000397:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HID_ANDROID")
+                  DW_AT_const_value	(78)
+
+0x0000039e:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HID_IOS")
+                  DW_AT_const_value	(79)
+
+0x000003a5:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HID_BOTH")
+                  DW_AT_const_value	(80)
+
+0x000003ac:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HID_DISCONNECT")
+                  DW_AT_const_value	(81)
+
+0x000003b3:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HID_HOME")
+                  DW_AT_const_value	(82)
+
+0x000003ba:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HID_RETURN")
+                  DW_AT_const_value	(83)
+
+0x000003c1:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HID_LEFTARROW")
+                  DW_AT_const_value	(84)
+
+0x000003c8:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HID_RIGHTARROW")
+                  DW_AT_const_value	(85)
+
+0x000003cf:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HID_VOL_UP")
+                  DW_AT_const_value	(86)
+
+0x000003d6:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HID_VOL_DOWN")
+                  DW_AT_const_value	(87)
+
+0x000003dd:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HID_SEND_DATA")
+                  DW_AT_const_value	(88)
+
+0x000003e4:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HID_CMD_END")
+                  DW_AT_const_value	(89)
+
+0x000003eb:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_TWS_CMD_BEGIN")
+                  DW_AT_const_value	(90)
+
+0x000003f2:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_SYNC_TRAIN")
+                  DW_AT_const_value	(91)
+
+0x000003f9:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_SYNC_TRAIN_SCAN")
+                  DW_AT_const_value	(92)
+
+0x00000400:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_MONITOR")
+                  DW_AT_const_value	(93)
+
+0x00000407:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_TWS_CONNEC_VIA_ADDR")
+                  DW_AT_const_value	(94)
+
+0x0000040e:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_TWS_COTROL_CDM")
+                  DW_AT_const_value	(95)
+
+0x00000415:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_TWS_CLEAR_INFO")
+                  DW_AT_const_value	(96)
+
+0x0000041c:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_TWS_DISCONNECTION_HCI")
+                  DW_AT_const_value	(97)
+
+0x00000423:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_TWS_START_CONNECTION")
+                  DW_AT_const_value	(98)
+
+0x0000042a:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_TWS_SYNC_CDM")
+                  DW_AT_const_value	(99)
+
+0x00000431:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_TWS_SYNC_SBC_CDM")
+                  DW_AT_const_value	(100)
+
+0x00000438:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_TWS_RESTART_SBC_CDM")
+                  DW_AT_const_value	(101)
+
+0x0000043f:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_SYNC_TRAIN_CANCEL")
+                  DW_AT_const_value	(102)
+
+0x00000446:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_SYNC_TRAIN_SCAN_CANCEL")
+                  DW_AT_const_value	(103)
+
+0x0000044d:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_TWS_SYNC_CDM_FUN")
+                  DW_AT_const_value	(104)
+
+0x00000454:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_TWS_LINEIN_START")
+                  DW_AT_const_value	(105)
+
+0x0000045b:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_TWS_LINEIN_CLOSE")
+                  DW_AT_const_value	(106)
+
+0x00000462:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_TWS_CMD_END")
+                  DW_AT_const_value	(107)
+
+0x00000469:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_SPP_CMD_BEGIN")
+                  DW_AT_const_value	(108)
+
+0x00000470:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_SPP_SEND_DATA")
+                  DW_AT_const_value	(109)
+
+0x00000477:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_SPP_TRY_SEND_DATA")
+                  DW_AT_const_value	(110)
+
+0x0000047e:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_SPP_UPDATA_DATA")
+                  DW_AT_const_value	(111)
+
+0x00000485:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_SPP_DISCONNECT")
+                  DW_AT_const_value	(112)
+
+0x0000048c:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_SPP_CMD_END")
+                  DW_AT_const_value	(113)
+
+0x00000493:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_PBG_CMD_BEGIN")
+                  DW_AT_const_value	(114)
+
+0x0000049a:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_PBG_SEND_DATA")
+                  DW_AT_const_value	(115)
+
+0x000004a1:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_PBG_TRY_SEND_DATA")
+                  DW_AT_const_value	(116)
+
+0x000004a8:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_PBG_CMD_END")
+                  DW_AT_const_value	(117)
+
+0x000004af:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_ADT_CMD_BEGIN")
+                  DW_AT_const_value	(118)
+
+0x000004b6:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_ADT_CONNECT")
+                  DW_AT_const_value	(119)
+
+0x000004bd:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_ADT_KEY_MIC_OPEN")
+                  DW_AT_const_value	(120)
+
+0x000004c4:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_ADT_SEND_DATA")
+                  DW_AT_const_value	(121)
+
+0x000004cb:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_ADT_TRY_SEND_DATA")
+                  DW_AT_const_value	(122)
+
+0x000004d2:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_ADT_CMD_END")
+                  DW_AT_const_value	(123)
+
+0x000004d9:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_PBAP_CMD_BEGIN")
+                  DW_AT_const_value	(124)
+
+0x000004e0:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_PBAP_READ_PART")
+                  DW_AT_const_value	(125)
+
+0x000004e7:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_PBAP_READ_ALL")
+                  DW_AT_const_value	(126)
+
+0x000004ee:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_PBAP_STOP_READING")
+                  DW_AT_const_value	(127)
+
+0x000004f5:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_PBAP_CMD_END")
+                  DW_AT_const_value	(128)
+
+0x000004fc:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_DEL_ALL_REMOTE_INFO")
+                  DW_AT_const_value	(129)
+
+0x00000503:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_TEST_KEY")
+                  DW_AT_const_value	(130)
+
+0x0000050a:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_SEND_USER_INFO")
+                  DW_AT_const_value	(131)
+
+0x00000511:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_KEYPRESS")
+                  DW_AT_const_value	(132)
+
+0x00000518:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_PAIR")
+                  DW_AT_const_value	(133)
+
+0x0000051f:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_AFH_CHANNEL")
+                  DW_AT_const_value	(134)
+
+0x00000526:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HALF_SEC_LOOP_CREATE")
+                  DW_AT_const_value	(135)
+
+0x0000052d:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_HALF_SEC_LOOP_DEL")
+                  DW_AT_const_value	(136)
+
+0x00000534:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_CMD_SYNC_VOL_INC")
+                  DW_AT_const_value	(137)
+
+0x0000053b:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_CMD_SYNC_VOL_DEC")
+                  DW_AT_const_value	(138)
+
+0x00000542:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_CMD_CHANGE_PROFILE_MODE")
+                  DW_AT_const_value	(139)
+
+0x00000549:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_CMD_RESERVE_INDEX4")
+                  DW_AT_const_value	(140)
+
+0x00000550:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_CMD_RESUME_STACK")
+                  DW_AT_const_value	(141)
+
+0x00000557:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_AVCTP_OPID_GET_MUSIC_INFO")
+                  DW_AT_const_value	(142)
+
+0x0000055e:     DW_TAG_enumerator
+                  DW_AT_name	("USER_CTRL_LAST")
+                  DW_AT_const_value	(143)
+
+0x00000565:     NULL
+
+0x00000566:   DW_TAG_pointer_type
+
+0x00000567:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x00000000000001ab)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("aec_sco_connection_start")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BR_EDR/bt_audio.c")
+                DW_AT_decl_line	(120)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000578:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000000
+                     0x0000000000000000 - 0x0000000000000035: DW_OP_reg2 EDX
+                     0x0000000000000035 - 0x00000000000001ab: DW_OP_breg5 EBP-25)
+                  DW_AT_name	("air_mode")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BR_EDR/bt_audio.c")
+                  DW_AT_decl_line	(120)
+                  DW_AT_type	(cu + 0x060e "u8")
+
+0x00000587:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000001f
+                     0x0000000000000000 - 0x0000000000000025: DW_OP_reg1 ECX
+                     0x0000000000000025 - 0x00000000000001ab: DW_OP_breg5 EBP-14)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BR_EDR/bt_audio.c")
+                  DW_AT_decl_line	(120)
+                  DW_AT_type	(cu + 0x004f "u16")
+
+0x00000596:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000003e
+                     0x0000000000000000 - 0x000000000000002f: DW_OP_reg0 EAX
+                     0x000000000000002f - 0x00000000000001ab: DW_OP_breg5 EBP-20)
+                  DW_AT_name	("addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BR_EDR/bt_audio.c")
+                  DW_AT_decl_line	(120)
+                  DW_AT_type	(cu + 0x0620 "u8*")
+
+0x000005a5:     NULL
+
+0x000005a6:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000001ab)
+                DW_AT_high_pc	(0x000000000000020f)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("send_sco_disconn")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BR_EDR/bt_audio.c")
+                DW_AT_decl_line	(110)
+                DW_AT_prototyped	(true)
+
+0x000005b7:     DW_TAG_formal_parameter
+                  DW_AT_name	("priv")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BR_EDR/bt_audio.c")
+                  DW_AT_decl_line	(110)
+                  DW_AT_type	(cu + 0x0566 "*")
+
+0x000005c2:     NULL
+
+0x000005c3:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000020f)
+                DW_AT_high_pc	(0x000000000000032b)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("aec_sco_connection_stop")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BR_EDR/bt_audio.c")
+                DW_AT_decl_line	(146)
+                DW_AT_external	(true)
+
+0x000005d4:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000032b)
+                DW_AT_high_pc	(0x0000000000000343)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("get_esco_coder_busy_flag")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BR_EDR/bt_audio.c")
+                DW_AT_decl_line	(162)
+                DW_AT_type	(cu + 0x060e "u8")
+                DW_AT_external	(true)
+
+0x000005e9:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000343)
+                DW_AT_high_pc	(0x0000000000000441)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("check_esco_state_via_addr")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BR_EDR/bt_audio.c")
+                DW_AT_decl_line	(167)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x060e "u8")
+                DW_AT_external	(true)
+
+0x000005fe:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000005d
+                     0x0000000000000343 - 0x0000000000000361: DW_OP_reg0 EAX
+                     0x0000000000000361 - 0x0000000000000441: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BR_EDR/bt_audio.c")
+                  DW_AT_decl_line	(167)
+                  DW_AT_type	(cu + 0x0620 "u8*")
+
+0x0000060d:     NULL
+
+0x0000060e:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0619 "unsigned char")
+                DW_AT_name	("u8")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(11)
+
+0x00000619:   DW_TAG_base_type
+                DW_AT_name	("unsigned char")
+                DW_AT_encoding	(DW_ATE_unsigned_char)
+                DW_AT_byte_size	(0x01)
+
+0x00000620:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x060e "u8")
+
+0x00000625:   NULL

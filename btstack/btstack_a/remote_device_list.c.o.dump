@@ -1,0 +1,1732 @@
+temp.o:	file format ELF32-i386
+
+.debug_info contents:
+0x00000000: Compile Unit: length = 0x00000b7c version = 0x0004 abbr_offset = 0x0000 addr_size = 0x04 (next unit at 0x00000b80)
+
+0x0000000b: DW_TAG_compile_unit
+              DW_AT_producer	("clang version 4.0.1 (git@192.168.8.109:huangzhenyu/clang.git d97b416c061747718623e97046d5e7dcb4c75555) (git@192.168.8.109:huangzhenyu/llvm.git 64c6917899f78226b6d3cf2b78db54d02abf7c85)")
+              DW_AT_language	(DW_LANG_C99)
+              DW_AT_name	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+              DW_AT_stmt_list	(0x00000000)
+              DW_AT_comp_dir	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make")
+              DW_AT_GNU_pubnames	(true)
+              DW_AT_low_pc	(0x0000000000000000)
+              DW_AT_high_pc	(0x0000000000001cef)
+
+0x00000026:   DW_TAG_variable
+                DW_AT_name	("app_info_debug_enable")
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/profile_stack_debug.h")
+                DW_AT_decl_line	(190)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x00000037:   DW_TAG_base_type
+                DW_AT_name	("int")
+                DW_AT_encoding	(DW_ATE_signed)
+                DW_AT_byte_size	(0x04)
+
+0x0000003e:   DW_TAG_variable
+                DW_AT_name	("remote_info_hdl")
+                DW_AT_type	(cu + 0x004f "remote_ctrl_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(91)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x0000004f:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x005a "structure ")
+                DW_AT_name	("remote_ctrl_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(79)
+
+0x0000005a:   DW_TAG_structure_type
+                DW_AT_byte_size	(0x0e)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(70)
+
+0x0000005e:     DW_TAG_member
+                  DW_AT_name	("info_tag")
+                  DW_AT_type	(cu + 0x00cb "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(71)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000006a:     DW_TAG_member
+                  DW_AT_name	("cfg_dev_max")
+                  DW_AT_type	(cu + 0x00cb "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(72)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x04)
+                  DW_AT_data_member_location	(0x01)
+
+0x00000079:     DW_TAG_member
+                  DW_AT_name	("cfg_cover_allow")
+                  DW_AT_type	(cu + 0x00cb "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(73)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x02)
+                  DW_AT_bit_offset	(0x02)
+                  DW_AT_data_member_location	(0x01)
+
+0x00000088:     DW_TAG_member
+                  DW_AT_name	("pair_lock")
+                  DW_AT_type	(cu + 0x00cb "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(74)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x01)
+                  DW_AT_data_member_location	(0x01)
+
+0x00000097:     DW_TAG_member
+                  DW_AT_name	("reserved")
+                  DW_AT_type	(cu + 0x00cb "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(75)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x01)
+
+0x000000a6:     DW_TAG_member
+                  DW_AT_name	("dev_count")
+                  DW_AT_type	(cu + 0x00cb "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(76)
+                  DW_AT_data_member_location	(0x02)
+
+0x000000b2:     DW_TAG_member
+                  DW_AT_name	("last_vm_write_index")
+                  DW_AT_type	(cu + 0x00cb "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(77)
+                  DW_AT_data_member_location	(0x03)
+
+0x000000be:     DW_TAG_member
+                  DW_AT_name	("vm_dev_sn")
+                  DW_AT_type	(cu + 0x00dd "u8[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(78)
+                  DW_AT_data_member_location	(0x04)
+
+0x000000ca:     NULL
+
+0x000000cb:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x00d6 "unsigned char")
+                DW_AT_name	("u8")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(11)
+
+0x000000d6:   DW_TAG_base_type
+                DW_AT_name	("unsigned char")
+                DW_AT_encoding	(DW_ATE_unsigned_char)
+                DW_AT_byte_size	(0x01)
+
+0x000000dd:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x00cb "u8")
+
+0x000000e2:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x00e9 "sizetype")
+                  DW_AT_count	(0x0a)
+
+0x000000e8:     NULL
+
+0x000000e9:   DW_TAG_base_type
+                DW_AT_name	("sizetype")
+                DW_AT_byte_size	(0x08)
+                DW_AT_encoding	(DW_ATE_unsigned)
+
+0x000000f0:   DW_TAG_variable
+                DW_AT_name	("remote_info_init")
+                DW_AT_type	(cu + 0x00fb "const remote_ctrl_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(82)
+
+0x000000fb:   DW_TAG_const_type
+                DW_AT_type	(cu + 0x004f "remote_ctrl_t")
+
+0x00000100:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0105 "const ")
+
+0x00000105:   DW_TAG_const_type
+
+0x00000106:   DW_TAG_pointer_type
+
+0x00000107:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x00cb "u8")
+
+0x0000010c:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x0000000000000034)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("ble_list_get_conn_addr_item")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(351)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+                DW_AT_external	(true)
+
+0x00000122:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000000
+                     0x0000000000000000 - 0x0000000000000030: DW_OP_reg6 ESI)
+                  DW_AT_name	("conn_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(351)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x00000132:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000013
+                     0x0000000000000000 - 0x0000000000000022: DW_OP_reg2 EDX)
+                  DW_AT_name	("conn_addr_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(351)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000142:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000026
+                     0x0000000000000000 - 0x0000000000000024: DW_OP_reg1 ECX)
+                  DW_AT_name	("role")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(351)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000152:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000039
+                     0x0000000000000000 - 0x0000000000000029: DW_OP_reg0 EAX)
+                  DW_AT_name	("item")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(351)
+                  DW_AT_type	(cu + 0x0b6e "BLE_REMOTE_LIST_T*")
+
+0x00000162:     NULL
+
+0x00000163:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000034)
+                DW_AT_high_pc	(0x000000000000018a)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("get_conn_addr_item")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(318)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+
+0x00000179:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000004c
+                     0x0000000000000034 - 0x0000000000000059: DW_OP_reg1 ECX
+                     0x0000000000000059 - 0x000000000000018a: DW_OP_breg5 EBP-20)
+                  DW_AT_name	("conn_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(318)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x00000189:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000006b
+                     0x0000000000000034 - 0x0000000000000053: DW_OP_reg0 EAX
+                     0x0000000000000053 - 0x000000000000018a: DW_OP_breg5 EBP-13)
+                  DW_AT_name	("conn_addr_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(318)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000199:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000008a
+                     0x0000000000000034 - 0x0000000000000050: DW_OP_reg2 EDX
+                     0x0000000000000050 - 0x000000000000018a: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("item")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(318)
+                  DW_AT_type	(cu + 0x0b6e "BLE_REMOTE_LIST_T*")
+
+0x000001a9:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000000a9
+                     0x0000000000000034 - 0x0000000000000056: DW_OP_reg0 EAX, DW_OP_bit_piece 0x8 0x8
+                     0x0000000000000056 - 0x000000000000018a: DW_OP_breg5 EBP-14)
+                  DW_AT_name	("role")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(318)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x000001b9:     DW_TAG_variable
+                  DW_AT_const_value	(0)
+                  DW_AT_name	("ret")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(321)
+                  DW_AT_type	(cu + 0x0232 "bool")
+
+0x000001c6:     DW_TAG_variable
+                  DW_AT_location	(0x000000cb
+                     0x000000000000006c - 0x000000000000015d: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x000000000000015d - 0x000000000000016e: DW_OP_reg0 EAX
+                     0x000000000000016e - 0x000000000000018a: DW_OP_breg5 EBP-40)
+                  DW_AT_name	("i")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(320)
+                  DW_AT_type	(cu + 0x039d "u32")
+
+0x000001d6:     NULL
+
+0x000001d7:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000018a)
+                DW_AT_high_pc	(0x00000000000001e2)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("ble_list_get_count")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(406)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0b5c "u16")
+                DW_AT_external	(true)
+
+0x000001ed:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000001e2)
+                DW_AT_high_pc	(0x0000000000000311)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x020f "reflash_remote_info")
+
+0x000001fc:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000000f7
+                     0x00000000000001e2 - 0x00000000000001fa: DW_OP_reg0 EAX
+                     0x00000000000002cd - 0x00000000000002d2: DW_OP_reg0 EAX)
+                  DW_AT_abstract_origin	(cu + 0x021b "act_rw")
+
+0x00000205:     DW_TAG_variable
+                  DW_AT_location	(0x00000115
+                     0x00000000000001ed - 0x0000000000000225: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x0000000000000225 - 0x0000000000000231: DW_OP_reg0 EAX)
+                  DW_AT_abstract_origin	(cu + 0x0226 "ret")
+
+0x0000020e:     NULL
+
+0x0000020f:   DW_TAG_subprogram
+                DW_AT_name	("reflash_remote_info")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(210)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+                DW_AT_inline	(DW_INL_inlined)
+
+0x0000021b:     DW_TAG_formal_parameter
+                  DW_AT_name	("act_rw")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(210)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000226:     DW_TAG_variable
+                  DW_AT_name	("ret")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(212)
+                  DW_AT_type	(cu + 0x023d "s32")
+
+0x00000231:     NULL
+
+0x00000232:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x00d6 "unsigned char")
+                DW_AT_name	("bool")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(11)
+
+0x0000023d:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_name	("s32")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(16)
+
+0x00000248:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000311)
+                DW_AT_high_pc	(0x0000000000000412)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("ble_list_config_reset")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(418)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x0000025a:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000135
+                     0x0000000000000311 - 0x000000000000032c: DW_OP_reg1 ECX
+                     0x000000000000032c - 0x000000000000033b: DW_OP_breg5 EBP-10
+                     0x000000000000033b - 0x0000000000000359: DW_OP_constu 0xa, DW_OP_stack_value
+                     0x0000000000000359 - 0x0000000000000369: DW_OP_reg0 EAX
+                     0x0000000000000369 - 0x0000000000000372: DW_OP_breg5 EBP-14
+                     0x0000000000000372 - 0x0000000000000412: DW_OP_breg5 EBP-10)
+                  DW_AT_name	("pair_devices_count")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(418)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x0000026a:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000184
+                     0x0000000000000311 - 0x0000000000000329: DW_OP_reg0 EAX
+                     0x0000000000000329 - 0x0000000000000412: DW_OP_breg5 EBP-9)
+                  DW_AT_name	("is_allow_cover")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(418)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x0000027a:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x020f "reflash_remote_info")
+                  DW_AT_low_pc	(0x00000000000003ae)
+                  DW_AT_high_pc	(0x00000000000003cc)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_call_line	(433)
+
+0x0000028a:       DW_TAG_formal_parameter
+                    DW_AT_const_value	(1)
+                    DW_AT_abstract_origin	(cu + 0x021b "act_rw")
+
+0x00000290:       DW_TAG_variable
+                    DW_AT_const_value	(0)
+                    DW_AT_abstract_origin	(cu + 0x0226 "ret")
+
+0x00000296:       NULL
+
+0x00000297:     NULL
+
+0x00000298:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000412)
+                DW_AT_high_pc	(0x0000000000000579)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("ble_list_clear_all")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(444)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+                DW_AT_external	(true)
+
+0x000002ae:     DW_TAG_variable
+                  DW_AT_location	(0x000001a3
+                     0x0000000000000435 - 0x00000000000004d1: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x00000000000004d1 - 0x00000000000004f4: DW_OP_reg0 EAX)
+                  DW_AT_name	("i")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(446)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x000002be:     DW_TAG_variable
+                  DW_AT_location	(0x000001c3
+                     0x0000000000000463 - 0x000000000000046c: DW_OP_breg2 EDX+0)
+                  DW_AT_name	("item")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(448)
+                  DW_AT_type	(cu + 0x03af "BLE_REMOTE_LIST_T")
+
+0x000002ce:     DW_TAG_variable
+                  DW_AT_name	("ret")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(447)
+                  DW_AT_type	(cu + 0x023d "s32")
+
+0x000002da:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x020f "reflash_remote_info")
+                  DW_AT_low_pc	(0x0000000000000548)
+                  DW_AT_high_pc	(0x000000000000056b)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_call_line	(469)
+
+0x000002ea:       DW_TAG_formal_parameter
+                    DW_AT_const_value	(1)
+                    DW_AT_abstract_origin	(cu + 0x021b "act_rw")
+
+0x000002f0:       DW_TAG_variable
+                    DW_AT_const_value	(0)
+                    DW_AT_abstract_origin	(cu + 0x0226 "ret")
+
+0x000002f6:       NULL
+
+0x000002f7:     NULL
+
+0x000002f8:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000579)
+                DW_AT_high_pc	(0x0000000000000609)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("get_list_exist_item")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(237)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+
+0x0000030d:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000001d7
+                     0x0000000000000579 - 0x0000000000000598: DW_OP_reg1 ECX
+                     0x0000000000000598 - 0x0000000000000609: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("item")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(237)
+                  DW_AT_type	(cu + 0x0b6e "BLE_REMOTE_LIST_T*")
+
+0x0000031c:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000001f6
+                     0x0000000000000579 - 0x0000000000000595: DW_OP_reg0 EAX
+                     0x0000000000000595 - 0x0000000000000609: DW_OP_breg5 EBP-9)
+                  DW_AT_name	("index")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(237)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x0000032b:     DW_TAG_variable
+                  DW_AT_location	(0x00000215
+                     0x00000000000005d0 - 0x00000000000005db: DW_OP_reg0 EAX)
+                  DW_AT_name	("ret")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(243)
+                  DW_AT_type	(cu + 0x023d "s32")
+
+0x0000033a:     NULL
+
+0x0000033b:   DW_TAG_subprogram
+                DW_AT_name	("delete_conn_addr_exist")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(357)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000348:     DW_TAG_formal_parameter
+                  DW_AT_name	("conn_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(357)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x00000354:     DW_TAG_formal_parameter
+                  DW_AT_name	("conn_addr_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(357)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000360:     DW_TAG_formal_parameter
+                  DW_AT_name	("irk_key")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(357)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x0000036c:     DW_TAG_formal_parameter
+                  DW_AT_name	("distribution")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(357)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000378:     DW_TAG_variable
+                  DW_AT_name	("del_flag")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(361)
+                  DW_AT_type	(cu + 0x0232 "bool")
+
+0x00000384:     DW_TAG_variable
+                  DW_AT_name	("i")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(359)
+                  DW_AT_type	(cu + 0x039d "u32")
+
+0x00000390:     DW_TAG_variable
+                  DW_AT_name	("item")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(360)
+                  DW_AT_type	(cu + 0x03af "BLE_REMOTE_LIST_T")
+
+0x0000039c:     NULL
+
+0x0000039d:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x03a8 "unsigned int")
+                DW_AT_name	("u32")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(15)
+
+0x000003a8:   DW_TAG_base_type
+                DW_AT_name	("unsigned int")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x04)
+
+0x000003af:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x03ba "structure ")
+                DW_AT_name	("BLE_REMOTE_LIST_T")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/remote_device_list.h")
+                DW_AT_decl_line	(62)
+
+0x000003ba:   DW_TAG_structure_type
+                DW_AT_byte_size	(0x34)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/remote_device_list.h")
+                DW_AT_decl_line	(47)
+
+0x000003be:     DW_TAG_member
+                  DW_AT_name	("irk_key")
+                  DW_AT_type	(cu + 0x046d "u8[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/remote_device_list.h")
+                  DW_AT_decl_line	(48)
+                  DW_AT_data_member_location	(0x00)
+
+0x000003ca:     DW_TAG_member
+                  DW_AT_name	("ltk_key")
+                  DW_AT_type	(cu + 0x046d "u8[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/remote_device_list.h")
+                  DW_AT_decl_line	(49)
+                  DW_AT_data_member_location	(0x10)
+
+0x000003d6:     DW_TAG_member
+                  DW_AT_name	("addr")
+                  DW_AT_type	(cu + 0x0479 "u8[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/remote_device_list.h")
+                  DW_AT_decl_line	(50)
+                  DW_AT_data_member_location	(0x20)
+
+0x000003e2:     DW_TAG_member
+                  DW_AT_name	("flag")
+                  DW_AT_type	(cu + 0x00cb "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/remote_device_list.h")
+                  DW_AT_decl_line	(51)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x04)
+                  DW_AT_data_member_location	(0x26)
+
+0x000003f1:     DW_TAG_member
+                  DW_AT_name	("role")
+                  DW_AT_type	(cu + 0x00cb "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/remote_device_list.h")
+                  DW_AT_decl_line	(52)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x03)
+                  DW_AT_data_member_location	(0x26)
+
+0x00000400:     DW_TAG_member
+                  DW_AT_name	("addr_type")
+                  DW_AT_type	(cu + 0x00cb "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/remote_device_list.h")
+                  DW_AT_decl_line	(53)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x02)
+                  DW_AT_data_member_location	(0x26)
+
+0x0000040f:     DW_TAG_member
+                  DW_AT_name	("remote_type")
+                  DW_AT_type	(cu + 0x00cb "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/remote_device_list.h")
+                  DW_AT_decl_line	(54)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x02)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x26)
+
+0x0000041e:     DW_TAG_member
+                  DW_AT_name	("distribution")
+                  DW_AT_type	(cu + 0x00cb "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/remote_device_list.h")
+                  DW_AT_decl_line	(55)
+                  DW_AT_data_member_location	(0x27)
+
+0x0000042a:     DW_TAG_member
+                  DW_AT_name	("rand")
+                  DW_AT_type	(cu + 0x0485 "u8[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/remote_device_list.h")
+                  DW_AT_decl_line	(57)
+                  DW_AT_data_member_location	(0x28)
+
+0x00000436:     DW_TAG_member
+                  DW_AT_name	("ediv")
+                  DW_AT_type	(cu + 0x0491 "u8[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/remote_device_list.h")
+                  DW_AT_decl_line	(58)
+                  DW_AT_data_member_location	(0x30)
+
+0x00000442:     DW_TAG_member
+                  DW_AT_name	("encryption_keysize")
+                  DW_AT_type	(cu + 0x00cb "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/remote_device_list.h")
+                  DW_AT_decl_line	(59)
+                  DW_AT_data_member_location	(0x32)
+
+0x0000044e:     DW_TAG_member
+                  DW_AT_name	("authenticated")
+                  DW_AT_type	(cu + 0x00cb "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/remote_device_list.h")
+                  DW_AT_decl_line	(60)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x04)
+                  DW_AT_data_member_location	(0x33)
+
+0x0000045d:     DW_TAG_member
+                  DW_AT_name	("authentication_state")
+                  DW_AT_type	(cu + 0x00cb "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/ble/remote_device_list.h")
+                  DW_AT_decl_line	(61)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x33)
+
+0x0000046c:     NULL
+
+0x0000046d:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000472:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x00e9 "sizetype")
+                  DW_AT_count	(0x10)
+
+0x00000478:     NULL
+
+0x00000479:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x00cb "u8")
+
+0x0000047e:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x00e9 "sizetype")
+                  DW_AT_count	(0x06)
+
+0x00000484:     NULL
+
+0x00000485:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x00cb "u8")
+
+0x0000048a:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x00e9 "sizetype")
+                  DW_AT_count	(0x08)
+
+0x00000490:     NULL
+
+0x00000491:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000496:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x00e9 "sizetype")
+                  DW_AT_count	(0x02)
+
+0x0000049c:     NULL
+
+0x0000049d:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000609)
+                DW_AT_high_pc	(0x0000000000000b54)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("ble_list_pair_add")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(500)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+                DW_AT_external	(true)
+
+0x000004b3:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000228
+                     0x0000000000000609 - 0x0000000000000636: DW_OP_reg3 EBX, DW_OP_bit_piece 0x8 0x8
+                     0x0000000000000636 - 0x0000000000000b54: DW_OP_breg5 EBP-125)
+                  DW_AT_name	("role")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(500)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x000004c3:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000024b
+                     0x0000000000000609 - 0x000000000000064e: DW_OP_reg6 ESI
+                     0x000000000000064e - 0x0000000000000b54: DW_OP_breg5 EBP-144)
+                  DW_AT_name	("conn_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(500)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x000004d3:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000026b
+                     0x0000000000000609 - 0x0000000000000648: DW_OP_reg3 EBX
+                     0x0000000000000648 - 0x0000000000000b54: DW_OP_breg5 EBP-137)
+                  DW_AT_name	("conn_addr_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(500)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x000004e3:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000028b
+                     0x0000000000000609 - 0x0000000000000642: DW_OP_reg2 EDX
+                     0x0000000000000642 - 0x0000000000000b54: DW_OP_breg5 EBP-136)
+                  DW_AT_name	("irk_key")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(500)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x000004f3:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000002ab
+                     0x0000000000000609 - 0x000000000000063c: DW_OP_reg1 ECX
+                     0x000000000000063c - 0x0000000000000b54: DW_OP_breg5 EBP-132)
+                  DW_AT_name	("ltk_key")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(500)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x00000503:     DW_TAG_formal_parameter
+                  DW_AT_location	(DW_OP_fbreg -124)
+                  DW_AT_name	("ext_data")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(500)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x00000513:     DW_TAG_variable
+                  DW_AT_location	(0x000002cb
+                     0x0000000000000696 - 0x000000000000069c: DW_OP_reg2 EDX
+                     0x000000000000069c - 0x00000000000006b1: DW_OP_breg5 EBP-154
+                     0x00000000000006b1 - 0x00000000000006d0: DW_OP_reg0 EAX
+                     0x00000000000006d0 - 0x000000000000095b: DW_OP_breg5 EBP-155
+                     0x000000000000095b - 0x0000000000000974: DW_OP_reg0 EAX
+                     0x0000000000000974 - 0x0000000000000979: DW_OP_breg5 EBP-209
+                     0x0000000000000979 - 0x0000000000000981: DW_OP_breg5 EBP-155
+                     0x0000000000000981 - 0x000000000000099a: DW_OP_reg0 EAX
+                     0x000000000000099a - 0x000000000000099f: DW_OP_breg5 EBP-209
+                     0x000000000000099f - 0x00000000000009e5: DW_OP_breg5 EBP-155
+                     0x00000000000009e5 - 0x00000000000009f6: DW_OP_reg0 EAX
+                     0x00000000000009f6 - 0x0000000000000a02: DW_OP_breg5 EBP-221
+                     0x0000000000000a02 - 0x0000000000000b54: DW_OP_breg5 EBP-155)
+                  DW_AT_name	("distribution")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(505)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000523:     DW_TAG_variable
+                  DW_AT_location	(0x000003e0
+                     0x0000000000000b35 - 0x0000000000000b3a: DW_OP_breg1 ECX+0)
+                  DW_AT_name	("item")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(506)
+                  DW_AT_type	(cu + 0x03af "BLE_REMOTE_LIST_T")
+
+0x00000533:     DW_TAG_variable
+                  DW_AT_name	("vm_index")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(504)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x0000053f:     DW_TAG_variable
+                  DW_AT_name	("ret")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(507)
+                  DW_AT_type	(cu + 0x023d "s32")
+
+0x0000054b:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x033b "delete_conn_addr_exist")
+                  DW_AT_low_pc	(0x00000000000006ed)
+                  DW_AT_high_pc	(0x00000000000008d2)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_call_line	(530)
+
+0x0000055b:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg -144)
+                    DW_AT_abstract_origin	(cu + 0x0348 "conn_addr")
+
+0x00000564:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg -137)
+                    DW_AT_abstract_origin	(cu + 0x0354 "conn_addr_type")
+
+0x0000056d:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg -136)
+                    DW_AT_abstract_origin	(cu + 0x0360 "irk_key")
+
+0x00000576:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg -155)
+                    DW_AT_abstract_origin	(cu + 0x036c "distribution")
+
+0x0000057f:       DW_TAG_variable
+                    DW_AT_location	(0x00000372
+                       0x00000000000006ed - 0x00000000000007ff: DW_OP_constu 0x0, DW_OP_stack_value
+                       0x00000000000007ff - 0x0000000000000b54: DW_OP_constu 0x1, DW_OP_stack_value)
+                    DW_AT_abstract_origin	(cu + 0x0378 "del_flag")
+
+0x00000588:       DW_TAG_variable
+                    DW_AT_location	(0x00000394
+                       0x0000000000000708 - 0x00000000000008ad: DW_OP_constu 0x0, DW_OP_stack_value
+                       0x00000000000008ad - 0x00000000000008c1: DW_OP_reg0 EAX
+                       0x00000000000008c1 - 0x00000000000008c7: DW_OP_breg5 EBP-188
+                       0x00000000000008c7 - 0x00000000000008ca: DW_OP_reg0 EAX)
+                    DW_AT_abstract_origin	(cu + 0x0384 "i")
+
+0x00000591:       DW_TAG_variable
+                    DW_AT_location	(0x000003cc
+                       0x0000000000000771 - 0x0000000000000787: DW_OP_breg1 ECX+0)
+                    DW_AT_abstract_origin	(cu + 0x0390 "item")
+
+0x0000059a:       NULL
+
+0x0000059b:     NULL
+
+0x0000059c:   DW_TAG_subprogram
+                DW_AT_name	("get_list_new_index")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(290)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+                DW_AT_inline	(DW_INL_inlined)
+
+0x000005a9:     DW_TAG_formal_parameter
+                  DW_AT_name	("vm_index")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(290)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x000005b5:     DW_TAG_variable
+                  DW_AT_name	("find_sn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(292)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x000005c1:     DW_TAG_lexical_block
+
+0x000005c2:       DW_TAG_variable
+                    DW_AT_name	("i")
+                    DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                    DW_AT_decl_line	(302)
+                    DW_AT_type	(cu + 0x0037 "int")
+
+0x000005ce:       NULL
+
+0x000005cf:     NULL
+
+0x000005d0:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000b54)
+                DW_AT_high_pc	(0x0000000000000cdb)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("add_new_device_to_list")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(473)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+
+0x000005e6:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000003f4
+                     0x0000000000000b54 - 0x0000000000000b77: DW_OP_reg1 ECX
+                     0x0000000000000b77 - 0x0000000000000cdb: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("item")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(473)
+                  DW_AT_type	(cu + 0x0b6e "BLE_REMOTE_LIST_T*")
+
+0x000005f6:     DW_TAG_variable
+                  DW_AT_location	(0x0000043f
+                     0x0000000000000c24 - 0x0000000000000c7f: DW_OP_breg5 EBP-41
+                     0x0000000000000c7f - 0x0000000000000cb7: DW_OP_reg3 EBX)
+                  DW_AT_name	("vm_index")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(475)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000606:     DW_TAG_variable
+                  DW_AT_location	(0x0000045e
+                     0x0000000000000c54 - 0x0000000000000c65: DW_OP_reg0 EAX)
+                  DW_AT_name	("ret")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(486)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000616:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x059c "get_list_new_index")
+                  DW_AT_low_pc	(0x0000000000000b61)
+                  DW_AT_high_pc	(0x0000000000000c1f)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_call_line	(478)
+
+0x00000626:       DW_TAG_variable
+                    DW_AT_const_value	(255)
+                    DW_AT_abstract_origin	(cu + 0x05b5 "find_sn")
+
+0x0000062d:       DW_TAG_lexical_block
+                    DW_AT_ranges	(0x00000000
+                       [0x00000b98 - 0x00000ba1)
+                       [0x00000bc9 - 0x00000c1f))
+
+0x00000632:         DW_TAG_variable
+                      DW_AT_location	(0x00000413
+                         0x0000000000000ba3 - 0x0000000000000c0c: DW_OP_consts +0, DW_OP_stack_value
+                         0x0000000000000c0c - 0x0000000000000c14: DW_OP_reg0 EAX
+                         0x0000000000000c14 - 0x0000000000000cdb: DW_OP_breg5 EBP-36)
+                      DW_AT_abstract_origin	(cu + 0x05c2 "i")
+
+0x0000063b:         NULL
+
+0x0000063c:       NULL
+
+0x0000063d:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x020f "reflash_remote_info")
+                  DW_AT_low_pc	(0x0000000000000c9a)
+                  DW_AT_high_pc	(0x0000000000000cb7)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_call_line	(491)
+
+0x0000064d:       DW_TAG_formal_parameter
+                    DW_AT_const_value	(1)
+                    DW_AT_abstract_origin	(cu + 0x021b "act_rw")
+
+0x00000653:       DW_TAG_variable
+                    DW_AT_const_value	(0)
+                    DW_AT_abstract_origin	(cu + 0x0226 "ret")
+
+0x00000659:       NULL
+
+0x0000065a:     NULL
+
+0x0000065b:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000cdb)
+                DW_AT_high_pc	(0x0000000000000d8b)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("ble_list_get_id_addr")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(580)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+                DW_AT_external	(true)
+
+0x00000671:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000471
+                     0x0000000000000cdb - 0x0000000000000d00: DW_OP_reg2 EDX
+                     0x0000000000000d00 - 0x0000000000000d8b: DW_OP_breg5 EBP-76)
+                  DW_AT_name	("conn_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(580)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x00000681:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000491
+                     0x0000000000000cdb - 0x0000000000000cfd: DW_OP_reg1 ECX
+                     0x0000000000000cfd - 0x0000000000000d8b: DW_OP_breg5 EBP-69)
+                  DW_AT_name	("conn_addr_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(580)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000691:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000004b1
+                     0x0000000000000cdb - 0x0000000000000cfa: DW_OP_reg0 EAX
+                     0x0000000000000cfa - 0x0000000000000d8b: DW_OP_breg5 EBP-68)
+                  DW_AT_name	("id_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(580)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x000006a1:     DW_TAG_variable
+                  DW_AT_location	(0x000004d1
+                     0x0000000000000d11 - 0x0000000000000d2f: DW_OP_breg0 EAX+0)
+                  DW_AT_name	("item")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(583)
+                  DW_AT_type	(cu + 0x03af "BLE_REMOTE_LIST_T")
+
+0x000006b1:     NULL
+
+0x000006b2:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000d8b)
+                DW_AT_high_pc	(0x0000000000000e39)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("ble_list_get_id_addr_extend")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(594)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+                DW_AT_external	(true)
+
+0x000006c8:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000004e5
+                     0x0000000000000d8b - 0x0000000000000db6: DW_OP_reg6 ESI
+                     0x0000000000000db6 - 0x0000000000000e39: DW_OP_breg5 EBP-80)
+                  DW_AT_name	("conn_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(594)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x000006d8:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000505
+                     0x0000000000000d8b - 0x0000000000000db3: DW_OP_reg2 EDX
+                     0x0000000000000db3 - 0x0000000000000e39: DW_OP_breg5 EBP-73)
+                  DW_AT_name	("conn_addr_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(594)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x000006e8:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000525
+                     0x0000000000000d8b - 0x0000000000000db0: DW_OP_reg1 ECX
+                     0x0000000000000db0 - 0x0000000000000e39: DW_OP_breg5 EBP-72)
+                  DW_AT_name	("id_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(594)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x000006f8:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000545
+                     0x0000000000000d8b - 0x0000000000000dad: DW_OP_reg0 EAX
+                     0x0000000000000dad - 0x0000000000000e39: DW_OP_breg5 EBP-65)
+                  DW_AT_name	("role")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(594)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000708:     DW_TAG_variable
+                  DW_AT_location	(0x00000565
+                     0x0000000000000dc2 - 0x0000000000000dd4: DW_OP_breg0 EAX+0)
+                  DW_AT_name	("item")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(597)
+                  DW_AT_type	(cu + 0x03af "BLE_REMOTE_LIST_T")
+
+0x00000718:     NULL
+
+0x00000719:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000e39)
+                DW_AT_high_pc	(0x0000000000000ec8)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("ble_list_get_remote_type")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(610)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+                DW_AT_external	(true)
+
+0x0000072f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000579
+                     0x0000000000000e39 - 0x0000000000000e5d: DW_OP_reg2 EDX
+                     0x0000000000000e5d - 0x0000000000000ec8: DW_OP_breg5 EBP-68)
+                  DW_AT_name	("conn_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(610)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x0000073f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000599
+                     0x0000000000000e39 - 0x0000000000000e5a: DW_OP_reg1 ECX
+                     0x0000000000000e5a - 0x0000000000000ec8: DW_OP_breg5 EBP-61)
+                  DW_AT_name	("conn_addr_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(610)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x0000074f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000005b8
+                     0x0000000000000e39 - 0x0000000000000e57: DW_OP_reg0 EAX
+                     0x0000000000000e57 - 0x0000000000000ec8: DW_OP_breg5 EBP-60)
+                  DW_AT_name	("output_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(610)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x0000075f:     DW_TAG_variable
+                  DW_AT_location	(0x000005d7
+                     0x0000000000000e6e - 0x0000000000000e8c: DW_OP_breg0 EAX+0)
+                  DW_AT_name	("item")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(613)
+                  DW_AT_type	(cu + 0x03af "BLE_REMOTE_LIST_T")
+
+0x0000076f:     NULL
+
+0x00000770:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000ec8)
+                DW_AT_high_pc	(0x0000000000000f20)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("ble_list_check_addr_is_exist")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(624)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+                DW_AT_external	(true)
+
+0x00000786:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000005eb
+                     0x0000000000000ec8 - 0x0000000000000ee6: DW_OP_reg1 ECX
+                     0x0000000000000ee6 - 0x0000000000000f20: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("conn_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(624)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x00000796:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000060a
+                     0x0000000000000ec8 - 0x0000000000000ee3: DW_OP_reg0 EAX
+                     0x0000000000000ee3 - 0x0000000000000f20: DW_OP_breg5 EBP-5)
+                  DW_AT_name	("conn_addr_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(624)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x000007a6:     NULL
+
+0x000007a7:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000f20)
+                DW_AT_high_pc	(0x0000000000000f8a)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("ble_list_check_addr_is_exist_extend")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(631)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+                DW_AT_external	(true)
+
+0x000007bd:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000629
+                     0x0000000000000f20 - 0x0000000000000f45: DW_OP_reg2 EDX
+                     0x0000000000000f45 - 0x0000000000000f8a: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("conn_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(631)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x000007cd:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000648
+                     0x0000000000000f20 - 0x0000000000000f42: DW_OP_reg1 ECX
+                     0x0000000000000f42 - 0x0000000000000f8a: DW_OP_breg5 EBP-10)
+                  DW_AT_name	("conn_addr_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(631)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x000007dd:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000667
+                     0x0000000000000f20 - 0x0000000000000f3f: DW_OP_reg0 EAX
+                     0x0000000000000f3f - 0x0000000000000f8a: DW_OP_breg5 EBP-9)
+                  DW_AT_name	("role")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(631)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x000007ed:     NULL
+
+0x000007ee:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000f8a)
+                DW_AT_high_pc	(0x0000000000001193)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("ble_list_reconnect_device_is_exist")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(639)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+                DW_AT_external	(true)
+
+0x00000804:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000686
+                     0x0000000000000f8a - 0x0000000000000fca: DW_OP_reg2 EDX
+                     0x0000000000000fca - 0x0000000000001193: DW_OP_breg5 EBP-80)
+                  DW_AT_name	("conn_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(639)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x00000814:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000006a6
+                     0x0000000000000f8a - 0x0000000000000fc7: DW_OP_reg1 ECX
+                     0x0000000000000fc7 - 0x0000000000001193: DW_OP_breg5 EBP-73)
+                  DW_AT_name	("conn_addr_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(639)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000824:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000006c6
+                     0x0000000000000f8a - 0x0000000000000fb0: DW_OP_reg0 EAX
+                     0x0000000000000fb0 - 0x0000000000001193: DW_OP_breg5 EBP-68)
+                  DW_AT_name	("ltk_key")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(639)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x00000834:     DW_TAG_formal_parameter
+                  DW_AT_name	("role")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(639)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000840:     DW_TAG_variable
+                  DW_AT_location	(0x000006e6
+                     0x0000000000000fa6 - 0x000000000000113c: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x000000000000113c - 0x000000000000115a: DW_OP_constu 0x1, DW_OP_stack_value
+                     0x000000000000115a - 0x0000000000001176: DW_OP_reg0 EAX
+                     0x0000000000001176 - 0x0000000000001193: DW_OP_breg5 EBP-113)
+                  DW_AT_name	("ret")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(643)
+                  DW_AT_type	(cu + 0x0232 "bool")
+
+0x00000850:     DW_TAG_variable
+                  DW_AT_location	(0x00000720
+                     0x0000000000000fdd - 0x0000000000001160: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x0000000000001160 - 0x0000000000001170: DW_OP_reg1 ECX
+                     0x0000000000001170 - 0x0000000000001193: DW_OP_breg5 EBP-105)
+                  DW_AT_name	("i")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(642)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000860:     DW_TAG_variable
+                  DW_AT_location	(0x0000074d
+                     0x0000000000001027 - 0x000000000000102f: DW_OP_breg2 EDX+0)
+                  DW_AT_name	("item")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(641)
+                  DW_AT_type	(cu + 0x03af "BLE_REMOTE_LIST_T")
+
+0x00000870:     NULL
+
+0x00000871:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000001193)
+                DW_AT_high_pc	(0x000000000000126a)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("check_random_addr")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(163)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+
+0x00000886:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000761
+                     0x0000000000001193 - 0x00000000000011ba: DW_OP_reg1 ECX
+                     0x00000000000011ba - 0x000000000000126a: DW_OP_breg5 EBP-56)
+                  DW_AT_name	("addr_in")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(163)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x00000895:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000780
+                     0x0000000000001193 - 0x00000000000011b7: DW_OP_reg2 EDX
+                     0x00000000000011b7 - 0x000000000000126a: DW_OP_breg5 EBP-52)
+                  DW_AT_name	("irk_key")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(163)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x000008a4:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000079f
+                     0x0000000000001193 - 0x00000000000011ab: DW_OP_reg0 EAX
+                     0x00000000000011ab - 0x000000000000126a: DW_OP_breg5 EBP-44)
+                  DW_AT_name	("addr_save")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(163)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x000008b3:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -15)
+                  DW_AT_name	("hash")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(165)
+                  DW_AT_type	(cu + 0x0b73 "u8[]")
+
+0x000008c1:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -31)
+                  DW_AT_name	("check_irk_key")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(166)
+                  DW_AT_type	(cu + 0x046d "u8[]")
+
+0x000008cf:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -37)
+                  DW_AT_name	("addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(167)
+                  DW_AT_type	(cu + 0x0479 "u8[]")
+
+0x000008dd:     NULL
+
+0x000008de:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000126a)
+                DW_AT_high_pc	(0x0000000000001316)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("ble_list_pair_is_allow")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(686)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+                DW_AT_external	(true)
+
+0x000008f4:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000007be
+                     0x000000000000126a - 0x0000000000001288: DW_OP_reg1 ECX
+                     0x0000000000001288 - 0x0000000000001316: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("conn_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(686)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x00000904:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000007dd
+                     0x000000000000126a - 0x0000000000001285: DW_OP_reg0 EAX
+                     0x0000000000001285 - 0x0000000000001316: DW_OP_breg5 EBP-5)
+                  DW_AT_name	("conn_addr_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(686)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000914:     NULL
+
+0x00000915:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000001316)
+                DW_AT_high_pc	(0x00000000000013c8)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("ble_list_pair_accept")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(706)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+                DW_AT_external	(true)
+
+0x0000092b:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000007fc
+                     0x0000000000001316 - 0x000000000000132b: DW_OP_reg0 EAX)
+                  DW_AT_name	("enable")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(706)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x0000093b:     DW_TAG_variable
+                  DW_AT_location	(0x0000080f
+                     0x0000000000001330 - 0x000000000000133a: DW_OP_reg0 EAX, DW_OP_bit_piece 0x8 0x8
+                     0x000000000000133a - 0x00000000000013c8: DW_OP_breg5 EBP-13)
+                  DW_AT_name	("lock_set")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(708)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x0000094b:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x020f "reflash_remote_info")
+                  DW_AT_low_pc	(0x0000000000001394)
+                  DW_AT_high_pc	(0x00000000000013ba)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_call_line	(715)
+
+0x0000095b:       DW_TAG_formal_parameter
+                    DW_AT_const_value	(1)
+                    DW_AT_abstract_origin	(cu + 0x021b "act_rw")
+
+0x00000961:       DW_TAG_variable
+                    DW_AT_const_value	(0)
+                    DW_AT_abstract_origin	(cu + 0x0226 "ret")
+
+0x00000967:       NULL
+
+0x00000968:     NULL
+
+0x00000969:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000013c8)
+                DW_AT_high_pc	(0x0000000000001449)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("ble_list_bonding_remote")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(721)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+                DW_AT_external	(true)
+
+0x0000097f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000831
+                     0x00000000000013c8 - 0x00000000000013e9: DW_OP_reg1 ECX
+                     0x00000000000013e9 - 0x0000000000001449: DW_OP_breg5 EBP-64)
+                  DW_AT_name	("conn_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(721)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x0000098f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000850
+                     0x00000000000013c8 - 0x00000000000013e6: DW_OP_reg0 EAX
+                     0x00000000000013e6 - 0x0000000000001449: DW_OP_breg5 EBP-57)
+                  DW_AT_name	("conn_addr_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(721)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x0000099f:     DW_TAG_variable
+                  DW_AT_location	(0x0000086f
+                     0x00000000000013fd - 0x000000000000141b: DW_OP_breg0 EAX+0
+                     0x0000000000001432 - 0x000000000000143a: DW_OP_breg1 ECX+0)
+                  DW_AT_name	("item")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(723)
+                  DW_AT_type	(cu + 0x03af "BLE_REMOTE_LIST_T")
+
+0x000009af:     NULL
+
+0x000009b0:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000001449)
+                DW_AT_high_pc	(0x00000000000014da)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("ble_list_get_last_id_addr")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(736)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+                DW_AT_external	(true)
+
+0x000009c6:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000088f
+                     0x0000000000001449 - 0x0000000000001477: DW_OP_reg0 EAX
+                     0x0000000000001477 - 0x00000000000014da: DW_OP_breg5 EBP-68)
+                  DW_AT_name	("id_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(736)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x000009d6:     DW_TAG_variable
+                  DW_AT_location	(0x000008af
+                     0x000000000000148b - 0x0000000000001493: DW_OP_breg1 ECX+0)
+                  DW_AT_name	("item")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(739)
+                  DW_AT_type	(cu + 0x03af "BLE_REMOTE_LIST_T")
+
+0x000009e6:     DW_TAG_variable
+                  DW_AT_name	("i")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(738)
+                  DW_AT_type	(cu + 0x039d "u32")
+
+0x000009f2:     NULL
+
+0x000009f3:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000014da)
+                DW_AT_high_pc	(0x0000000000001626)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("ble_list_delete_device")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(762)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+                DW_AT_external	(true)
+
+0x00000a09:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000008c3
+                     0x00000000000014da - 0x000000000000150e: DW_OP_reg1 ECX
+                     0x000000000000150e - 0x0000000000001626: DW_OP_breg5 EBP-72)
+                  DW_AT_name	("conn_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(762)
+                  DW_AT_type	(cu + 0x0107 "u8*")
+
+0x00000a19:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000008e3
+                     0x00000000000014da - 0x000000000000150b: DW_OP_reg0 EAX
+                     0x000000000000150b - 0x0000000000001626: DW_OP_breg5 EBP-65)
+                  DW_AT_name	("conn_addr_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(762)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000a29:     DW_TAG_variable
+                  DW_AT_const_value	(0)
+                  DW_AT_name	("find_flag")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(766)
+                  DW_AT_type	(cu + 0x0232 "bool")
+
+0x00000a36:     DW_TAG_variable
+                  DW_AT_location	(0x00000903
+                     0x000000000000151e - 0x00000000000015dc: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x00000000000015dc - 0x00000000000015ed: DW_OP_reg0 EAX
+                     0x00000000000015ed - 0x000000000000160d: DW_OP_breg5 EBP-96
+                     0x000000000000160d - 0x000000000000160f: DW_OP_reg0 EAX)
+                  DW_AT_name	("i")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(764)
+                  DW_AT_type	(cu + 0x039d "u32")
+
+0x00000a46:     DW_TAG_variable
+                  DW_AT_location	(0x0000093b
+                     0x000000000000155d - 0x000000000000156d: DW_OP_breg1 ECX+0)
+                  DW_AT_name	("item")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(765)
+                  DW_AT_type	(cu + 0x03af "BLE_REMOTE_LIST_T")
+
+0x00000a56:     NULL
+
+0x00000a57:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000001626)
+                DW_AT_high_pc	(0x0000000000001793)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("delete_device_by_index")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(253)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0232 "bool")
+
+0x00000a6c:     DW_TAG_formal_parameter
+                  DW_AT_name	("index")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(253)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000a77:     DW_TAG_variable
+                  DW_AT_location	(0x0000094f
+                     0x000000000000169f - 0x00000000000016b9: DW_OP_reg3 EBX
+                     0x00000000000016b9 - 0x0000000000001793: DW_OP_breg5 EBP-81)
+                  DW_AT_name	("dev_sn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(256)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000a87:     DW_TAG_variable
+                  DW_AT_name	("item")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(255)
+                  DW_AT_type	(cu + 0x03af "BLE_REMOTE_LIST_T")
+
+0x00000a92:     DW_TAG_lexical_block
+                  DW_AT_ranges	(0x00000018
+                     [0x000016a7 - 0x000016d5)
+                     [0x000016f8 - 0x0000174e))
+
+0x00000a97:       DW_TAG_variable
+                    DW_AT_location	(0x0000096f
+                       0x00000000000016a7 - 0x000000000000173b: DW_OP_consts +0, DW_OP_stack_value
+                       0x000000000000173b - 0x0000000000001743: DW_OP_reg0 EAX
+                       0x0000000000001743 - 0x0000000000001793: DW_OP_breg5 EBP-92)
+                    DW_AT_name	("i")
+                    DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                    DW_AT_decl_line	(272)
+                    DW_AT_type	(cu + 0x0037 "int")
+
+0x00000aa7:       NULL
+
+0x00000aa8:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x020f "reflash_remote_info")
+                  DW_AT_low_pc	(0x0000000000001768)
+                  DW_AT_high_pc	(0x0000000000001789)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_call_line	(285)
+
+0x00000ab8:       DW_TAG_formal_parameter
+                    DW_AT_const_value	(1)
+                    DW_AT_abstract_origin	(cu + 0x021b "act_rw")
+
+0x00000abe:       DW_TAG_variable
+                    DW_AT_const_value	(0)
+                    DW_AT_abstract_origin	(cu + 0x0226 "ret")
+
+0x00000ac4:       NULL
+
+0x00000ac5:     NULL
+
+0x00000ac6:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000001793)
+                DW_AT_high_pc	(0x0000000000001cef)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("ble_list_init")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                DW_AT_decl_line	(800)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000ad8:     DW_TAG_variable
+                  DW_AT_location	(0x0000099c
+                     0x00000000000017a2 - 0x0000000000001869: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x0000000000001869 - 0x000000000000188e: DW_OP_reg2 EDX
+                     0x000000000000188e - 0x0000000000001900: DW_OP_breg5 EBP-105
+                     0x0000000000001900 - 0x000000000000190e: DW_OP_reg1 ECX
+                     0x0000000000001914 - 0x0000000000001932: DW_OP_reg1 ECX
+                     0x0000000000001932 - 0x0000000000001944: DW_OP_breg5 EBP-116
+                     0x0000000000001944 - 0x000000000000195b: DW_OP_breg5 EBP-105
+                     0x000000000000195b - 0x0000000000001966: DW_OP_reg0 EAX
+                     0x0000000000001966 - 0x000000000000196b: DW_OP_reg0 EAX, DW_OP_bit_piece 0x8 0x8
+                     0x000000000000196b - 0x0000000000001977: DW_OP_breg5 EBP-117
+                     0x0000000000001977 - 0x0000000000001980: DW_OP_breg5 EBP-105
+                     0x0000000000001980 - 0x0000000000001985: DW_OP_reg0 EAX
+                     0x0000000000001985 - 0x000000000000198b: DW_OP_breg5 EBP-120
+                     0x000000000000198b - 0x0000000000001cef: DW_OP_breg5 EBP-105)
+                  DW_AT_name	("err_info")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(802)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000ae8:     DW_TAG_variable
+                  DW_AT_location	(0x00000a51
+                     0x00000000000017a2 - 0x00000000000018cf: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x00000000000018cf - 0x00000000000018dd: DW_OP_reg0 EAX
+                     0x0000000000001914 - 0x000000000000192f: DW_OP_reg0 EAX
+                     0x000000000000192f - 0x0000000000001cef: DW_OP_breg5 EBP-115)
+                  DW_AT_name	("count")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(803)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000af8:     DW_TAG_variable
+                  DW_AT_location	(0x00000a89
+                     0x00000000000017c5 - 0x000000000000191a: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x000000000000191a - 0x0000000000001955: DW_OP_reg2 EDX
+                     0x0000000000001a16 - 0x0000000000001a87: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x0000000000001a87 - 0x0000000000001a87: DW_OP_breg5 EBP-154
+                     0x0000000000001aa1 - 0x0000000000001ace: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x0000000000001ace - 0x0000000000001adc: DW_OP_reg0 EAX
+                     0x0000000000001adc - 0x0000000000001cef: DW_OP_breg5 EBP-154)
+                  DW_AT_name	("i")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(803)
+                  DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000b08:     DW_TAG_variable
+                  DW_AT_location	(0x00000ae8
+                     0x0000000000001809 - 0x0000000000001814: DW_OP_breg7 EDI+0)
+                  DW_AT_name	("item")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                  DW_AT_decl_line	(804)
+                  DW_AT_type	(cu + 0x03af "BLE_REMOTE_LIST_T")
+
+0x00000b18:     DW_TAG_lexical_block
+                  DW_AT_low_pc	(0x0000000000001991)
+                  DW_AT_high_pc	(0x0000000000001c86)
+
+0x00000b21:       DW_TAG_variable
+                    DW_AT_location	(0x00000afc
+                       0x00000000000019cd - 0x0000000000001a3a: DW_OP_constu 0x0, DW_OP_stack_value
+                       0x0000000000001a3a - 0x0000000000001a3a: DW_OP_breg5 EBP-178
+                       0x0000000000001a3a - 0x0000000000001a3f: DW_OP_reg0 EAX
+                       0x0000000000001a43 - 0x0000000000001b71: DW_OP_constu 0x0, DW_OP_stack_value
+                       0x0000000000001b71 - 0x0000000000001b7c: DW_OP_reg0 EAX
+                       0x0000000000001b7c - 0x0000000000001bd6: DW_OP_breg5 EBP-139
+                       0x0000000000001bd6 - 0x0000000000001bef: DW_OP_reg0 EAX
+                       0x0000000000001bef - 0x0000000000001cef: DW_OP_breg5 EBP-178)
+                    DW_AT_name	("j")
+                    DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                    DW_AT_decl_line	(843)
+                    DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000b31:       DW_TAG_variable
+                    DW_AT_name	("get_flag")
+                    DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                    DW_AT_decl_line	(844)
+                    DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000b3d:       DW_TAG_inlined_subroutine
+                    DW_AT_abstract_origin	(cu + 0x020f "reflash_remote_info")
+                    DW_AT_low_pc	(0x0000000000001c57)
+                    DW_AT_high_pc	(0x0000000000001c7b)
+                    DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/remote_device_list.c")
+                    DW_AT_call_line	(874)
+
+0x00000b4d:         DW_TAG_formal_parameter
+                      DW_AT_const_value	(1)
+                      DW_AT_abstract_origin	(cu + 0x021b "act_rw")
+
+0x00000b53:         DW_TAG_variable
+                      DW_AT_const_value	(0)
+                      DW_AT_abstract_origin	(cu + 0x0226 "ret")
+
+0x00000b59:         NULL
+
+0x00000b5a:       NULL
+
+0x00000b5b:     NULL
+
+0x00000b5c:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0b67 "unsigned short")
+                DW_AT_name	("u16")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(13)
+
+0x00000b67:   DW_TAG_base_type
+                DW_AT_name	("unsigned short")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x02)
+
+0x00000b6e:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x03af "BLE_REMOTE_LIST_T")
+
+0x00000b73:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x00cb "u8")
+
+0x00000b78:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x00e9 "sizetype")
+                  DW_AT_count	(0x03)
+
+0x00000b7e:     NULL
+
+0x00000b7f:   NULL

@@ -1,0 +1,510 @@
+temp.o:	file format ELF32-i386
+
+.debug_info contents:
+0x00000000: Compile Unit: length = 0x0000034b version = 0x0004 abbr_offset = 0x0000 addr_size = 0x04 (next unit at 0x0000034f)
+
+0x0000000b: DW_TAG_compile_unit
+              DW_AT_producer	("clang version 4.0.1 (git@192.168.8.109:huangzhenyu/clang.git d97b416c061747718623e97046d5e7dcb4c75555) (git@192.168.8.109:huangzhenyu/llvm.git 64c6917899f78226b6d3cf2b78db54d02abf7c85)")
+              DW_AT_language	(DW_LANG_C99)
+              DW_AT_name	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+              DW_AT_stmt_list	(0x00000000)
+              DW_AT_comp_dir	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make")
+              DW_AT_GNU_pubnames	(true)
+              DW_AT_low_pc	(0x0000000000000000)
+              DW_AT_high_pc	(0x0000000000000454)
+
+0x00000026:   DW_TAG_variable
+                DW_AT_name	("app_info_debug_enable")
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/profile_stack_debug.h")
+                DW_AT_decl_line	(190)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x00000037:   DW_TAG_base_type
+                DW_AT_name	("int")
+                DW_AT_encoding	(DW_ATE_signed)
+                DW_AT_byte_size	(0x04)
+
+0x0000003e:   DW_TAG_variable
+                DW_AT_name	("l2cap_signaling_commands_format")
+                DW_AT_type	(cu + 0x004f "const char*[]")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                DW_AT_decl_line	(55)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x0000004f:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x005b "const char*")
+
+0x00000054:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x006c "sizetype")
+                  DW_AT_count	(0x16)
+
+0x0000005a:     NULL
+
+0x0000005b:   DW_TAG_const_type
+                DW_AT_type	(cu + 0x0060 "char*")
+
+0x00000060:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0065 "char")
+
+0x00000065:   DW_TAG_base_type
+                DW_AT_name	("char")
+                DW_AT_encoding	(DW_ATE_signed_char)
+                DW_AT_byte_size	(0x01)
+
+0x0000006c:   DW_TAG_base_type
+                DW_AT_name	("sizetype")
+                DW_AT_byte_size	(0x08)
+                DW_AT_encoding	(DW_ATE_unsigned)
+
+0x00000073:   DW_TAG_enumeration_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Host/include/common/l2cap_signaling.h")
+                DW_AT_decl_line	(52)
+
+0x00000077:     DW_TAG_enumerator
+                  DW_AT_name	("COMMAND_REJECT")
+                  DW_AT_const_value	(1)
+
+0x0000007d:     DW_TAG_enumerator
+                  DW_AT_name	("CONNECTION_REQUEST")
+                  DW_AT_const_value	(2)
+
+0x00000083:     DW_TAG_enumerator
+                  DW_AT_name	("CONNECTION_RESPONSE")
+                  DW_AT_const_value	(3)
+
+0x00000089:     DW_TAG_enumerator
+                  DW_AT_name	("CONFIGURE_REQUEST")
+                  DW_AT_const_value	(4)
+
+0x0000008f:     DW_TAG_enumerator
+                  DW_AT_name	("CONFIGURE_RESPONSE")
+                  DW_AT_const_value	(5)
+
+0x00000095:     DW_TAG_enumerator
+                  DW_AT_name	("DISCONNECTION_REQUEST")
+                  DW_AT_const_value	(6)
+
+0x0000009b:     DW_TAG_enumerator
+                  DW_AT_name	("DISCONNECTION_RESPONSE")
+                  DW_AT_const_value	(7)
+
+0x000000a1:     DW_TAG_enumerator
+                  DW_AT_name	("ECHO_REQUEST")
+                  DW_AT_const_value	(8)
+
+0x000000a7:     DW_TAG_enumerator
+                  DW_AT_name	("ECHO_RESPONSE")
+                  DW_AT_const_value	(9)
+
+0x000000ad:     DW_TAG_enumerator
+                  DW_AT_name	("INFORMATION_REQUEST")
+                  DW_AT_const_value	(10)
+
+0x000000b3:     DW_TAG_enumerator
+                  DW_AT_name	("INFORMATION_RESPONSE")
+                  DW_AT_const_value	(11)
+
+0x000000b9:     DW_TAG_enumerator
+                  DW_AT_name	("CONNECTION_PARAMETER_UPDATE_REQUEST")
+                  DW_AT_const_value	(18)
+
+0x000000bf:     DW_TAG_enumerator
+                  DW_AT_name	("CONNECTION_PARAMETER_UPDATE_RESPONSE")
+                  DW_AT_const_value	(19)
+
+0x000000c5:     DW_TAG_enumerator
+                  DW_AT_name	("LE_CREDIT_BASED_CONNECTION_REQUEST")
+                  DW_AT_const_value	(20)
+
+0x000000cb:     DW_TAG_enumerator
+                  DW_AT_name	("LE_CREDIT_BASED_CONNECTION_RESPONSE")
+                  DW_AT_const_value	(21)
+
+0x000000d1:     DW_TAG_enumerator
+                  DW_AT_name	("LE_FLOW_CONTROL_CREDIT")
+                  DW_AT_const_value	(22)
+
+0x000000d7:     DW_TAG_enumerator
+                  DW_AT_name	("COMMAND_REJECT_LE")
+                  DW_AT_const_value	(31)
+
+0x000000dd:     NULL
+
+0x000000de:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x0000000000000134)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("l2cap_outgoing_acl_len")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                DW_AT_decl_line	(150)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x02ac "u16")
+                DW_AT_external	(true)
+
+0x000000f3:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000000
+                     0x0000000000000000 - 0x000000000000001a: DW_OP_reg1 ECX)
+                  DW_AT_name	("cmd")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(150)
+                  DW_AT_type	(cu + 0x02d4 "L2CAP_SIGNALING_COMMANDS")
+
+0x00000102:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000013
+                     0x0000000000000000 - 0x0000000000000022: DW_OP_reg0 EAX
+                     0x0000000000000022 - 0x0000000000000134: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("argptr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(150)
+                  DW_AT_type	(cu + 0x02df "va_list")
+
+0x00000111:     DW_TAG_variable
+                  DW_AT_location	(0x00000032
+                     0x0000000000000013 - 0x00000000000000e4: DW_OP_constu 0x8, DW_OP_stack_value
+                     0x00000000000000e4 - 0x00000000000000e8: DW_OP_reg6 ESI
+                     0x00000000000000e8 - 0x00000000000000ec: DW_OP_breg5 EBP-58
+                     0x00000000000000ec - 0x0000000000000102: DW_OP_reg0 EAX
+                     0x0000000000000102 - 0x0000000000000134: DW_OP_breg5 EBP-60)
+                  DW_AT_name	("pos")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(153)
+                  DW_AT_type	(cu + 0x02ac "u16")
+
+0x00000120:     DW_TAG_variable
+                  DW_AT_location	(0x00000075
+                     0x000000000000001a - 0x0000000000000028: DW_OP_reg1 ECX
+                     0x0000000000000028 - 0x00000000000000f2: DW_OP_breg5 EBP-24
+                     0x00000000000000f2 - 0x000000000000010c: DW_OP_reg1 ECX
+                     0x000000000000010c - 0x0000000000000112: DW_OP_breg5 EBP-36
+                     0x0000000000000112 - 0x0000000000000112: DW_OP_breg5 EBP-24
+                     0x0000000000000112 - 0x000000000000011f: DW_OP_reg1 ECX)
+                  DW_AT_name	("format")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(154)
+                  DW_AT_type	(cu + 0x02f5 "const char*")
+
+0x0000012f:     DW_TAG_variable
+                  DW_AT_location	(0x000000c2
+                     0x00000000000000d8 - 0x00000000000000e1: DW_OP_reg0 EAX)
+                  DW_AT_name	("word")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(155)
+                  DW_AT_type	(cu + 0x02ff "u32")
+
+0x0000013e:     NULL
+
+0x0000013f:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000134)
+                DW_AT_high_pc	(0x0000000000000176)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("l2cap_create_signaling_internal_bredr")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                DW_AT_decl_line	(186)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x02be "uint16_t")
+                DW_AT_external	(true)
+
+0x00000154:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000000d5
+                     0x0000000000000134 - 0x0000000000000173: DW_OP_reg7 EDI)
+                  DW_AT_name	("acl_buffer")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(186)
+                  DW_AT_type	(cu + 0x0311 "uint8_t*")
+
+0x00000163:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000000e8
+                     0x0000000000000134 - 0x0000000000000172: DW_OP_reg6 ESI)
+                  DW_AT_name	("handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(186)
+                  DW_AT_type	(cu + 0x0333 "hci_con_handle_t")
+
+0x00000172:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000000fb
+                     0x0000000000000134 - 0x0000000000000164: DW_OP_reg2 EDX)
+                  DW_AT_name	("cmd")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(186)
+                  DW_AT_type	(cu + 0x02d4 "L2CAP_SIGNALING_COMMANDS")
+
+0x00000181:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000010e
+                     0x0000000000000134 - 0x0000000000000152: DW_OP_reg1 ECX)
+                  DW_AT_name	("identifier")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(186)
+                  DW_AT_type	(cu + 0x0316 "uint8_t")
+
+0x00000190:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000121
+                     0x0000000000000134 - 0x000000000000016b: DW_OP_reg0 EAX)
+                  DW_AT_name	("argptr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(186)
+                  DW_AT_type	(cu + 0x02df "va_list")
+
+0x0000019f:     NULL
+
+0x000001a0:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000176)
+                DW_AT_high_pc	(0x0000000000000412)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("l2cap_create_signaling_internal")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                DW_AT_decl_line	(84)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x02ac "u16")
+
+0x000001b5:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000134
+                     0x0000000000000176 - 0x00000000000001b6: DW_OP_reg7 EDI
+                     0x00000000000001b6 - 0x0000000000000412: DW_OP_breg5 EBP-28)
+                  DW_AT_name	("acl_buffer")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(84)
+                  DW_AT_type	(cu + 0x033e "u8*")
+
+0x000001c4:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000153
+                     0x0000000000000176 - 0x000000000000019e: DW_OP_reg0 EAX)
+                  DW_AT_name	("handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(84)
+                  DW_AT_type	(cu + 0x0333 "hci_con_handle_t")
+
+0x000001d3:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000166
+                     0x0000000000000176 - 0x00000000000001c0: DW_OP_reg6 ESI
+                     0x00000000000001c0 - 0x0000000000000412: DW_OP_breg5 EBP-38)
+                  DW_AT_name	("cid")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(84)
+                  DW_AT_type	(cu + 0x02be "uint16_t")
+
+0x000001e2:     DW_TAG_formal_parameter
+                  DW_AT_location	(DW_OP_fbreg -20)
+                  DW_AT_name	("cmd")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(84)
+                  DW_AT_type	(cu + 0x02d4 "L2CAP_SIGNALING_COMMANDS")
+
+0x000001f0:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000185
+                     0x0000000000000176 - 0x00000000000001bc: DW_OP_reg3 EBX
+                     0x00000000000001bc - 0x0000000000000412: DW_OP_breg5 EBP-36)
+                  DW_AT_name	("identifier")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(84)
+                  DW_AT_type	(cu + 0x02ff "u32")
+
+0x000001ff:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000001a4
+                     0x0000000000000176 - 0x00000000000001b9: DW_OP_reg2 EDX
+                     0x00000000000001b9 - 0x0000000000000412: DW_OP_breg5 EBP-32)
+                  DW_AT_name	("argptr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(84)
+                  DW_AT_type	(cu + 0x02df "va_list")
+
+0x0000020e:     DW_TAG_variable
+                  DW_AT_location	(0x000001c3
+                     0x0000000000000200 - 0x000000000000029d: DW_OP_constu 0xc, DW_OP_stack_value
+                     0x000000000000029d - 0x00000000000002ba: DW_OP_reg6 ESI
+                     0x00000000000002ba - 0x00000000000002d4: DW_OP_breg5 EBP-94
+                     0x00000000000002d4 - 0x00000000000002e5: DW_OP_reg2 EDX
+                     0x00000000000002e5 - 0x000000000000033d: DW_OP_breg5 EBP-86
+                     0x000000000000033d - 0x0000000000000341: DW_OP_reg6 ESI
+                     0x0000000000000341 - 0x0000000000000345: DW_OP_breg5 EBP-86
+                     0x0000000000000345 - 0x000000000000035b: DW_OP_reg0 EAX
+                     0x000000000000035b - 0x000000000000036b: DW_OP_breg5 EBP-106
+                     0x000000000000036b - 0x0000000000000412: DW_OP_breg5 EBP-94)
+                  DW_AT_name	("pos")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(87)
+                  DW_AT_type	(cu + 0x02ac "u16")
+
+0x0000021d:     DW_TAG_variable
+                  DW_AT_location	(0x00000245
+                     0x000000000000020a - 0x0000000000000214: DW_OP_reg7 EDI
+                     0x0000000000000214 - 0x000000000000034b: DW_OP_breg5 EBP-52
+                     0x000000000000034b - 0x0000000000000365: DW_OP_reg1 ECX
+                     0x0000000000000365 - 0x000000000000036b: DW_OP_breg5 EBP-64
+                     0x000000000000036b - 0x000000000000036b: DW_OP_reg1 ECX
+                     0x000000000000036b - 0x0000000000000412: DW_OP_breg5 EBP-52)
+                  DW_AT_name	("format")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(88)
+                  DW_AT_type	(cu + 0x02f5 "const char*")
+
+0x0000022c:     DW_TAG_variable
+                  DW_AT_location	(0x00000292
+                     0x0000000000000293 - 0x00000000000002b6: DW_OP_reg0 EAX
+                     0x00000000000002b6 - 0x00000000000002fd: DW_OP_breg5 EBP-92
+                     0x00000000000002fd - 0x000000000000032a: DW_OP_reg0 EAX
+                     0x000000000000032a - 0x0000000000000412: DW_OP_breg5 EBP-100)
+                  DW_AT_name	("word")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(89)
+                  DW_AT_type	(cu + 0x02ff "u32")
+
+0x0000023b:     DW_TAG_variable
+                  DW_AT_location	(0x000002ca
+                     0x0000000000000310 - 0x0000000000000332: DW_OP_reg1 ECX)
+                  DW_AT_name	("ptr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(90)
+                  DW_AT_type	(cu + 0x033e "u8*")
+
+0x0000024a:     NULL
+
+0x0000024b:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000412)
+                DW_AT_high_pc	(0x0000000000000454)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("l2cap_create_signaling_internal_le")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                DW_AT_decl_line	(192)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x02be "uint16_t")
+                DW_AT_external	(true)
+
+0x00000260:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000002dd
+                     0x0000000000000412 - 0x0000000000000451: DW_OP_reg7 EDI)
+                  DW_AT_name	("acl_buffer")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(192)
+                  DW_AT_type	(cu + 0x0311 "uint8_t*")
+
+0x0000026f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000002f0
+                     0x0000000000000412 - 0x0000000000000450: DW_OP_reg6 ESI)
+                  DW_AT_name	("handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(192)
+                  DW_AT_type	(cu + 0x0333 "hci_con_handle_t")
+
+0x0000027e:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000303
+                     0x0000000000000412 - 0x0000000000000442: DW_OP_reg2 EDX)
+                  DW_AT_name	("cmd")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(192)
+                  DW_AT_type	(cu + 0x02d4 "L2CAP_SIGNALING_COMMANDS")
+
+0x0000028d:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000316
+                     0x0000000000000412 - 0x0000000000000430: DW_OP_reg1 ECX)
+                  DW_AT_name	("identifier")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(192)
+                  DW_AT_type	(cu + 0x0316 "uint8_t")
+
+0x0000029c:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000329
+                     0x0000000000000412 - 0x0000000000000449: DW_OP_reg0 EAX)
+                  DW_AT_name	("argptr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                  DW_AT_decl_line	(192)
+                  DW_AT_type	(cu + 0x02df "va_list")
+
+0x000002ab:     NULL
+
+0x000002ac:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x02b7 "unsigned short")
+                DW_AT_name	("u16")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(13)
+
+0x000002b7:   DW_TAG_base_type
+                DW_AT_name	("unsigned short")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x02)
+
+0x000002be:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x02c9 "__uint16_t")
+                DW_AT_name	("uint16_t")
+                DW_AT_decl_file	("/opt/q32s/include/sys/_stdint.h")
+                DW_AT_decl_line	(26)
+
+0x000002c9:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x02b7 "unsigned short")
+                DW_AT_name	("__uint16_t")
+                DW_AT_decl_file	("/opt/q32s/include/machine/_default_types.h")
+                DW_AT_decl_line	(43)
+
+0x000002d4:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0073 "enumeration ")
+                DW_AT_name	("L2CAP_SIGNALING_COMMANDS")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Host/include/common/l2cap_signaling.h")
+                DW_AT_decl_line	(71)
+
+0x000002df:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x02ea "__builtin_va_list")
+                DW_AT_name	("va_list")
+                DW_AT_decl_file	("/opt/q32s/bin/../lib/clang/4.0.1/include/stdarg.h")
+                DW_AT_decl_line	(30)
+
+0x000002ea:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0060 "char*")
+                DW_AT_name	("__builtin_va_list")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/common/l2cap_signaling.c")
+                DW_AT_decl_line	(190)
+
+0x000002f5:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x02fa "const char")
+
+0x000002fa:   DW_TAG_const_type
+                DW_AT_type	(cu + 0x0065 "char")
+
+0x000002ff:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x030a "unsigned int")
+                DW_AT_name	("u32")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(15)
+
+0x0000030a:   DW_TAG_base_type
+                DW_AT_name	("unsigned int")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x04)
+
+0x00000311:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0316 "uint8_t")
+
+0x00000316:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0321 "__uint8_t")
+                DW_AT_name	("uint8_t")
+                DW_AT_decl_file	("/opt/q32s/include/sys/_stdint.h")
+                DW_AT_decl_line	(20)
+
+0x00000321:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x032c "unsigned char")
+                DW_AT_name	("__uint8_t")
+                DW_AT_decl_file	("/opt/q32s/include/machine/_default_types.h")
+                DW_AT_decl_line	(29)
+
+0x0000032c:   DW_TAG_base_type
+                DW_AT_name	("unsigned char")
+                DW_AT_encoding	(DW_ATE_unsigned_char)
+                DW_AT_byte_size	(0x01)
+
+0x00000333:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x02be "uint16_t")
+                DW_AT_name	("hci_con_handle_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/btstack_typedef.h")
+                DW_AT_decl_line	(9)
+
+0x0000033e:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0343 "u8")
+
+0x00000343:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x032c "unsigned char")
+                DW_AT_name	("u8")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(11)
+
+0x0000034e:   NULL

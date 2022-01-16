@@ -1,0 +1,2120 @@
+temp.o:	file format ELF32-i386
+
+.debug_info contents:
+0x00000000: Compile Unit: length = 0x00000e41 version = 0x0004 abbr_offset = 0x0000 addr_size = 0x04 (next unit at 0x00000e45)
+
+0x0000000b: DW_TAG_compile_unit
+              DW_AT_producer	("clang version 4.0.1 (git@192.168.8.109:huangzhenyu/clang.git d97b416c061747718623e97046d5e7dcb4c75555) (git@192.168.8.109:huangzhenyu/llvm.git 64c6917899f78226b6d3cf2b78db54d02abf7c85)")
+              DW_AT_language	(DW_LANG_C99)
+              DW_AT_name	("../tws_host.c")
+              DW_AT_stmt_list	(0x00000000)
+              DW_AT_comp_dir	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make")
+              DW_AT_GNU_pubnames	(true)
+              DW_AT_low_pc	(0x0000000000000000)
+              DW_AT_high_pc	(0x0000000000001af5)
+
+0x00000026:   DW_TAG_variable
+                DW_AT_name	("app_info_debug_enable")
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/profile_stack_debug.h")
+                DW_AT_decl_line	(190)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x00000037:   DW_TAG_base_type
+                DW_AT_name	("int")
+                DW_AT_encoding	(DW_ATE_signed)
+                DW_AT_byte_size	(0x04)
+
+0x0000003e:   DW_TAG_variable
+                DW_AT_name	("search_tws_reasult")
+                DW_AT_type	(cu + 0x004f "search_tws_reasult_t")
+                DW_AT_external	(true)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(39)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x0000004f:   DW_TAG_structure_type
+                DW_AT_name	("search_tws_reasult_t")
+                DW_AT_byte_size	(0x0d)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(33)
+
+0x00000057:     DW_TAG_member
+                  DW_AT_name	("search_tws_add_state")
+                  DW_AT_type	(cu + 0x007c "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(34)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000063:     DW_TAG_member
+                  DW_AT_name	("tws_remote_addr")
+                  DW_AT_type	(cu + 0x008e "u8[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(35)
+                  DW_AT_data_member_location	(0x01)
+
+0x0000006f:     DW_TAG_member
+                  DW_AT_name	("tws_wait_phone_conn_addr")
+                  DW_AT_type	(cu + 0x008e "u8[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(36)
+                  DW_AT_data_member_location	(0x07)
+
+0x0000007b:     NULL
+
+0x0000007c:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0087 "unsigned char")
+                DW_AT_name	("u8")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(44)
+
+0x00000087:   DW_TAG_base_type
+                DW_AT_name	("unsigned char")
+                DW_AT_encoding	(DW_ATE_unsigned_char)
+                DW_AT_byte_size	(0x01)
+
+0x0000008e:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x007c "u8")
+
+0x00000093:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x009a "sizetype")
+                  DW_AT_count	(0x06)
+
+0x00000099:     NULL
+
+0x0000009a:   DW_TAG_base_type
+                DW_AT_name	("sizetype")
+                DW_AT_byte_size	(0x08)
+                DW_AT_encoding	(DW_ATE_unsigned)
+
+0x000000a1:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x007c "u8")
+
+0x000000a6:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x00b1 "unsigned short")
+                DW_AT_name	("uint16_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(46)
+
+0x000000b1:   DW_TAG_base_type
+                DW_AT_name	("unsigned short")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x02)
+
+0x000000b8:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x0000000000000087)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("get_tws_reomot_reasult")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(40)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0df7 "bool")
+                DW_AT_external	(true)
+
+0x000000cd:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000000
+                     0x0000000000000000 - 0x000000000000001a: DW_OP_reg0 EAX
+                     0x000000000000001a - 0x0000000000000087: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(40)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x000000dc:     NULL
+
+0x000000dd:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000087)
+                DW_AT_high_pc	(0x00000000000000cf)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("get_tws_wait_phone_con_reasult")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(51)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0df7 "bool")
+                DW_AT_external	(true)
+
+0x000000f2:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000001f
+                     0x0000000000000087 - 0x000000000000009f: DW_OP_reg0 EAX
+                     0x000000000000009f - 0x00000000000000cf: DW_OP_breg5 EBP-8)
+                  DW_AT_name	("addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(51)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x00000101:     NULL
+
+0x00000102:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000000cf)
+                DW_AT_high_pc	(0x00000000000000d4)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("bt_get_tws_device_indicate")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(59)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000113:     DW_TAG_formal_parameter
+                  DW_AT_name	("tws_device_indicate")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(59)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x0000011e:     DW_TAG_variable
+                  DW_AT_name	("tws_device_indicate_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(61)
+                  DW_AT_type	(cu + 0x0e02 "char[]")
+
+0x00000129:     NULL
+
+0x0000012a:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000000d4)
+                DW_AT_high_pc	(0x00000000000003f2)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("hci_event_extended_inquiry_result")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(64)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x0000013b:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000003e
+                     0x00000000000000d4 - 0x00000000000000f6: DW_OP_reg0 EAX
+                     0x00000000000000f6 - 0x00000000000003f2: DW_OP_breg5 EBP-48)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(64)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x0000014a:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000114
+                     0x00000000000000d4 - 0x00000000000003f2: DW_OP_constu 0xf0, DW_OP_stack_value)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(64)
+                  DW_AT_type	(cu + 0x0e2d "u16")
+
+0x00000159:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -16)
+                  DW_AT_name	("tws_dev_indicate")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(68)
+                  DW_AT_type	(cu + 0x0e15 "u8[]")
+
+0x00000167:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -22)
+                  DW_AT_name	("remote_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(69)
+                  DW_AT_type	(cu + 0x008e "u8[]")
+
+0x00000175:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -42)
+                  DW_AT_name	("priv_version")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(72)
+                  DW_AT_type	(cu + 0x0e21 "u8[]")
+
+0x00000183:     DW_TAG_variable
+                  DW_AT_const_value	(0)
+                  DW_AT_name	("remote_name_len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(70)
+                  DW_AT_type	(cu + 0x007c "u8")
+
+0x0000018f:     DW_TAG_variable
+                  DW_AT_location	(0x0000005d
+                     0x00000000000000ef - 0x0000000000000202: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x0000000000000202 - 0x0000000000000216: DW_OP_breg5 EBP-117
+                     0x0000000000000216 - 0x0000000000000234: DW_OP_constu 0x14, DW_OP_stack_value
+                     0x0000000000000234 - 0x000000000000024e: DW_OP_reg0 EAX
+                     0x000000000000024e - 0x0000000000000282: DW_OP_breg5 EBP-127
+                     0x0000000000000282 - 0x00000000000002a9: DW_OP_reg0 EAX
+                     0x00000000000002a9 - 0x00000000000003f2: DW_OP_breg5 EBP-118)
+                  DW_AT_name	("priv_version_len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(71)
+                  DW_AT_type	(cu + 0x007c "u8")
+
+0x0000019e:     DW_TAG_variable
+                  DW_AT_location	(0x000000bc
+                     0x00000000000000ff - 0x000000000000010b: DW_OP_reg0 EAX
+                     0x000000000000010b - 0x0000000000000292: DW_OP_breg5 EBP-52
+                     0x0000000000000292 - 0x00000000000002a6: DW_OP_reg7 EDI
+                     0x00000000000002a6 - 0x00000000000002af: DW_OP_breg5 EBP-104
+                     0x00000000000002af - 0x00000000000003f2: DW_OP_breg5 EBP-52)
+                  DW_AT_name	("p")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(74)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x000001ad:     DW_TAG_variable
+                  DW_AT_location	(0x000000ff
+                     0x00000000000000ff - 0x00000000000003f2: DW_OP_constu 0x0, DW_OP_stack_value)
+                  DW_AT_name	("name_cmp_flag")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(75)
+                  DW_AT_type	(cu + 0x007c "u8")
+
+0x000001bc:     DW_TAG_variable
+                  DW_AT_location	(0x0000012a
+                     0x0000000000000338 - 0x0000000000000345: DW_OP_reg0 EAX)
+                  DW_AT_name	("crc_priv")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(67)
+                  DW_AT_type	(cu + 0x0e2d "u16")
+
+0x000001cb:     NULL
+
+0x000001cc:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000003f2)
+                DW_AT_high_pc	(0x00000000000003f9)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_api_connect_completed")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(145)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x000001e1:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000003f9)
+                DW_AT_high_pc	(0x00000000000003fe)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("tws_host_acl_handler")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(174)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x000001f2:     DW_TAG_formal_parameter
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(174)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x000001fd:     NULL
+
+0x000001fe:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000003fe)
+                DW_AT_high_pc	(0x0000000000000410)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("tws_profile_init")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(192)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x00000213:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000410)
+                DW_AT_high_pc	(0x0000000000000422)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("tws_profile_exit")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(199)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x00000228:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000422)
+                DW_AT_high_pc	(0x00000000000004c4)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("cheack_tws_connect_state")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(255)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x007c "u8")
+                DW_AT_external	(true)
+
+0x0000023d:     DW_TAG_variable
+                  DW_AT_location	(0x0000013d
+                     0x000000000000042d - 0x0000000000000430: DW_OP_reg0 EAX
+                     0x0000000000000430 - 0x00000000000004c4: DW_OP_breg5 EBP-1)
+                  DW_AT_name	("check_tws_con_channel")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(257)
+                  DW_AT_type	(cu + 0x007c "u8")
+
+0x0000024d:     DW_TAG_variable
+                  DW_AT_location	(0x0000015c
+                     0x0000000000000435 - 0x0000000000000438: DW_OP_reg0 EAX
+                     0x0000000000000438 - 0x00000000000004c4: DW_OP_breg5 EBP-2)
+                  DW_AT_name	("check_user_cmd")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(258)
+                  DW_AT_type	(cu + 0x007c "u8")
+
+0x0000025d:     DW_TAG_variable
+                  DW_AT_location	(0x0000017b
+                     0x000000000000043d - 0x0000000000000440: DW_OP_reg0 EAX
+                     0x0000000000000440 - 0x00000000000004c4: DW_OP_breg5 EBP-3)
+                  DW_AT_name	("sdp_master_channel")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(259)
+                  DW_AT_type	(cu + 0x007c "u8")
+
+0x0000026d:     DW_TAG_variable
+                  DW_AT_location	(0x0000019a
+                     0x0000000000000445 - 0x0000000000000448: DW_OP_reg0 EAX
+                     0x0000000000000448 - 0x00000000000004c4: DW_OP_breg5 EBP-4)
+                  DW_AT_name	("check_avctp_cmd")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(260)
+                  DW_AT_type	(cu + 0x007c "u8")
+
+0x0000027d:     DW_TAG_variable
+                  DW_AT_location	(0x000001b9
+                     0x000000000000044d - 0x0000000000000450: DW_OP_reg0 EAX
+                     0x0000000000000450 - 0x00000000000004c4: DW_OP_breg5 EBP-5)
+                  DW_AT_name	("check_hid_step")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(261)
+                  DW_AT_type	(cu + 0x007c "u8")
+
+0x0000028d:     DW_TAG_variable
+                  DW_AT_location	(0x000001d8
+                     0x0000000000000455 - 0x0000000000000458: DW_OP_reg0 EAX
+                     0x0000000000000458 - 0x00000000000004c4: DW_OP_breg5 EBP-6)
+                  DW_AT_name	("check_hfp_resend")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(262)
+                  DW_AT_type	(cu + 0x007c "u8")
+
+0x0000029d:     DW_TAG_variable
+                  DW_AT_location	(0x000001f7
+                     0x000000000000045f - 0x000000000000048e: DW_OP_reg0 EAX)
+                  DW_AT_name	("check_l2cap_state")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(263)
+                  DW_AT_type	(cu + 0x007c "u8")
+
+0x000002ad:     DW_TAG_lexical_block
+                  DW_AT_low_pc	(0x0000000000000489)
+                  DW_AT_high_pc	(0x00000000000004b9)
+
+0x000002b6:       DW_TAG_variable
+                    DW_AT_location	(0x0000020a
+                       0x0000000000000492 - 0x0000000000000497: DW_OP_reg0 EAX)
+                    DW_AT_name	("state")
+                    DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                    DW_AT_decl_line	(267)
+                    DW_AT_type	(cu + 0x0037 "int")
+
+0x000002c6:       NULL
+
+0x000002c7:     NULL
+
+0x000002c8:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000004c4)
+                DW_AT_high_pc	(0x0000000000000575)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("tws_hci_connected_info_for_send")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(277)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x000002de:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000021d
+                     0x00000000000004c4 - 0x00000000000004f0: DW_OP_reg0 EAX
+                     0x00000000000004f0 - 0x0000000000000575: DW_OP_breg5 EBP-4)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(277)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x000002ee:     DW_TAG_formal_parameter
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(277)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000002fa:     NULL
+
+0x000002fb:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000575)
+                DW_AT_high_pc	(0x000000000000059a)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x0980 "tws_hci_connected_info_for_set")
+
+0x0000030a:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000023c
+                     0x0000000000000575 - 0x0000000000000594: DW_OP_reg1 ECX)
+                  DW_AT_abstract_origin	(cu + 0x0989 "packet")
+
+0x00000313:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000024f
+                     0x0000000000000575 - 0x0000000000000588: DW_OP_reg0 EAX)
+                  DW_AT_abstract_origin	(cu + 0x0995 "size")
+
+0x0000031c:     NULL
+
+0x0000031d:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000059a)
+                DW_AT_high_pc	(0x0000000000000637)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("tws_l2cap_connected_info_for_send")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(297)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x00000333:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000262
+                     0x000000000000059a - 0x00000000000005c0: DW_OP_reg1 ECX
+                     0x00000000000005c0 - 0x0000000000000637: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(297)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x00000343:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000281
+                     0x000000000000059a - 0x00000000000005b9: DW_OP_reg0 EAX)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(297)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000353:     DW_TAG_variable
+                  DW_AT_location	(0x00000294
+                     0x00000000000005a8 - 0x00000000000005c8: DW_OP_consts +0, DW_OP_stack_value
+                     0x00000000000005c8 - 0x00000000000005eb: DW_OP_reg0 EAX
+                     0x00000000000005eb - 0x0000000000000637: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(299)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000363:     NULL
+
+0x00000364:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000637)
+                DW_AT_high_pc	(0x000000000000065c)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x09a2 "tws_l2cap_connected_info_for_set")
+
+0x00000373:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000002c0
+                     0x0000000000000637 - 0x0000000000000656: DW_OP_reg1 ECX)
+                  DW_AT_abstract_origin	(cu + 0x09ab "packet")
+
+0x0000037c:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000002d3
+                     0x0000000000000637 - 0x000000000000064a: DW_OP_reg0 EAX)
+                  DW_AT_abstract_origin	(cu + 0x09b7 "size")
+
+0x00000385:     NULL
+
+0x00000386:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000065c)
+                DW_AT_high_pc	(0x00000000000006f9)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("tws_l2cap_channel_info_for_send")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(315)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x0000039c:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000002e6
+                     0x000000000000065c - 0x0000000000000682: DW_OP_reg1 ECX
+                     0x0000000000000682 - 0x00000000000006f9: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(315)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x000003ac:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000305
+                     0x000000000000065c - 0x000000000000067b: DW_OP_reg0 EAX)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(315)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000003bc:     DW_TAG_variable
+                  DW_AT_location	(0x00000318
+                     0x000000000000066a - 0x000000000000068a: DW_OP_consts +0, DW_OP_stack_value
+                     0x000000000000068a - 0x00000000000006ad: DW_OP_reg0 EAX
+                     0x00000000000006ad - 0x00000000000006f9: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(317)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000003cc:     NULL
+
+0x000003cd:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000006f9)
+                DW_AT_high_pc	(0x000000000000071e)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x09c4 "tws_l2cap_channel_info_for_set")
+
+0x000003dc:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000344
+                     0x00000000000006f9 - 0x0000000000000718: DW_OP_reg1 ECX)
+                  DW_AT_abstract_origin	(cu + 0x09cd "packet")
+
+0x000003e5:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000357
+                     0x00000000000006f9 - 0x000000000000070c: DW_OP_reg0 EAX)
+                  DW_AT_abstract_origin	(cu + 0x09d9 "size")
+
+0x000003ee:     NULL
+
+0x000003ef:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000071e)
+                DW_AT_high_pc	(0x00000000000007bb)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("tws_avdtp_info_for_send")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(333)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x00000405:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000036a
+                     0x000000000000071e - 0x0000000000000744: DW_OP_reg1 ECX
+                     0x0000000000000744 - 0x00000000000007bb: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(333)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x00000415:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000389
+                     0x000000000000071e - 0x000000000000073d: DW_OP_reg0 EAX)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(333)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000425:     DW_TAG_variable
+                  DW_AT_location	(0x0000039c
+                     0x000000000000072c - 0x000000000000074c: DW_OP_consts +0, DW_OP_stack_value
+                     0x000000000000074c - 0x000000000000076f: DW_OP_reg0 EAX
+                     0x000000000000076f - 0x00000000000007bb: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(335)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000435:     NULL
+
+0x00000436:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000007bb)
+                DW_AT_high_pc	(0x00000000000007e0)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x09e6 "tws_avdtp_info_for_set")
+
+0x00000445:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000003c8
+                     0x00000000000007bb - 0x00000000000007da: DW_OP_reg1 ECX)
+                  DW_AT_abstract_origin	(cu + 0x09ef "packet")
+
+0x0000044e:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000003db
+                     0x00000000000007bb - 0x00000000000007ce: DW_OP_reg0 EAX)
+                  DW_AT_abstract_origin	(cu + 0x09fb "size")
+
+0x00000457:     NULL
+
+0x00000458:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000007e0)
+                DW_AT_high_pc	(0x000000000000087d)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("tws_a2dp_info_for_send")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(351)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x0000046e:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000003ee
+                     0x00000000000007e0 - 0x0000000000000806: DW_OP_reg1 ECX
+                     0x0000000000000806 - 0x000000000000087d: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(351)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x0000047e:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000040d
+                     0x00000000000007e0 - 0x00000000000007ff: DW_OP_reg0 EAX)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(351)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x0000048e:     DW_TAG_variable
+                  DW_AT_location	(0x00000420
+                     0x00000000000007ee - 0x000000000000080e: DW_OP_consts +0, DW_OP_stack_value
+                     0x000000000000080e - 0x0000000000000831: DW_OP_reg0 EAX
+                     0x0000000000000831 - 0x000000000000087d: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(353)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x0000049e:     NULL
+
+0x0000049f:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000087d)
+                DW_AT_high_pc	(0x00000000000008a2)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x0a08 "tws_a2dp_info_for_set")
+
+0x000004ae:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000044c
+                     0x000000000000087d - 0x000000000000089c: DW_OP_reg1 ECX)
+                  DW_AT_abstract_origin	(cu + 0x0a11 "packet")
+
+0x000004b7:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000045f
+                     0x000000000000087d - 0x0000000000000890: DW_OP_reg0 EAX)
+                  DW_AT_abstract_origin	(cu + 0x0a1d "size")
+
+0x000004c0:     NULL
+
+0x000004c1:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000008a2)
+                DW_AT_high_pc	(0x000000000000093f)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("tws_avctp_info_for_send")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(370)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x000004d7:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000472
+                     0x00000000000008a2 - 0x00000000000008c8: DW_OP_reg1 ECX
+                     0x00000000000008c8 - 0x000000000000093f: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(370)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x000004e7:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000491
+                     0x00000000000008a2 - 0x00000000000008c1: DW_OP_reg0 EAX)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(370)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000004f7:     DW_TAG_variable
+                  DW_AT_location	(0x000004a4
+                     0x00000000000008b0 - 0x00000000000008d0: DW_OP_consts +0, DW_OP_stack_value
+                     0x00000000000008d0 - 0x00000000000008f3: DW_OP_reg0 EAX
+                     0x00000000000008f3 - 0x000000000000093f: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(372)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000507:     NULL
+
+0x00000508:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000093f)
+                DW_AT_high_pc	(0x0000000000000964)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x0a2a "tws_avctp_info_for_set")
+
+0x00000517:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000004d0
+                     0x000000000000093f - 0x000000000000095e: DW_OP_reg1 ECX)
+                  DW_AT_abstract_origin	(cu + 0x0a33 "packet")
+
+0x00000520:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000004e3
+                     0x000000000000093f - 0x0000000000000952: DW_OP_reg0 EAX)
+                  DW_AT_abstract_origin	(cu + 0x0a3f "size")
+
+0x00000529:     NULL
+
+0x0000052a:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000964)
+                DW_AT_high_pc	(0x0000000000000a01)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("tws_sdp_info_for_send")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(388)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x00000540:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000004f6
+                     0x0000000000000964 - 0x000000000000098a: DW_OP_reg1 ECX
+                     0x000000000000098a - 0x0000000000000a01: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(388)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x00000550:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000515
+                     0x0000000000000964 - 0x0000000000000983: DW_OP_reg0 EAX)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(388)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000560:     DW_TAG_variable
+                  DW_AT_location	(0x00000528
+                     0x0000000000000972 - 0x0000000000000992: DW_OP_consts +0, DW_OP_stack_value
+                     0x0000000000000992 - 0x00000000000009b5: DW_OP_reg0 EAX
+                     0x00000000000009b5 - 0x0000000000000a01: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(390)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000570:     NULL
+
+0x00000571:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000a01)
+                DW_AT_high_pc	(0x0000000000000a26)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x0a4c "tws_sdp_info_for_set")
+
+0x00000580:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000554
+                     0x0000000000000a01 - 0x0000000000000a20: DW_OP_reg1 ECX)
+                  DW_AT_abstract_origin	(cu + 0x0a55 "packet")
+
+0x00000589:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000567
+                     0x0000000000000a01 - 0x0000000000000a14: DW_OP_reg0 EAX)
+                  DW_AT_abstract_origin	(cu + 0x0a61 "size")
+
+0x00000592:     NULL
+
+0x00000593:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000a26)
+                DW_AT_high_pc	(0x0000000000000ac3)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("tws_rfc_channel_info_for_send")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(406)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x000005a9:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000057a
+                     0x0000000000000a26 - 0x0000000000000a4c: DW_OP_reg1 ECX
+                     0x0000000000000a4c - 0x0000000000000ac3: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(406)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x000005b9:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000599
+                     0x0000000000000a26 - 0x0000000000000a45: DW_OP_reg0 EAX)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(406)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000005c9:     DW_TAG_variable
+                  DW_AT_location	(0x000005ac
+                     0x0000000000000a34 - 0x0000000000000a54: DW_OP_consts +0, DW_OP_stack_value
+                     0x0000000000000a54 - 0x0000000000000a77: DW_OP_reg0 EAX
+                     0x0000000000000a77 - 0x0000000000000ac3: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(408)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000005d9:     NULL
+
+0x000005da:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000ac3)
+                DW_AT_high_pc	(0x0000000000000ae8)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x0a90 "tws_rfc_channel_info_for_set")
+
+0x000005e9:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000005d8
+                     0x0000000000000ac3 - 0x0000000000000ae2: DW_OP_reg1 ECX)
+                  DW_AT_abstract_origin	(cu + 0x0a99 "packet")
+
+0x000005f2:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000005eb
+                     0x0000000000000ac3 - 0x0000000000000ad6: DW_OP_reg0 EAX)
+                  DW_AT_abstract_origin	(cu + 0x0aa5 "size")
+
+0x000005fb:     NULL
+
+0x000005fc:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000ae8)
+                DW_AT_high_pc	(0x0000000000000b85)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("tws_rfc_multiplexer_info_for_send")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(424)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x00000612:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000005fe
+                     0x0000000000000ae8 - 0x0000000000000b0e: DW_OP_reg1 ECX
+                     0x0000000000000b0e - 0x0000000000000b85: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(424)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x00000622:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000061d
+                     0x0000000000000ae8 - 0x0000000000000b07: DW_OP_reg0 EAX)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(424)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000632:     DW_TAG_variable
+                  DW_AT_location	(0x00000630
+                     0x0000000000000af6 - 0x0000000000000b16: DW_OP_consts +0, DW_OP_stack_value
+                     0x0000000000000b16 - 0x0000000000000b39: DW_OP_reg0 EAX
+                     0x0000000000000b39 - 0x0000000000000b85: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(426)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000642:     NULL
+
+0x00000643:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000b85)
+                DW_AT_high_pc	(0x0000000000000baa)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x0a6e "tws_rfc_multiplexer_info_for_set")
+
+0x00000652:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000065c
+                     0x0000000000000b85 - 0x0000000000000ba4: DW_OP_reg1 ECX)
+                  DW_AT_abstract_origin	(cu + 0x0a77 "packet")
+
+0x0000065b:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000066f
+                     0x0000000000000b85 - 0x0000000000000b98: DW_OP_reg0 EAX)
+                  DW_AT_abstract_origin	(cu + 0x0a83 "size")
+
+0x00000664:     NULL
+
+0x00000665:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000baa)
+                DW_AT_high_pc	(0x0000000000000c47)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("tws_hfp_info_for_send")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(442)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x0000067b:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000682
+                     0x0000000000000baa - 0x0000000000000bd0: DW_OP_reg1 ECX
+                     0x0000000000000bd0 - 0x0000000000000c47: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(442)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x0000068b:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000006a1
+                     0x0000000000000baa - 0x0000000000000bc9: DW_OP_reg0 EAX)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(442)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x0000069b:     DW_TAG_variable
+                  DW_AT_location	(0x000006b4
+                     0x0000000000000bb8 - 0x0000000000000bd8: DW_OP_consts +0, DW_OP_stack_value
+                     0x0000000000000bd8 - 0x0000000000000bfb: DW_OP_reg0 EAX
+                     0x0000000000000bfb - 0x0000000000000c47: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(444)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000006ab:     NULL
+
+0x000006ac:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000c47)
+                DW_AT_high_pc	(0x0000000000000c6c)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x0ab2 "tws_hfp_info_for_set")
+
+0x000006bb:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000006e0
+                     0x0000000000000c47 - 0x0000000000000c66: DW_OP_reg1 ECX)
+                  DW_AT_abstract_origin	(cu + 0x0abb "packet")
+
+0x000006c4:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000006f3
+                     0x0000000000000c47 - 0x0000000000000c5a: DW_OP_reg0 EAX)
+                  DW_AT_abstract_origin	(cu + 0x0ac7 "size")
+
+0x000006cd:     NULL
+
+0x000006ce:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000c6c)
+                DW_AT_high_pc	(0x0000000000000d09)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("tws_user_info_for_send")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(460)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x000006e4:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000706
+                     0x0000000000000c6c - 0x0000000000000c92: DW_OP_reg1 ECX
+                     0x0000000000000c92 - 0x0000000000000d09: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(460)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x000006f4:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000725
+                     0x0000000000000c6c - 0x0000000000000c8b: DW_OP_reg0 EAX)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(460)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000704:     DW_TAG_variable
+                  DW_AT_location	(0x00000738
+                     0x0000000000000c7a - 0x0000000000000c9a: DW_OP_consts +0, DW_OP_stack_value
+                     0x0000000000000c9a - 0x0000000000000cbd: DW_OP_reg0 EAX
+                     0x0000000000000cbd - 0x0000000000000d09: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(462)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000714:     NULL
+
+0x00000715:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000d09)
+                DW_AT_high_pc	(0x0000000000000d2e)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x0ad4 "tws_user_info_for_set")
+
+0x00000724:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000764
+                     0x0000000000000d09 - 0x0000000000000d28: DW_OP_reg1 ECX)
+                  DW_AT_abstract_origin	(cu + 0x0add "packet")
+
+0x0000072d:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000777
+                     0x0000000000000d09 - 0x0000000000000d1c: DW_OP_reg0 EAX)
+                  DW_AT_abstract_origin	(cu + 0x0ae9 "size")
+
+0x00000736:     NULL
+
+0x00000737:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000d2e)
+                DW_AT_high_pc	(0x0000000000000dcb)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("tws_hid_info_for_send")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(478)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x0000074d:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000078a
+                     0x0000000000000d2e - 0x0000000000000d54: DW_OP_reg1 ECX
+                     0x0000000000000d54 - 0x0000000000000dcb: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(478)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x0000075d:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000007a9
+                     0x0000000000000d2e - 0x0000000000000d4d: DW_OP_reg0 EAX)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(478)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x0000076d:     DW_TAG_variable
+                  DW_AT_location	(0x000007bc
+                     0x0000000000000d3c - 0x0000000000000d5c: DW_OP_consts +0, DW_OP_stack_value
+                     0x0000000000000d5c - 0x0000000000000d7f: DW_OP_reg0 EAX
+                     0x0000000000000d7f - 0x0000000000000dcb: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(480)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x0000077d:     NULL
+
+0x0000077e:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000dcb)
+                DW_AT_high_pc	(0x0000000000000df0)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x0b18 "tws_hid_info_for_set")
+
+0x0000078d:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000007e8
+                     0x0000000000000dcb - 0x0000000000000dea: DW_OP_reg1 ECX)
+                  DW_AT_abstract_origin	(cu + 0x0b21 "packet")
+
+0x00000796:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000007fb
+                     0x0000000000000dcb - 0x0000000000000dde: DW_OP_reg0 EAX)
+                  DW_AT_abstract_origin	(cu + 0x0b2d "size")
+
+0x0000079f:     NULL
+
+0x000007a0:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000df0)
+                DW_AT_high_pc	(0x0000000000000e8d)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("tws_spp_info_for_send")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(496)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x000007b6:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000080e
+                     0x0000000000000df0 - 0x0000000000000e16: DW_OP_reg1 ECX
+                     0x0000000000000e16 - 0x0000000000000e8d: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(496)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x000007c6:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000082d
+                     0x0000000000000df0 - 0x0000000000000e0f: DW_OP_reg0 EAX)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(496)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000007d6:     DW_TAG_variable
+                  DW_AT_location	(0x00000840
+                     0x0000000000000dfe - 0x0000000000000e1e: DW_OP_consts +0, DW_OP_stack_value
+                     0x0000000000000e1e - 0x0000000000000e41: DW_OP_reg0 EAX
+                     0x0000000000000e41 - 0x0000000000000e8d: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(498)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000007e6:     NULL
+
+0x000007e7:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000e8d)
+                DW_AT_high_pc	(0x0000000000000eb2)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x0b3a "tws_spp_info_for_set")
+
+0x000007f6:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000086c
+                     0x0000000000000e8d - 0x0000000000000eac: DW_OP_reg1 ECX)
+                  DW_AT_abstract_origin	(cu + 0x0b43 "packet")
+
+0x000007ff:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000087f
+                     0x0000000000000e8d - 0x0000000000000ea0: DW_OP_reg0 EAX)
+                  DW_AT_abstract_origin	(cu + 0x0b4f "size")
+
+0x00000808:     NULL
+
+0x00000809:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000eb2)
+                DW_AT_high_pc	(0x0000000000000f4f)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("tws_iap_info_for_send")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(514)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x0000081f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000892
+                     0x0000000000000eb2 - 0x0000000000000ed8: DW_OP_reg1 ECX
+                     0x0000000000000ed8 - 0x0000000000000f4f: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(514)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x0000082f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000008b1
+                     0x0000000000000eb2 - 0x0000000000000ed1: DW_OP_reg0 EAX)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(514)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x0000083f:     DW_TAG_variable
+                  DW_AT_location	(0x000008c4
+                     0x0000000000000ec0 - 0x0000000000000ee0: DW_OP_consts +0, DW_OP_stack_value
+                     0x0000000000000ee0 - 0x0000000000000f03: DW_OP_reg0 EAX
+                     0x0000000000000f03 - 0x0000000000000f4f: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(516)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x0000084f:     NULL
+
+0x00000850:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000f4f)
+                DW_AT_high_pc	(0x0000000000000f74)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x0b5c "tws_iap_info_for_set")
+
+0x0000085f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000008f0
+                     0x0000000000000f4f - 0x0000000000000f6e: DW_OP_reg1 ECX)
+                  DW_AT_abstract_origin	(cu + 0x0b65 "packet")
+
+0x00000868:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000903
+                     0x0000000000000f4f - 0x0000000000000f62: DW_OP_reg0 EAX)
+                  DW_AT_abstract_origin	(cu + 0x0b71 "size")
+
+0x00000871:     NULL
+
+0x00000872:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000f74)
+                DW_AT_high_pc	(0x0000000000000fb7)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("app_core_data_for_send")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(532)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x00000888:     DW_TAG_formal_parameter
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(532)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x00000894:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000916
+                     0x0000000000000f74 - 0x0000000000000f8e: DW_OP_reg0 EAX
+                     0x0000000000000f8e - 0x0000000000000fb7: DW_OP_breg5 EBP-2)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(532)
+                  DW_AT_type	(cu + 0x0e2d "u16")
+
+0x000008a4:     NULL
+
+0x000008a5:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000fb7)
+                DW_AT_high_pc	(0x0000000000000fbc)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("app_core_data_for_set")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(539)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x000008b7:     DW_TAG_formal_parameter
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(539)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x000008c3:     DW_TAG_formal_parameter
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(539)
+                  DW_AT_type	(cu + 0x0e2d "u16")
+
+0x000008cf:     NULL
+
+0x000008d0:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000fbc)
+                DW_AT_high_pc	(0x0000000000001059)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("tws_app_info_for_send")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(544)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x000008e6:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000935
+                     0x0000000000000fbc - 0x0000000000000fe2: DW_OP_reg1 ECX
+                     0x0000000000000fe2 - 0x0000000000001059: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(544)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x000008f6:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000954
+                     0x0000000000000fbc - 0x0000000000000fdb: DW_OP_reg0 EAX)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(544)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000906:     DW_TAG_variable
+                  DW_AT_location	(0x00000967
+                     0x0000000000000fca - 0x0000000000000fea: DW_OP_consts +0, DW_OP_stack_value
+                     0x0000000000000fea - 0x000000000000100d: DW_OP_reg0 EAX
+                     0x000000000000100d - 0x0000000000001059: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(546)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000916:     NULL
+
+0x00000917:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000001059)
+                DW_AT_high_pc	(0x000000000000107e)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x0af6 "tws_app_info_for_set")
+
+0x00000926:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000993
+                     0x0000000000001059 - 0x0000000000001078: DW_OP_reg1 ECX)
+                  DW_AT_abstract_origin	(cu + 0x0aff "packet")
+
+0x0000092f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000009a6
+                     0x0000000000001059 - 0x000000000000106c: DW_OP_reg0 EAX)
+                  DW_AT_abstract_origin	(cu + 0x0b0b "size")
+
+0x00000938:     NULL
+
+0x00000939:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000107e)
+                DW_AT_high_pc	(0x00000000000012a5)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("tws_host_get_core_data")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(562)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x0000094f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000009b9
+                     0x000000000000107e - 0x000000000000109e: DW_OP_reg1 ECX
+                     0x000000000000109e - 0x00000000000012a5: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(562)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x0000095f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000009d8
+                     0x000000000000107e - 0x000000000000109b: DW_OP_reg0 EAX
+                     0x000000000000109b - 0x00000000000012a5: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(562)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x0000096f:     DW_TAG_variable
+                  DW_AT_location	(0x000009f7
+                     0x000000000000108c - 0x00000000000010ca: DW_OP_consts +0, DW_OP_stack_value
+                     0x00000000000010ca - 0x00000000000010de: DW_OP_reg0 EAX
+                     0x00000000000010de - 0x00000000000010e8: DW_OP_breg5 EBP-28
+                     0x00000000000010e8 - 0x00000000000010fc: DW_OP_reg0 EAX
+                     0x00000000000010fc - 0x0000000000001106: DW_OP_breg5 EBP-32
+                     0x0000000000001106 - 0x000000000000111a: DW_OP_reg1 ECX
+                     0x000000000000111a - 0x0000000000001124: DW_OP_breg5 EBP-36
+                     0x0000000000001124 - 0x0000000000001138: DW_OP_reg1 ECX
+                     0x0000000000001138 - 0x0000000000001142: DW_OP_breg5 EBP-40
+                     0x0000000000001142 - 0x0000000000001156: DW_OP_reg1 ECX
+                     0x0000000000001156 - 0x0000000000001160: DW_OP_breg5 EBP-44
+                     0x0000000000001160 - 0x0000000000001174: DW_OP_reg1 ECX
+                     0x0000000000001174 - 0x000000000000117e: DW_OP_breg5 EBP-48
+                     0x000000000000117e - 0x0000000000001192: DW_OP_reg1 ECX
+                     0x0000000000001192 - 0x000000000000119c: DW_OP_breg5 EBP-52
+                     0x000000000000119c - 0x00000000000011b0: DW_OP_reg1 ECX
+                     0x00000000000011b0 - 0x00000000000011ba: DW_OP_breg5 EBP-56
+                     0x00000000000011ba - 0x00000000000011ce: DW_OP_reg1 ECX
+                     0x00000000000011ce - 0x00000000000011d8: DW_OP_breg5 EBP-60
+                     0x00000000000011d8 - 0x00000000000011ec: DW_OP_reg1 ECX
+                     0x00000000000011ec - 0x00000000000011f6: DW_OP_breg5 EBP-64
+                     0x00000000000011f6 - 0x000000000000120a: DW_OP_reg1 ECX
+                     0x000000000000120a - 0x0000000000001214: DW_OP_breg5 EBP-68
+                     0x0000000000001214 - 0x0000000000001228: DW_OP_reg1 ECX
+                     0x0000000000001228 - 0x0000000000001232: DW_OP_breg5 EBP-72
+                     0x0000000000001232 - 0x0000000000001246: DW_OP_reg1 ECX
+                     0x0000000000001246 - 0x0000000000001250: DW_OP_breg5 EBP-76
+                     0x0000000000001250 - 0x0000000000001264: DW_OP_reg1 ECX
+                     0x0000000000001264 - 0x000000000000126e: DW_OP_breg5 EBP-80
+                     0x000000000000126e - 0x000000000000127d: DW_OP_reg1 ECX
+                     0x000000000000127d - 0x0000000000001283: DW_OP_breg5 EBP-84
+                     0x0000000000001283 - 0x00000000000012a5: DW_OP_breg5 EBP-28)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(564)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x0000097f:     NULL
+
+0x00000980:   DW_TAG_subprogram
+                DW_AT_name	("tws_hci_connected_info_for_set")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(292)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000989:     DW_TAG_formal_parameter
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(292)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x00000995:     DW_TAG_formal_parameter
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(292)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000009a1:     NULL
+
+0x000009a2:   DW_TAG_subprogram
+                DW_AT_name	("tws_l2cap_connected_info_for_set")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(310)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x000009ab:     DW_TAG_formal_parameter
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(310)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x000009b7:     DW_TAG_formal_parameter
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(310)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000009c3:     NULL
+
+0x000009c4:   DW_TAG_subprogram
+                DW_AT_name	("tws_l2cap_channel_info_for_set")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(328)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x000009cd:     DW_TAG_formal_parameter
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(328)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x000009d9:     DW_TAG_formal_parameter
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(328)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000009e5:     NULL
+
+0x000009e6:   DW_TAG_subprogram
+                DW_AT_name	("tws_avdtp_info_for_set")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(346)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x000009ef:     DW_TAG_formal_parameter
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(346)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x000009fb:     DW_TAG_formal_parameter
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(346)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000a07:     NULL
+
+0x00000a08:   DW_TAG_subprogram
+                DW_AT_name	("tws_a2dp_info_for_set")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(364)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000a11:     DW_TAG_formal_parameter
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(364)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x00000a1d:     DW_TAG_formal_parameter
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(364)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000a29:     NULL
+
+0x00000a2a:   DW_TAG_subprogram
+                DW_AT_name	("tws_avctp_info_for_set")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(383)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000a33:     DW_TAG_formal_parameter
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(383)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x00000a3f:     DW_TAG_formal_parameter
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(383)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000a4b:     NULL
+
+0x00000a4c:   DW_TAG_subprogram
+                DW_AT_name	("tws_sdp_info_for_set")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(401)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000a55:     DW_TAG_formal_parameter
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(401)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x00000a61:     DW_TAG_formal_parameter
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(401)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000a6d:     NULL
+
+0x00000a6e:   DW_TAG_subprogram
+                DW_AT_name	("tws_rfc_multiplexer_info_for_set")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(437)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000a77:     DW_TAG_formal_parameter
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(437)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x00000a83:     DW_TAG_formal_parameter
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(437)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000a8f:     NULL
+
+0x00000a90:   DW_TAG_subprogram
+                DW_AT_name	("tws_rfc_channel_info_for_set")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(419)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000a99:     DW_TAG_formal_parameter
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(419)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x00000aa5:     DW_TAG_formal_parameter
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(419)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000ab1:     NULL
+
+0x00000ab2:   DW_TAG_subprogram
+                DW_AT_name	("tws_hfp_info_for_set")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(455)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000abb:     DW_TAG_formal_parameter
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(455)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x00000ac7:     DW_TAG_formal_parameter
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(455)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000ad3:     NULL
+
+0x00000ad4:   DW_TAG_subprogram
+                DW_AT_name	("tws_user_info_for_set")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(473)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000add:     DW_TAG_formal_parameter
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(473)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x00000ae9:     DW_TAG_formal_parameter
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(473)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000af5:     NULL
+
+0x00000af6:   DW_TAG_subprogram
+                DW_AT_name	("tws_app_info_for_set")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(557)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000aff:     DW_TAG_formal_parameter
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(557)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x00000b0b:     DW_TAG_formal_parameter
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(557)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000b17:     NULL
+
+0x00000b18:   DW_TAG_subprogram
+                DW_AT_name	("tws_hid_info_for_set")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(491)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000b21:     DW_TAG_formal_parameter
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(491)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x00000b2d:     DW_TAG_formal_parameter
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(491)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000b39:     NULL
+
+0x00000b3a:   DW_TAG_subprogram
+                DW_AT_name	("tws_spp_info_for_set")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(509)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000b43:     DW_TAG_formal_parameter
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(509)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x00000b4f:     DW_TAG_formal_parameter
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(509)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000b5b:     NULL
+
+0x00000b5c:   DW_TAG_subprogram
+                DW_AT_name	("tws_iap_info_for_set")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(527)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000b65:     DW_TAG_formal_parameter
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(527)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x00000b71:     DW_TAG_formal_parameter
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(527)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000b7d:     NULL
+
+0x00000b7e:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000012a5)
+                DW_AT_high_pc	(0x0000000000001af5)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("tws_host_set_core_data")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                DW_AT_decl_line	(588)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x00000b94:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000b76
+                     0x00000000000012a5 - 0x00000000000012e6: DW_OP_reg1 ECX
+                     0x00000000000012e6 - 0x0000000000001af5: DW_OP_breg5 EBP-32)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(588)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x00000ba4:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000b95
+                     0x00000000000012a5 - 0x00000000000012e3: DW_OP_reg0 EAX
+                     0x00000000000012e3 - 0x0000000000001af5: DW_OP_breg5 EBP-28)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(588)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000bb4:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -21)
+                  DW_AT_name	("hci_connect_complete")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(593)
+                  DW_AT_type	(cu + 0x0e38 "u8[]")
+
+0x00000bc3:     DW_TAG_variable
+                  DW_AT_location	(0x00000bb4
+                     0x00000000000012b9 - 0x00000000000012e6: DW_OP_reg1 ECX
+                     0x00000000000012e6 - 0x0000000000001aca: DW_OP_breg5 EBP-32
+                     0x0000000000001aca - 0x0000000000001ade: DW_OP_reg0 EAX
+                     0x0000000000001ade - 0x0000000000001ae4: DW_OP_breg5 EBP-52
+                     0x0000000000001ae4 - 0x0000000000001ae4: DW_OP_reg0 EAX
+                     0x0000000000001ae4 - 0x0000000000001af5: DW_OP_breg5 EBP-32)
+                  DW_AT_name	("deal_ptr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(590)
+                  DW_AT_type	(cu + 0x00a1 "u8*")
+
+0x00000bd3:     DW_TAG_variable
+                  DW_AT_const_value	(0)
+                  DW_AT_name	("deal_len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(591)
+                  DW_AT_type	(cu + 0x0e2d "u16")
+
+0x00000be0:     DW_TAG_variable
+                  DW_AT_const_value	(0)
+                  DW_AT_name	("info_len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_decl_line	(592)
+                  DW_AT_type	(cu + 0x0e2d "u16")
+
+0x00000bed:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0980 "tws_hci_connected_info_for_set")
+                  DW_AT_low_pc	(0x00000000000013bb)
+                  DW_AT_high_pc	(0x00000000000013d1)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_call_line	(611)
+
+0x00000bfd:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg -36)
+                    DW_AT_abstract_origin	(cu + 0x0989 "packet")
+
+0x00000c05:       DW_TAG_formal_parameter
+                    DW_AT_const_value	(13)
+                    DW_AT_abstract_origin	(cu + 0x0995 "size")
+
+0x00000c0b:       NULL
+
+0x00000c0c:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x09a2 "tws_l2cap_connected_info_for_set")
+                  DW_AT_low_pc	(0x0000000000001434)
+                  DW_AT_high_pc	(0x0000000000001446)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_call_line	(617)
+
+0x00000c1c:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000c01
+                       0x0000000000001434 - 0x000000000000143d: DW_OP_reg0 EAX)
+                    DW_AT_abstract_origin	(cu + 0x09ab "packet")
+
+0x00000c25:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000c14
+                       0x0000000000001434 - 0x0000000000001446: DW_OP_reg1 ECX)
+                    DW_AT_abstract_origin	(cu + 0x09b7 "size")
+
+0x00000c2e:       NULL
+
+0x00000c2f:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x09c4 "tws_l2cap_channel_info_for_set")
+                  DW_AT_low_pc	(0x00000000000014a9)
+                  DW_AT_high_pc	(0x00000000000014bb)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_call_line	(623)
+
+0x00000c3f:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000c27
+                       0x00000000000014a9 - 0x00000000000014b2: DW_OP_reg0 EAX)
+                    DW_AT_abstract_origin	(cu + 0x09cd "packet")
+
+0x00000c48:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000c3a
+                       0x00000000000014a9 - 0x00000000000014bb: DW_OP_reg1 ECX)
+                    DW_AT_abstract_origin	(cu + 0x09d9 "size")
+
+0x00000c51:       NULL
+
+0x00000c52:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x09e6 "tws_avdtp_info_for_set")
+                  DW_AT_low_pc	(0x000000000000151e)
+                  DW_AT_high_pc	(0x0000000000001530)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_call_line	(629)
+
+0x00000c62:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000c4d
+                       0x000000000000151e - 0x0000000000001527: DW_OP_reg0 EAX)
+                    DW_AT_abstract_origin	(cu + 0x09ef "packet")
+
+0x00000c6b:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000c60
+                       0x000000000000151e - 0x0000000000001530: DW_OP_reg1 ECX)
+                    DW_AT_abstract_origin	(cu + 0x09fb "size")
+
+0x00000c74:       NULL
+
+0x00000c75:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0a08 "tws_a2dp_info_for_set")
+                  DW_AT_low_pc	(0x0000000000001593)
+                  DW_AT_high_pc	(0x00000000000015a5)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_call_line	(635)
+
+0x00000c85:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000c73
+                       0x0000000000001593 - 0x000000000000159c: DW_OP_reg0 EAX)
+                    DW_AT_abstract_origin	(cu + 0x0a11 "packet")
+
+0x00000c8e:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000c86
+                       0x0000000000001593 - 0x00000000000015a5: DW_OP_reg1 ECX)
+                    DW_AT_abstract_origin	(cu + 0x0a1d "size")
+
+0x00000c97:       NULL
+
+0x00000c98:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0a2a "tws_avctp_info_for_set")
+                  DW_AT_low_pc	(0x0000000000001608)
+                  DW_AT_high_pc	(0x000000000000161a)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_call_line	(641)
+
+0x00000ca8:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000c99
+                       0x0000000000001608 - 0x0000000000001611: DW_OP_reg0 EAX)
+                    DW_AT_abstract_origin	(cu + 0x0a33 "packet")
+
+0x00000cb1:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000cac
+                       0x0000000000001608 - 0x000000000000161a: DW_OP_reg1 ECX)
+                    DW_AT_abstract_origin	(cu + 0x0a3f "size")
+
+0x00000cba:       NULL
+
+0x00000cbb:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0a4c "tws_sdp_info_for_set")
+                  DW_AT_low_pc	(0x0000000000001680)
+                  DW_AT_high_pc	(0x0000000000001692)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_call_line	(647)
+
+0x00000ccb:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000cbf
+                       0x0000000000001680 - 0x0000000000001689: DW_OP_reg0 EAX)
+                    DW_AT_abstract_origin	(cu + 0x0a55 "packet")
+
+0x00000cd4:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000cd2
+                       0x0000000000001680 - 0x0000000000001692: DW_OP_reg1 ECX)
+                    DW_AT_abstract_origin	(cu + 0x0a61 "size")
+
+0x00000cdd:       NULL
+
+0x00000cde:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0a6e "tws_rfc_multiplexer_info_for_set")
+                  DW_AT_low_pc	(0x0000000000001701)
+                  DW_AT_high_pc	(0x0000000000001713)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_call_line	(653)
+
+0x00000cee:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000ce5
+                       0x0000000000001701 - 0x000000000000170a: DW_OP_reg0 EAX)
+                    DW_AT_abstract_origin	(cu + 0x0a77 "packet")
+
+0x00000cf7:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000cf8
+                       0x0000000000001701 - 0x0000000000001713: DW_OP_reg1 ECX)
+                    DW_AT_abstract_origin	(cu + 0x0a83 "size")
+
+0x00000d00:       NULL
+
+0x00000d01:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0a90 "tws_rfc_channel_info_for_set")
+                  DW_AT_low_pc	(0x0000000000001782)
+                  DW_AT_high_pc	(0x0000000000001794)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_call_line	(659)
+
+0x00000d11:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000d0b
+                       0x0000000000001782 - 0x000000000000178b: DW_OP_reg0 EAX)
+                    DW_AT_abstract_origin	(cu + 0x0a99 "packet")
+
+0x00000d1a:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000d1e
+                       0x0000000000001782 - 0x0000000000001794: DW_OP_reg1 ECX)
+                    DW_AT_abstract_origin	(cu + 0x0aa5 "size")
+
+0x00000d23:       NULL
+
+0x00000d24:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0ab2 "tws_hfp_info_for_set")
+                  DW_AT_low_pc	(0x0000000000001803)
+                  DW_AT_high_pc	(0x0000000000001815)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_call_line	(665)
+
+0x00000d34:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000d31
+                       0x0000000000001803 - 0x000000000000180c: DW_OP_reg0 EAX)
+                    DW_AT_abstract_origin	(cu + 0x0abb "packet")
+
+0x00000d3d:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000d44
+                       0x0000000000001803 - 0x0000000000001815: DW_OP_reg1 ECX)
+                    DW_AT_abstract_origin	(cu + 0x0ac7 "size")
+
+0x00000d46:       NULL
+
+0x00000d47:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0ad4 "tws_user_info_for_set")
+                  DW_AT_low_pc	(0x0000000000001884)
+                  DW_AT_high_pc	(0x0000000000001896)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_call_line	(671)
+
+0x00000d57:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000d57
+                       0x0000000000001884 - 0x000000000000188d: DW_OP_reg0 EAX)
+                    DW_AT_abstract_origin	(cu + 0x0add "packet")
+
+0x00000d60:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000d6a
+                       0x0000000000001884 - 0x0000000000001896: DW_OP_reg1 ECX)
+                    DW_AT_abstract_origin	(cu + 0x0ae9 "size")
+
+0x00000d69:       NULL
+
+0x00000d6a:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0af6 "tws_app_info_for_set")
+                  DW_AT_low_pc	(0x0000000000001905)
+                  DW_AT_high_pc	(0x0000000000001917)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_call_line	(677)
+
+0x00000d7a:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000d7d
+                       0x0000000000001905 - 0x000000000000190e: DW_OP_reg0 EAX)
+                    DW_AT_abstract_origin	(cu + 0x0aff "packet")
+
+0x00000d83:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000d90
+                       0x0000000000001905 - 0x0000000000001917: DW_OP_reg1 ECX)
+                    DW_AT_abstract_origin	(cu + 0x0b0b "size")
+
+0x00000d8c:       NULL
+
+0x00000d8d:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0b18 "tws_hid_info_for_set")
+                  DW_AT_low_pc	(0x0000000000001986)
+                  DW_AT_high_pc	(0x0000000000001998)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_call_line	(683)
+
+0x00000d9d:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000da3
+                       0x0000000000001986 - 0x000000000000198f: DW_OP_reg0 EAX)
+                    DW_AT_abstract_origin	(cu + 0x0b21 "packet")
+
+0x00000da6:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000db6
+                       0x0000000000001986 - 0x0000000000001998: DW_OP_reg1 ECX)
+                    DW_AT_abstract_origin	(cu + 0x0b2d "size")
+
+0x00000daf:       NULL
+
+0x00000db0:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0b3a "tws_spp_info_for_set")
+                  DW_AT_low_pc	(0x0000000000001a07)
+                  DW_AT_high_pc	(0x0000000000001a19)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_call_line	(689)
+
+0x00000dc0:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000dc9
+                       0x0000000000001a07 - 0x0000000000001a10: DW_OP_reg0 EAX)
+                    DW_AT_abstract_origin	(cu + 0x0b43 "packet")
+
+0x00000dc9:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000ddc
+                       0x0000000000001a07 - 0x0000000000001a19: DW_OP_reg1 ECX)
+                    DW_AT_abstract_origin	(cu + 0x0b4f "size")
+
+0x00000dd2:       NULL
+
+0x00000dd3:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0b5c "tws_iap_info_for_set")
+                  DW_AT_low_pc	(0x0000000000001a88)
+                  DW_AT_high_pc	(0x0000000000001a9a)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/tws_host.c")
+                  DW_AT_call_line	(694)
+
+0x00000de3:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000def
+                       0x0000000000001a88 - 0x0000000000001a91: DW_OP_reg0 EAX)
+                    DW_AT_abstract_origin	(cu + 0x0b65 "packet")
+
+0x00000dec:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000e02
+                       0x0000000000001a88 - 0x0000000000001a9a: DW_OP_reg1 ECX)
+                    DW_AT_abstract_origin	(cu + 0x0b71 "size")
+
+0x00000df5:       NULL
+
+0x00000df6:     NULL
+
+0x00000df7:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0087 "unsigned char")
+                DW_AT_name	("bool")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(44)
+
+0x00000e02:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x0e0e "char")
+
+0x00000e07:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x009a "sizetype")
+                  DW_AT_count	(0x02)
+
+0x00000e0d:     NULL
+
+0x00000e0e:   DW_TAG_base_type
+                DW_AT_name	("char")
+                DW_AT_encoding	(DW_ATE_signed_char)
+                DW_AT_byte_size	(0x01)
+
+0x00000e15:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x007c "u8")
+
+0x00000e1a:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x009a "sizetype")
+                  DW_AT_count	(0x02)
+
+0x00000e20:     NULL
+
+0x00000e21:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x007c "u8")
+
+0x00000e26:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x009a "sizetype")
+                  DW_AT_count	(0x14)
+
+0x00000e2c:     NULL
+
+0x00000e2d:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x00b1 "unsigned short")
+                DW_AT_name	("u16")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(46)
+
+0x00000e38:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x007c "u8")
+
+0x00000e3d:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x009a "sizetype")
+                  DW_AT_count	(0x0d)
+
+0x00000e43:     NULL
+
+0x00000e44:   NULL

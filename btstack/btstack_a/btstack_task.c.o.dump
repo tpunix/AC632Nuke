@@ -1,0 +1,1296 @@
+bt.o:	file format ELF32-i386
+
+.debug_info contents:
+0x00000000: Compile Unit: length = 0x0000082a version = 0x0004 abbr_offset = 0x0000 addr_size = 0x04 (next unit at 0x0000082e)
+
+0x0000000b: DW_TAG_compile_unit
+              DW_AT_producer	("clang version 4.0.1 (git@192.168.8.109:huangzhenyu/clang.git d97b416c061747718623e97046d5e7dcb4c75555) (git@192.168.8.109:huangzhenyu/llvm.git 64c6917899f78226b6d3cf2b78db54d02abf7c85)")
+              DW_AT_language	(DW_LANG_C99)
+              DW_AT_name	("../btcommon/btstack_task.c")
+              DW_AT_stmt_list	(0x00000000)
+              DW_AT_comp_dir	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make")
+              DW_AT_GNU_pubnames	(true)
+              DW_AT_low_pc	(0x0000000000000000)
+              DW_AT_ranges	(0x00000000
+                 [0x00000000 - 0x0000079e)
+                 [0x0000079e - 0x000007af)
+                 [0x00000000 - 0x00000009)
+                 [0x00000009 - 0x00000018))
+
+0x00000026:   DW_TAG_variable
+                DW_AT_name	("app_info_debug_enable")
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/profile_stack_debug.h")
+                DW_AT_decl_line	(190)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x00000037:   DW_TAG_base_type
+                DW_AT_name	("int")
+                DW_AT_encoding	(DW_ATE_signed)
+                DW_AT_byte_size	(0x04)
+
+0x0000003e:   DW_TAG_variable
+                DW_AT_name	("btstack_lowpower_target")
+                DW_AT_type	(cu + 0x0050 "const lp_target")
+                DW_AT_external	(true)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                DW_AT_decl_line	(278)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x00000050:   DW_TAG_const_type
+                DW_AT_type	(cu + 0x0055 "lp_target")
+
+0x00000055:   DW_TAG_structure_type
+                DW_AT_name	("lp_target")
+                DW_AT_byte_size	(0x0c)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/power_interface.h")
+                DW_AT_decl_line	(357)
+
+0x0000005e:     DW_TAG_member
+                  DW_AT_name	("name")
+                  DW_AT_type	(cu + 0x0086 "char*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/power_interface.h")
+                  DW_AT_decl_line	(358)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000006b:     DW_TAG_member
+                  DW_AT_name	("level")
+                  DW_AT_type	(cu + 0x0092 "level_handler_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/power_interface.h")
+                  DW_AT_decl_line	(359)
+                  DW_AT_data_member_location	(0x04)
+
+0x00000078:     DW_TAG_member
+                  DW_AT_name	("is_idle")
+                  DW_AT_type	(cu + 0x00c4 "idle_handler_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/power_interface.h")
+                  DW_AT_decl_line	(360)
+                  DW_AT_data_member_location	(0x08)
+
+0x00000085:     NULL
+
+0x00000086:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x008b "char")
+
+0x0000008b:   DW_TAG_base_type
+                DW_AT_name	("char")
+                DW_AT_encoding	(DW_ATE_signed_char)
+                DW_AT_byte_size	(0x01)
+
+0x00000092:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x009e "subroutine LOW_POWER_LEVEL*")
+                DW_AT_name	("level_handler_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/power_interface.h")
+                DW_AT_decl_line	(355)
+
+0x0000009e:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x00a3 "subroutine LOW_POWER_LEVEL")
+
+0x000000a3:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x00a8 "LOW_POWER_LEVEL")
+                DW_AT_prototyped	(true)
+
+0x000000a8:   DW_TAG_enumeration_type
+                DW_AT_name	("LOW_POWER_LEVEL")
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/power_interface.h")
+                DW_AT_decl_line	(346)
+
+0x000000b1:     DW_TAG_enumerator
+                  DW_AT_name	("LOW_POWER_MODE_SLEEP")
+                  DW_AT_const_value	(0)
+
+0x000000b7:     DW_TAG_enumerator
+                  DW_AT_name	("LOW_POWER_MODE_LIGHT_SLEEP")
+                  DW_AT_const_value	(1)
+
+0x000000bd:     DW_TAG_enumerator
+                  DW_AT_name	("LOW_POWER_MODE_DEEP_SLEEP")
+                  DW_AT_const_value	(2)
+
+0x000000c3:     NULL
+
+0x000000c4:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x00d0 "subroutine u8*")
+                DW_AT_name	("idle_handler_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/power_interface.h")
+                DW_AT_decl_line	(354)
+
+0x000000d0:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x00d5 "subroutine u8")
+
+0x000000d5:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x00da "u8")
+                DW_AT_prototyped	(true)
+
+0x000000da:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x00e5 "unsigned char")
+                DW_AT_name	("u8")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(11)
+
+0x000000e5:   DW_TAG_base_type
+                DW_AT_name	("unsigned char")
+                DW_AT_encoding	(DW_ATE_unsigned_char)
+                DW_AT_byte_size	(0x01)
+
+0x000000ec:   DW_TAG_variable
+                DW_AT_name	("config")
+                DW_AT_type	(cu + 0x00fd "hci_transport_config_uart_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                DW_AT_decl_line	(181)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x000000fd:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0108 "structure ")
+                DW_AT_name	("hci_transport_config_uart_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btctrler/hci_transport.h")
+                DW_AT_decl_line	(199)
+
+0x00000108:   DW_TAG_structure_type
+                DW_AT_byte_size	(0x14)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btctrler/hci_transport.h")
+                DW_AT_decl_line	(193)
+
+0x0000010c:     DW_TAG_member
+                  DW_AT_name	("type")
+                  DW_AT_type	(cu + 0x0149 "hci_transport_config_type_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btctrler/hci_transport.h")
+                  DW_AT_decl_line	(194)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000118:     DW_TAG_member
+                  DW_AT_name	("baudrate_init")
+                  DW_AT_type	(cu + 0x0165 "uint32_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btctrler/hci_transport.h")
+                  DW_AT_decl_line	(195)
+                  DW_AT_data_member_location	(0x04)
+
+0x00000124:     DW_TAG_member
+                  DW_AT_name	("baudrate_main")
+                  DW_AT_type	(cu + 0x0165 "uint32_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btctrler/hci_transport.h")
+                  DW_AT_decl_line	(196)
+                  DW_AT_data_member_location	(0x08)
+
+0x00000130:     DW_TAG_member
+                  DW_AT_name	("flowcontrol")
+                  DW_AT_type	(cu + 0x0037 "int")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btctrler/hci_transport.h")
+                  DW_AT_decl_line	(197)
+                  DW_AT_data_member_location	(0x0c)
+
+0x0000013c:     DW_TAG_member
+                  DW_AT_name	("device_name")
+                  DW_AT_type	(cu + 0x0182 "const char*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btctrler/hci_transport.h")
+                  DW_AT_decl_line	(198)
+                  DW_AT_data_member_location	(0x10)
+
+0x00000148:     NULL
+
+0x00000149:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0154 "enumeration ")
+                DW_AT_name	("hci_transport_config_type_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btctrler/hci_transport.h")
+                DW_AT_decl_line	(187)
+
+0x00000154:   DW_TAG_enumeration_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btctrler/hci_transport.h")
+                DW_AT_decl_line	(184)
+
+0x00000158:     DW_TAG_enumerator
+                  DW_AT_name	("HCI_TRANSPORT_CONFIG_UART")
+                  DW_AT_const_value	(0)
+
+0x0000015e:     DW_TAG_enumerator
+                  DW_AT_name	("HCI_TRANSPORT_CONFIG_USB")
+                  DW_AT_const_value	(1)
+
+0x00000164:     NULL
+
+0x00000165:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0170 "__uint32_t")
+                DW_AT_name	("uint32_t")
+                DW_AT_decl_file	("/opt/q32s/include/sys/_stdint.h")
+                DW_AT_decl_line	(32)
+
+0x00000170:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x017b "unsigned int")
+                DW_AT_name	("__uint32_t")
+                DW_AT_decl_file	("/opt/q32s/include/machine/_default_types.h")
+                DW_AT_decl_line	(65)
+
+0x0000017b:   DW_TAG_base_type
+                DW_AT_name	("unsigned int")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x04)
+
+0x00000182:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0187 "const char")
+
+0x00000187:   DW_TAG_const_type
+                DW_AT_type	(cu + 0x008b "char")
+
+0x0000018c:   DW_TAG_variable
+                DW_AT_name	("is_btstack_lowpower_active")
+                DW_AT_type	(cu + 0x0197 "u8")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                DW_AT_decl_line	(42)
+
+0x00000197:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x00e5 "unsigned char")
+                DW_AT_name	("u8")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(44)
+
+0x000001a2:   DW_TAG_variable
+                DW_AT_name	("btstack_task_create_flag")
+                DW_AT_type	(cu + 0x0197 "u8")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                DW_AT_decl_line	(189)
+
+0x000001ad:   DW_TAG_enumeration_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                DW_AT_decl_line	(28)
+
+0x000001b1:     DW_TAG_enumerator
+                  DW_AT_name	("BTSTACK_HCI_EVENT")
+                  DW_AT_const_value	(4194305)
+
+0x000001ba:     DW_TAG_enumerator
+                  DW_AT_name	("BTSTACK_HCI_ACL")
+                  DW_AT_const_value	(4194306)
+
+0x000001c3:     DW_TAG_enumerator
+                  DW_AT_name	("BTSTACK_HCI_SOC")
+                  DW_AT_const_value	(4194307)
+
+0x000001cc:     DW_TAG_enumerator
+                  DW_AT_name	("BTSTACK_TASK_EXIT")
+                  DW_AT_const_value	(4194308)
+
+0x000001d5:     DW_TAG_enumerator
+                  DW_AT_name	("BTSTACK_LE_CONNECT_TIME_SET")
+                  DW_AT_const_value	(4194309)
+
+0x000001de:     DW_TAG_enumerator
+                  DW_AT_name	("BTSTACK_L2CAP_HANDOUT_CREDIT")
+                  DW_AT_const_value	(4194310)
+
+0x000001e7:     NULL
+
+0x000001e8:   DW_TAG_enumeration_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/os_error.h")
+                DW_AT_decl_line	(7)
+
+0x000001ec:     DW_TAG_enumerator
+                  DW_AT_name	("OS_NO_ERR")
+                  DW_AT_const_value	(0)
+
+0x000001f2:     DW_TAG_enumerator
+                  DW_AT_name	("OS_TRUE")
+                  DW_AT_const_value	(1)
+
+0x000001f8:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_EVENT_TYPE")
+                  DW_AT_const_value	(2)
+
+0x000001fe:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_PEND_ISR")
+                  DW_AT_const_value	(3)
+
+0x00000204:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_POST_NULL_PTR")
+                  DW_AT_const_value	(4)
+
+0x0000020a:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_PEVENT_NULL")
+                  DW_AT_const_value	(5)
+
+0x00000210:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_POST_ISR")
+                  DW_AT_const_value	(6)
+
+0x00000216:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_QUERY_ISR")
+                  DW_AT_const_value	(7)
+
+0x0000021c:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_INVALID_OPT")
+                  DW_AT_const_value	(8)
+
+0x00000222:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_TASK_WAITING")
+                  DW_AT_const_value	(9)
+
+0x00000228:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_PDATA_NULL")
+                  DW_AT_const_value	(10)
+
+0x0000022e:     DW_TAG_enumerator
+                  DW_AT_name	("OS_TIMEOUT")
+                  DW_AT_const_value	(11)
+
+0x00000234:     DW_TAG_enumerator
+                  DW_AT_name	("OS_TIMER")
+                  DW_AT_const_value	(12)
+
+0x0000023a:     DW_TAG_enumerator
+                  DW_AT_name	("OS_TASKQ")
+                  DW_AT_const_value	(13)
+
+0x00000240:     DW_TAG_enumerator
+                  DW_AT_name	("OS_TASK_NOT_EXIST")
+                  DW_AT_const_value	(14)
+
+0x00000246:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_EVENT_NAME_TOO_LONG")
+                  DW_AT_const_value	(15)
+
+0x0000024c:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_FLAG_NAME_TOO_LONG")
+                  DW_AT_const_value	(16)
+
+0x00000252:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_TASK_NAME_TOO_LONG")
+                  DW_AT_const_value	(17)
+
+0x00000258:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_PNAME_NULL")
+                  DW_AT_const_value	(18)
+
+0x0000025e:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_TASK_CREATE_ISR")
+                  DW_AT_const_value	(19)
+
+0x00000264:     DW_TAG_enumerator
+                  DW_AT_name	("OS_MBOX_FULL")
+                  DW_AT_const_value	(20)
+
+0x0000026a:     DW_TAG_enumerator
+                  DW_AT_name	("OS_Q_FULL")
+                  DW_AT_const_value	(21)
+
+0x00000270:     DW_TAG_enumerator
+                  DW_AT_name	("OS_Q_EMPTY")
+                  DW_AT_const_value	(22)
+
+0x00000276:     DW_TAG_enumerator
+                  DW_AT_name	("OS_Q_ERR")
+                  DW_AT_const_value	(23)
+
+0x0000027c:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_NO_QBUF")
+                  DW_AT_const_value	(24)
+
+0x00000282:     DW_TAG_enumerator
+                  DW_AT_name	("OS_PRIO_EXIST")
+                  DW_AT_const_value	(25)
+
+0x00000288:     DW_TAG_enumerator
+                  DW_AT_name	("OS_PRIO_ERR")
+                  DW_AT_const_value	(26)
+
+0x0000028e:     DW_TAG_enumerator
+                  DW_AT_name	("OS_PRIO_INVALID")
+                  DW_AT_const_value	(27)
+
+0x00000294:     DW_TAG_enumerator
+                  DW_AT_name	("OS_SEM_OVF")
+                  DW_AT_const_value	(28)
+
+0x0000029a:     DW_TAG_enumerator
+                  DW_AT_name	("OS_TASK_DEL_ERR")
+                  DW_AT_const_value	(29)
+
+0x000002a0:     DW_TAG_enumerator
+                  DW_AT_name	("OS_TASK_DEL_IDLE")
+                  DW_AT_const_value	(30)
+
+0x000002a6:     DW_TAG_enumerator
+                  DW_AT_name	("OS_TASK_DEL_ISR")
+                  DW_AT_const_value	(31)
+
+0x000002ac:     DW_TAG_enumerator
+                  DW_AT_name	("OS_NO_MORE_TCB")
+                  DW_AT_const_value	(32)
+
+0x000002b2:     DW_TAG_enumerator
+                  DW_AT_name	("OS_TIME_NOT_DLY")
+                  DW_AT_const_value	(33)
+
+0x000002b8:     DW_TAG_enumerator
+                  DW_AT_name	("OS_TIME_INVALID_MINUTES")
+                  DW_AT_const_value	(34)
+
+0x000002be:     DW_TAG_enumerator
+                  DW_AT_name	("OS_TIME_INVALID_SECONDS")
+                  DW_AT_const_value	(35)
+
+0x000002c4:     DW_TAG_enumerator
+                  DW_AT_name	("OS_TIME_INVALID_MILLI")
+                  DW_AT_const_value	(36)
+
+0x000002ca:     DW_TAG_enumerator
+                  DW_AT_name	("OS_TIME_ZERO_DLY")
+                  DW_AT_const_value	(37)
+
+0x000002d0:     DW_TAG_enumerator
+                  DW_AT_name	("OS_TASK_SUSPEND_PRIO")
+                  DW_AT_const_value	(38)
+
+0x000002d6:     DW_TAG_enumerator
+                  DW_AT_name	("OS_TASK_SUSPEND_IDLE")
+                  DW_AT_const_value	(39)
+
+0x000002dc:     DW_TAG_enumerator
+                  DW_AT_name	("OS_TASK_RESUME_PRIO")
+                  DW_AT_const_value	(40)
+
+0x000002e2:     DW_TAG_enumerator
+                  DW_AT_name	("OS_TASK_NOT_SUSPENDED")
+                  DW_AT_const_value	(41)
+
+0x000002e8:     DW_TAG_enumerator
+                  DW_AT_name	("OS_MEM_INVALID_PART")
+                  DW_AT_const_value	(42)
+
+0x000002ee:     DW_TAG_enumerator
+                  DW_AT_name	("OS_MEM_INVALID_BLKS")
+                  DW_AT_const_value	(43)
+
+0x000002f4:     DW_TAG_enumerator
+                  DW_AT_name	("OS_MEM_INVALID_SIZE")
+                  DW_AT_const_value	(44)
+
+0x000002fa:     DW_TAG_enumerator
+                  DW_AT_name	("OS_MEM_NO_FREE_BLKS")
+                  DW_AT_const_value	(45)
+
+0x00000300:     DW_TAG_enumerator
+                  DW_AT_name	("OS_MEM_FULL")
+                  DW_AT_const_value	(46)
+
+0x00000306:     DW_TAG_enumerator
+                  DW_AT_name	("OS_MEM_INVALID_PBLK")
+                  DW_AT_const_value	(47)
+
+0x0000030c:     DW_TAG_enumerator
+                  DW_AT_name	("OS_MEM_INVALID_PMEM")
+                  DW_AT_const_value	(48)
+
+0x00000312:     DW_TAG_enumerator
+                  DW_AT_name	("OS_MEM_INVALID_PDATA")
+                  DW_AT_const_value	(49)
+
+0x00000318:     DW_TAG_enumerator
+                  DW_AT_name	("OS_MEM_INVALID_ADDR")
+                  DW_AT_const_value	(50)
+
+0x0000031e:     DW_TAG_enumerator
+                  DW_AT_name	("OS_MEM_NAME_TOO_LONG")
+                  DW_AT_const_value	(51)
+
+0x00000324:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_MEM_NO_MEM")
+                  DW_AT_const_value	(52)
+
+0x0000032a:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_NOT_MUTEX_OWNER")
+                  DW_AT_const_value	(53)
+
+0x00000330:     DW_TAG_enumerator
+                  DW_AT_name	("OS_TASK_OPT_ERR")
+                  DW_AT_const_value	(54)
+
+0x00000336:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_DEL_ISR")
+                  DW_AT_const_value	(55)
+
+0x0000033c:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_CREATE_ISR")
+                  DW_AT_const_value	(56)
+
+0x00000342:     DW_TAG_enumerator
+                  DW_AT_name	("OS_FLAG_INVALID_PGRP")
+                  DW_AT_const_value	(57)
+
+0x00000348:     DW_TAG_enumerator
+                  DW_AT_name	("OS_FLAG_ERR_WAIT_TYPE")
+                  DW_AT_const_value	(58)
+
+0x0000034e:     DW_TAG_enumerator
+                  DW_AT_name	("OS_FLAG_ERR_NOT_RDY")
+                  DW_AT_const_value	(59)
+
+0x00000354:     DW_TAG_enumerator
+                  DW_AT_name	("OS_FLAG_INVALID_OPT")
+                  DW_AT_const_value	(60)
+
+0x0000035a:     DW_TAG_enumerator
+                  DW_AT_name	("OS_FLAG_GRP_DEPLETED")
+                  DW_AT_const_value	(61)
+
+0x00000360:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_PIP_LOWER")
+                  DW_AT_const_value	(62)
+
+0x00000366:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_MSG_POOL_EMPTY")
+                  DW_AT_const_value	(63)
+
+0x0000036c:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_MSG_POOL_NULL_PTR")
+                  DW_AT_const_value	(64)
+
+0x00000373:     DW_TAG_enumerator
+                  DW_AT_name	("OS_ERR_MSG_POOL_FULL")
+                  DW_AT_const_value	(65)
+
+0x0000037a:     NULL
+
+0x0000037b:   DW_TAG_enumeration_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/avctp_user.h")
+                DW_AT_decl_line	(299)
+
+0x00000380:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_POWER_ON")
+                  DW_AT_const_value	(1)
+
+0x00000386:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_POWER_OFF")
+                  DW_AT_const_value	(2)
+
+0x0000038c:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_INIT_OK")
+                  DW_AT_const_value	(3)
+
+0x00000392:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_EXIT_OK")
+                  DW_AT_const_value	(4)
+
+0x00000398:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_START_CONNECTED")
+                  DW_AT_const_value	(5)
+
+0x0000039e:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_FIRST_CONNECTED")
+                  DW_AT_const_value	(6)
+
+0x000003a4:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_SECOND_CONNECTED")
+                  DW_AT_const_value	(7)
+
+0x000003aa:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_ENCRY_COMPLETE")
+                  DW_AT_const_value	(8)
+
+0x000003b0:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_FIRST_DISCONNECT")
+                  DW_AT_const_value	(9)
+
+0x000003b6:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_SECOND_DISCONNECT")
+                  DW_AT_const_value	(10)
+
+0x000003bc:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_PHONE_INCOME")
+                  DW_AT_const_value	(11)
+
+0x000003c2:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_PHONE_NUMBER")
+                  DW_AT_const_value	(12)
+
+0x000003c8:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_PHONE_MANUFACTURER")
+                  DW_AT_const_value	(13)
+
+0x000003ce:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_PHONE_OUT")
+                  DW_AT_const_value	(14)
+
+0x000003d4:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_PHONE_ACTIVE")
+                  DW_AT_const_value	(15)
+
+0x000003da:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_PHONE_HANGUP")
+                  DW_AT_const_value	(16)
+
+0x000003e0:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_BEGIN_AUTO_CON")
+                  DW_AT_const_value	(17)
+
+0x000003e6:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_MUSIC_SOUND_COME")
+                  DW_AT_const_value	(18)
+
+0x000003ec:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_MUSIC_SOUND_GO")
+                  DW_AT_const_value	(19)
+
+0x000003f2:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_RESUME")
+                  DW_AT_const_value	(20)
+
+0x000003f8:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_RESUME_BTSTACK")
+                  DW_AT_const_value	(21)
+
+0x000003fe:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_SUSPEND")
+                  DW_AT_const_value	(22)
+
+0x00000404:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_LAST_CALL_TYPE_CHANGE")
+                  DW_AT_const_value	(23)
+
+0x0000040a:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_CALL_VOL_CHANGE")
+                  DW_AT_const_value	(24)
+
+0x00000410:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_SCO_STATUS_CHANGE")
+                  DW_AT_const_value	(25)
+
+0x00000416:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_CONNECT_WITHOUT_LINKKEY")
+                  DW_AT_const_value	(26)
+
+0x0000041c:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_PHONE_BATTERY_CHANGE")
+                  DW_AT_const_value	(27)
+
+0x00000422:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_RECONNECT_LINKKEY_LOST")
+                  DW_AT_const_value	(28)
+
+0x00000428:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_RECONN_OR_CONN")
+                  DW_AT_const_value	(29)
+
+0x0000042e:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_BT_TEST_BOX_CMD")
+                  DW_AT_const_value	(30)
+
+0x00000434:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_BT_TWS_CONNECT_CMD")
+                  DW_AT_const_value	(31)
+
+0x0000043a:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_SNIFF_STATE_UPDATE")
+                  DW_AT_const_value	(32)
+
+0x00000440:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_TONE_BY_FILE_NAME")
+                  DW_AT_const_value	(33)
+
+0x00000446:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_PHONE_DATE_AND_TIME")
+                  DW_AT_const_value	(34)
+
+0x0000044c:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_INBAND_RINGTONE")
+                  DW_AT_const_value	(35)
+
+0x00000452:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_VOICE_RECOGNITION")
+                  DW_AT_const_value	(36)
+
+0x00000458:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_AVRCP_INCOME_OPID")
+                  DW_AT_const_value	(37)
+
+0x0000045e:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_HFP_SERVICE_LEVEL_CONNECTION_OK")
+                  DW_AT_const_value	(38)
+
+0x00000464:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_CONN_A2DP_CH")
+                  DW_AT_const_value	(39)
+
+0x0000046a:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_CONN_HFP_CH")
+                  DW_AT_const_value	(40)
+
+0x00000470:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_INQUIRY_TIMEOUT")
+                  DW_AT_const_value	(41)
+
+0x00000476:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_INITING")
+                  DW_AT_const_value	(42)
+
+0x0000047c:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_WAITINT_CONN")
+                  DW_AT_const_value	(43)
+
+0x00000482:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_AUTO_CONNECTINT")
+                  DW_AT_const_value	(44)
+
+0x00000488:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_CONNECTING")
+                  DW_AT_const_value	(45)
+
+0x0000048e:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_TAKEING_PHONE")
+                  DW_AT_const_value	(46)
+
+0x00000494:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_PLAYING_MUSIC")
+                  DW_AT_const_value	(47)
+
+0x0000049a:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_A2DP_MEDIA_START")
+                  DW_AT_const_value	(48)
+
+0x000004a0:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_A2DP_MEDIA_STOP")
+                  DW_AT_const_value	(49)
+
+0x000004a6:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_BROADCAST_STATE")
+                  DW_AT_const_value	(50)
+
+0x000004ac:     DW_TAG_enumerator
+                  DW_AT_name	("BT_STATUS_TRIM_OVER")
+                  DW_AT_const_value	(51)
+
+0x000004b2:     NULL
+
+0x000004b3:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0037 "int")
+
+0x000004b8:   DW_TAG_pointer_type
+
+0x000004b9:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0197 "u8")
+
+0x000004be:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x04c3 "OS_SEM")
+
+0x000004c3:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x04ce "StaticSemaphore_t")
+                DW_AT_name	("OS_SEM")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/os_type.h")
+                DW_AT_decl_line	(26)
+
+0x000004ce:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x04da "StaticQueue_t")
+                DW_AT_name	("StaticSemaphore_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                DW_AT_decl_line	(991)
+
+0x000004da:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x04e6 "xSTATIC_QUEUE")
+                DW_AT_name	("StaticQueue_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                DW_AT_decl_line	(990)
+
+0x000004e6:   DW_TAG_structure_type
+                DW_AT_name	("xSTATIC_QUEUE")
+                DW_AT_byte_size	(0x50)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                DW_AT_decl_line	(965)
+
+0x000004ef:     DW_TAG_member
+                  DW_AT_name	("pvDummy1")
+                  DW_AT_type	(cu + 0x0578 "*[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                  DW_AT_decl_line	(966)
+                  DW_AT_data_member_location	(0x00)
+
+0x000004fc:     DW_TAG_member
+                  DW_AT_name	("u")
+                  DW_AT_type	(cu + 0x0509 "union ")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                  DW_AT_decl_line	(971)
+                  DW_AT_data_member_location	(0x0c)
+
+0x00000509:     DW_TAG_union_type
+                  DW_AT_byte_size	(0x04)
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                  DW_AT_decl_line	(968)
+
+0x0000050e:       DW_TAG_member
+                    DW_AT_name	("pvDummy2")
+                    DW_AT_type	(cu + 0x04b8 "*")
+                    DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                    DW_AT_decl_line	(969)
+                    DW_AT_data_member_location	(0x00)
+
+0x0000051b:       DW_TAG_member
+                    DW_AT_name	("uxDummy2")
+                    DW_AT_type	(cu + 0x058b "UBaseType_t")
+                    DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                    DW_AT_decl_line	(970)
+                    DW_AT_data_member_location	(0x00)
+
+0x00000528:       NULL
+
+0x00000529:     DW_TAG_member
+                  DW_AT_name	("xDummy3")
+                  DW_AT_type	(cu + 0x059d "StaticList_t[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                  DW_AT_decl_line	(973)
+                  DW_AT_data_member_location	(0x10)
+
+0x00000536:     DW_TAG_member
+                  DW_AT_name	("uxDummy4")
+                  DW_AT_type	(cu + 0x062d "UBaseType_t[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                  DW_AT_decl_line	(974)
+                  DW_AT_data_member_location	(0x38)
+
+0x00000543:     DW_TAG_member
+                  DW_AT_name	("ucDummy5")
+                  DW_AT_type	(cu + 0x0639 "uint8_t[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                  DW_AT_decl_line	(975)
+                  DW_AT_data_member_location	(0x44)
+
+0x00000550:     DW_TAG_member
+                  DW_AT_name	("ucDummy6")
+                  DW_AT_type	(cu + 0x0645 "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                  DW_AT_decl_line	(978)
+                  DW_AT_data_member_location	(0x46)
+
+0x0000055d:     DW_TAG_member
+                  DW_AT_name	("uxDummy8")
+                  DW_AT_type	(cu + 0x058b "UBaseType_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                  DW_AT_decl_line	(986)
+                  DW_AT_data_member_location	(0x48)
+
+0x0000056a:     DW_TAG_member
+                  DW_AT_name	("ucDummy9")
+                  DW_AT_type	(cu + 0x0645 "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                  DW_AT_decl_line	(987)
+                  DW_AT_data_member_location	(0x4c)
+
+0x00000577:     NULL
+
+0x00000578:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x04b8 "*")
+
+0x0000057d:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0584 "sizetype")
+                  DW_AT_count	(0x03)
+
+0x00000583:     NULL
+
+0x00000584:   DW_TAG_base_type
+                DW_AT_name	("sizetype")
+                DW_AT_byte_size	(0x08)
+                DW_AT_encoding	(DW_ATE_unsigned)
+
+0x0000058b:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0596 "long unsigned int")
+                DW_AT_name	("UBaseType_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/q32s/portmacro.h")
+                DW_AT_decl_line	(89)
+
+0x00000596:   DW_TAG_base_type
+                DW_AT_name	("long unsigned int")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x04)
+
+0x0000059d:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x05a9 "StaticList_t")
+
+0x000005a2:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0584 "sizetype")
+                  DW_AT_count	(0x02)
+
+0x000005a8:     NULL
+
+0x000005a9:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x05b5 "xSTATIC_LIST")
+                DW_AT_name	("StaticList_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                DW_AT_decl_line	(892)
+
+0x000005b5:   DW_TAG_structure_type
+                DW_AT_name	("xSTATIC_LIST")
+                DW_AT_byte_size	(0x14)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                DW_AT_decl_line	(888)
+
+0x000005be:     DW_TAG_member
+                  DW_AT_name	("uxDummy1")
+                  DW_AT_type	(cu + 0x058b "UBaseType_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                  DW_AT_decl_line	(889)
+                  DW_AT_data_member_location	(0x00)
+
+0x000005cb:     DW_TAG_member
+                  DW_AT_name	("pvDummy2")
+                  DW_AT_type	(cu + 0x04b8 "*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                  DW_AT_decl_line	(890)
+                  DW_AT_data_member_location	(0x04)
+
+0x000005d8:     DW_TAG_member
+                  DW_AT_name	("xDummy3")
+                  DW_AT_type	(cu + 0x05e6 "StaticMiniListItem_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                  DW_AT_decl_line	(891)
+                  DW_AT_data_member_location	(0x08)
+
+0x000005e5:     NULL
+
+0x000005e6:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x05f2 "xSTATIC_MINI_LIST_ITEM")
+                DW_AT_name	("StaticMiniListItem_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                DW_AT_decl_line	(885)
+
+0x000005f2:   DW_TAG_structure_type
+                DW_AT_name	("xSTATIC_MINI_LIST_ITEM")
+                DW_AT_byte_size	(0x0c)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                DW_AT_decl_line	(881)
+
+0x000005fb:     DW_TAG_member
+                  DW_AT_name	("xDummy1")
+                  DW_AT_type	(cu + 0x0616 "TickType_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                  DW_AT_decl_line	(882)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000608:     DW_TAG_member
+                  DW_AT_name	("pvDummy2")
+                  DW_AT_type	(cu + 0x0621 "*[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/FreeRTOS.h")
+                  DW_AT_decl_line	(883)
+                  DW_AT_data_member_location	(0x04)
+
+0x00000615:     NULL
+
+0x00000616:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0165 "uint32_t")
+                DW_AT_name	("TickType_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/system/os/FreeRTOS/q32s/portmacro.h")
+                DW_AT_decl_line	(96)
+
+0x00000621:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x04b8 "*")
+
+0x00000626:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0584 "sizetype")
+                  DW_AT_count	(0x02)
+
+0x0000062c:     NULL
+
+0x0000062d:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x058b "UBaseType_t")
+
+0x00000632:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0584 "sizetype")
+                  DW_AT_count	(0x03)
+
+0x00000638:     NULL
+
+0x00000639:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x0645 "uint8_t")
+
+0x0000063e:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0584 "sizetype")
+                  DW_AT_count	(0x02)
+
+0x00000644:     NULL
+
+0x00000645:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0650 "__uint8_t")
+                DW_AT_name	("uint8_t")
+                DW_AT_decl_file	("/opt/q32s/include/sys/_stdint.h")
+                DW_AT_decl_line	(20)
+
+0x00000650:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x00e5 "unsigned char")
+                DW_AT_name	("__uint8_t")
+                DW_AT_decl_file	("/opt/q32s/include/machine/_default_types.h")
+                DW_AT_decl_line	(29)
+
+0x0000065b:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x000000000000002a)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("stack_run_loop_resume")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                DW_AT_decl_line	(52)
+                DW_AT_external	(true)
+
+0x0000066c:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000002a)
+                DW_AT_high_pc	(0x0000000000000054)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("stack_handout_credit")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                DW_AT_decl_line	(58)
+                DW_AT_external	(true)
+
+0x0000067d:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000054)
+                DW_AT_high_pc	(0x000000000000007f)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_send_msg_to_stack")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                DW_AT_decl_line	(62)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x00000692:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000000
+                     0x0000000000000054 - 0x000000000000007a: DW_OP_reg1 ECX)
+                  DW_AT_name	("argc")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                  DW_AT_decl_line	(62)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000006a1:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000013
+                     0x0000000000000054 - 0x000000000000007a: DW_OP_reg0 EAX)
+                  DW_AT_name	("argv")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                  DW_AT_decl_line	(62)
+                  DW_AT_type	(cu + 0x04b3 "int*")
+
+0x000006b0:     NULL
+
+0x000006b1:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000007f)
+                DW_AT_high_pc	(0x0000000000000098)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_task_init")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                DW_AT_decl_line	(71)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x000006c2:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000098)
+                DW_AT_high_pc	(0x0000000000000222)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("hci_packet_handler")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                DW_AT_decl_line	(146)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x000006d7:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000026
+                     0x0000000000000098 - 0x00000000000000d5: DW_OP_reg2 EDX
+                     0x00000000000000d5 - 0x0000000000000222: DW_OP_breg5 EBP-41)
+                  DW_AT_name	("type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                  DW_AT_decl_line	(146)
+                  DW_AT_type	(cu + 0x0197 "u8")
+
+0x000006e6:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000045
+                     0x0000000000000098 - 0x00000000000000d2: DW_OP_reg1 ECX
+                     0x00000000000000d2 - 0x0000000000000222: DW_OP_breg5 EBP-40)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                  DW_AT_decl_line	(146)
+                  DW_AT_type	(cu + 0x04b9 "u8*")
+
+0x000006f5:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000064
+                     0x0000000000000098 - 0x00000000000000b6: DW_OP_reg0 EAX)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                  DW_AT_decl_line	(146)
+                  DW_AT_type	(cu + 0x080f "u16")
+
+0x00000704:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -20)
+                  DW_AT_name	("msg")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                  DW_AT_decl_line	(149)
+                  DW_AT_type	(cu + 0x0803 "int[]")
+
+0x00000712:     DW_TAG_variable
+                  DW_AT_location	(0x00000077
+                     0x00000000000000ae - 0x000000000000013c: DW_OP_consts +0, DW_OP_stack_value
+                     0x000000000000013c - 0x000000000000013f: DW_OP_reg0 EAX
+                     0x000000000000013f - 0x0000000000000189: DW_OP_breg5 EBP-76
+                     0x0000000000000189 - 0x000000000000018c: DW_OP_reg0 EAX
+                     0x000000000000018c - 0x000000000000018c: DW_OP_breg5 EBP-76
+                     0x000000000000018c - 0x0000000000000195: DW_OP_reg0 EAX
+                     0x0000000000000195 - 0x000000000000019b: DW_OP_breg5 EBP-68
+                     0x000000000000019b - 0x000000000000019b: DW_OP_breg5 EBP-76
+                     0x000000000000019b - 0x00000000000001a0: DW_OP_reg0 EAX)
+                  DW_AT_name	("err")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                  DW_AT_decl_line	(148)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000721:     NULL
+
+0x00000722:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000222)
+                DW_AT_high_pc	(0x0000000000000247)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("ble_bqb_test_thread_init")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                DW_AT_decl_line	(192)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000733:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000247)
+                DW_AT_high_pc	(0x000000000000037c)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_init")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                DW_AT_decl_line	(198)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x00000748:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000037c)
+                DW_AT_high_pc	(0x0000000000000522)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_task")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                DW_AT_decl_line	(80)
+                DW_AT_prototyped	(true)
+
+0x00000759:     DW_TAG_formal_parameter
+                  DW_AT_name	("p")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                  DW_AT_decl_line	(80)
+                  DW_AT_type	(cu + 0x04b8 "*")
+
+0x00000764:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -136)
+                  DW_AT_name	("msg")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                  DW_AT_decl_line	(83)
+                  DW_AT_type	(cu + 0x0821 "int[]")
+
+0x00000773:     DW_TAG_variable
+                  DW_AT_location	(0x000000ec
+                     0x0000000000000453 - 0x0000000000000462: DW_OP_reg0 EAX)
+                  DW_AT_name	("ret")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                  DW_AT_decl_line	(82)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000782:     NULL
+
+0x00000783:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000522)
+                DW_AT_high_pc	(0x000000000000079e)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_exit")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                DW_AT_decl_line	(227)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x00000798:     DW_TAG_variable
+                  DW_AT_location	(0x000000ff
+                     0x0000000000000533 - 0x0000000000000647: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x0000000000000647 - 0x000000000000064a: DW_OP_reg0 EAX
+                     0x000000000000064a - 0x0000000000000689: DW_OP_breg5 EBP-74
+                     0x0000000000000689 - 0x000000000000068f: DW_OP_reg2 EDX
+                     0x000000000000068f - 0x0000000000000695: DW_OP_breg5 EBP-73
+                     0x0000000000000695 - 0x000000000000079e: DW_OP_breg5 EBP-74)
+                  DW_AT_name	("bt_disconn_cnt")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                  DW_AT_decl_line	(229)
+                  DW_AT_type	(cu + 0x0197 "u8")
+
+0x000007a7:     DW_TAG_variable
+                  DW_AT_location	(0x00000151
+                     0x00000000000006d1 - 0x0000000000000724: DW_OP_breg5 EBP-40
+                     0x0000000000000724 - 0x000000000000073a: DW_OP_reg2 EDX)
+                  DW_AT_name	("sem")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                  DW_AT_decl_line	(235)
+                  DW_AT_type	(cu + 0x04be "OS_SEM*")
+
+0x000007b6:     NULL
+
+0x000007b7:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x0000000000000009)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("cpu_reset")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(145)
+                DW_AT_prototyped	(true)
+
+0x000007c8:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000079e)
+                DW_AT_high_pc	(0x00000000000007af)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_lowpower_idle_query")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_task.c")
+                DW_AT_decl_line	(273)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0197 "u8")
+
+0x000007de:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000009)
+                DW_AT_high_pc	(0x0000000000000018)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("cpu_in_irq")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(69)
+                DW_AT_type	(cu + 0x0037 "int")
+
+0x000007f3:     DW_TAG_variable
+                  DW_AT_location	(0x00000170
+                     0x0000000000000011 - 0x0000000000000016: DW_OP_reg0 EAX)
+                  DW_AT_name	("flag")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                  DW_AT_decl_line	(71)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000802:     NULL
+
+0x00000803:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x0037 "int")
+
+0x00000808:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0584 "sizetype")
+                  DW_AT_count	(0x02)
+
+0x0000080e:     NULL
+
+0x0000080f:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x081a "unsigned short")
+                DW_AT_name	("u16")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(46)
+
+0x0000081a:   DW_TAG_base_type
+                DW_AT_name	("unsigned short")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x02)
+
+0x00000821:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x0037 "int")
+
+0x00000826:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0584 "sizetype")
+                  DW_AT_count	(0x20)
+
+0x0000082c:     NULL
+
+0x0000082d:   NULL

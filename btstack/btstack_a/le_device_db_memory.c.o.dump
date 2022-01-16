@@ -1,0 +1,658 @@
+temp.o:	file format ELF32-i386
+
+.debug_info contents:
+0x00000000: Compile Unit: length = 0x00000439 version = 0x0004 abbr_offset = 0x0000 addr_size = 0x04 (next unit at 0x0000043d)
+
+0x0000000b: DW_TAG_compile_unit
+              DW_AT_producer	("clang version 4.0.1 (git@192.168.8.109:huangzhenyu/clang.git d97b416c061747718623e97046d5e7dcb4c75555) (git@192.168.8.109:huangzhenyu/llvm.git 64c6917899f78226b6d3cf2b78db54d02abf7c85)")
+              DW_AT_language	(DW_LANG_C99)
+              DW_AT_name	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+              DW_AT_stmt_list	(0x00000000)
+              DW_AT_comp_dir	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make")
+              DW_AT_GNU_pubnames	(true)
+              DW_AT_low_pc	(0x0000000000000000)
+              DW_AT_ranges	(0x00000000
+                 [0x00000000 - 0x00000196)
+                 [0x00000196 - 0x000006c4)
+                 [0x00000000 - 0x00000009))
+
+0x00000026:   DW_TAG_variable
+                DW_AT_name	("app_info_debug_enable")
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/profile_stack_debug.h")
+                DW_AT_decl_line	(190)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x00000037:   DW_TAG_base_type
+                DW_AT_name	("int")
+                DW_AT_encoding	(DW_ATE_signed)
+                DW_AT_byte_size	(0x04)
+
+0x0000003e:   DW_TAG_variable
+                DW_AT_name	("le_global_db_info")
+                DW_AT_type	(cu + 0x004f "le_db_info_t")
+                DW_AT_external	(true)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                DW_AT_decl_line	(97)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x0000004f:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x005a "structure ")
+                DW_AT_name	("le_db_info_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                DW_AT_decl_line	(95)
+
+0x0000005a:   DW_TAG_structure_type
+                DW_AT_byte_size	(0x20)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                DW_AT_decl_line	(93)
+
+0x0000005e:     DW_TAG_member
+                  DW_AT_name	("le_devices")
+                  DW_AT_type	(cu + 0x006b "le_device_memory_db_t*[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(94)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000006a:     NULL
+
+0x0000006b:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x0077 "le_device_memory_db_t*")
+
+0x00000070:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0125 "sizetype")
+                  DW_AT_count	(0x08)
+
+0x00000076:     NULL
+
+0x00000077:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x007c "le_device_memory_db_t")
+
+0x0000007c:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0087 "le_device_memory_db")
+                DW_AT_name	("le_device_memory_db_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                DW_AT_decl_line	(85)
+
+0x00000087:   DW_TAG_structure_type
+                DW_AT_name	("le_device_memory_db")
+                DW_AT_byte_size	(0x38)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                DW_AT_decl_line	(59)
+
+0x0000008f:     DW_TAG_member
+                  DW_AT_name	("addr_type")
+                  DW_AT_type	(cu + 0x0037 "int")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(62)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000009b:     DW_TAG_member
+                  DW_AT_name	("addr")
+                  DW_AT_type	(cu + 0x00fc "bd_addr_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(63)
+                  DW_AT_data_member_location	(0x04)
+
+0x000000a7:     DW_TAG_member
+                  DW_AT_name	("irk")
+                  DW_AT_type	(cu + 0x012c "sm_key_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(64)
+                  DW_AT_data_member_location	(0x0a)
+
+0x000000b3:     DW_TAG_member
+                  DW_AT_name	("ltk")
+                  DW_AT_type	(cu + 0x012c "sm_key_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(68)
+                  DW_AT_data_member_location	(0x1a)
+
+0x000000bf:     DW_TAG_member
+                  DW_AT_name	("ediv")
+                  DW_AT_type	(cu + 0x0143 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(69)
+                  DW_AT_data_member_location	(0x2a)
+
+0x000000cb:     DW_TAG_member
+                  DW_AT_name	("rand")
+                  DW_AT_type	(cu + 0x0155 "uint8_t[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(70)
+                  DW_AT_data_member_location	(0x2c)
+
+0x000000d7:     DW_TAG_member
+                  DW_AT_name	("key_size")
+                  DW_AT_type	(cu + 0x0113 "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(71)
+                  DW_AT_data_member_location	(0x34)
+
+0x000000e3:     DW_TAG_member
+                  DW_AT_name	("authenticated")
+                  DW_AT_type	(cu + 0x0113 "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(72)
+                  DW_AT_data_member_location	(0x35)
+
+0x000000ef:     DW_TAG_member
+                  DW_AT_name	("authorized")
+                  DW_AT_type	(cu + 0x0113 "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(73)
+                  DW_AT_data_member_location	(0x36)
+
+0x000000fb:     NULL
+
+0x000000fc:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0107 "uint8_t[]")
+                DW_AT_name	("bd_addr_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/utils.h")
+                DW_AT_decl_line	(66)
+
+0x00000107:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x0113 "uint8_t")
+
+0x0000010c:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0125 "sizetype")
+                  DW_AT_count	(0x06)
+
+0x00000112:     NULL
+
+0x00000113:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x011e "unsigned char")
+                DW_AT_name	("uint8_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(44)
+
+0x0000011e:   DW_TAG_base_type
+                DW_AT_name	("unsigned char")
+                DW_AT_encoding	(DW_ATE_unsigned_char)
+                DW_AT_byte_size	(0x01)
+
+0x00000125:   DW_TAG_base_type
+                DW_AT_name	("sizetype")
+                DW_AT_byte_size	(0x08)
+                DW_AT_encoding	(DW_ATE_unsigned)
+
+0x0000012c:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0137 "uint8_t[]")
+                DW_AT_name	("sm_key_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/utils.h")
+                DW_AT_decl_line	(90)
+
+0x00000137:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x0113 "uint8_t")
+
+0x0000013c:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0125 "sizetype")
+                  DW_AT_count	(0x10)
+
+0x00000142:     NULL
+
+0x00000143:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x014e "unsigned short")
+                DW_AT_name	("uint16_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(46)
+
+0x0000014e:   DW_TAG_base_type
+                DW_AT_name	("unsigned short")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x02)
+
+0x00000155:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x0113 "uint8_t")
+
+0x0000015a:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0125 "sizetype")
+                  DW_AT_count	(0x08)
+
+0x00000160:     NULL
+
+0x00000161:   DW_TAG_subprogram
+                DW_AT_name	("le_device_db_remove")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                DW_AT_decl_line	(163)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000169:     DW_TAG_formal_parameter
+                  DW_AT_name	("index")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(163)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000174:     NULL
+
+0x00000175:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x0000000000000196)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("le_device_db_init")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                DW_AT_decl_line	(103)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000186:     DW_TAG_variable
+                  DW_AT_location	(0x00000000
+                     0x00000000000000be - 0x00000000000000c6: DW_OP_reg1 ECX
+                     0x00000000000000c6 - 0x0000000000000196: DW_OP_breg5 EBP-24)
+                  DW_AT_name	("db_pt")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(106)
+                  DW_AT_type	(cu + 0x0077 "le_device_memory_db_t*")
+
+0x00000195:     DW_TAG_variable
+                  DW_AT_location	(0x0000001f
+                     0x000000000000014a - 0x000000000000017e: DW_OP_consts +0, DW_OP_stack_value
+                     0x000000000000017e - 0x0000000000000186: DW_OP_reg0 EAX
+                     0x0000000000000186 - 0x000000000000018c: DW_OP_breg5 EBP-52
+                     0x000000000000018c - 0x0000000000000191: DW_OP_reg0 EAX)
+                  DW_AT_name	("i")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(105)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000001a4:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0161 "le_device_db_remove")
+                  DW_AT_low_pc	(0x0000000000000175)
+                  DW_AT_high_pc	(0x000000000000017b)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_call_line	(120)
+
+0x000001b3:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000056
+                       0x0000000000000175 - 0x000000000000017e: DW_OP_reg0 EAX)
+                    DW_AT_abstract_origin	(cu + 0x0169 "index")
+
+0x000001bc:       NULL
+
+0x000001bd:     NULL
+
+0x000001be:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x0000000000000009)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("cpu_reset")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(145)
+                DW_AT_prototyped	(true)
+
+0x000001cf:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000196)
+                DW_AT_high_pc	(0x00000000000001be)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_abstract_origin	(cu + 0x0161 "le_device_db_remove")
+
+0x000001de:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000069
+                     0x0000000000000196 - 0x00000000000001a3: DW_OP_reg0 EAX
+                     0x00000000000001a3 - 0x00000000000001be: DW_OP_breg5 EBP-4)
+                  DW_AT_abstract_origin	(cu + 0x0169 "index")
+
+0x000001e7:     NULL
+
+0x000001e8:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000001be)
+                DW_AT_high_pc	(0x0000000000000212)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("le_device_db_exit")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                DW_AT_decl_line	(125)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x000001f9:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000212)
+                DW_AT_high_pc	(0x0000000000000217)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("le_device_db_set_local_bd_addr")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                DW_AT_decl_line	(139)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x0000020a:     DW_TAG_formal_parameter
+                  DW_AT_name	("bd_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(139)
+                  DW_AT_type	(cu + 0x042d "uint8_t*")
+
+0x00000215:     NULL
+
+0x00000216:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000217)
+                DW_AT_high_pc	(0x00000000000002a8)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("le_device_db_count")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                DW_AT_decl_line	(145)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x0000022b:     DW_TAG_variable
+                  DW_AT_location	(0x00000088
+                     0x0000000000000221 - 0x000000000000027a: DW_OP_consts +0, DW_OP_stack_value
+                     0x000000000000027a - 0x0000000000000287: DW_OP_reg2 EDX
+                     0x0000000000000287 - 0x00000000000002a8: DW_OP_breg5 EBP-28)
+                  DW_AT_name	("counter")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(148)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x0000023a:     DW_TAG_variable
+                  DW_AT_location	(0x000000b4
+                     0x0000000000000239 - 0x000000000000027d: DW_OP_consts +0, DW_OP_stack_value
+                     0x000000000000027d - 0x0000000000000296: DW_OP_reg0 EAX)
+                  DW_AT_name	("i")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(147)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000249:     NULL
+
+0x0000024a:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000002a8)
+                DW_AT_high_pc	(0x00000000000003d7)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("le_device_db_add")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                DW_AT_decl_line	(172)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x0000025f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000000d4
+                     0x00000000000002a8 - 0x00000000000002cf: DW_OP_reg2 EDX
+                     0x00000000000002cf - 0x00000000000003d7: DW_OP_breg5 EBP-24)
+                  DW_AT_name	("addr_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(172)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x0000026e:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000000f3
+                     0x00000000000002a8 - 0x00000000000002cc: DW_OP_reg1 ECX
+                     0x00000000000002cc - 0x00000000000003d7: DW_OP_breg5 EBP-20)
+                  DW_AT_name	("addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(172)
+                  DW_AT_type	(cu + 0x042d "uint8_t*")
+
+0x0000027d:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000112
+                     0x00000000000002a8 - 0x00000000000002c9: DW_OP_reg0 EAX
+                     0x00000000000002c9 - 0x00000000000003d7: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("irk")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(172)
+                  DW_AT_type	(cu + 0x042d "uint8_t*")
+
+0x0000028c:     DW_TAG_variable
+                  DW_AT_const_value	(4294967295)
+                  DW_AT_name	("index")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(175)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x0000029c:     DW_TAG_variable
+                  DW_AT_location	(0x00000131
+                     0x00000000000002d8 - 0x0000000000000325: DW_OP_consts +0, DW_OP_stack_value
+                     0x0000000000000325 - 0x000000000000032d: DW_OP_reg0 EAX
+                     0x000000000000032d - 0x0000000000000349: DW_OP_breg5 EBP-36
+                     0x0000000000000349 - 0x000000000000034e: DW_OP_reg0 EAX)
+                  DW_AT_name	("i")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(174)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000002ab:     NULL
+
+0x000002ac:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000003d7)
+                DW_AT_high_pc	(0x000000000000050f)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("le_device_db_info")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                DW_AT_decl_line	(207)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x000002bd:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000168
+                     0x00000000000003d7 - 0x0000000000000401: DW_OP_reg6 ESI
+                     0x0000000000000401 - 0x000000000000050f: DW_OP_breg5 EBP-28)
+                  DW_AT_name	("index")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(207)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000002cc:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000187
+                     0x00000000000003d7 - 0x00000000000003fe: DW_OP_reg2 EDX
+                     0x00000000000003fe - 0x000000000000050f: DW_OP_breg5 EBP-24)
+                  DW_AT_name	("addr_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(207)
+                  DW_AT_type	(cu + 0x0432 "int*")
+
+0x000002db:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000001a6
+                     0x00000000000003d7 - 0x00000000000003fb: DW_OP_reg1 ECX
+                     0x00000000000003fb - 0x000000000000050f: DW_OP_breg5 EBP-20)
+                  DW_AT_name	("addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(207)
+                  DW_AT_type	(cu + 0x042d "uint8_t*")
+
+0x000002ea:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000001c5
+                     0x00000000000003d7 - 0x00000000000003f8: DW_OP_reg0 EAX
+                     0x00000000000003f8 - 0x000000000000050f: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("irk")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(207)
+                  DW_AT_type	(cu + 0x042d "uint8_t*")
+
+0x000002f9:     NULL
+
+0x000002fa:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000050f)
+                DW_AT_high_pc	(0x00000000000005c9)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("le_device_db_encryption_set")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                DW_AT_decl_line	(234)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x0000030b:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000001e4
+                     0x000000000000050f - 0x0000000000000537: DW_OP_reg0 EAX
+                     0x0000000000000537 - 0x00000000000005c9: DW_OP_breg5 EBP-20)
+                  DW_AT_name	("index")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(234)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x0000031a:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000203
+                     0x000000000000050f - 0x0000000000000547: DW_OP_reg3 EBX
+                     0x0000000000000547 - 0x00000000000005c9: DW_OP_breg5 EBP-38)
+                  DW_AT_name	("ediv")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(234)
+                  DW_AT_type	(cu + 0x0143 "uint16_t")
+
+0x00000329:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000222
+                     0x000000000000050f - 0x0000000000000543: DW_OP_reg7 EDI
+                     0x0000000000000543 - 0x00000000000005c9: DW_OP_breg5 EBP-36)
+                  DW_AT_name	("rand")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(234)
+                  DW_AT_type	(cu + 0x042d "uint8_t*")
+
+0x00000338:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000241
+                     0x000000000000050f - 0x0000000000000540: DW_OP_reg6 ESI
+                     0x0000000000000540 - 0x00000000000005c9: DW_OP_breg5 EBP-32)
+                  DW_AT_name	("ltk")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(234)
+                  DW_AT_type	(cu + 0x042d "uint8_t*")
+
+0x00000347:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000260
+                     0x000000000000050f - 0x000000000000053d: DW_OP_reg2 EDX
+                     0x000000000000053d - 0x00000000000005c9: DW_OP_breg5 EBP-28)
+                  DW_AT_name	("key_size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(234)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000356:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000027f
+                     0x000000000000050f - 0x000000000000053a: DW_OP_reg1 ECX
+                     0x000000000000053a - 0x00000000000005c9: DW_OP_breg5 EBP-24)
+                  DW_AT_name	("authenticated")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(234)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000365:     DW_TAG_formal_parameter
+                  DW_AT_location	(DW_OP_fbreg -16)
+                  DW_AT_name	("authorized")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(234)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000373:     DW_TAG_variable
+                  DW_AT_location	(0x0000029e
+                     0x0000000000000557 - 0x0000000000000568: DW_OP_reg1 ECX
+                     0x0000000000000568 - 0x00000000000005c9: DW_OP_breg5 EBP-44)
+                  DW_AT_name	("device")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(242)
+                  DW_AT_type	(cu + 0x0077 "le_device_memory_db_t*")
+
+0x00000382:     NULL
+
+0x00000383:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000005c9)
+                DW_AT_high_pc	(0x00000000000006bf)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("le_device_db_encryption_get")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                DW_AT_decl_line	(255)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000394:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000002bd
+                     0x00000000000005c9 - 0x00000000000005f0: DW_OP_reg0 EAX
+                     0x00000000000005f0 - 0x00000000000006bf: DW_OP_breg5 EBP-20)
+                  DW_AT_name	("index")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(255)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000003a3:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000002dc
+                     0x00000000000005c9 - 0x00000000000005ff: DW_OP_reg3 EBX
+                     0x00000000000005ff - 0x00000000000006bf: DW_OP_breg5 EBP-40)
+                  DW_AT_name	("ediv")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(255)
+                  DW_AT_type	(cu + 0x0437 "uint16_t*")
+
+0x000003b2:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000002fb
+                     0x00000000000005c9 - 0x00000000000005fc: DW_OP_reg7 EDI
+                     0x00000000000005fc - 0x00000000000006bf: DW_OP_breg5 EBP-36)
+                  DW_AT_name	("rand")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(255)
+                  DW_AT_type	(cu + 0x042d "uint8_t*")
+
+0x000003c1:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000031a
+                     0x00000000000005c9 - 0x00000000000005f9: DW_OP_reg6 ESI
+                     0x00000000000005f9 - 0x00000000000006bf: DW_OP_breg5 EBP-32)
+                  DW_AT_name	("ltk")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(255)
+                  DW_AT_type	(cu + 0x042d "uint8_t*")
+
+0x000003d0:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000339
+                     0x00000000000005c9 - 0x00000000000005f6: DW_OP_reg2 EDX
+                     0x00000000000005f6 - 0x00000000000006bf: DW_OP_breg5 EBP-28)
+                  DW_AT_name	("key_size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(255)
+                  DW_AT_type	(cu + 0x0432 "int*")
+
+0x000003df:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000358
+                     0x00000000000005c9 - 0x00000000000005f3: DW_OP_reg1 ECX
+                     0x00000000000005f3 - 0x00000000000006bf: DW_OP_breg5 EBP-24)
+                  DW_AT_name	("authenticated")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(255)
+                  DW_AT_type	(cu + 0x0432 "int*")
+
+0x000003ee:     DW_TAG_formal_parameter
+                  DW_AT_location	(DW_OP_fbreg -16)
+                  DW_AT_name	("authorized")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(255)
+                  DW_AT_type	(cu + 0x0432 "int*")
+
+0x000003fc:     DW_TAG_variable
+                  DW_AT_location	(0x00000377
+                     0x000000000000060f - 0x0000000000000618: DW_OP_reg1 ECX
+                     0x0000000000000618 - 0x00000000000006bf: DW_OP_breg5 EBP-44)
+                  DW_AT_name	("device")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(261)
+                  DW_AT_type	(cu + 0x0077 "le_device_memory_db_t*")
+
+0x0000040c:     NULL
+
+0x0000040d:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000006bf)
+                DW_AT_high_pc	(0x00000000000006c4)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("le_device_db_dump")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                DW_AT_decl_line	(369)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x0000041f:     DW_TAG_variable
+                  DW_AT_const_value	(0)
+                  DW_AT_name	("i")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Host/BLE/le_device_db_memory.c")
+                  DW_AT_decl_line	(372)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x0000042c:     NULL
+
+0x0000042d:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0113 "uint8_t")
+
+0x00000432:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0037 "int")
+
+0x00000437:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0143 "uint16_t")
+
+0x0000043c:   NULL

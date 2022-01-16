@@ -1,0 +1,311 @@
+temp.o:	file format ELF32-i386
+
+.debug_info contents:
+0x00000000: Compile Unit: length = 0x00000203 version = 0x0004 abbr_offset = 0x0000 addr_size = 0x04 (next unit at 0x00000207)
+
+0x0000000b: DW_TAG_compile_unit
+              DW_AT_producer	("clang version 4.0.1 (git@192.168.8.109:huangzhenyu/clang.git d97b416c061747718623e97046d5e7dcb4c75555) (git@192.168.8.109:huangzhenyu/llvm.git 64c6917899f78226b6d3cf2b78db54d02abf7c85)")
+              DW_AT_language	(DW_LANG_C99)
+              DW_AT_name	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+              DW_AT_stmt_list	(0x00000000)
+              DW_AT_comp_dir	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make")
+              DW_AT_GNU_pubnames	(true)
+              DW_AT_low_pc	(0x0000000000000000)
+              DW_AT_high_pc	(0x000000000000039b)
+
+0x00000026:   DW_TAG_variable
+                DW_AT_name	("mesh_notify_lbuf_head")
+                DW_AT_type	(cu + 0x0037 "lbuff_head*")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                DW_AT_decl_line	(36)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x00000037:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x003c "lbuff_head")
+
+0x0000003c:   DW_TAG_structure_type
+                DW_AT_name	("lbuff_head")
+                DW_AT_declaration	(true)
+
+0x00000041:   DW_TAG_pointer_type
+
+0x00000042:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0047 "uint8_t")
+
+0x00000047:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0052 "unsigned char")
+                DW_AT_name	("uint8_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                DW_AT_decl_line	(22)
+
+0x00000052:   DW_TAG_base_type
+                DW_AT_name	("unsigned char")
+                DW_AT_encoding	(DW_ATE_unsigned_char)
+                DW_AT_byte_size	(0x01)
+
+0x00000059:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x005e "__mesh_gatt_notify_data")
+
+0x0000005e:   DW_TAG_structure_type
+                DW_AT_name	("__mesh_gatt_notify_data")
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                DW_AT_decl_line	(30)
+
+0x00000066:     DW_TAG_member
+                  DW_AT_name	("att_handle")
+                  DW_AT_type	(cu + 0x008b "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                  DW_AT_decl_line	(31)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000072:     DW_TAG_member
+                  DW_AT_name	("len")
+                  DW_AT_type	(cu + 0x008b "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                  DW_AT_decl_line	(32)
+                  DW_AT_data_member_location	(0x02)
+
+0x0000007e:     DW_TAG_member
+                  DW_AT_name	("data")
+                  DW_AT_type	(cu + 0x009d "u8[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                  DW_AT_decl_line	(33)
+                  DW_AT_data_member_location	(0x04)
+
+0x0000008a:     NULL
+
+0x0000008b:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0096 "unsigned short")
+                DW_AT_name	("u16")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(46)
+
+0x00000096:   DW_TAG_base_type
+                DW_AT_name	("unsigned short")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x02)
+
+0x0000009d:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x00a9 "u8")
+
+0x000000a2:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x00b4 "sizetype")
+                  DW_AT_count	(0x00)
+
+0x000000a8:     NULL
+
+0x000000a9:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0052 "unsigned char")
+                DW_AT_name	("u8")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(44)
+
+0x000000b4:   DW_TAG_base_type
+                DW_AT_name	("sizetype")
+                DW_AT_byte_size	(0x08)
+                DW_AT_encoding	(DW_ATE_unsigned)
+
+0x000000bb:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x000000000000014c)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("notify_remain_data")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                DW_AT_decl_line	(38)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x000000cc:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000000
+                     0x0000000000000000 - 0x000000000000001e: DW_OP_reg0 EAX
+                     0x000000000000001e - 0x000000000000014c: DW_OP_breg5 EBP-14)
+                  DW_AT_name	("conn_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                  DW_AT_decl_line	(38)
+                  DW_AT_type	(cu + 0x008b "u16")
+
+0x000000db:     DW_TAG_variable
+                  DW_AT_location	(0x0000001f
+                     0x000000000000000d - 0x00000000000000d5: DW_OP_consts +0, DW_OP_stack_value
+                     0x00000000000000d5 - 0x00000000000000ed: DW_OP_reg0 EAX
+                     0x00000000000000ed - 0x000000000000014c: DW_OP_breg5 EBP-40)
+                  DW_AT_name	("err")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                  DW_AT_decl_line	(40)
+                  DW_AT_type	(cu + 0x01e9 "int")
+
+0x000000ea:     DW_TAG_variable
+                  DW_AT_name	("notify_data")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                  DW_AT_decl_line	(44)
+                  DW_AT_type	(cu + 0x0059 "__mesh_gatt_notify_data*")
+
+0x000000f5:     NULL
+
+0x000000f6:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000014c)
+                DW_AT_high_pc	(0x0000000000000324)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("mesh_gatt_notify")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                DW_AT_decl_line	(65)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x01e9 "int")
+                DW_AT_external	(true)
+
+0x0000010b:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000004b
+                     0x000000000000014c - 0x0000000000000179: DW_OP_reg6 ESI
+                     0x0000000000000179 - 0x0000000000000324: DW_OP_breg5 EBP-20)
+                  DW_AT_name	("conn_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                  DW_AT_decl_line	(65)
+                  DW_AT_type	(cu + 0x008b "u16")
+
+0x0000011a:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000006a
+                     0x000000000000014c - 0x0000000000000175: DW_OP_reg2 EDX
+                     0x0000000000000175 - 0x0000000000000324: DW_OP_breg5 EBP-18)
+                  DW_AT_name	("att_handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                  DW_AT_decl_line	(65)
+                  DW_AT_type	(cu + 0x008b "u16")
+
+0x00000129:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000089
+                     0x000000000000014c - 0x0000000000000171: DW_OP_reg1 ECX
+                     0x0000000000000171 - 0x0000000000000324: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("data")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                  DW_AT_decl_line	(65)
+                  DW_AT_type	(cu + 0x01f0 "const *")
+
+0x00000138:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000000a8
+                     0x000000000000014c - 0x000000000000016e: DW_OP_reg0 EAX
+                     0x000000000000016e - 0x0000000000000324: DW_OP_breg5 EBP-10)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                  DW_AT_decl_line	(65)
+                  DW_AT_type	(cu + 0x01f6 "u16_t")
+
+0x00000147:     DW_TAG_variable
+                  DW_AT_location	(0x000000c7
+                     0x00000000000001b4 - 0x00000000000001f6: DW_OP_consts +0, DW_OP_stack_value
+                     0x00000000000001f6 - 0x00000000000001fc: DW_OP_reg0 EAX
+                     0x00000000000001fc - 0x0000000000000324: DW_OP_breg5 EBP-32)
+                  DW_AT_name	("err")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                  DW_AT_decl_line	(69)
+                  DW_AT_type	(cu + 0x01e9 "int")
+
+0x00000156:     DW_TAG_lexical_block
+                  DW_AT_low_pc	(0x0000000000000202)
+                  DW_AT_high_pc	(0x0000000000000306)
+
+0x0000015f:       DW_TAG_variable
+                    DW_AT_name	("notify_data")
+                    DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                    DW_AT_decl_line	(80)
+                    DW_AT_type	(cu + 0x0059 "__mesh_gatt_notify_data*")
+
+0x0000016a:       NULL
+
+0x0000016b:     NULL
+
+0x0000016c:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000324)
+                DW_AT_high_pc	(0x000000000000034c)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("mesh_gatt_set_callback")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                DW_AT_decl_line	(101)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x0000017d:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000000f3
+                     0x0000000000000324 - 0x000000000000033b: DW_OP_reg1 ECX)
+                  DW_AT_name	("read_cb")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                  DW_AT_decl_line	(101)
+                  DW_AT_type	(cu + 0x0041 "*")
+
+0x0000018c:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000106
+                     0x0000000000000324 - 0x0000000000000336: DW_OP_reg0 EAX
+                     0x0000000000000336 - 0x000000000000034c: DW_OP_breg5 EBP-4)
+                  DW_AT_name	("write_cb")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                  DW_AT_decl_line	(101)
+                  DW_AT_type	(cu + 0x0041 "*")
+
+0x0000019b:     NULL
+
+0x0000019c:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000034c)
+                DW_AT_high_pc	(0x000000000000035f)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("mesh_gatt_change_profile")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                DW_AT_decl_line	(108)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x000001ad:     DW_TAG_formal_parameter
+                  DW_AT_name	("data")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                  DW_AT_decl_line	(108)
+                  DW_AT_type	(cu + 0x0041 "*")
+
+0x000001b8:     NULL
+
+0x000001b9:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000035f)
+                DW_AT_high_pc	(0x000000000000039b)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("mesh_gatt_init")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                DW_AT_decl_line	(113)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x000001ca:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000125
+                     0x000000000000035f - 0x000000000000037b: DW_OP_reg1 ECX)
+                  DW_AT_name	("buf")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                  DW_AT_decl_line	(113)
+                  DW_AT_type	(cu + 0x0201 "u8*")
+
+0x000001d9:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000138
+                     0x000000000000035f - 0x000000000000037b: DW_OP_reg0 EAX)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                  DW_AT_decl_line	(113)
+                  DW_AT_type	(cu + 0x008b "u16")
+
+0x000001e8:     NULL
+
+0x000001e9:   DW_TAG_base_type
+                DW_AT_name	("int")
+                DW_AT_encoding	(DW_ATE_signed)
+                DW_AT_byte_size	(0x04)
+
+0x000001f0:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x01f5 "const ")
+
+0x000001f5:   DW_TAG_const_type
+
+0x000001f6:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0096 "unsigned short")
+                DW_AT_name	("u16_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BLE/mesh/lib_adaptation/mesh_gatt.c")
+                DW_AT_decl_line	(24)
+
+0x00000201:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x00a9 "u8")
+
+0x00000206:   NULL

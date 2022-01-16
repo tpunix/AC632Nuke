@@ -1,0 +1,1260 @@
+temp.o:	file format ELF32-i386
+
+.debug_info contents:
+0x00000000: Compile Unit: length = 0x000007eb version = 0x0004 abbr_offset = 0x0000 addr_size = 0x04 (next unit at 0x000007ef)
+
+0x0000000b: DW_TAG_compile_unit
+              DW_AT_producer	("clang version 4.0.1 (git@192.168.8.109:huangzhenyu/clang.git d97b416c061747718623e97046d5e7dcb4c75555) (git@192.168.8.109:huangzhenyu/llvm.git 64c6917899f78226b6d3cf2b78db54d02abf7c85)")
+              DW_AT_language	(DW_LANG_C99)
+              DW_AT_name	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+              DW_AT_stmt_list	(0x00000000)
+              DW_AT_comp_dir	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make")
+              DW_AT_GNU_pubnames	(true)
+              DW_AT_low_pc	(0x0000000000000000)
+              DW_AT_high_pc	(0x0000000000000025)
+
+0x00000026:   DW_TAG_variable
+                DW_AT_name	("app_info_debug_enable")
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/profile_stack_debug.h")
+                DW_AT_decl_line	(190)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x00000037:   DW_TAG_base_type
+                DW_AT_name	("int")
+                DW_AT_encoding	(DW_ATE_signed)
+                DW_AT_byte_size	(0x04)
+
+0x0000003e:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x000000000000000a)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("a2dp_source_init")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+                DW_AT_decl_line	(1022)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x00000054:     DW_TAG_formal_parameter
+                  DW_AT_name	("buf")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+                  DW_AT_decl_line	(1022)
+                  DW_AT_type	(cu + 0x016a "*")
+
+0x00000060:     DW_TAG_formal_parameter
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+                  DW_AT_decl_line	(1022)
+                  DW_AT_type	(cu + 0x016b "u16")
+
+0x0000006c:     DW_TAG_formal_parameter
+                  DW_AT_name	("deal_flag")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+                  DW_AT_decl_line	(1022)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000078:     NULL
+
+0x00000079:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000000a)
+                DW_AT_high_pc	(0x0000000000000016)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("get_a2dp_source_support")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+                DW_AT_decl_line	(1026)
+                DW_AT_type	(cu + 0x0158 "u8")
+                DW_AT_external	(true)
+
+0x0000008f:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000016)
+                DW_AT_high_pc	(0x000000000000001b)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("__emitter_send_media_toggle")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+                DW_AT_decl_line	(1031)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x000000a1:     DW_TAG_formal_parameter
+                  DW_AT_name	("addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+                  DW_AT_decl_line	(1031)
+                  DW_AT_type	(cu + 0x017d "u8*")
+
+0x000000ad:     DW_TAG_formal_parameter
+                  DW_AT_name	("toggle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+                  DW_AT_decl_line	(1031)
+                  DW_AT_type	(cu + 0x0158 "u8")
+
+0x000000b9:     NULL
+
+0x000000ba:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000001b)
+                DW_AT_high_pc	(0x0000000000000020)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("a2dp_media_packet_info")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+                DW_AT_decl_line	(1035)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x000000cc:     DW_TAG_formal_parameter
+                  DW_AT_name	("a2dp_conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+                  DW_AT_decl_line	(1035)
+                  DW_AT_type	(cu + 0x0182 "a2dp_conn*")
+
+0x000000d8:     DW_TAG_formal_parameter
+                  DW_AT_name	("cp_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+                  DW_AT_decl_line	(1035)
+                  DW_AT_type	(cu + 0x0158 "u8")
+
+0x000000e4:     DW_TAG_formal_parameter
+                  DW_AT_name	("remote_mtu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+                  DW_AT_decl_line	(1035)
+                  DW_AT_type	(cu + 0x016b "u16")
+
+0x000000f0:     NULL
+
+0x000000f1:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000020)
+                DW_AT_high_pc	(0x0000000000000025)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("sbc_param_init")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+                DW_AT_decl_line	(1038)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000103:     DW_TAG_formal_parameter
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+                  DW_AT_decl_line	(1038)
+                  DW_AT_type	(cu + 0x0182 "a2dp_conn*")
+
+0x0000010f:     DW_TAG_formal_parameter
+                  DW_AT_name	("channel_mode")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+                  DW_AT_decl_line	(1038)
+                  DW_AT_type	(cu + 0x0158 "u8")
+
+0x0000011b:     DW_TAG_formal_parameter
+                  DW_AT_name	("block_length")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+                  DW_AT_decl_line	(1038)
+                  DW_AT_type	(cu + 0x0158 "u8")
+
+0x00000127:     DW_TAG_formal_parameter
+                  DW_AT_name	("subbands")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+                  DW_AT_decl_line	(1038)
+                  DW_AT_type	(cu + 0x0158 "u8")
+
+0x00000133:     DW_TAG_formal_parameter
+                  DW_AT_name	("allocation_method")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+                  DW_AT_decl_line	(1038)
+                  DW_AT_type	(cu + 0x0158 "u8")
+
+0x0000013f:     DW_TAG_formal_parameter
+                  DW_AT_name	("frequency")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+                  DW_AT_decl_line	(1039)
+                  DW_AT_type	(cu + 0x0158 "u8")
+
+0x0000014b:     DW_TAG_formal_parameter
+                  DW_AT_name	("max_bitpool")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/a2dp_source.c")
+                  DW_AT_decl_line	(1039)
+                  DW_AT_type	(cu + 0x0158 "u8")
+
+0x00000157:     NULL
+
+0x00000158:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0163 "unsigned char")
+                DW_AT_name	("u8")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(44)
+
+0x00000163:   DW_TAG_base_type
+                DW_AT_name	("unsigned char")
+                DW_AT_encoding	(DW_ATE_unsigned_char)
+                DW_AT_byte_size	(0x01)
+
+0x0000016a:   DW_TAG_pointer_type
+
+0x0000016b:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0176 "unsigned short")
+                DW_AT_name	("u16")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(46)
+
+0x00000176:   DW_TAG_base_type
+                DW_AT_name	("unsigned short")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x02)
+
+0x0000017d:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0158 "u8")
+
+0x00000182:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0187 "a2dp_conn")
+
+0x00000187:   DW_TAG_structure_type
+                DW_AT_name	("a2dp_conn")
+                DW_AT_byte_size	(0x80)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                DW_AT_decl_line	(237)
+
+0x0000018f:     DW_TAG_member
+                  DW_AT_name	("addr")
+                  DW_AT_type	(cu + 0x01c0 "bd_addr_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(238)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000019b:     DW_TAG_member
+                  DW_AT_name	("a2dp_core_data")
+                  DW_AT_type	(cu + 0x01e9 "a2dp_core_data_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(239)
+                  DW_AT_data_member_location	(0x06)
+
+0x000001a7:     DW_TAG_member
+                  DW_AT_name	("session")
+                  DW_AT_type	(cu + 0x0226 "avdtp")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(240)
+                  DW_AT_data_member_location	(0x08)
+
+0x000001b3:     DW_TAG_member
+                  DW_AT_name	("media")
+                  DW_AT_type	(cu + 0x060a "a2dp_media")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(241)
+                  DW_AT_data_member_location	(0x68)
+
+0x000001bf:     NULL
+
+0x000001c0:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x01cb "uint8_t[]")
+                DW_AT_name	("bd_addr_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/btstack_typedef.h")
+                DW_AT_decl_line	(7)
+
+0x000001cb:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x01d7 "uint8_t")
+
+0x000001d0:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x01e2 "sizetype")
+                  DW_AT_count	(0x06)
+
+0x000001d6:     NULL
+
+0x000001d7:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0163 "unsigned char")
+                DW_AT_name	("uint8_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(44)
+
+0x000001e2:   DW_TAG_base_type
+                DW_AT_name	("sizetype")
+                DW_AT_byte_size	(0x08)
+                DW_AT_encoding	(DW_ATE_unsigned)
+
+0x000001e9:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x01f4 "structure ")
+                DW_AT_name	("a2dp_core_data_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                DW_AT_decl_line	(229)
+
+0x000001f4:   DW_TAG_structure_type
+                DW_AT_byte_size	(0x01)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                DW_AT_decl_line	(225)
+
+0x000001f8:     DW_TAG_member
+                  DW_AT_name	("inused")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(226)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x07)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000207:     DW_TAG_member
+                  DW_AT_name	("discover_req")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(227)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x03)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000216:     DW_TAG_member
+                  DW_AT_name	("bqb_test_cnt")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(228)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x03)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000225:     NULL
+
+0x00000226:   DW_TAG_structure_type
+                DW_AT_name	("avdtp")
+                DW_AT_byte_size	(0x60)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                DW_AT_decl_line	(335)
+
+0x0000022f:     DW_TAG_member
+                  DW_AT_name	("local_seps")
+                  DW_AT_type	(cu + 0x024a "avdtp_local_sep[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(337)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000023c:     DW_TAG_member
+                  DW_AT_name	("adp_core_data")
+                  DW_AT_type	(cu + 0x04f2 "avdtp_core_data_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(338)
+                  DW_AT_data_member_location	(0x38)
+
+0x00000249:     NULL
+
+0x0000024a:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x0256 "avdtp_local_sep")
+
+0x0000024f:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x01e2 "sizetype")
+                  DW_AT_count	(0x02)
+
+0x00000255:     NULL
+
+0x00000256:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0262 "_avdtp_local_sep")
+                DW_AT_name	("avdtp_local_sep")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                DW_AT_decl_line	(293)
+
+0x00000262:   DW_TAG_structure_type
+                DW_AT_name	("_avdtp_local_sep")
+                DW_AT_byte_size	(0x1c)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                DW_AT_decl_line	(282)
+
+0x0000026b:     DW_TAG_member
+                  DW_AT_name	("ind")
+                  DW_AT_type	(cu + 0x02c0 "const _avdtp_sep_ind*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(283)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000278:     DW_TAG_member
+                  DW_AT_name	("session")
+                  DW_AT_type	(cu + 0x0473 "avdtp*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(284)
+                  DW_AT_data_member_location	(0x04)
+
+0x00000285:     DW_TAG_member
+                  DW_AT_name	("info")
+                  DW_AT_type	(cu + 0x0478 "seid_info")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(286)
+                  DW_AT_data_member_location	(0x08)
+
+0x00000292:     DW_TAG_member
+                  DW_AT_name	("state")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(288)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x04)
+                  DW_AT_data_member_location	(0x0a)
+
+0x000002a2:     DW_TAG_member
+                  DW_AT_name	("codec_type")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(289)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x0a)
+
+0x000002b2:     DW_TAG_member
+                  DW_AT_name	("config")
+                  DW_AT_type	(cu + 0x04e6 "u8[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(290)
+                  DW_AT_data_member_location	(0x0b)
+
+0x000002bf:     NULL
+
+0x000002c0:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x02c5 "const _avdtp_sep_ind")
+
+0x000002c5:   DW_TAG_const_type
+                DW_AT_type	(cu + 0x02ca "_avdtp_sep_ind")
+
+0x000002ca:   DW_TAG_structure_type
+                DW_AT_name	("_avdtp_sep_ind")
+                DW_AT_byte_size	(0x24)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                DW_AT_decl_line	(350)
+
+0x000002d3:     DW_TAG_member
+                  DW_AT_name	("get_capability")
+                  DW_AT_type	(cu + 0x0349 "subroutine bool*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(351)
+                  DW_AT_data_member_location	(0x00)
+
+0x000002e0:     DW_TAG_member
+                  DW_AT_name	("set_configuration")
+                  DW_AT_type	(cu + 0x036e "subroutine bool*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(353)
+                  DW_AT_data_member_location	(0x04)
+
+0x000002ed:     DW_TAG_member
+                  DW_AT_name	("open")
+                  DW_AT_type	(cu + 0x0392 "subroutine bool*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(355)
+                  DW_AT_data_member_location	(0x08)
+
+0x000002fa:     DW_TAG_member
+                  DW_AT_name	("start")
+                  DW_AT_type	(cu + 0x0417 "subroutine bool*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(356)
+                  DW_AT_data_member_location	(0x0c)
+
+0x00000307:     DW_TAG_member
+                  DW_AT_name	("suspend")
+                  DW_AT_type	(cu + 0x0417 "subroutine bool*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(357)
+                  DW_AT_data_member_location	(0x10)
+
+0x00000314:     DW_TAG_member
+                  DW_AT_name	("close")
+                  DW_AT_type	(cu + 0x042c "subroutine bool*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(359)
+                  DW_AT_data_member_location	(0x14)
+
+0x00000321:     DW_TAG_member
+                  DW_AT_name	("abort")
+                  DW_AT_type	(cu + 0x0446 "subroutine *")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(361)
+                  DW_AT_data_member_location	(0x18)
+
+0x0000032e:     DW_TAG_member
+                  DW_AT_name	("reconfigure")
+                  DW_AT_type	(cu + 0x0452 "subroutine bool*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(362)
+                  DW_AT_data_member_location	(0x1c)
+
+0x0000033b:     DW_TAG_member
+                  DW_AT_name	("delayreport")
+                  DW_AT_type	(cu + 0x045e "subroutine bool*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(363)
+                  DW_AT_data_member_location	(0x20)
+
+0x00000348:     NULL
+
+0x00000349:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x034e "subroutine bool")
+
+0x0000034e:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x0363 "bool")
+                DW_AT_prototyped	(true)
+
+0x00000353:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x0158 "u8")
+
+0x00000358:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x016a "*")
+
+0x0000035d:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x017d "u8*")
+
+0x00000362:     NULL
+
+0x00000363:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0163 "unsigned char")
+                DW_AT_name	("bool")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(44)
+
+0x0000036e:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0373 "subroutine bool")
+
+0x00000373:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x0363 "bool")
+                DW_AT_prototyped	(true)
+
+0x00000378:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x038d "avdtp_local_sep*")
+
+0x0000037d:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x017d "u8*")
+
+0x00000382:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x0158 "u8")
+
+0x00000387:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x016a "*")
+
+0x0000038c:     NULL
+
+0x0000038d:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0256 "avdtp_local_sep")
+
+0x00000392:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0397 "subroutine bool")
+
+0x00000397:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x0363 "bool")
+                DW_AT_prototyped	(true)
+
+0x0000039c:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x038d "avdtp_local_sep*")
+
+0x000003a1:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x03ac "avdtp_stream*")
+
+0x000003a6:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x0158 "u8")
+
+0x000003ab:     NULL
+
+0x000003ac:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x03b1 "avdtp_stream")
+
+0x000003b1:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x03bd "_avdtp_stream")
+                DW_AT_name	("avdtp_stream")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                DW_AT_decl_line	(280)
+
+0x000003bd:   DW_TAG_structure_type
+                DW_AT_name	("_avdtp_stream")
+                DW_AT_byte_size	(0x01)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                DW_AT_decl_line	(268)
+
+0x000003c6:     DW_TAG_member
+                  DW_AT_name	("rseid")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(270)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x04)
+                  DW_AT_data_member_location	(0x00)
+
+0x000003d6:     DW_TAG_member
+                  DW_AT_name	("int_role")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(271)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x03)
+                  DW_AT_data_member_location	(0x00)
+
+0x000003e6:     DW_TAG_member
+                  DW_AT_name	("open_acp")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(272)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x02)
+                  DW_AT_data_member_location	(0x00)
+
+0x000003f6:     DW_TAG_member
+                  DW_AT_name	("starting")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(278)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x01)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000406:     DW_TAG_member
+                  DW_AT_name	("reserve")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(279)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000416:     NULL
+
+0x00000417:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x041c "subroutine bool")
+
+0x0000041c:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x0363 "bool")
+                DW_AT_prototyped	(true)
+
+0x00000421:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x038d "avdtp_local_sep*")
+
+0x00000426:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x03ac "avdtp_stream*")
+
+0x0000042b:     NULL
+
+0x0000042c:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0431 "subroutine bool")
+
+0x00000431:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x0363 "bool")
+                DW_AT_prototyped	(true)
+
+0x00000436:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x038d "avdtp_local_sep*")
+
+0x0000043b:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x03ac "avdtp_stream*")
+
+0x00000440:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x017d "u8*")
+
+0x00000445:     NULL
+
+0x00000446:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x044b "subroutine ")
+
+0x0000044b:   DW_TAG_subroutine_type
+                DW_AT_prototyped	(true)
+
+0x0000044c:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x038d "avdtp_local_sep*")
+
+0x00000451:     NULL
+
+0x00000452:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0457 "subroutine bool")
+
+0x00000457:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x0363 "bool")
+
+0x0000045c:     DW_TAG_unspecified_parameters
+
+0x0000045d:     NULL
+
+0x0000045e:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0463 "subroutine bool")
+
+0x00000463:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x0363 "bool")
+                DW_AT_prototyped	(true)
+
+0x00000468:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x0158 "u8")
+
+0x0000046d:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x016b "u16")
+
+0x00000472:     NULL
+
+0x00000473:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0226 "avdtp")
+
+0x00000478:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0483 "_seid_info")
+                DW_AT_name	("seid_info")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                DW_AT_decl_line	(124)
+
+0x00000483:   DW_TAG_structure_type
+                DW_AT_name	("_seid_info")
+                DW_AT_byte_size	(0x02)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                DW_AT_decl_line	(117)
+
+0x0000048b:     DW_TAG_member
+                  DW_AT_name	("rfa0")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(118)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x07)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000049a:     DW_TAG_member
+                  DW_AT_name	("inuse")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(119)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x06)
+                  DW_AT_data_member_location	(0x00)
+
+0x000004a9:     DW_TAG_member
+                  DW_AT_name	("seid")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(120)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x06)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x00)
+
+0x000004b8:     DW_TAG_member
+                  DW_AT_name	("rfa2")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(121)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x03)
+                  DW_AT_bit_offset	(0x05)
+                  DW_AT_data_member_location	(0x01)
+
+0x000004c7:     DW_TAG_member
+                  DW_AT_name	("type")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(122)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x04)
+                  DW_AT_data_member_location	(0x01)
+
+0x000004d6:     DW_TAG_member
+                  DW_AT_name	("media_type")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(123)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x01)
+
+0x000004e5:     NULL
+
+0x000004e6:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x0158 "u8")
+
+0x000004eb:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x01e2 "sizetype")
+                  DW_AT_count	(0x10)
+
+0x000004f1:     NULL
+
+0x000004f2:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x04fe "structure ")
+                DW_AT_name	("avdtp_core_data_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                DW_AT_decl_line	(333)
+
+0x000004fe:   DW_TAG_structure_type
+                DW_AT_byte_size	(0x28)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                DW_AT_decl_line	(318)
+
+0x00000503:     DW_TAG_member
+                  DW_AT_name	("stream")
+                  DW_AT_type	(cu + 0x03b1 "avdtp_stream")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(319)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000510:     DW_TAG_member
+                  DW_AT_name	("local_sep")
+                  DW_AT_type	(cu + 0x038d "avdtp_local_sep*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(320)
+                  DW_AT_data_member_location	(0x04)
+
+0x0000051d:     DW_TAG_member
+                  DW_AT_name	("local_sep_ind")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(321)
+                  DW_AT_data_member_location	(0x08)
+
+0x0000052a:     DW_TAG_member
+                  DW_AT_name	("channel")
+                  DW_AT_type	(cu + 0x016b "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(322)
+                  DW_AT_data_member_location	(0x0a)
+
+0x00000537:     DW_TAG_member
+                  DW_AT_name	("acp_seid")
+                  DW_AT_type	(cu + 0x05cc "seid_req[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(323)
+                  DW_AT_data_member_location	(0x0c)
+
+0x00000544:     DW_TAG_member
+                  DW_AT_name	("config")
+                  DW_AT_type	(cu + 0x04e6 "u8[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(324)
+                  DW_AT_data_member_location	(0x14)
+
+0x00000551:     DW_TAG_member
+                  DW_AT_name	("seid_ind")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(325)
+                  DW_AT_data_member_location	(0x24)
+
+0x0000055e:     DW_TAG_member
+                  DW_AT_name	("pending_req")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(326)
+                  DW_AT_data_member_location	(0x25)
+
+0x0000056b:     DW_TAG_member
+                  DW_AT_name	("max_acp_seid")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(327)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x04)
+                  DW_AT_data_member_location	(0x26)
+
+0x0000057b:     DW_TAG_member
+                  DW_AT_name	("cur_acp_seid")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(328)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x26)
+
+0x0000058b:     DW_TAG_member
+                  DW_AT_name	("aac_codec_prior")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(329)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x04)
+                  DW_AT_data_member_location	(0x27)
+
+0x0000059b:     DW_TAG_member
+                  DW_AT_name	("role")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(330)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x02)
+                  DW_AT_bit_offset	(0x02)
+                  DW_AT_data_member_location	(0x27)
+
+0x000005ab:     DW_TAG_member
+                  DW_AT_name	("get_discover")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(331)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x01)
+                  DW_AT_data_member_location	(0x27)
+
+0x000005bb:     DW_TAG_member
+                  DW_AT_name	("reserve")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(332)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x27)
+
+0x000005cb:     NULL
+
+0x000005cc:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x05d8 "seid_req")
+
+0x000005d1:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x01e2 "sizetype")
+                  DW_AT_count	(0x08)
+
+0x000005d7:     NULL
+
+0x000005d8:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x05e3 "_seid_req")
+                DW_AT_name	("seid_req")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                DW_AT_decl_line	(129)
+
+0x000005e3:   DW_TAG_structure_type
+                DW_AT_name	("_seid_req")
+                DW_AT_byte_size	(0x01)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                DW_AT_decl_line	(126)
+
+0x000005eb:     DW_TAG_member
+                  DW_AT_name	("rfa0")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(127)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x02)
+                  DW_AT_bit_offset	(0x06)
+                  DW_AT_data_member_location	(0x00)
+
+0x000005fa:     DW_TAG_member
+                  DW_AT_name	("acp_seid")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avdtp.h")
+                  DW_AT_decl_line	(128)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x06)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000609:     NULL
+
+0x0000060a:   DW_TAG_structure_type
+                DW_AT_name	("a2dp_media")
+                DW_AT_byte_size	(0x18)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                DW_AT_decl_line	(215)
+
+0x00000612:     DW_TAG_member
+                  DW_AT_name	("media_core_data")
+                  DW_AT_type	(cu + 0x066d "media_core_data_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(216)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000061e:     DW_TAG_member
+                  DW_AT_name	("probe")
+                  DW_AT_type	(cu + 0x06b3 "a2dp_media_probe*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(217)
+                  DW_AT_data_member_location	(0x08)
+
+0x0000062a:     DW_TAG_member
+                  DW_AT_name	("codec")
+                  DW_AT_type	(cu + 0x0763 "a2dp_media_codec*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(218)
+                  DW_AT_data_member_location	(0x0c)
+
+0x00000636:     DW_TAG_member
+                  DW_AT_name	("bitrate")
+                  DW_AT_type	(cu + 0x06a1 "u32")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(219)
+                  DW_AT_data_member_location	(0x10)
+
+0x00000642:     DW_TAG_member
+                  DW_AT_name	("nchannels")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(220)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x04)
+                  DW_AT_data_member_location	(0x14)
+
+0x00000651:     DW_TAG_member
+                  DW_AT_name	("reserve")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(221)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x14)
+
+0x00000660:     DW_TAG_member
+                  DW_AT_name	("type")
+                  DW_AT_type	(cu + 0x0158 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(222)
+                  DW_AT_data_member_location	(0x15)
+
+0x0000066c:     NULL
+
+0x0000066d:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0678 "structure ")
+                DW_AT_name	("media_core_data_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                DW_AT_decl_line	(213)
+
+0x00000678:   DW_TAG_structure_type
+                DW_AT_byte_size	(0x08)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                DW_AT_decl_line	(209)
+
+0x0000067c:     DW_TAG_member
+                  DW_AT_name	("channel")
+                  DW_AT_type	(cu + 0x016b "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(210)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000688:     DW_TAG_member
+                  DW_AT_name	("cp_type")
+                  DW_AT_type	(cu + 0x016b "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(211)
+                  DW_AT_data_member_location	(0x02)
+
+0x00000694:     DW_TAG_member
+                  DW_AT_name	("samplerate")
+                  DW_AT_type	(cu + 0x06a1 "u32")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(212)
+                  DW_AT_data_member_location	(0x04)
+
+0x000006a0:     NULL
+
+0x000006a1:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x06ac "unsigned int")
+                DW_AT_name	("u32")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(48)
+
+0x000006ac:   DW_TAG_base_type
+                DW_AT_name	("unsigned int")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x04)
+
+0x000006b3:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x06b8 "a2dp_media_probe")
+
+0x000006b8:   DW_TAG_structure_type
+                DW_AT_name	("a2dp_media_probe")
+                DW_AT_byte_size	(0x18)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                DW_AT_decl_line	(190)
+
+0x000006c0:     DW_TAG_member
+                  DW_AT_name	("type")
+                  DW_AT_type	(cu + 0x0037 "int")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(192)
+                  DW_AT_data_member_location	(0x00)
+
+0x000006cc:     DW_TAG_member
+                  DW_AT_name	("init")
+                  DW_AT_type	(cu + 0x0709 "subroutine int*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(193)
+                  DW_AT_data_member_location	(0x04)
+
+0x000006d8:     DW_TAG_member
+                  DW_AT_name	("probe")
+                  DW_AT_type	(cu + 0x0738 "subroutine int*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(194)
+                  DW_AT_data_member_location	(0x08)
+
+0x000006e4:     DW_TAG_member
+                  DW_AT_name	("start")
+                  DW_AT_type	(cu + 0x0757 "subroutine int*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(195)
+                  DW_AT_data_member_location	(0x0c)
+
+0x000006f0:     DW_TAG_member
+                  DW_AT_name	("suspend")
+                  DW_AT_type	(cu + 0x0757 "subroutine int*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(196)
+                  DW_AT_data_member_location	(0x10)
+
+0x000006fc:     DW_TAG_member
+                  DW_AT_name	("close")
+                  DW_AT_type	(cu + 0x0757 "subroutine int*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(197)
+                  DW_AT_data_member_location	(0x14)
+
+0x00000708:     NULL
+
+0x00000709:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x070e "subroutine int")
+
+0x0000070e:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_prototyped	(true)
+
+0x00000713:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x016a "*")
+
+0x00000718:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x071e "subroutine int*")
+
+0x0000071d:     NULL
+
+0x0000071e:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0723 "subroutine int")
+
+0x00000723:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_prototyped	(true)
+
+0x00000728:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x016a "*")
+
+0x0000072d:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x017d "u8*")
+
+0x00000732:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x016b "u16")
+
+0x00000737:     NULL
+
+0x00000738:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x073d "subroutine int")
+
+0x0000073d:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_prototyped	(true)
+
+0x00000742:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x0752 "uint8_t*")
+
+0x00000747:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x017d "u8*")
+
+0x0000074c:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x016b "u16")
+
+0x00000751:     NULL
+
+0x00000752:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x01d7 "uint8_t")
+
+0x00000757:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x075c "subroutine int")
+
+0x0000075c:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x0037 "int")
+
+0x00000761:     DW_TAG_unspecified_parameters
+
+0x00000762:     NULL
+
+0x00000763:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0768 "a2dp_media_codec")
+
+0x00000768:   DW_TAG_structure_type
+                DW_AT_name	("a2dp_media_codec")
+                DW_AT_byte_size	(0x18)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                DW_AT_decl_line	(200)
+
+0x00000770:     DW_TAG_member
+                  DW_AT_name	("type")
+                  DW_AT_type	(cu + 0x0037 "int")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(201)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000077c:     DW_TAG_member
+                  DW_AT_name	("inused")
+                  DW_AT_type	(cu + 0x07b9 "subroutine int*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(202)
+                  DW_AT_data_member_location	(0x04)
+
+0x00000788:     DW_TAG_member
+                  DW_AT_name	("init")
+                  DW_AT_type	(cu + 0x07c9 "subroutine int*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(203)
+                  DW_AT_data_member_location	(0x08)
+
+0x00000794:     DW_TAG_member
+                  DW_AT_name	("start")
+                  DW_AT_type	(cu + 0x07d9 "subroutine int*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(204)
+                  DW_AT_data_member_location	(0x0c)
+
+0x000007a0:     DW_TAG_member
+                  DW_AT_name	("suspend")
+                  DW_AT_type	(cu + 0x0757 "subroutine int*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(205)
+                  DW_AT_data_member_location	(0x10)
+
+0x000007ac:     DW_TAG_member
+                  DW_AT_name	("stop")
+                  DW_AT_type	(cu + 0x07c9 "subroutine int*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                  DW_AT_decl_line	(206)
+                  DW_AT_data_member_location	(0x14)
+
+0x000007b8:     NULL
+
+0x000007b9:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x07be "subroutine int")
+
+0x000007be:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_prototyped	(true)
+
+0x000007c3:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000007c8:     NULL
+
+0x000007c9:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x07ce "subroutine int")
+
+0x000007ce:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_prototyped	(true)
+
+0x000007d3:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x016a "*")
+
+0x000007d8:     NULL
+
+0x000007d9:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x07de "subroutine int")
+
+0x000007de:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_prototyped	(true)
+
+0x000007e3:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x017d "u8*")
+
+0x000007e8:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x016b "u16")
+
+0x000007ed:     NULL
+
+0x000007ee:   NULL

@@ -1,0 +1,371 @@
+temp.o:	file format ELF32-i386
+
+.debug_info contents:
+0x00000000: Compile Unit: length = 0x0000025d version = 0x0004 abbr_offset = 0x0000 addr_size = 0x04 (next unit at 0x00000261)
+
+0x0000000b: DW_TAG_compile_unit
+              DW_AT_producer	("clang version 4.0.1 (git@192.168.8.109:huangzhenyu/clang.git d97b416c061747718623e97046d5e7dcb4c75555) (git@192.168.8.109:huangzhenyu/llvm.git 64c6917899f78226b6d3cf2b78db54d02abf7c85)")
+              DW_AT_language	(DW_LANG_C99)
+              DW_AT_name	("../btcommon/btstack_sys_timer.c")
+              DW_AT_stmt_list	(0x00000000)
+              DW_AT_comp_dir	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make")
+              DW_AT_GNU_pubnames	(true)
+              DW_AT_low_pc	(0x0000000000000000)
+              DW_AT_high_pc	(0x000000000000015c)
+
+0x00000026:   DW_TAG_variable
+                DW_AT_name	("app_info_debug_enable")
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/profile_stack_debug.h")
+                DW_AT_decl_line	(190)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x00000037:   DW_TAG_base_type
+                DW_AT_name	("int")
+                DW_AT_encoding	(DW_ATE_signed)
+                DW_AT_byte_size	(0x04)
+
+0x0000003e:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0043 "subroutine ")
+
+0x00000043:   DW_TAG_subroutine_type
+                DW_AT_prototyped	(true)
+
+0x00000044:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x004a "*")
+
+0x00000049:     NULL
+
+0x0000004a:   DW_TAG_pointer_type
+
+0x0000004b:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x0000000000000005)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("bt_timer_schedule")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_sys_timer.c")
+                DW_AT_decl_line	(46)
+                DW_AT_external	(true)
+
+0x0000005c:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000005)
+                DW_AT_high_pc	(0x000000000000000c)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_get_timeout_ticks_for_unit")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_sys_timer.c")
+                DW_AT_decl_line	(53)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x015f "uint32_t")
+                DW_AT_external	(true)
+
+0x00000071:     DW_TAG_formal_parameter
+                  DW_AT_name	("timeout")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_sys_timer.c")
+                  DW_AT_decl_line	(53)
+                  DW_AT_type	(cu + 0x017c "uint32_t")
+
+0x0000007c:     DW_TAG_formal_parameter
+                  DW_AT_name	("timer_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_sys_timer.c")
+                  DW_AT_decl_line	(53)
+                  DW_AT_type	(cu + 0x0187 "short")
+
+0x00000087:     NULL
+
+0x00000088:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000000c)
+                DW_AT_high_pc	(0x00000000000000c0)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_get_timeout_for_ms")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_sys_timer.c")
+                DW_AT_decl_line	(67)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x017c "uint32_t")
+                DW_AT_external	(true)
+
+0x0000009d:     DW_TAG_formal_parameter
+                  DW_AT_name	("timeout")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_sys_timer.c")
+                  DW_AT_decl_line	(67)
+                  DW_AT_type	(cu + 0x017c "uint32_t")
+
+0x000000a8:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000000
+                     0x000000000000000c - 0x0000000000000023: DW_OP_reg0 EAX
+                     0x0000000000000023 - 0x00000000000000c0: DW_OP_breg5 EBP-2)
+                  DW_AT_name	("timer_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_sys_timer.c")
+                  DW_AT_decl_line	(67)
+                  DW_AT_type	(cu + 0x0187 "short")
+
+0x000000b7:     NULL
+
+0x000000b8:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000000c0)
+                DW_AT_high_pc	(0x000000000000012a)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_set_timer")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_sys_timer.c")
+                DW_AT_decl_line	(105)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x000000c9:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000001f
+                     0x00000000000000c0 - 0x00000000000000fc: DW_OP_reg1 ECX
+                     0x00000000000000fc - 0x000000000000012a: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("ts")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_sys_timer.c")
+                  DW_AT_decl_line	(105)
+                  DW_AT_type	(cu + 0x018e "btstack_timer_source_t*")
+
+0x000000d8:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000003e
+                     0x00000000000000c0 - 0x00000000000000d6: DW_OP_reg0 EAX)
+                  DW_AT_name	("timer_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_sys_timer.c")
+                  DW_AT_decl_line	(105)
+                  DW_AT_type	(cu + 0x0187 "short")
+
+0x000000e7:     DW_TAG_variable
+                  DW_AT_location	(0x00000051
+                     0x0000000000000101 - 0x000000000000011a: DW_OP_reg0 EAX)
+                  DW_AT_name	("timeout_interval")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_sys_timer.c")
+                  DW_AT_decl_line	(142)
+                  DW_AT_type	(cu + 0x0175 "unsigned int")
+
+0x000000f6:     NULL
+
+0x000000f7:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000012a)
+                DW_AT_high_pc	(0x000000000000014b)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_run_loop_remove_timer")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_sys_timer.c")
+                DW_AT_decl_line	(168)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x0000010c:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000064
+                     0x000000000000012a - 0x0000000000000136: DW_OP_reg0 EAX)
+                  DW_AT_name	("ts")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_sys_timer.c")
+                  DW_AT_decl_line	(168)
+                  DW_AT_type	(cu + 0x018e "btstack_timer_source_t*")
+
+0x0000011b:     NULL
+
+0x0000011c:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000014b)
+                DW_AT_high_pc	(0x0000000000000150)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_run_loop_embedded_execute_once")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_sys_timer.c")
+                DW_AT_decl_line	(195)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x0000012d:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000150)
+                DW_AT_high_pc	(0x0000000000000157)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_run_loop_embedded_get_ticks")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_sys_timer.c")
+                DW_AT_decl_line	(216)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x017c "uint32_t")
+                DW_AT_external	(true)
+
+0x00000142:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000157)
+                DW_AT_high_pc	(0x000000000000015c)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("bt_timer_resume_handler_register")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_sys_timer.c")
+                DW_AT_decl_line	(227)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000153:     DW_TAG_formal_parameter
+                  DW_AT_name	("handler")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_sys_timer.c")
+                  DW_AT_decl_line	(227)
+                  DW_AT_type	(cu + 0x0258 "subroutine *")
+
+0x0000015e:     NULL
+
+0x0000015f:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x016a "__uint32_t")
+                DW_AT_name	("uint32_t")
+                DW_AT_decl_file	("/opt/q32s/include/sys/_stdint.h")
+                DW_AT_decl_line	(32)
+
+0x0000016a:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0175 "unsigned int")
+                DW_AT_name	("__uint32_t")
+                DW_AT_decl_file	("/opt/q32s/include/machine/_default_types.h")
+                DW_AT_decl_line	(65)
+
+0x00000175:   DW_TAG_base_type
+                DW_AT_name	("unsigned int")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x04)
+
+0x0000017c:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0175 "unsigned int")
+                DW_AT_name	("uint32_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(48)
+
+0x00000187:   DW_TAG_base_type
+                DW_AT_name	("short")
+                DW_AT_encoding	(DW_ATE_signed)
+                DW_AT_byte_size	(0x02)
+
+0x0000018e:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0193 "btstack_timer_source_t")
+
+0x00000193:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x019e "btstack_timer_source")
+                DW_AT_name	("btstack_timer_source_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_sys_timer.h")
+                DW_AT_decl_line	(19)
+
+0x0000019e:   DW_TAG_structure_type
+                DW_AT_name	("btstack_timer_source")
+                DW_AT_byte_size	(0x14)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_sys_timer.h")
+                DW_AT_decl_line	(7)
+
+0x000001a6:     DW_TAG_member
+                  DW_AT_name	("item")
+                  DW_AT_type	(cu + 0x0222 "btstack_linked_item_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_sys_timer.h")
+                  DW_AT_decl_line	(8)
+                  DW_AT_data_member_location	(0x00)
+
+0x000001b2:     DW_TAG_member
+                  DW_AT_name	("timeout")
+                  DW_AT_type	(cu + 0x015f "uint32_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_sys_timer.h")
+                  DW_AT_decl_line	(10)
+                  DW_AT_data_member_location	(0x04)
+
+0x000001be:     DW_TAG_member
+                  DW_AT_name	("timeout_interval")
+                  DW_AT_type	(cu + 0x015f "uint32_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_sys_timer.h")
+                  DW_AT_decl_line	(11)
+                  DW_AT_byte_size	(0x04)
+                  DW_AT_bit_size	(0x10)
+                  DW_AT_bit_offset	(0x10)
+                  DW_AT_data_member_location	(0x08)
+
+0x000001cd:     DW_TAG_member
+                  DW_AT_name	("timer_type")
+                  DW_AT_type	(cu + 0x015f "uint32_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_sys_timer.h")
+                  DW_AT_decl_line	(12)
+                  DW_AT_byte_size	(0x04)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x0c)
+                  DW_AT_data_member_location	(0x08)
+
+0x000001dc:     DW_TAG_member
+                  DW_AT_name	("timer_tick_overflow")
+                  DW_AT_type	(cu + 0x015f "uint32_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_sys_timer.h")
+                  DW_AT_decl_line	(13)
+                  DW_AT_byte_size	(0x04)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x0b)
+                  DW_AT_data_member_location	(0x08)
+
+0x000001eb:     DW_TAG_member
+                  DW_AT_name	("loop_flag")
+                  DW_AT_type	(cu + 0x015f "uint32_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_sys_timer.h")
+                  DW_AT_decl_line	(14)
+                  DW_AT_byte_size	(0x04)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x0a)
+                  DW_AT_data_member_location	(0x08)
+
+0x000001fa:     DW_TAG_member
+                  DW_AT_name	("loop_times")
+                  DW_AT_type	(cu + 0x015f "uint32_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_sys_timer.h")
+                  DW_AT_decl_line	(15)
+                  DW_AT_byte_size	(0x04)
+                  DW_AT_bit_size	(0x0a)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x08)
+
+0x00000209:     DW_TAG_member
+                  DW_AT_name	("process")
+                  DW_AT_type	(cu + 0x0247 "subroutine *")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_sys_timer.h")
+                  DW_AT_decl_line	(17)
+                  DW_AT_data_member_location	(0x0c)
+
+0x00000215:     DW_TAG_member
+                  DW_AT_name	("context")
+                  DW_AT_type	(cu + 0x004a "*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_sys_timer.h")
+                  DW_AT_decl_line	(18)
+                  DW_AT_data_member_location	(0x10)
+
+0x00000221:     NULL
+
+0x00000222:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x022d "btstack_linked_item")
+                DW_AT_name	("btstack_linked_item_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_linked_list.h")
+                DW_AT_decl_line	(55)
+
+0x0000022d:   DW_TAG_structure_type
+                DW_AT_name	("btstack_linked_item")
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_linked_list.h")
+                DW_AT_decl_line	(53)
+
+0x00000235:     DW_TAG_member
+                  DW_AT_name	("next")
+                  DW_AT_type	(cu + 0x0242 "btstack_linked_item*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_linked_list.h")
+                  DW_AT_decl_line	(54)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000241:     NULL
+
+0x00000242:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x022d "btstack_linked_item")
+
+0x00000247:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x024c "subroutine ")
+
+0x0000024c:   DW_TAG_subroutine_type
+                DW_AT_prototyped	(true)
+
+0x0000024d:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x0253 "btstack_timer_source*")
+
+0x00000252:     NULL
+
+0x00000253:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x019e "btstack_timer_source")
+
+0x00000258:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x025d "subroutine ")
+
+0x0000025d:   DW_TAG_subroutine_type
+
+0x0000025e:     DW_TAG_unspecified_parameters
+
+0x0000025f:     NULL
+
+0x00000260:   NULL

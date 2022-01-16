@@ -1,0 +1,1523 @@
+temp.o:	file format ELF32-i386
+
+.debug_info contents:
+0x00000000: Compile Unit: length = 0x000009d7 version = 0x0004 abbr_offset = 0x0000 addr_size = 0x04 (next unit at 0x000009db)
+
+0x0000000b: DW_TAG_compile_unit
+              DW_AT_producer	("clang version 4.0.1 (git@192.168.8.109:huangzhenyu/clang.git d97b416c061747718623e97046d5e7dcb4c75555) (git@192.168.8.109:huangzhenyu/llvm.git 64c6917899f78226b6d3cf2b78db54d02abf7c85)")
+              DW_AT_language	(DW_LANG_C99)
+              DW_AT_name	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+              DW_AT_stmt_list	(0x00000000)
+              DW_AT_comp_dir	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make")
+              DW_AT_GNU_pubnames	(true)
+              DW_AT_low_pc	(0x0000000000000000)
+              DW_AT_high_pc	(0x0000000000001cec)
+
+0x00000026:   DW_TAG_variable
+                DW_AT_name	("temp_link_key_flag")
+                DW_AT_type	(cu + 0x0037 "volatile u8")
+                DW_AT_external	(true)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(205)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x00000037:   DW_TAG_volatile_type
+                DW_AT_type	(cu + 0x003c "u8")
+
+0x0000003c:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0047 "unsigned char")
+                DW_AT_name	("u8")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(44)
+
+0x00000047:   DW_TAG_base_type
+                DW_AT_name	("unsigned char")
+                DW_AT_encoding	(DW_ATE_unsigned_char)
+                DW_AT_byte_size	(0x01)
+
+0x0000004e:   DW_TAG_variable
+                DW_AT_name	("dbf_file")
+                DW_AT_type	(cu + 0x005f "const database_file*")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(30)
+                DW_AT_location	(DW_OP_addr 0x10)
+
+0x0000005f:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0064 "const database_file")
+
+0x00000064:   DW_TAG_const_type
+                DW_AT_type	(cu + 0x0069 "database_file")
+
+0x00000069:   DW_TAG_structure_type
+                DW_AT_name	("database_file")
+                DW_AT_byte_size	(0x1c)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/bredr/remote_device_db.h")
+                DW_AT_decl_line	(47)
+
+0x00000071:     DW_TAG_member
+                  DW_AT_name	("open")
+                  DW_AT_type	(cu + 0x00c6 "subroutine int*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/bredr/remote_device_db.h")
+                  DW_AT_decl_line	(48)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000007d:     DW_TAG_member
+                  DW_AT_name	("close")
+                  DW_AT_type	(cu + 0x00d9 "subroutine *")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/bredr/remote_device_db.h")
+                  DW_AT_decl_line	(49)
+                  DW_AT_data_member_location	(0x04)
+
+0x00000089:     DW_TAG_member
+                  DW_AT_name	("read")
+                  DW_AT_type	(cu + 0x00e1 "subroutine int*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/bredr/remote_device_db.h")
+                  DW_AT_decl_line	(50)
+                  DW_AT_data_member_location	(0x08)
+
+0x00000095:     DW_TAG_member
+                  DW_AT_name	("write")
+                  DW_AT_type	(cu + 0x00e1 "subroutine int*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/bredr/remote_device_db.h")
+                  DW_AT_decl_line	(51)
+                  DW_AT_data_member_location	(0x0c)
+
+0x000000a1:     DW_TAG_member
+                  DW_AT_name	("seek")
+                  DW_AT_type	(cu + 0x010e "subroutine *")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/bredr/remote_device_db.h")
+                  DW_AT_decl_line	(52)
+                  DW_AT_data_member_location	(0x10)
+
+0x000000ad:     DW_TAG_member
+                  DW_AT_name	("getlen")
+                  DW_AT_type	(cu + 0x011f "subroutine int*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/bredr/remote_device_db.h")
+                  DW_AT_decl_line	(53)
+                  DW_AT_data_member_location	(0x14)
+
+0x000000b9:     DW_TAG_member
+                  DW_AT_name	("get_fpos")
+                  DW_AT_type	(cu + 0x00c6 "subroutine int*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/bredr/remote_device_db.h")
+                  DW_AT_decl_line	(54)
+                  DW_AT_data_member_location	(0x18)
+
+0x000000c5:     NULL
+
+0x000000c6:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x00cb "subroutine int")
+
+0x000000cb:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x00d2 "int")
+
+0x000000d0:     DW_TAG_unspecified_parameters
+
+0x000000d1:     NULL
+
+0x000000d2:   DW_TAG_base_type
+                DW_AT_name	("int")
+                DW_AT_encoding	(DW_ATE_signed)
+                DW_AT_byte_size	(0x04)
+
+0x000000d9:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x00de "subroutine ")
+
+0x000000de:   DW_TAG_subroutine_type
+
+0x000000df:     DW_TAG_unspecified_parameters
+
+0x000000e0:     NULL
+
+0x000000e1:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x00e6 "subroutine int")
+
+0x000000e6:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x00d2 "int")
+                DW_AT_prototyped	(true)
+
+0x000000eb:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x00fb "*")
+
+0x000000f0:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x00d2 "int")
+
+0x000000f5:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x00fc "u32")
+
+0x000000fa:     NULL
+
+0x000000fb:   DW_TAG_pointer_type
+
+0x000000fc:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0107 "unsigned int")
+                DW_AT_name	("u32")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(48)
+
+0x00000107:   DW_TAG_base_type
+                DW_AT_name	("unsigned int")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x04)
+
+0x0000010e:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0113 "subroutine ")
+
+0x00000113:   DW_TAG_subroutine_type
+                DW_AT_prototyped	(true)
+
+0x00000114:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x00d2 "int")
+
+0x00000119:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x00d2 "int")
+
+0x0000011e:     NULL
+
+0x0000011f:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0124 "subroutine int")
+
+0x00000124:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x00d2 "int")
+                DW_AT_prototyped	(true)
+
+0x00000129:   DW_TAG_variable
+                DW_AT_name	("temp_device_connect_linkkey")
+                DW_AT_type	(cu + 0x013a "u8[]")
+                DW_AT_external	(true)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(206)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x0000013a:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x003c "u8")
+
+0x0000013f:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0146 "sizetype")
+                  DW_AT_count	(0x10)
+
+0x00000145:     NULL
+
+0x00000146:   DW_TAG_base_type
+                DW_AT_name	("sizetype")
+                DW_AT_byte_size	(0x08)
+                DW_AT_encoding	(DW_ATE_unsigned)
+
+0x0000014d:   DW_TAG_variable
+                DW_AT_name	("last_device_connect_linkkey")
+                DW_AT_type	(cu + 0x013a "u8[]")
+                DW_AT_external	(true)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(248)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x0000015e:   DW_TAG_variable
+                DW_AT_name	("own_private_linkkey")
+                DW_AT_type	(cu + 0x016f "const u8[]")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(200)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x0000016f:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x017b "const u8")
+
+0x00000174:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0146 "sizetype")
+                  DW_AT_count	(0x10)
+
+0x0000017a:     NULL
+
+0x0000017b:   DW_TAG_const_type
+                DW_AT_type	(cu + 0x003c "u8")
+
+0x00000180:   DW_TAG_enumeration_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Host/include/bredr/user_interface.h")
+                DW_AT_decl_line	(14)
+
+0x00000184:     DW_TAG_enumerator
+                  DW_AT_name	("DB_ID_REMOTE")
+                  DW_AT_const_value	(0)
+
+0x0000018a:     DW_TAG_enumerator
+                  DW_AT_name	("DB_ID_EMITTER")
+                  DW_AT_const_value	(1)
+
+0x00000190:     DW_TAG_enumerator
+                  DW_AT_name	("DB_ID_TWS")
+                  DW_AT_const_value	(2)
+
+0x00000196:     NULL
+
+0x00000197:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x0000000000000031)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("set_temp_link_key")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(207)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x000001a8:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000000
+                     0x0000000000000000 - 0x0000000000000023: DW_OP_reg0 EAX)
+                  DW_AT_name	("linkkey")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(207)
+                  DW_AT_type	(cu + 0x09b3 "u8*")
+
+0x000001b7:     NULL
+
+0x000001b8:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000031)
+                DW_AT_high_pc	(0x0000000000000067)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("get_support_profile")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(213)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x00d2 "int")
+                DW_AT_external	(true)
+
+0x000001cd:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000013
+                     0x0000000000000031 - 0x000000000000004d: DW_OP_reg2 EDX)
+                  DW_AT_name	("bd_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(213)
+                  DW_AT_type	(cu + 0x048f "bd_addr_t*")
+
+0x000001dc:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000026
+                     0x0000000000000031 - 0x000000000000004d: DW_OP_reg0 EAX)
+                  DW_AT_name	("id")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(213)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x000001eb:     DW_TAG_variable
+                  DW_AT_location	(0x00000039
+                     0x0000000000000042 - 0x0000000000000055: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x0000000000000055 - 0x0000000000000065: DW_OP_reg3 EBX)
+                  DW_AT_name	("profile")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(215)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x000001fa:     DW_TAG_variable
+                  DW_AT_location	(0x00000059
+                     0x0000000000000042 - 0x000000000000004d: DW_OP_breg1 ECX+0)
+                  DW_AT_name	("remote_db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(216)
+                  DW_AT_type	(cu + 0x04b6 "remote_database_t")
+
+0x00000209:     NULL
+
+0x0000020a:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000067)
+                DW_AT_high_pc	(0x0000000000000160)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("get_database")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(32)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x00d2 "int")
+
+0x0000021f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000006d
+                     0x0000000000000067 - 0x0000000000000081: DW_OP_reg1 ECX
+                     0x0000000000000081 - 0x0000000000000160: DW_OP_breg5 EBP-20)
+                  DW_AT_name	("db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(32)
+                  DW_AT_type	(cu + 0x09b8 "remote_database_t*")
+
+0x0000022e:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000008c
+                     0x0000000000000067 - 0x000000000000007e: DW_OP_reg2 EDX
+                     0x000000000000007e - 0x0000000000000160: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("bd_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(32)
+                  DW_AT_type	(cu + 0x048f "bd_addr_t*")
+
+0x0000023d:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000000ab
+                     0x0000000000000067 - 0x000000000000007b: DW_OP_reg0 EAX
+                     0x000000000000007b - 0x0000000000000160: DW_OP_breg5 EBP-9)
+                  DW_AT_name	("id")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(32)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x0000024c:     DW_TAG_variable
+                  DW_AT_location	(0x000000ca
+                     0x0000000000000072 - 0x0000000000000129: DW_OP_consts +0, DW_OP_stack_value
+                     0x0000000000000129 - 0x0000000000000144: DW_OP_consts +1, DW_OP_stack_value
+                     0x0000000000000144 - 0x000000000000014d: DW_OP_reg0 EAX
+                     0x000000000000014d - 0x0000000000000160: DW_OP_breg5 EBP-56)
+                  DW_AT_name	("res")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(35)
+                  DW_AT_type	(cu + 0x00d2 "int")
+
+0x0000025b:     DW_TAG_variable
+                  DW_AT_location	(0x00000103
+                     0x00000000000000cf - 0x00000000000000da: DW_OP_reg0 EAX
+                     0x0000000000000137 - 0x0000000000000139: DW_OP_reg0 EAX)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(34)
+                  DW_AT_type	(cu + 0x00d2 "int")
+
+0x0000026a:     NULL
+
+0x0000026b:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000160)
+                DW_AT_high_pc	(0x00000000000001b0)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("put_support_profile")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(230)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x0000027c:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000121
+                     0x0000000000000160 - 0x000000000000018c: DW_OP_reg2 EDX)
+                  DW_AT_name	("bd_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(230)
+                  DW_AT_type	(cu + 0x048f "bd_addr_t*")
+
+0x0000028b:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000134
+                     0x0000000000000160 - 0x0000000000000179: DW_OP_reg1 ECX
+                     0x0000000000000179 - 0x00000000000001b0: DW_OP_breg5 EBP-41)
+                  DW_AT_name	("profile")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(230)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x0000029a:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000153
+                     0x0000000000000160 - 0x0000000000000184: DW_OP_reg0 EAX
+                     0x0000000000000184 - 0x00000000000001b0: DW_OP_breg5 EBP-42)
+                  DW_AT_name	("id")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(230)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x000002a9:     DW_TAG_variable
+                  DW_AT_location	(0x00000172
+                     0x0000000000000176 - 0x000000000000017e: DW_OP_breg6 ESI+0
+                     0x000000000000019e - 0x00000000000001a9: DW_OP_breg1 ECX+0)
+                  DW_AT_name	("remote_db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(232)
+                  DW_AT_type	(cu + 0x04b6 "remote_database_t")
+
+0x000002b8:     NULL
+
+0x000002b9:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000001b0)
+                DW_AT_high_pc	(0x0000000000000a75)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("put_database")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(64)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x00d2 "int")
+
+0x000002ce:     DW_TAG_formal_parameter
+                  DW_AT_name	("db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(64)
+                  DW_AT_type	(cu + 0x09b8 "remote_database_t*")
+
+0x000002d9:     DW_TAG_formal_parameter
+                  DW_AT_name	("id")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(64)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x000002e4:     DW_TAG_variable
+                  DW_AT_location	(0x00000192
+                     0x00000000000001c4 - 0x000000000000040f: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x000000000000040f - 0x0000000000000438: DW_OP_reg7 EDI
+                     0x0000000000000438 - 0x00000000000006f6: DW_OP_breg5 EBP-192
+                     0x00000000000006f6 - 0x0000000000000704: DW_OP_reg6 ESI
+                     0x0000000000000704 - 0x000000000000075b: DW_OP_reg7 EDI
+                     0x000000000000075b - 0x0000000000000774: DW_OP_breg5 EBP-276
+                     0x0000000000000774 - 0x0000000000000a75: DW_OP_breg5 EBP-192)
+                  DW_AT_name	("max_timestamp")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(68)
+                  DW_AT_type	(cu + 0x0542 "u16")
+
+0x000002f3:     DW_TAG_variable
+                  DW_AT_location	(0x000001ef
+                     0x00000000000001c4 - 0x000000000000040f: DW_OP_constu 0xffff, DW_OP_stack_value
+                     0x000000000000040f - 0x0000000000000431: DW_OP_reg6 ESI
+                     0x0000000000000431 - 0x00000000000006b3: DW_OP_breg5 EBP-190
+                     0x00000000000006b3 - 0x00000000000006f6: DW_OP_reg6 ESI
+                     0x00000000000006f6 - 0x0000000000000762: DW_OP_reg3 EBX
+                     0x0000000000000762 - 0x0000000000000774: DW_OP_breg5 EBP-278
+                     0x0000000000000774 - 0x0000000000000a75: DW_OP_breg5 EBP-190)
+                  DW_AT_name	("min_timestamp")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(69)
+                  DW_AT_type	(cu + 0x0542 "u16")
+
+0x00000302:     DW_TAG_variable
+                  DW_AT_location	(0x0000024e
+                     0x00000000000001c4 - 0x000000000000040f: DW_OP_constu 0x0, DW_OP_stack_value, DW_OP_piece 0x2, DW_OP_constu 0x0, DW_OP_stack_value, DW_OP_piece 0x2, DW_OP_constu 0x0, DW_OP_stack_value, DW_OP_piece 0x2
+                     0x000000000000040f - 0x000000000000040f: DW_OP_breg5 EBP-174, DW_OP_piece 0x2, DW_OP_constu 0x0, DW_OP_stack_value, DW_OP_piece 0x2, DW_OP_constu 0x0, DW_OP_stack_value, DW_OP_piece 0x2
+                     0x000000000000040f - 0x000000000000040f: DW_OP_breg5 EBP-174, DW_OP_piece 0x2, DW_OP_reg1 ECX, DW_OP_piece 0x2, DW_OP_constu 0x0, DW_OP_stack_value, DW_OP_piece 0x2
+                     0x000000000000040f - 0x0000000000000423: DW_OP_breg5 EBP-174, DW_OP_piece 0x2, DW_OP_reg1 ECX, DW_OP_piece 0x2, DW_OP_reg2 EDX, DW_OP_piece 0x2
+                     0x0000000000000423 - 0x000000000000042a: DW_OP_breg5 EBP-174, DW_OP_piece 0x2, DW_OP_breg5 EBP-186, DW_OP_piece 0x2, DW_OP_reg2 EDX, DW_OP_piece 0x2
+                     0x000000000000042a - 0x0000000000000641: DW_OP_breg5 EBP-174, DW_OP_piece 0x2, DW_OP_breg5 EBP-186, DW_OP_piece 0x2, DW_OP_breg5 EBP-188, DW_OP_piece 0x2
+                     0x0000000000000641 - 0x00000000000006f6: DW_OP_breg5 EBP-174, DW_OP_piece 0x2, DW_OP_breg5 EBP-210, DW_OP_piece 0x2, DW_OP_breg5 EBP-188, DW_OP_piece 0x2
+                     0x00000000000006f6 - 0x000000000000070b: DW_OP_breg5 EBP-174, DW_OP_piece 0x2, DW_OP_breg5 EBP-210, DW_OP_piece 0x2, DW_OP_reg0 EAX, DW_OP_piece 0x2
+                     0x000000000000070b - 0x0000000000000a75: DW_OP_breg5 EBP-174, DW_OP_piece 0x2, DW_OP_breg5 EBP-210, DW_OP_piece 0x2, DW_OP_breg5 EBP-270, DW_OP_piece 0x2)
+                  DW_AT_name	("w_pos")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(70)
+                  DW_AT_type	(cu + 0x09bd "u16[]")
+
+0x00000311:     DW_TAG_variable
+                  DW_AT_location	(0x0000032d
+                     0x00000000000001c6 - 0x000000000000040f: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x000000000000040f - 0x000000000000041c: DW_OP_reg0 EAX
+                     0x000000000000041c - 0x0000000000000500: DW_OP_breg5 EBP-184
+                     0x0000000000000500 - 0x0000000000000514: DW_OP_reg2 EDX
+                     0x0000000000000514 - 0x0000000000000584: DW_OP_breg5 EBP-224
+                     0x0000000000000584 - 0x0000000000000641: DW_OP_breg5 EBP-184
+                     0x0000000000000641 - 0x00000000000006a1: DW_OP_breg5 EBP-212
+                     0x00000000000006a1 - 0x00000000000006be: DW_OP_breg5 EBP-184
+                     0x00000000000006be - 0x00000000000006f6: DW_OP_reg7 EDI
+                     0x00000000000006f6 - 0x0000000000000754: DW_OP_reg2 EDX
+                     0x0000000000000754 - 0x0000000000000774: DW_OP_breg5 EBP-274
+                     0x0000000000000774 - 0x000000000000081f: DW_OP_breg5 EBP-184
+                     0x000000000000081f - 0x0000000000000834: DW_OP_reg0 EAX
+                     0x0000000000000834 - 0x0000000000000834: DW_OP_breg5 EBP-284
+                     0x0000000000000834 - 0x0000000000000a75: DW_OP_breg5 EBP-184)
+                  DW_AT_name	("priority")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(73)
+                  DW_AT_type	(cu + 0x0542 "u16")
+
+0x00000320:     DW_TAG_variable
+                  DW_AT_location	(0x000003ee
+                     0x00000000000001c6 - 0x00000000000001ce: DW_OP_breg2 EDX+0)
+                  DW_AT_name	("db_newest")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(72)
+                  DW_AT_type	(cu + 0x04b6 "remote_database_t")
+
+0x0000032f:     DW_TAG_variable
+                  DW_AT_location	(0x00000402
+                     0x0000000000000981 - 0x0000000000000988: DW_OP_reg1 ECX
+                     0x0000000000000988 - 0x00000000000009fd: DW_OP_breg5 EBP-310
+                     0x00000000000009fd - 0x0000000000000a04: DW_OP_reg1 ECX
+                     0x0000000000000a04 - 0x0000000000000a0d: DW_OP_breg5 EBP-310
+                     0x0000000000000a0d - 0x0000000000000a2c: DW_OP_reg0 EAX)
+                  DW_AT_name	("pos")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(67)
+                  DW_AT_type	(cu + 0x0542 "u16")
+
+0x0000033e:     DW_TAG_variable
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(66)
+                  DW_AT_type	(cu + 0x0542 "u16")
+
+0x00000349:     DW_TAG_variable
+                  DW_AT_name	("r_db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(71)
+                  DW_AT_type	(cu + 0x04b6 "remote_database_t")
+
+0x00000354:     NULL
+
+0x00000355:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000a75)
+                DW_AT_high_pc	(0x0000000000000be5)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("get_link_key")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(249)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x00d2 "int")
+                DW_AT_external	(true)
+
+0x0000036a:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000445
+                     0x0000000000000a75 - 0x0000000000000a96: DW_OP_reg2 EDX
+                     0x0000000000000a96 - 0x0000000000000be5: DW_OP_breg5 EBP-76)
+                  DW_AT_name	("bd_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(249)
+                  DW_AT_type	(cu + 0x048f "bd_addr_t*")
+
+0x00000379:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000465
+                     0x0000000000000a75 - 0x0000000000000a93: DW_OP_reg1 ECX
+                     0x0000000000000a93 - 0x0000000000000be5: DW_OP_breg5 EBP-72)
+                  DW_AT_name	("link_key")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(249)
+                  DW_AT_type	(cu + 0x09c9 "link_key_t*")
+
+0x00000388:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000485
+                     0x0000000000000a75 - 0x0000000000000a90: DW_OP_reg0 EAX
+                     0x0000000000000a90 - 0x0000000000000be5: DW_OP_breg5 EBP-65)
+                  DW_AT_name	("id")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(249)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x00000397:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -28)
+                  DW_AT_name	("empty_linkkey")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(251)
+                  DW_AT_type	(cu + 0x013a "u8[]")
+
+0x000003a5:     DW_TAG_variable
+                  DW_AT_location	(0x000004a5
+                     0x0000000000000b31 - 0x0000000000000b42: DW_OP_breg1 ECX+0)
+                  DW_AT_name	("remote_db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(252)
+                  DW_AT_type	(cu + 0x04b6 "remote_database_t")
+
+0x000003b4:     NULL
+
+0x000003b5:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000be5)
+                DW_AT_high_pc	(0x0000000000000ccf)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("put_link_key")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(304)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x000003c7:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000004b9
+                     0x0000000000000be5 - 0x0000000000000c03: DW_OP_reg2 EDX
+                     0x0000000000000c03 - 0x0000000000000ccf: DW_OP_breg5 EBP-60)
+                  DW_AT_name	("bd_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(304)
+                  DW_AT_type	(cu + 0x048f "bd_addr_t*")
+
+0x000003d7:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000004d8
+                     0x0000000000000be5 - 0x0000000000000c00: DW_OP_reg1 ECX
+                     0x0000000000000c00 - 0x0000000000000ccf: DW_OP_breg5 EBP-56)
+                  DW_AT_name	("link_key")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(304)
+                  DW_AT_type	(cu + 0x09c9 "link_key_t*")
+
+0x000003e7:     DW_TAG_formal_parameter
+                  DW_AT_name	("sr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(304)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x000003f3:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000004f7
+                     0x0000000000000be5 - 0x0000000000000bfd: DW_OP_reg0 EAX
+                     0x0000000000000bfd - 0x0000000000000ccf: DW_OP_breg5 EBP-49)
+                  DW_AT_name	("id")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(304)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x00000403:     DW_TAG_variable
+                  DW_AT_location	(0x00000516
+                     0x0000000000000c39 - 0x0000000000000c4a: DW_OP_breg1 ECX+0
+                     0x0000000000000cbc - 0x0000000000000cc7: DW_OP_breg1 ECX+0)
+                  DW_AT_name	("remote_db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(306)
+                  DW_AT_type	(cu + 0x04b6 "remote_database_t")
+
+0x00000413:     NULL
+
+0x00000414:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000ccf)
+                DW_AT_high_pc	(0x0000000000000d29)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("updata_last_link_key")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(340)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000426:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000536
+                     0x0000000000000ccf - 0x0000000000000cf3: DW_OP_reg1 ECX
+                     0x0000000000000cf3 - 0x0000000000000d29: DW_OP_breg5 EBP-28)
+                  DW_AT_name	("bd_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(340)
+                  DW_AT_type	(cu + 0x048f "bd_addr_t*")
+
+0x00000436:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000555
+                     0x0000000000000ccf - 0x0000000000000cf0: DW_OP_reg0 EAX
+                     0x0000000000000cf0 - 0x0000000000000d29: DW_OP_breg5 EBP-21)
+                  DW_AT_name	("id")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(340)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x00000446:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -20)
+                  DW_AT_name	("link_key")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(343)
+                  DW_AT_type	(cu + 0x055f "link_key_t")
+
+0x00000455:     NULL
+
+0x00000456:   DW_TAG_subprogram
+                DW_AT_name	("delete_database")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(167)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x00d2 "int")
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000462:     DW_TAG_formal_parameter
+                  DW_AT_name	("bd_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(167)
+                  DW_AT_type	(cu + 0x048f "bd_addr_t*")
+
+0x0000046d:     DW_TAG_formal_parameter
+                  DW_AT_name	("id")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(167)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x00000478:     DW_TAG_variable
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(169)
+                  DW_AT_type	(cu + 0x00d2 "int")
+
+0x00000483:     DW_TAG_variable
+                  DW_AT_name	("db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(170)
+                  DW_AT_type	(cu + 0x04b6 "remote_database_t")
+
+0x0000048e:     NULL
+
+0x0000048f:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0494 "bd_addr_t")
+
+0x00000494:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x049f "uint8_t[]")
+                DW_AT_name	("bd_addr_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/btstack_typedef.h")
+                DW_AT_decl_line	(7)
+
+0x0000049f:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x04ab "uint8_t")
+
+0x000004a4:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0146 "sizetype")
+                  DW_AT_count	(0x06)
+
+0x000004aa:     NULL
+
+0x000004ab:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0047 "unsigned char")
+                DW_AT_name	("uint8_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(44)
+
+0x000004b6:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x04c1 "_remote_database")
+                DW_AT_name	("remote_database_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/bredr/remote_device_db.h")
+                DW_AT_decl_line	(69)
+
+0x000004c1:   DW_TAG_structure_type
+                DW_AT_name	("_remote_database")
+                DW_AT_byte_size	(0x20)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/bredr/remote_device_db.h")
+                DW_AT_decl_line	(58)
+
+0x000004c9:     DW_TAG_member
+                  DW_AT_name	("crc")
+                  DW_AT_type	(cu + 0x0542 "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/bredr/remote_device_db.h")
+                  DW_AT_decl_line	(59)
+                  DW_AT_data_member_location	(0x00)
+
+0x000004d5:     DW_TAG_member
+                  DW_AT_name	("timestamp")
+                  DW_AT_type	(cu + 0x0542 "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/bredr/remote_device_db.h")
+                  DW_AT_decl_line	(60)
+                  DW_AT_data_member_location	(0x02)
+
+0x000004e1:     DW_TAG_member
+                  DW_AT_name	("dev_type")
+                  DW_AT_type	(cu + 0x003c "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/bredr/remote_device_db.h")
+                  DW_AT_decl_line	(61)
+                  DW_AT_data_member_location	(0x04)
+
+0x000004ed:     DW_TAG_member
+                  DW_AT_name	("a2dp_discover_by_remote")
+                  DW_AT_type	(cu + 0x003c "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/bredr/remote_device_db.h")
+                  DW_AT_decl_line	(62)
+                  DW_AT_data_member_location	(0x05)
+
+0x000004f9:     DW_TAG_member
+                  DW_AT_name	("a2dp_volume")
+                  DW_AT_type	(cu + 0x003c "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/bredr/remote_device_db.h")
+                  DW_AT_decl_line	(63)
+                  DW_AT_data_member_location	(0x06)
+
+0x00000505:     DW_TAG_member
+                  DW_AT_name	("hfp_volume")
+                  DW_AT_type	(cu + 0x003c "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/bredr/remote_device_db.h")
+                  DW_AT_decl_line	(64)
+                  DW_AT_data_member_location	(0x07)
+
+0x00000511:     DW_TAG_member
+                  DW_AT_name	("support_profile")
+                  DW_AT_type	(cu + 0x003c "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/bredr/remote_device_db.h")
+                  DW_AT_decl_line	(65)
+                  DW_AT_data_member_location	(0x08)
+
+0x0000051d:     DW_TAG_member
+                  DW_AT_name	("pair_connect_att")
+                  DW_AT_type	(cu + 0x003c "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/bredr/remote_device_db.h")
+                  DW_AT_decl_line	(66)
+                  DW_AT_data_member_location	(0x09)
+
+0x00000529:     DW_TAG_member
+                  DW_AT_name	("mac_addr")
+                  DW_AT_type	(cu + 0x0554 "bd_addr_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/bredr/remote_device_db.h")
+                  DW_AT_decl_line	(67)
+                  DW_AT_data_member_location	(0x0a)
+
+0x00000535:     DW_TAG_member
+                  DW_AT_name	("link_key")
+                  DW_AT_type	(cu + 0x055f "link_key_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../User/include/bredr/remote_device_db.h")
+                  DW_AT_decl_line	(68)
+                  DW_AT_data_member_location	(0x10)
+
+0x00000541:     NULL
+
+0x00000542:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x054d "unsigned short")
+                DW_AT_name	("u16")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(46)
+
+0x0000054d:   DW_TAG_base_type
+                DW_AT_name	("unsigned short")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x02)
+
+0x00000554:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x049f "uint8_t[]")
+                DW_AT_name	("bd_addr_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/utils.h")
+                DW_AT_decl_line	(66)
+
+0x0000055f:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x056a "uint8_t[]")
+                DW_AT_name	("link_key_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/utils.h")
+                DW_AT_decl_line	(73)
+
+0x0000056a:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x04ab "uint8_t")
+
+0x0000056f:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0146 "sizetype")
+                  DW_AT_count	(0x10)
+
+0x00000575:     NULL
+
+0x00000576:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000d29)
+                DW_AT_high_pc	(0x0000000000000f06)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("delete_link_key")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(349)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000588:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000574
+                     0x0000000000000d29 - 0x0000000000000d49: DW_OP_reg1 ECX
+                     0x0000000000000d49 - 0x0000000000000f06: DW_OP_breg5 EBP-48)
+                  DW_AT_name	("bd_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(349)
+                  DW_AT_type	(cu + 0x048f "bd_addr_t*")
+
+0x00000598:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000593
+                     0x0000000000000d29 - 0x0000000000000d46: DW_OP_reg0 EAX
+                     0x0000000000000d46 - 0x0000000000000f06: DW_OP_breg5 EBP-41)
+                  DW_AT_name	("id")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(349)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x000005a8:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0456 "delete_database")
+                  DW_AT_low_pc	(0x0000000000000d3d)
+                  DW_AT_high_pc	(0x0000000000000efc)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_call_line	(353)
+
+0x000005b8:       DW_TAG_variable
+                    DW_AT_location	(0x000005b2
+                       0x0000000000000d85 - 0x0000000000000d8e: DW_OP_reg0 EAX
+                       0x0000000000000ee6 - 0x0000000000000ef4: DW_OP_reg0 EAX)
+                    DW_AT_abstract_origin	(cu + 0x0478 "len")
+
+0x000005c1:       NULL
+
+0x000005c2:     NULL
+
+0x000005c3:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000f06)
+                DW_AT_high_pc	(0x0000000000000fbe)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("handle_a2dp_discover_flag")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(481)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x003c "u8")
+                DW_AT_external	(true)
+
+0x000005d9:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000005d0
+                     0x0000000000000f06 - 0x0000000000000f1c: DW_OP_reg2 EDX
+                     0x0000000000000f1c - 0x0000000000000fbe: DW_OP_breg5 EBP-48)
+                  DW_AT_name	("bd_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(481)
+                  DW_AT_type	(cu + 0x048f "bd_addr_t*")
+
+0x000005e9:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000005ef
+                     0x0000000000000f06 - 0x0000000000000f19: DW_OP_reg0 EAX
+                     0x0000000000000f19 - 0x0000000000000fbe: DW_OP_breg5 EBP-41)
+                  DW_AT_name	("cmd")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(481)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x000005f9:     DW_TAG_variable
+                  DW_AT_location	(0x0000060e
+                     0x0000000000000f55 - 0x0000000000000f67: DW_OP_breg1 ECX+0
+                     0x0000000000000fa6 - 0x0000000000000fab: DW_OP_breg1 ECX+0)
+                  DW_AT_name	("remote_db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(483)
+                  DW_AT_type	(cu + 0x04b6 "remote_database_t")
+
+0x00000609:     NULL
+
+0x0000060a:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000fbe)
+                DW_AT_high_pc	(0x0000000000001089)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("handle_att_connect_flag")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(505)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x003c "u8")
+                DW_AT_external	(true)
+
+0x00000620:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000062e
+                     0x0000000000000fbe - 0x0000000000000fd4: DW_OP_reg2 EDX
+                     0x0000000000000fd4 - 0x0000000000001089: DW_OP_breg5 EBP-48)
+                  DW_AT_name	("bd_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(505)
+                  DW_AT_type	(cu + 0x048f "bd_addr_t*")
+
+0x00000630:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000064d
+                     0x0000000000000fbe - 0x0000000000000fd1: DW_OP_reg0 EAX
+                     0x0000000000000fd1 - 0x0000000000001089: DW_OP_breg5 EBP-41)
+                  DW_AT_name	("cmd")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(505)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x00000640:     DW_TAG_variable
+                  DW_AT_location	(0x0000066c
+                     0x000000000000100d - 0x000000000000101f: DW_OP_breg1 ECX+0
+                     0x0000000000001071 - 0x0000000000001076: DW_OP_breg1 ECX+0)
+                  DW_AT_name	("remote_db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(507)
+                  DW_AT_type	(cu + 0x04b6 "remote_database_t")
+
+0x00000650:     NULL
+
+0x00000651:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000001089)
+                DW_AT_high_pc	(0x000000000000116a)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("hfp_volume_interface")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(533)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x003c "u8")
+                DW_AT_external	(true)
+
+0x00000667:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000068c
+                     0x0000000000001089 - 0x000000000000109f: DW_OP_reg1 ECX
+                     0x000000000000109f - 0x000000000000116a: DW_OP_breg5 EBP-48)
+                  DW_AT_name	("bd_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(533)
+                  DW_AT_type	(cu + 0x00fb "*")
+
+0x00000677:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000006ab
+                     0x0000000000001089 - 0x000000000000109c: DW_OP_reg0 EAX
+                     0x000000000000109c - 0x0000000000001116: DW_OP_breg5 EBP-41
+                     0x0000000000001116 - 0x0000000000001137: DW_OP_constu 0xf, DW_OP_stack_value
+                     0x0000000000001137 - 0x0000000000001150: DW_OP_reg0 EAX)
+                  DW_AT_name	("param")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(533)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x00000687:     DW_TAG_variable
+                  DW_AT_location	(0x000006e2
+                     0x00000000000010d9 - 0x00000000000010e8: DW_OP_breg1 ECX+0
+                     0x0000000000001140 - 0x000000000000116a: DW_OP_breg5 EBP-68, DW_OP_deref)
+                  DW_AT_name	("remote_db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(535)
+                  DW_AT_type	(cu + 0x04b6 "remote_database_t")
+
+0x00000697:     NULL
+
+0x00000698:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000116a)
+                DW_AT_high_pc	(0x0000000000001248)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("avrcp_volume_interface")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(557)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x003c "u8")
+                DW_AT_external	(true)
+
+0x000006ae:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000704
+                     0x000000000000116a - 0x0000000000001180: DW_OP_reg1 ECX
+                     0x0000000000001180 - 0x0000000000001248: DW_OP_breg5 EBP-48)
+                  DW_AT_name	("bd_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(557)
+                  DW_AT_type	(cu + 0x00fb "*")
+
+0x000006be:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000723
+                     0x000000000000116a - 0x000000000000117d: DW_OP_reg0 EAX
+                     0x000000000000117d - 0x00000000000011f7: DW_OP_breg5 EBP-41
+                     0x00000000000011f7 - 0x0000000000001215: DW_OP_constu 0x7f, DW_OP_stack_value
+                     0x0000000000001215 - 0x000000000000122e: DW_OP_reg0 EAX)
+                  DW_AT_name	("param")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(557)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x000006ce:     DW_TAG_variable
+                  DW_AT_location	(0x0000075a
+                     0x00000000000011ba - 0x00000000000011c9: DW_OP_breg1 ECX+0
+                     0x000000000000121e - 0x0000000000001248: DW_OP_breg5 EBP-68, DW_OP_deref)
+                  DW_AT_name	("remote_db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(559)
+                  DW_AT_type	(cu + 0x04b6 "remote_database_t")
+
+0x000006de:     NULL
+
+0x000006df:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000001248)
+                DW_AT_high_pc	(0x00000000000013cd)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("handle_remote_dev_type")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(582)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x003c "u8")
+                DW_AT_external	(true)
+
+0x000006f5:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000077c
+                     0x0000000000001248 - 0x0000000000001266: DW_OP_reg1 ECX
+                     0x0000000000001266 - 0x00000000000013cd: DW_OP_breg5 EBP-72)
+                  DW_AT_name	("bd_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(582)
+                  DW_AT_type	(cu + 0x048f "bd_addr_t*")
+
+0x00000705:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000079c
+                     0x0000000000001248 - 0x0000000000001263: DW_OP_reg0 EAX
+                     0x0000000000001263 - 0x00000000000013cd: DW_OP_breg5 EBP-65)
+                  DW_AT_name	("param")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(582)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x00000715:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -64)
+                  DW_AT_name	("link_key")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(585)
+                  DW_AT_type	(cu + 0x055f "link_key_t")
+
+0x00000724:     DW_TAG_variable
+                  DW_AT_location	(0x000007bc
+                     0x0000000000001285 - 0x0000000000001297: DW_OP_breg1 ECX+0
+                     0x00000000000013b0 - 0x00000000000013b5: DW_OP_breg1 ECX+0)
+                  DW_AT_name	("remote_db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(584)
+                  DW_AT_type	(cu + 0x04b6 "remote_database_t")
+
+0x00000734:     DW_TAG_variable
+                  DW_AT_name	("check")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(586)
+                  DW_AT_type	(cu + 0x00d2 "int")
+
+0x00000740:     NULL
+
+0x00000741:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000013cd)
+                DW_AT_high_pc	(0x00000000000013da)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("remote_device_db_init_opt")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(621)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000753:     DW_TAG_formal_parameter
+                  DW_AT_location	(DW_OP_reg0 EAX)
+                  DW_AT_name	("_file")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(621)
+                  DW_AT_type	(cu + 0x005f "const database_file*")
+
+0x00000761:     NULL
+
+0x00000762:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000013da)
+                DW_AT_high_pc	(0x0000000000001594)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("restore_remote_device_info_opt")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(626)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x003c "u8")
+                DW_AT_external	(true)
+
+0x00000778:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000007dc
+                     0x00000000000013da - 0x000000000000142a: DW_OP_reg2 EDX
+                     0x000000000000142a - 0x0000000000001594: DW_OP_breg5 EBP-384)
+                  DW_AT_name	("mac_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(626)
+                  DW_AT_type	(cu + 0x048f "bd_addr_t*")
+
+0x00000788:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000007fc
+                     0x00000000000013da - 0x0000000000001424: DW_OP_reg1 ECX
+                     0x0000000000001424 - 0x0000000000001594: DW_OP_breg5 EBP-377)
+                  DW_AT_name	("conn_device_num")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(626)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x00000798:     DW_TAG_formal_parameter
+                  DW_AT_location	(DW_OP_fbreg -369)
+                  DW_AT_name	("id")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(626)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x000007a8:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -368)
+                  DW_AT_name	("temp_db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(634)
+                  DW_AT_type	(cu + 0x09ce "remote_database_t[]")
+
+0x000007b8:     DW_TAG_variable
+                  DW_AT_location	(0x0000081c
+                     0x0000000000001405 - 0x000000000000149a: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x000000000000149a - 0x00000000000014a8: DW_OP_reg3 EBX, DW_OP_bit_piece 0x8 0x8
+                     0x00000000000014a8 - 0x0000000000001594: DW_OP_breg5 EBP-397)
+                  DW_AT_name	("current_search_index")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(632)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x000007c8:     DW_TAG_variable
+                  DW_AT_location	(0x0000084c
+                     0x000000000000149f - 0x00000000000014ae: DW_OP_reg0 EAX
+                     0x00000000000014ae - 0x00000000000014e8: DW_OP_breg5 EBP-404
+                     0x00000000000014e8 - 0x000000000000151a: DW_OP_reg1 ECX
+                     0x000000000000151a - 0x000000000000156f: DW_OP_breg5 EBP-412
+                     0x000000000000156f - 0x000000000000156f: DW_OP_reg1 ECX
+                     0x000000000000156f - 0x0000000000001594: DW_OP_breg5 EBP-404)
+                  DW_AT_name	("loopj")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(633)
+                  DW_AT_type	(cu + 0x00d2 "int")
+
+0x000007d8:     DW_TAG_variable
+                  DW_AT_location	(0x0000089c
+                     0x000000000000150c - 0x0000000000001520: DW_OP_reg0 EAX
+                     0x0000000000001520 - 0x000000000000156f: DW_OP_breg5 EBP-416
+                     0x000000000000156f - 0x0000000000001575: DW_OP_reg0 EAX)
+                  DW_AT_name	("loopi")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(633)
+                  DW_AT_type	(cu + 0x00d2 "int")
+
+0x000007e8:     DW_TAG_variable
+                  DW_AT_location	(0x000008c7
+                     0x000000000000152e - 0x000000000000153c: DW_OP_breg1 ECX+0)
+                  DW_AT_name	("db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(629)
+                  DW_AT_type	(cu + 0x04b6 "remote_database_t")
+
+0x000007f8:     DW_TAG_variable
+                  DW_AT_location	(0x000008db
+                     0x0000000000001564 - 0x0000000000001594: DW_OP_constu 0x1, DW_OP_stack_value)
+                  DW_AT_name	("get_dev_number")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(630)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x00000808:     NULL
+
+0x00000809:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000001594)
+                DW_AT_high_pc	(0x0000000000001a27)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("get_last_N_database")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(358)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x00d2 "int")
+
+0x0000081f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000008f0
+                     0x0000000000001594 - 0x00000000000015cd: DW_OP_reg1 ECX
+                     0x00000000000015cd - 0x0000000000001a27: DW_OP_breg5 EBP-384)
+                  DW_AT_name	("db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(358)
+                  DW_AT_type	(cu + 0x09b8 "remote_database_t*")
+
+0x0000082f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000910
+                     0x0000000000001594 - 0x00000000000015c1: DW_OP_reg2 EDX
+                     0x00000000000015c1 - 0x00000000000018a6: DW_OP_breg5 EBP-376
+                     0x00000000000018a6 - 0x00000000000018b1: DW_OP_reg1 ECX
+                     0x00000000000018b1 - 0x00000000000018bd: DW_OP_breg5 EBP-472
+                     0x00000000000018bd - 0x0000000000001a27: DW_OP_breg5 EBP-376)
+                  DW_AT_name	("num")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(358)
+                  DW_AT_type	(cu + 0x00d2 "int")
+
+0x0000083f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000955
+                     0x0000000000001594 - 0x00000000000015bb: DW_OP_reg0 EAX, DW_OP_bit_piece 0x8 0x8
+                     0x00000000000015bb - 0x0000000000001a27: DW_OP_breg5 EBP-369)
+                  DW_AT_name	("id")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(358)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x0000084f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000978
+                     0x0000000000001594 - 0x00000000000015c7: DW_OP_reg0 EAX
+                     0x00000000000015c7 - 0x0000000000001a27: DW_OP_breg5 EBP-377)
+                  DW_AT_name	("profile")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(358)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x0000085f:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -368)
+                  DW_AT_name	("temp_r_db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(365)
+                  DW_AT_type	(cu + 0x09ce "remote_database_t[]")
+
+0x0000086f:     DW_TAG_variable
+                  DW_AT_location	(0x00000998
+                     0x00000000000015af - 0x0000000000001687: DW_OP_consts +0, DW_OP_stack_value
+                     0x0000000000001687 - 0x000000000000177c: DW_OP_breg5 EBP-432
+                     0x000000000000178a - 0x00000000000017b7: DW_OP_reg1 ECX
+                     0x00000000000017b7 - 0x000000000000185e: DW_OP_breg5 EBP-456
+                     0x000000000000185e - 0x0000000000001a27: DW_OP_breg5 EBP-432)
+                  DW_AT_name	("record_total_number")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(361)
+                  DW_AT_type	(cu + 0x00d2 "int")
+
+0x0000087f:     DW_TAG_variable
+                  DW_AT_location	(0x000009df
+                     0x00000000000015af - 0x0000000000001942: DW_OP_consts +0, DW_OP_stack_value
+                     0x0000000000001942 - 0x0000000000001948: DW_OP_reg0 EAX
+                     0x0000000000001948 - 0x000000000000195b: DW_OP_reg1 ECX
+                     0x000000000000195b - 0x0000000000001a27: DW_OP_breg5 EBP-500)
+                  DW_AT_name	("max_index")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(362)
+                  DW_AT_type	(cu + 0x00d2 "int")
+
+0x0000088f:     DW_TAG_variable
+                  DW_AT_const_value	(0)
+                  DW_AT_name	("stereo_last_database")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(363)
+                  DW_AT_type	(cu + 0x00d2 "int")
+
+0x0000089c:     DW_TAG_variable
+                  DW_AT_location	(0x00000a17
+                     0x0000000000001628 - 0x0000000000001639: DW_OP_reg0 EAX
+                     0x00000000000016b1 - 0x00000000000016bf: DW_OP_reg0 EAX
+                     0x00000000000017ba - 0x00000000000017c3: DW_OP_reg0 EAX
+                     0x000000000000185e - 0x0000000000001864: DW_OP_reg0 EAX)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(360)
+                  DW_AT_type	(cu + 0x00d2 "int")
+
+0x000008ac:     DW_TAG_variable
+                  DW_AT_location	(0x00000a4b
+                     0x00000000000018a6 - 0x00000000000019f1: DW_OP_consts +0, DW_OP_stack_value
+                     0x00000000000019f1 - 0x00000000000019ff: DW_OP_reg0 EAX
+                     0x00000000000019ff - 0x0000000000001a05: DW_OP_breg5 EBP-480
+                     0x0000000000001a05 - 0x0000000000001a0b: DW_OP_reg0 EAX)
+                  DW_AT_name	("loop_i")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(360)
+                  DW_AT_type	(cu + 0x00d2 "int")
+
+0x000008bc:     DW_TAG_variable
+                  DW_AT_location	(0x00000a83
+                     0x00000000000018df - 0x000000000000194b: DW_OP_consts +0, DW_OP_stack_value
+                     0x000000000000194b - 0x0000000000001967: DW_OP_reg0 EAX
+                     0x0000000000001967 - 0x000000000000196d: DW_OP_breg5 EBP-496
+                     0x000000000000196d - 0x0000000000001973: DW_OP_reg0 EAX)
+                  DW_AT_name	("loop_j")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(360)
+                  DW_AT_type	(cu + 0x00d2 "int")
+
+0x000008cc:     DW_TAG_variable
+                  DW_AT_name	("r_db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(364)
+                  DW_AT_type	(cu + 0x04b6 "remote_database_t")
+
+0x000008d8:     NULL
+
+0x000008d9:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000001a27)
+                DW_AT_high_pc	(0x0000000000001c97)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("get_last_database")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(431)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x00d2 "int")
+
+0x000008ef:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000abb
+                     0x0000000000001a27 - 0x0000000000001a43: DW_OP_reg1 ECX
+                     0x0000000000001a43 - 0x0000000000001c97: DW_OP_breg5 EBP-48)
+                  DW_AT_name	("db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(431)
+                  DW_AT_type	(cu + 0x09b8 "remote_database_t*")
+
+0x000008ff:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000ada
+                     0x0000000000001a27 - 0x0000000000001a40: DW_OP_reg0 EAX
+                     0x0000000000001a40 - 0x0000000000001c97: DW_OP_breg5 EBP-41)
+                  DW_AT_name	("id")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(431)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x0000090f:     DW_TAG_variable
+                  DW_AT_location	(0x00000af9
+                     0x0000000000001a37 - 0x0000000000001ac8: DW_OP_consts +0, DW_OP_stack_value
+                     0x0000000000001ac8 - 0x0000000000001b4c: DW_OP_breg5 EBP-92
+                     0x0000000000001b4c - 0x0000000000001b72: DW_OP_breg5 EBP-108
+                     0x0000000000001b72 - 0x0000000000001b7f: DW_OP_reg0 EAX
+                     0x0000000000001b7f - 0x0000000000001b88: DW_OP_breg5 EBP-120
+                     0x0000000000001b88 - 0x0000000000001b90: DW_OP_breg5 EBP-92
+                     0x0000000000001b90 - 0x0000000000001bae: DW_OP_reg0 EAX
+                     0x0000000000001bae - 0x0000000000001bcb: DW_OP_breg5 EBP-128
+                     0x0000000000001bcb - 0x0000000000001c2b: DW_OP_breg5 EBP-92
+                     0x0000000000001c2b - 0x0000000000001c59: DW_OP_breg5 EBP-144
+                     0x0000000000001c59 - 0x0000000000001c97: DW_OP_breg5 EBP-92)
+                  DW_AT_name	("max_timestamp")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(434)
+                  DW_AT_type	(cu + 0x00d2 "int")
+
+0x0000091f:     DW_TAG_variable
+                  DW_AT_location	(0x00000b8c
+                     0x0000000000001a86 - 0x0000000000001a94: DW_OP_reg0 EAX
+                     0x0000000000001ae9 - 0x0000000000001af7: DW_OP_reg0 EAX
+                     0x0000000000001bb7 - 0x0000000000001bbd: DW_OP_reg0 EAX
+                     0x0000000000001c59 - 0x0000000000001c5c: DW_OP_reg0 EAX)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(433)
+                  DW_AT_type	(cu + 0x00d2 "int")
+
+0x0000092f:     DW_TAG_variable
+                  DW_AT_name	("r_db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(435)
+                  DW_AT_type	(cu + 0x04b6 "remote_database_t")
+
+0x0000093b:     NULL
+
+0x0000093c:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000001c97)
+                DW_AT_high_pc	(0x0000000000001cec)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("restore_remote_device_info_profile")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                DW_AT_decl_line	(668)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x003c "u8")
+                DW_AT_external	(true)
+
+0x00000952:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000bc0
+                     0x0000000000001c97 - 0x0000000000001cca: DW_OP_reg6 ESI
+                     0x0000000000001cca - 0x0000000000001cec: DW_OP_breg5 EBP-56)
+                  DW_AT_name	("mac_addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(668)
+                  DW_AT_type	(cu + 0x048f "bd_addr_t*")
+
+0x00000962:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000bdf
+                     0x0000000000001c97 - 0x0000000000001cb2: DW_OP_reg2 EDX)
+                  DW_AT_name	("device_num")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(668)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x00000972:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000bf2
+                     0x0000000000001c97 - 0x0000000000001cb5: DW_OP_reg1 ECX
+                     0x0000000000001cb5 - 0x0000000000001cec: DW_OP_breg5 EBP-49)
+                  DW_AT_name	("id")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(668)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x00000982:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000c11
+                     0x0000000000001c97 - 0x0000000000001ccf: DW_OP_reg0 EAX)
+                  DW_AT_name	("profile")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(668)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x00000992:     DW_TAG_variable
+                  DW_AT_location	(0x00000c24
+                     0x0000000000001cb2 - 0x0000000000001cbd: DW_OP_breg7 EDI+0)
+                  DW_AT_name	("temp_db")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(670)
+                  DW_AT_type	(cu + 0x04b6 "remote_database_t")
+
+0x000009a2:     DW_TAG_variable
+                  DW_AT_location	(0x00000c38
+                     0x0000000000001cd1 - 0x0000000000001cea: DW_OP_reg3 EBX)
+                  DW_AT_name	("num")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/bredr/remote_device_db.c")
+                  DW_AT_decl_line	(671)
+                  DW_AT_type	(cu + 0x003c "u8")
+
+0x000009b2:     NULL
+
+0x000009b3:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x003c "u8")
+
+0x000009b8:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x04b6 "remote_database_t")
+
+0x000009bd:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x0542 "u16")
+
+0x000009c2:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0146 "sizetype")
+                  DW_AT_count	(0x03)
+
+0x000009c8:     NULL
+
+0x000009c9:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x055f "link_key_t")
+
+0x000009ce:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x04b6 "remote_database_t")
+
+0x000009d3:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0146 "sizetype")
+                  DW_AT_count	(0x0a)
+
+0x000009d9:     NULL
+
+0x000009da:   NULL

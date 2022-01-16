@@ -1,0 +1,134 @@
+temp.o:	file format ELF32-i386
+
+.debug_info contents:
+0x00000000: Compile Unit: length = 0x000000ed version = 0x0004 abbr_offset = 0x0000 addr_size = 0x04 (next unit at 0x000000f1)
+
+0x0000000b: DW_TAG_compile_unit
+              DW_AT_producer	("clang version 4.0.1 (git@192.168.8.109:huangzhenyu/clang.git d97b416c061747718623e97046d5e7dcb4c75555) (git@192.168.8.109:huangzhenyu/llvm.git 64c6917899f78226b6d3cf2b78db54d02abf7c85)")
+              DW_AT_language	(DW_LANG_C99)
+              DW_AT_name	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/hfp_ag_profile.c")
+              DW_AT_stmt_list	(0x00000000)
+              DW_AT_comp_dir	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make")
+              DW_AT_GNU_pubnames	(true)
+              DW_AT_low_pc	(0x0000000000000000)
+              DW_AT_high_pc	(0x0000000000000014)
+
+0x00000026:   DW_TAG_variable
+                DW_AT_name	("app_info_debug_enable")
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/profile_stack_debug.h")
+                DW_AT_decl_line	(190)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x00000037:   DW_TAG_base_type
+                DW_AT_name	("int")
+                DW_AT_encoding	(DW_ATE_signed)
+                DW_AT_byte_size	(0x04)
+
+0x0000003e:   DW_TAG_enumeration_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/profile_common.h")
+                DW_AT_decl_line	(31)
+
+0x00000042:     DW_TAG_enumerator
+                  DW_AT_name	("PROFILE_CMD_OK")
+                  DW_AT_const_value	(0)
+
+0x00000048:     DW_TAG_enumerator
+                  DW_AT_name	("PROFILE_CMD_DEVICE_NO_FOUND")
+                  DW_AT_const_value	(-1000)
+
+0x0000004f:     DW_TAG_enumerator
+                  DW_AT_name	("PROFILE_CMD_NO_FOUND")
+                  DW_AT_const_value	(-1001)
+
+0x00000056:     DW_TAG_enumerator
+                  DW_AT_name	("PROFILE_CMD_SEND_ERROR")
+                  DW_AT_const_value	(-1002)
+
+0x0000005d:     DW_TAG_enumerator
+                  DW_AT_name	("PROFILE_CMD_REMOTE_NOT_SUPPORT")
+                  DW_AT_const_value	(-1003)
+
+0x00000064:     DW_TAG_enumerator
+                  DW_AT_name	("PROFILE_CMD_TRY_AGAIN_LATER")
+                  DW_AT_const_value	(-1004)
+
+0x0000006b:     DW_TAG_enumerator
+                  DW_AT_name	("PROFILE_CMD_DATA_PARSE_ERROE")
+                  DW_AT_const_value	(-1005)
+
+0x00000072:     DW_TAG_enumerator
+                  DW_AT_name	("PROFILE_CMD_PROFILE_NOT_SUPPORT")
+                  DW_AT_const_value	(-1006)
+
+0x00000079:     NULL
+
+0x0000007a:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x000000000000000a)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("hfp_ag_buf_init")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/hfp_ag_profile.c")
+                DW_AT_decl_line	(1239)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x00000090:     DW_TAG_formal_parameter
+                  DW_AT_name	("buf")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/hfp_ag_profile.c")
+                  DW_AT_decl_line	(1239)
+                  DW_AT_type	(cu + 0x00d8 "*")
+
+0x0000009c:     DW_TAG_formal_parameter
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/hfp_ag_profile.c")
+                  DW_AT_decl_line	(1239)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000000a8:     DW_TAG_formal_parameter
+                  DW_AT_name	("deal_flag")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/hfp_ag_profile.c")
+                  DW_AT_decl_line	(1239)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000000b4:     NULL
+
+0x000000b5:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000000a)
+                DW_AT_high_pc	(0x0000000000000014)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("setup_hfp_ag_esco_link")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/hfp_ag_profile.c")
+                DW_AT_decl_line	(1243)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x000000cb:     DW_TAG_formal_parameter
+                  DW_AT_name	("addr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/hfp_ag_profile.c")
+                  DW_AT_decl_line	(1243)
+                  DW_AT_type	(cu + 0x00d9 "u8*")
+
+0x000000d7:     NULL
+
+0x000000d8:   DW_TAG_pointer_type
+
+0x000000d9:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x00de "u8")
+
+0x000000de:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x00e9 "unsigned char")
+                DW_AT_name	("u8")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(44)
+
+0x000000e9:   DW_TAG_base_type
+                DW_AT_name	("unsigned char")
+                DW_AT_encoding	(DW_ATE_unsigned_char)
+                DW_AT_byte_size	(0x01)
+
+0x000000f0:   NULL

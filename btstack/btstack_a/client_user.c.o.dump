@@ -1,0 +1,1221 @@
+temp.o:	file format ELF32-i386
+
+.debug_info contents:
+0x00000000: Compile Unit: length = 0x000007ee version = 0x0004 abbr_offset = 0x0000 addr_size = 0x04 (next unit at 0x000007f2)
+
+0x0000000b: DW_TAG_compile_unit
+              DW_AT_producer	("clang version 4.0.1 (git@192.168.8.109:huangzhenyu/clang.git d97b416c061747718623e97046d5e7dcb4c75555) (git@192.168.8.109:huangzhenyu/llvm.git 64c6917899f78226b6d3cf2b78db54d02abf7c85)")
+              DW_AT_language	(DW_LANG_C99)
+              DW_AT_name	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+              DW_AT_stmt_list	(0x00000000)
+              DW_AT_comp_dir	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make")
+              DW_AT_GNU_pubnames	(true)
+              DW_AT_low_pc	(0x0000000000000000)
+              DW_AT_ranges	(0x00000000
+                 [0x00000000 - 0x000008a2)
+                 [0x000008a2 - 0x000009db)
+                 [0x000009db - 0x00000d20)
+                 [0x00000000 - 0x00000026)
+                 [0x00000026 - 0x00000044)
+                 [0x00000044 - 0x0000004d))
+
+0x00000026:   DW_TAG_variable
+                DW_AT_name	("app_info_debug_enable")
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/profile_stack_debug.h")
+                DW_AT_decl_line	(190)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x00000037:   DW_TAG_base_type
+                DW_AT_name	("int")
+                DW_AT_encoding	(DW_ATE_signed)
+                DW_AT_byte_size	(0x04)
+
+0x0000003e:   DW_TAG_variable
+                DW_AT_name	("common_notification_registration")
+                DW_AT_type	(cu + 0x004f "gatt_client_notification_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                DW_AT_decl_line	(105)
+                DW_AT_location	(DW_OP_addr 0x8)
+
+0x0000004f:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x005a "gatt_client_notification")
+                DW_AT_name	("gatt_client_notification_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Protocol/include/ble/gatt_client.h")
+                DW_AT_decl_line	(198)
+
+0x0000005a:   DW_TAG_structure_type
+                DW_AT_name	("gatt_client_notification")
+                DW_AT_byte_size	(0x0c)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Protocol/include/ble/gatt_client.h")
+                DW_AT_decl_line	(193)
+
+0x00000062:     DW_TAG_member
+                  DW_AT_name	("item")
+                  DW_AT_type	(cu + 0x0093 "linked_item_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Protocol/include/ble/gatt_client.h")
+                  DW_AT_decl_line	(194)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000006e:     DW_TAG_member
+                  DW_AT_name	("callback")
+                  DW_AT_type	(cu + 0x00c3 "btstack_packet_handler_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Protocol/include/ble/gatt_client.h")
+                  DW_AT_decl_line	(195)
+                  DW_AT_data_member_location	(0x04)
+
+0x0000007a:     DW_TAG_member
+                  DW_AT_name	("con_handle")
+                  DW_AT_type	(cu + 0x0112 "hci_con_handle_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Protocol/include/ble/gatt_client.h")
+                  DW_AT_decl_line	(196)
+                  DW_AT_data_member_location	(0x08)
+
+0x00000086:     DW_TAG_member
+                  DW_AT_name	("attribute_handle")
+                  DW_AT_type	(cu + 0x00fb "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Protocol/include/ble/gatt_client.h")
+                  DW_AT_decl_line	(197)
+                  DW_AT_data_member_location	(0x0a)
+
+0x00000092:     NULL
+
+0x00000093:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x009e "btstack_linked_item_t")
+                DW_AT_name	("linked_item_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_linked_list.h")
+                DW_AT_decl_line	(100)
+
+0x0000009e:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x00a9 "btstack_linked_item")
+                DW_AT_name	("btstack_linked_item_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_linked_list.h")
+                DW_AT_decl_line	(55)
+
+0x000000a9:   DW_TAG_structure_type
+                DW_AT_name	("btstack_linked_item")
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_linked_list.h")
+                DW_AT_decl_line	(53)
+
+0x000000b1:     DW_TAG_member
+                  DW_AT_name	("next")
+                  DW_AT_type	(cu + 0x00be "btstack_linked_item*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_linked_list.h")
+                  DW_AT_decl_line	(54)
+                  DW_AT_data_member_location	(0x00)
+
+0x000000bd:     NULL
+
+0x000000be:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x00a9 "btstack_linked_item")
+
+0x000000c3:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x00ce "subroutine *")
+                DW_AT_name	("btstack_packet_handler_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/hci_cmds.h")
+                DW_AT_decl_line	(58)
+
+0x000000ce:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x00d3 "subroutine ")
+
+0x000000d3:   DW_TAG_subroutine_type
+                DW_AT_prototyped	(true)
+
+0x000000d4:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x00e9 "uint8_t")
+
+0x000000d9:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x00fb "uint16_t")
+
+0x000000de:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x010d "uint8_t*")
+
+0x000000e3:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x00fb "uint16_t")
+
+0x000000e8:     NULL
+
+0x000000e9:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x00f4 "unsigned char")
+                DW_AT_name	("uint8_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(44)
+
+0x000000f4:   DW_TAG_base_type
+                DW_AT_name	("unsigned char")
+                DW_AT_encoding	(DW_ATE_unsigned_char)
+                DW_AT_byte_size	(0x01)
+
+0x000000fb:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0106 "unsigned short")
+                DW_AT_name	("uint16_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(46)
+
+0x00000106:   DW_TAG_base_type
+                DW_AT_name	("unsigned short")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x02)
+
+0x0000010d:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x00e9 "uint8_t")
+
+0x00000112:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x00fb "uint16_t")
+                DW_AT_name	("hci_con_handle_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/utils.h")
+                DW_AT_decl_line	(60)
+
+0x0000011d:   DW_TAG_variable
+                DW_AT_name	("gc_search_handle")
+                DW_AT_type	(cu + 0x0112 "hci_con_handle_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                DW_AT_decl_line	(106)
+                DW_AT_location	(DW_OP_addr 0x4)
+
+0x0000012e:   DW_TAG_variable
+                DW_AT_name	("client_s_hdl")
+                DW_AT_type	(cu + 0x013f "client_ctl_t*")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                DW_AT_decl_line	(108)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x0000013f:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0144 "client_ctl_t")
+
+0x00000144:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x014f "structure ")
+                DW_AT_name	("client_ctl_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                DW_AT_decl_line	(103)
+
+0x0000014f:   DW_TAG_structure_type
+                DW_AT_byte_size	(0x01b8)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                DW_AT_decl_line	(85)
+
+0x00000154:     DW_TAG_member
+                  DW_AT_name	("tc_state")
+                  DW_AT_type	(cu + 0x01ce "tc_state_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(86)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000160:     DW_TAG_member
+                  DW_AT_name	("current_service")
+                  DW_AT_type	(cu + 0x026e "le_service_t*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(89)
+                  DW_AT_data_member_location	(0x04)
+
+0x0000016c:     DW_TAG_member
+                  DW_AT_name	("current_characteristic")
+                  DW_AT_type	(cu + 0x02f2 "le_characteristic_t*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(90)
+                  DW_AT_data_member_location	(0x08)
+
+0x00000178:     DW_TAG_member
+                  DW_AT_name	("service_count")
+                  DW_AT_type	(cu + 0x034f "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(96)
+                  DW_AT_data_member_location	(0x0c)
+
+0x00000184:     DW_TAG_member
+                  DW_AT_name	("service_index")
+                  DW_AT_type	(cu + 0x034f "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(97)
+                  DW_AT_data_member_location	(0x0e)
+
+0x00000190:     DW_TAG_member
+                  DW_AT_name	("characteristic_count")
+                  DW_AT_type	(cu + 0x034f "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(98)
+                  DW_AT_data_member_location	(0x10)
+
+0x0000019c:     DW_TAG_member
+                  DW_AT_name	("characteristic_index")
+                  DW_AT_type	(cu + 0x034f "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(99)
+                  DW_AT_data_member_location	(0x12)
+
+0x000001a8:     DW_TAG_member
+                  DW_AT_name	("cur_search_info")
+                  DW_AT_type	(cu + 0x035a "search_result_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(100)
+                  DW_AT_data_member_location	(0x14)
+
+0x000001b4:     DW_TAG_member
+                  DW_AT_name	("remote_services")
+                  DW_AT_type	(cu + 0x043d "le_service_t[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(101)
+                  DW_AT_data_member_location	(0x48)
+
+0x000001c0:     DW_TAG_member
+                  DW_AT_name	("reserve_buf")
+                  DW_AT_type	(cu + 0x0449 "u32[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(102)
+                  DW_AT_data_member_location	(0x01a8)
+
+0x000001cd:     NULL
+
+0x000001ce:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x01d9 "enumeration ")
+                DW_AT_name	("tc_state_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                DW_AT_decl_line	(75)
+
+0x000001d9:   DW_TAG_enumeration_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                DW_AT_decl_line	(41)
+
+0x000001dd:     DW_TAG_enumerator
+                  DW_AT_name	("TC_IDLE")
+                  DW_AT_const_value	(0)
+
+0x000001e3:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W4_SCAN_RESULT")
+                  DW_AT_const_value	(1)
+
+0x000001e9:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W4_CONNECT")
+                  DW_AT_const_value	(2)
+
+0x000001ef:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W4_ENCRYPTED_CONNECTION")
+                  DW_AT_const_value	(3)
+
+0x000001f5:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W4_SERVICE_RESULT")
+                  DW_AT_const_value	(4)
+
+0x000001fb:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W4_SERVICE_WITH_UUID_RESULT")
+                  DW_AT_const_value	(5)
+
+0x00000201:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W4_CHARACTERISTIC_RESULT")
+                  DW_AT_const_value	(6)
+
+0x00000207:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W4_CHARACTERISTIC_WITH_UUID_RESULT")
+                  DW_AT_const_value	(7)
+
+0x0000020d:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W4_CHARACTERISTIC_DESCRIPTOR_RESULT")
+                  DW_AT_const_value	(8)
+
+0x00000213:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W4_INCLUDED_SERVICE_RESULT")
+                  DW_AT_const_value	(9)
+
+0x00000219:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W4_READ_RESULT")
+                  DW_AT_const_value	(10)
+
+0x0000021f:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W4_READ_LONG_RESULT")
+                  DW_AT_const_value	(11)
+
+0x00000225:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W2_WRITE_WITHOUT_RESPONSE")
+                  DW_AT_const_value	(12)
+
+0x0000022b:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W4_WRITE_WITHOUT_RESPONSE_SENT")
+                  DW_AT_const_value	(13)
+
+0x00000231:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W4_WRITE_RESULT")
+                  DW_AT_const_value	(14)
+
+0x00000237:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W4_LONG_WRITE_RESULT")
+                  DW_AT_const_value	(15)
+
+0x0000023d:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W4_RELIABLE_WRITE_RESULT")
+                  DW_AT_const_value	(16)
+
+0x00000243:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W4_ACC_ENABLE")
+                  DW_AT_const_value	(17)
+
+0x00000249:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W4_ACC_CLIENT_CONFIG_CHARACTERISTIC_RESULT")
+                  DW_AT_const_value	(18)
+
+0x0000024f:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W4_ACC_SUBSCRIBE")
+                  DW_AT_const_value	(19)
+
+0x00000255:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W4_ACC_DATA")
+                  DW_AT_const_value	(20)
+
+0x0000025b:     DW_TAG_enumerator
+                  DW_AT_name	("TC_W4_DISCONNECT")
+                  DW_AT_const_value	(21)
+
+0x00000261:     DW_TAG_enumerator
+                  DW_AT_name	("TC_DISCONNECTED")
+                  DW_AT_const_value	(22)
+
+0x00000267:     DW_TAG_enumerator
+                  DW_AT_name	("TC_CONNECTED")
+                  DW_AT_const_value	(23)
+
+0x0000026d:     NULL
+
+0x0000026e:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0273 "le_service_t")
+
+0x00000273:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x027e "structure ")
+                DW_AT_name	("le_service_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/gatt.h")
+                DW_AT_decl_line	(24)
+
+0x0000027e:   DW_TAG_structure_type
+                DW_AT_byte_size	(0x16)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/gatt.h")
+                DW_AT_decl_line	(19)
+
+0x00000282:     DW_TAG_member
+                  DW_AT_name	("start_group_handle")
+                  DW_AT_type	(cu + 0x02b3 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/gatt.h")
+                  DW_AT_decl_line	(20)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000028e:     DW_TAG_member
+                  DW_AT_name	("end_group_handle")
+                  DW_AT_type	(cu + 0x02b3 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/gatt.h")
+                  DW_AT_decl_line	(21)
+                  DW_AT_data_member_location	(0x02)
+
+0x0000029a:     DW_TAG_member
+                  DW_AT_name	("uuid16")
+                  DW_AT_type	(cu + 0x02b3 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/gatt.h")
+                  DW_AT_decl_line	(22)
+                  DW_AT_data_member_location	(0x04)
+
+0x000002a6:     DW_TAG_member
+                  DW_AT_name	("uuid128")
+                  DW_AT_type	(cu + 0x02c9 "uint8_t[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/gatt.h")
+                  DW_AT_decl_line	(23)
+                  DW_AT_data_member_location	(0x06)
+
+0x000002b2:     NULL
+
+0x000002b3:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x02be "__uint16_t")
+                DW_AT_name	("uint16_t")
+                DW_AT_decl_file	("/opt/q32s/include/sys/_stdint.h")
+                DW_AT_decl_line	(26)
+
+0x000002be:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0106 "unsigned short")
+                DW_AT_name	("__uint16_t")
+                DW_AT_decl_file	("/opt/q32s/include/machine/_default_types.h")
+                DW_AT_decl_line	(43)
+
+0x000002c9:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x02d5 "uint8_t")
+
+0x000002ce:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x02eb "sizetype")
+                  DW_AT_count	(0x10)
+
+0x000002d4:     NULL
+
+0x000002d5:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x02e0 "__uint8_t")
+                DW_AT_name	("uint8_t")
+                DW_AT_decl_file	("/opt/q32s/include/sys/_stdint.h")
+                DW_AT_decl_line	(20)
+
+0x000002e0:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x00f4 "unsigned char")
+                DW_AT_name	("__uint8_t")
+                DW_AT_decl_file	("/opt/q32s/include/machine/_default_types.h")
+                DW_AT_decl_line	(29)
+
+0x000002eb:   DW_TAG_base_type
+                DW_AT_name	("sizetype")
+                DW_AT_byte_size	(0x08)
+                DW_AT_encoding	(DW_ATE_unsigned)
+
+0x000002f2:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x02f7 "le_characteristic_t")
+
+0x000002f7:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0302 "structure ")
+                DW_AT_name	("le_characteristic_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/gatt.h")
+                DW_AT_decl_line	(34)
+
+0x00000302:   DW_TAG_structure_type
+                DW_AT_byte_size	(0x1a)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/gatt.h")
+                DW_AT_decl_line	(27)
+
+0x00000306:     DW_TAG_member
+                  DW_AT_name	("start_handle")
+                  DW_AT_type	(cu + 0x02b3 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/gatt.h")
+                  DW_AT_decl_line	(28)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000312:     DW_TAG_member
+                  DW_AT_name	("value_handle")
+                  DW_AT_type	(cu + 0x02b3 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/gatt.h")
+                  DW_AT_decl_line	(29)
+                  DW_AT_data_member_location	(0x02)
+
+0x0000031e:     DW_TAG_member
+                  DW_AT_name	("end_handle")
+                  DW_AT_type	(cu + 0x02b3 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/gatt.h")
+                  DW_AT_decl_line	(30)
+                  DW_AT_data_member_location	(0x04)
+
+0x0000032a:     DW_TAG_member
+                  DW_AT_name	("properties")
+                  DW_AT_type	(cu + 0x02b3 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/gatt.h")
+                  DW_AT_decl_line	(31)
+                  DW_AT_data_member_location	(0x06)
+
+0x00000336:     DW_TAG_member
+                  DW_AT_name	("uuid16")
+                  DW_AT_type	(cu + 0x02b3 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/gatt.h")
+                  DW_AT_decl_line	(32)
+                  DW_AT_data_member_location	(0x08)
+
+0x00000342:     DW_TAG_member
+                  DW_AT_name	("uuid128")
+                  DW_AT_type	(cu + 0x02c9 "uint8_t[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/gatt.h")
+                  DW_AT_decl_line	(33)
+                  DW_AT_data_member_location	(0x0a)
+
+0x0000034e:     NULL
+
+0x0000034f:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0106 "unsigned short")
+                DW_AT_name	("u16")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(46)
+
+0x0000035a:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0365 "structure ")
+                DW_AT_name	("search_result_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                DW_AT_decl_line	(90)
+
+0x00000365:   DW_TAG_structure_type
+                DW_AT_byte_size	(0x34)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                DW_AT_decl_line	(85)
+
+0x00000369:     DW_TAG_member
+                  DW_AT_name	("services")
+                  DW_AT_type	(cu + 0x039a "service_report_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                  DW_AT_decl_line	(86)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000375:     DW_TAG_member
+                  DW_AT_name	("characteristic")
+                  DW_AT_type	(cu + 0x03da "charact_report_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                  DW_AT_decl_line	(87)
+                  DW_AT_data_member_location	(0x16)
+
+0x00000381:     DW_TAG_member
+                  DW_AT_name	("service_index")
+                  DW_AT_type	(cu + 0x0432 "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                  DW_AT_decl_line	(88)
+                  DW_AT_data_member_location	(0x30)
+
+0x0000038d:     DW_TAG_member
+                  DW_AT_name	("characteristic_index")
+                  DW_AT_type	(cu + 0x0432 "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                  DW_AT_decl_line	(89)
+                  DW_AT_data_member_location	(0x32)
+
+0x00000399:     NULL
+
+0x0000039a:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x03a5 "structure ")
+                DW_AT_name	("service_report_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                DW_AT_decl_line	(64)
+
+0x000003a5:   DW_TAG_structure_type
+                DW_AT_byte_size	(0x16)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                DW_AT_decl_line	(59)
+
+0x000003a9:     DW_TAG_member
+                  DW_AT_name	("start_group_handle")
+                  DW_AT_type	(cu + 0x02b3 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                  DW_AT_decl_line	(60)
+                  DW_AT_data_member_location	(0x00)
+
+0x000003b5:     DW_TAG_member
+                  DW_AT_name	("end_group_handle")
+                  DW_AT_type	(cu + 0x02b3 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                  DW_AT_decl_line	(61)
+                  DW_AT_data_member_location	(0x02)
+
+0x000003c1:     DW_TAG_member
+                  DW_AT_name	("uuid16")
+                  DW_AT_type	(cu + 0x02b3 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                  DW_AT_decl_line	(62)
+                  DW_AT_data_member_location	(0x04)
+
+0x000003cd:     DW_TAG_member
+                  DW_AT_name	("uuid128")
+                  DW_AT_type	(cu + 0x02c9 "uint8_t[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                  DW_AT_decl_line	(63)
+                  DW_AT_data_member_location	(0x06)
+
+0x000003d9:     NULL
+
+0x000003da:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x03e5 "structure ")
+                DW_AT_name	("charact_report_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                DW_AT_decl_line	(73)
+
+0x000003e5:   DW_TAG_structure_type
+                DW_AT_byte_size	(0x1a)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                DW_AT_decl_line	(66)
+
+0x000003e9:     DW_TAG_member
+                  DW_AT_name	("start_handle")
+                  DW_AT_type	(cu + 0x02b3 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                  DW_AT_decl_line	(67)
+                  DW_AT_data_member_location	(0x00)
+
+0x000003f5:     DW_TAG_member
+                  DW_AT_name	("value_handle")
+                  DW_AT_type	(cu + 0x02b3 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                  DW_AT_decl_line	(68)
+                  DW_AT_data_member_location	(0x02)
+
+0x00000401:     DW_TAG_member
+                  DW_AT_name	("end_handle")
+                  DW_AT_type	(cu + 0x02b3 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                  DW_AT_decl_line	(69)
+                  DW_AT_data_member_location	(0x04)
+
+0x0000040d:     DW_TAG_member
+                  DW_AT_name	("properties")
+                  DW_AT_type	(cu + 0x02b3 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                  DW_AT_decl_line	(70)
+                  DW_AT_data_member_location	(0x06)
+
+0x00000419:     DW_TAG_member
+                  DW_AT_name	("uuid16")
+                  DW_AT_type	(cu + 0x02b3 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                  DW_AT_decl_line	(71)
+                  DW_AT_data_member_location	(0x08)
+
+0x00000425:     DW_TAG_member
+                  DW_AT_name	("uuid128")
+                  DW_AT_type	(cu + 0x02c9 "uint8_t[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                  DW_AT_decl_line	(72)
+                  DW_AT_data_member_location	(0x0a)
+
+0x00000431:     NULL
+
+0x00000432:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0106 "unsigned short")
+                DW_AT_name	("u16")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(13)
+
+0x0000043d:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x0273 "le_service_t")
+
+0x00000442:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x02eb "sizetype")
+                  DW_AT_count	(0x10)
+
+0x00000448:     NULL
+
+0x00000449:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x0455 "u32")
+
+0x0000044e:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x02eb "sizetype")
+                  DW_AT_count	(0x04)
+
+0x00000454:     NULL
+
+0x00000455:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0460 "unsigned int")
+                DW_AT_name	("u32")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(48)
+
+0x00000460:   DW_TAG_base_type
+                DW_AT_name	("unsigned int")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x04)
+
+0x00000467:   DW_TAG_enumeration_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/ble_api.h")
+                DW_AT_decl_line	(89)
+
+0x0000046b:     DW_TAG_enumerator
+                  DW_AT_name	("BLE_CMD_RET_SUCESS")
+                  DW_AT_const_value	(0)
+
+0x00000471:     DW_TAG_enumerator
+                  DW_AT_name	("BLE_CMD_RET_BUSY")
+                  DW_AT_const_value	(-100)
+
+0x00000478:     DW_TAG_enumerator
+                  DW_AT_name	("BLE_CMD_PARAM_OVERFLOW")
+                  DW_AT_const_value	(-99)
+
+0x0000047f:     DW_TAG_enumerator
+                  DW_AT_name	("BLE_CMD_OPT_FAIL")
+                  DW_AT_const_value	(-98)
+
+0x00000486:     DW_TAG_enumerator
+                  DW_AT_name	("BLE_BUFFER_FULL")
+                  DW_AT_const_value	(-97)
+
+0x0000048d:     DW_TAG_enumerator
+                  DW_AT_name	("BLE_BUFFER_ERROR")
+                  DW_AT_const_value	(-96)
+
+0x00000494:     DW_TAG_enumerator
+                  DW_AT_name	("BLE_CMD_PARAM_ERROR")
+                  DW_AT_const_value	(-95)
+
+0x0000049b:     DW_TAG_enumerator
+                  DW_AT_name	("BLE_CMD_STACK_NOT_RUN")
+                  DW_AT_const_value	(-94)
+
+0x000004a2:     DW_TAG_enumerator
+                  DW_AT_name	("BLE_CMD_CCC_FAIL")
+                  DW_AT_const_value	(-93)
+
+0x000004a9:     NULL
+
+0x000004aa:   DW_TAG_pointer_type
+
+0x000004ab:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x0000000000000005)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("user_client_report_search_result")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                DW_AT_decl_line	(163)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x000004bc:     DW_TAG_formal_parameter
+                  DW_AT_name	("result_info")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(163)
+                  DW_AT_type	(cu + 0x0745 "search_result_t*")
+
+0x000004c7:     NULL
+
+0x000004c8:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000005)
+                DW_AT_high_pc	(0x000000000000000a)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("user_client_report_data_callback")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                DW_AT_decl_line	(256)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x000004da:     DW_TAG_formal_parameter
+                  DW_AT_name	("report_data")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(256)
+                  DW_AT_type	(cu + 0x074a "att_data_report_t*")
+
+0x000004e6:     NULL
+
+0x000004e7:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000000a)
+                DW_AT_high_pc	(0x0000000000000013)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("user_client_set_search_complete")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                DW_AT_decl_line	(316)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x000004f9:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000013)
+                DW_AT_high_pc	(0x0000000000000130)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("user_client_search_profile_complete")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                DW_AT_decl_line	(168)
+                DW_AT_prototyped	(true)
+
+0x0000050a:     DW_TAG_variable
+                  DW_AT_location	(0x00000000
+                     0x0000000000000069 - 0x0000000000000078: DW_OP_breg0 EAX+0
+                     0x000000000000007c - 0x000000000000009a: DW_OP_reg1 ECX
+                     0x000000000000009a - 0x00000000000000d3: DW_OP_breg5 EBP-24
+                     0x00000000000000d3 - 0x00000000000000e5: DW_OP_reg0 EAX)
+                  DW_AT_name	("mtu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(174)
+                  DW_AT_type	(cu + 0x034f "u16")
+
+0x00000519:     NULL
+
+0x0000051a:   DW_TAG_subprogram
+                DW_AT_name	("user_client_search_characteristic_init")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                DW_AT_decl_line	(152)
+                DW_AT_prototyped	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000522:   DW_TAG_subprogram
+                DW_AT_name	("user_client_search_report_characteristtic")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                DW_AT_decl_line	(189)
+                DW_AT_prototyped	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x0000052a:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000130)
+                DW_AT_high_pc	(0x00000000000007a4)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("user_client_gatt_event")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                DW_AT_decl_line	(321)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x0000053c:     DW_TAG_formal_parameter
+                  DW_AT_name	("packet_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(321)
+                  DW_AT_type	(cu + 0x00e9 "uint8_t")
+
+0x00000548:     DW_TAG_formal_parameter
+                  DW_AT_name	("channel")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(321)
+                  DW_AT_type	(cu + 0x00fb "uint16_t")
+
+0x00000554:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000036
+                     0x0000000000000130 - 0x0000000000000151: DW_OP_reg1 ECX
+                     0x0000000000000151 - 0x00000000000007a4: DW_OP_breg5 EBP-20)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(321)
+                  DW_AT_type	(cu + 0x010d "uint8_t*")
+
+0x00000564:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000055
+                     0x0000000000000130 - 0x000000000000014e: DW_OP_reg0 EAX
+                     0x000000000000014e - 0x00000000000007a4: DW_OP_breg5 EBP-14)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(321)
+                  DW_AT_type	(cu + 0x00fb "uint16_t")
+
+0x00000574:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x051a "user_client_search_characteristic_init")
+                  DW_AT_low_pc	(0x00000000000004dd)
+                  DW_AT_high_pc	(0x000000000000052e)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_call_line	(374)
+
+0x00000584:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0522 "user_client_search_report_characteristtic")
+                  DW_AT_low_pc	(0x00000000000005be)
+                  DW_AT_high_pc	(0x00000000000005f9)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_call_line	(389)
+
+0x00000594:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x051a "user_client_search_characteristic_init")
+                  DW_AT_low_pc	(0x00000000000006e0)
+                  DW_AT_high_pc	(0x0000000000000731)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_call_line	(401)
+
+0x000005a4:     NULL
+
+0x000005a5:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000007a4)
+                DW_AT_high_pc	(0x00000000000008a2)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("user_client_report_acc_data")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                DW_AT_decl_line	(271)
+                DW_AT_prototyped	(true)
+
+0x000005b7:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000074
+                     0x00000000000007a4 - 0x00000000000007b4: DW_OP_reg1 ECX
+                     0x00000000000007b4 - 0x00000000000008a2: DW_OP_breg5 EBP-28)
+                  DW_AT_name	("packet")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(271)
+                  DW_AT_type	(cu + 0x010d "uint8_t*")
+
+0x000005c7:     DW_TAG_formal_parameter
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(271)
+                  DW_AT_type	(cu + 0x00fb "uint16_t")
+
+0x000005d3:     DW_TAG_variable
+                  DW_AT_location	(0x00000093
+                     0x00000000000007b1 - 0x0000000000000816: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x0000000000000816 - 0x00000000000008a2: DW_OP_constu 0x1, DW_OP_stack_value)
+                  DW_AT_name	("get_data_flag")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(274)
+                  DW_AT_type	(cu + 0x07b7 "u8")
+
+0x000005e3:     DW_TAG_variable
+                  DW_AT_location	(0x000000b5
+                     0x0000000000000894 - 0x000000000000089c: DW_OP_breg1 ECX+0)
+                  DW_AT_name	("report_data")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(273)
+                  DW_AT_type	(cu + 0x074f "att_data_report_t")
+
+0x000005f3:     NULL
+
+0x000005f4:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x0000000000000008)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("hci_event_packet_get_type")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/btstack_event.h")
+                DW_AT_decl_line	(38)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x02d5 "uint8_t")
+
+0x00000609:     DW_TAG_formal_parameter
+                  DW_AT_location	(DW_OP_reg1 ECX)
+                  DW_AT_name	("event")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/btstack_event.h")
+                  DW_AT_decl_line	(38)
+                  DW_AT_type	(cu + 0x07c2 "const uint8_t*")
+
+0x00000616:     NULL
+
+0x00000617:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000008)
+                DW_AT_high_pc	(0x0000000000000026)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("gatt_event_service_query_result_get_service")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/btstack_event.h")
+                DW_AT_decl_line	(1919)
+                DW_AT_prototyped	(true)
+
+0x00000629:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000000c9
+                     0x0000000000000008 - 0x0000000000000021: DW_OP_reg1 ECX)
+                  DW_AT_name	("event")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/btstack_event.h")
+                  DW_AT_decl_line	(1919)
+                  DW_AT_type	(cu + 0x07c2 "const uint8_t*")
+
+0x00000639:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000000dc
+                     0x0000000000000008 - 0x0000000000000021: DW_OP_reg2 EDX)
+                  DW_AT_name	("service")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/btstack_event.h")
+                  DW_AT_decl_line	(1919)
+                  DW_AT_type	(cu + 0x07cc "gatt_client_service_t*")
+
+0x00000649:     NULL
+
+0x0000064a:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000008a2)
+                DW_AT_high_pc	(0x00000000000009db)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("user_client_discover_next_service")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                DW_AT_decl_line	(211)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+
+0x0000065f:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000026)
+                DW_AT_high_pc	(0x0000000000000044)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("gatt_event_characteristic_query_result_get_characteristic")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/btstack_event.h")
+                DW_AT_decl_line	(1942)
+                DW_AT_prototyped	(true)
+
+0x00000671:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000000ef
+                     0x0000000000000026 - 0x000000000000003f: DW_OP_reg1 ECX)
+                  DW_AT_name	("event")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/btstack_event.h")
+                  DW_AT_decl_line	(1942)
+                  DW_AT_type	(cu + 0x07c2 "const uint8_t*")
+
+0x00000681:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000102
+                     0x0000000000000026 - 0x000000000000003f: DW_OP_reg2 EDX)
+                  DW_AT_name	("characteristic")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/btstack_event.h")
+                  DW_AT_decl_line	(1942)
+                  DW_AT_type	(cu + 0x07dc "gatt_client_characteristic_t*")
+
+0x00000691:     NULL
+
+0x00000692:   DW_TAG_subprogram
+                DW_AT_name	("user_client_search_service_init")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                DW_AT_decl_line	(142)
+                DW_AT_prototyped	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x0000069a:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000009db)
+                DW_AT_high_pc	(0x0000000000000bab)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("user_client_search_profile_start")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                DW_AT_decl_line	(466)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x000006b0:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000115
+                     0x00000000000009db - 0x00000000000009fc: DW_OP_reg1 ECX
+                     0x00000000000009fc - 0x0000000000000bab: DW_OP_breg5 EBP-20)
+                  DW_AT_name	("search_pfl_type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(466)
+                  DW_AT_type	(cu + 0x0455 "u32")
+
+0x000006c0:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000134
+                     0x00000000000009db - 0x00000000000009f9: DW_OP_reg0 EAX
+                     0x00000000000009f9 - 0x0000000000000bab: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("search_data")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(466)
+                  DW_AT_type	(cu + 0x0455 "u32")
+
+0x000006d0:     DW_TAG_variable
+                  DW_AT_location	(0x00000153
+                     0x00000000000009ef - 0x0000000000000b52: DW_OP_consts +0, DW_OP_stack_value
+                     0x0000000000000b5b - 0x0000000000000b60: DW_OP_reg1 ECX
+                     0x0000000000000b60 - 0x0000000000000b66: DW_OP_breg5 EBP-24
+                     0x0000000000000b66 - 0x0000000000000b71: DW_OP_reg1 ECX)
+                  DW_AT_name	("res")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(468)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000006e0:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0692 "user_client_search_service_init")
+                  DW_AT_low_pc	(0x0000000000000a26)
+                  DW_AT_high_pc	(0x0000000000000a6b)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_call_line	(476)
+
+0x000006f0:     NULL
+
+0x000006f1:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000bab)
+                DW_AT_high_pc	(0x0000000000000d20)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("user_client_init")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                DW_AT_decl_line	(505)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000703:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000018a
+                     0x0000000000000bab - 0x0000000000000bd0: DW_OP_reg2 EDX
+                     0x0000000000000bd0 - 0x0000000000000d20: DW_OP_breg5 EBP-18)
+                  DW_AT_name	("handle")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(505)
+                  DW_AT_type	(cu + 0x034f "u16")
+
+0x00000713:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000001a9
+                     0x0000000000000bab - 0x0000000000000bcc: DW_OP_reg1 ECX
+                     0x0000000000000bcc - 0x0000000000000d20: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("buffer")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(505)
+                  DW_AT_type	(cu + 0x07ec "u8*")
+
+0x00000723:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000001c8
+                     0x0000000000000bab - 0x0000000000000bc9: DW_OP_reg0 EAX
+                     0x0000000000000bc9 - 0x0000000000000d20: DW_OP_breg5 EBP-10)
+                  DW_AT_name	("buffer_size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/User/ble/client_user.c")
+                  DW_AT_decl_line	(505)
+                  DW_AT_type	(cu + 0x034f "u16")
+
+0x00000733:     NULL
+
+0x00000734:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000044)
+                DW_AT_high_pc	(0x000000000000004d)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("cpu_reset")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(145)
+                DW_AT_prototyped	(true)
+
+0x00000745:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x035a "search_result_t")
+
+0x0000074a:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x074f "att_data_report_t")
+
+0x0000074f:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x075a "structure ")
+                DW_AT_name	("att_data_report_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                DW_AT_decl_line	(82)
+
+0x0000075a:   DW_TAG_structure_type
+                DW_AT_byte_size	(0x10)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                DW_AT_decl_line	(75)
+
+0x0000075e:     DW_TAG_member
+                  DW_AT_name	("packet_type")
+                  DW_AT_type	(cu + 0x0432 "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                  DW_AT_decl_line	(76)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000076a:     DW_TAG_member
+                  DW_AT_name	("value_handle")
+                  DW_AT_type	(cu + 0x0432 "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                  DW_AT_decl_line	(77)
+                  DW_AT_data_member_location	(0x02)
+
+0x00000776:     DW_TAG_member
+                  DW_AT_name	("value_offset")
+                  DW_AT_type	(cu + 0x0432 "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                  DW_AT_decl_line	(78)
+                  DW_AT_data_member_location	(0x04)
+
+0x00000782:     DW_TAG_member
+                  DW_AT_name	("blob_length")
+                  DW_AT_type	(cu + 0x0432 "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                  DW_AT_decl_line	(79)
+                  DW_AT_data_member_location	(0x06)
+
+0x0000078e:     DW_TAG_member
+                  DW_AT_name	("blob")
+                  DW_AT_type	(cu + 0x07a7 "u8*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                  DW_AT_decl_line	(80)
+                  DW_AT_data_member_location	(0x08)
+
+0x0000079a:     DW_TAG_member
+                  DW_AT_name	("conn_handle")
+                  DW_AT_type	(cu + 0x0432 "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/att.h")
+                  DW_AT_decl_line	(81)
+                  DW_AT_data_member_location	(0x0c)
+
+0x000007a6:     NULL
+
+0x000007a7:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x07ac "u8")
+
+0x000007ac:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x00f4 "unsigned char")
+                DW_AT_name	("u8")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/driver/cpu/bd19/asm/cpu.h")
+                DW_AT_decl_line	(11)
+
+0x000007b7:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x00f4 "unsigned char")
+                DW_AT_name	("u8")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(44)
+
+0x000007c2:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x07c7 "const uint8_t")
+
+0x000007c7:   DW_TAG_const_type
+                DW_AT_type	(cu + 0x02d5 "uint8_t")
+
+0x000007cc:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x07d1 "gatt_client_service_t")
+
+0x000007d1:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x027e "structure ")
+                DW_AT_name	("gatt_client_service_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/gatt.h")
+                DW_AT_decl_line	(24)
+
+0x000007dc:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x07e1 "gatt_client_characteristic_t")
+
+0x000007e1:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0302 "structure ")
+                DW_AT_name	("gatt_client_characteristic_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/include_lib/btstack/le/gatt.h")
+                DW_AT_decl_line	(34)
+
+0x000007ec:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x07b7 "u8")
+
+0x000007f1:   NULL

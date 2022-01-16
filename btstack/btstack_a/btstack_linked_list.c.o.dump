@@ -1,0 +1,471 @@
+temp.o:	file format ELF32-i386
+
+.debug_info contents:
+0x00000000: Compile Unit: length = 0x000002fa version = 0x0004 abbr_offset = 0x0000 addr_size = 0x04 (next unit at 0x000002fe)
+
+0x0000000b: DW_TAG_compile_unit
+              DW_AT_producer	("clang version 4.0.1 (git@192.168.8.109:huangzhenyu/clang.git d97b416c061747718623e97046d5e7dcb4c75555) (git@192.168.8.109:huangzhenyu/llvm.git 64c6917899f78226b6d3cf2b78db54d02abf7c85)")
+              DW_AT_language	(DW_LANG_C99)
+              DW_AT_name	("../btcommon/btstack_linked_list.c")
+              DW_AT_stmt_list	(0x00000000)
+              DW_AT_comp_dir	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make")
+              DW_AT_GNU_pubnames	(true)
+              DW_AT_low_pc	(0x0000000000000000)
+              DW_AT_high_pc	(0x000000000000030b)
+
+0x00000026:   DW_TAG_pointer_type
+
+0x00000027:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x002c "btstack_linked_item_t")
+
+0x0000002c:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0037 "btstack_linked_item")
+                DW_AT_name	("btstack_linked_item_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_linked_list.h")
+                DW_AT_decl_line	(55)
+
+0x00000037:   DW_TAG_structure_type
+                DW_AT_name	("btstack_linked_item")
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_linked_list.h")
+                DW_AT_decl_line	(53)
+
+0x0000003f:     DW_TAG_member
+                  DW_AT_name	("next")
+                  DW_AT_type	(cu + 0x004c "btstack_linked_item*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_linked_list.h")
+                  DW_AT_decl_line	(54)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000004b:     NULL
+
+0x0000004c:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0037 "btstack_linked_item")
+
+0x00000051:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x0000000000000014)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_linked_list_empty")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                DW_AT_decl_line	(58)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x02ad "int")
+                DW_AT_external	(true)
+
+0x00000066:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000000
+                     0x0000000000000000 - 0x0000000000000012: DW_OP_reg0 EAX)
+                  DW_AT_name	("list")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(58)
+                  DW_AT_type	(cu + 0x02b4 "btstack_linked_list_t*")
+
+0x00000075:     NULL
+
+0x00000076:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000014)
+                DW_AT_high_pc	(0x0000000000000049)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_linked_list_get_last_item")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                DW_AT_decl_line	(66)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0027 "btstack_linked_item_t*")
+                DW_AT_external	(true)
+
+0x0000008b:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000013
+                     0x0000000000000014 - 0x0000000000000028: DW_OP_reg0 EAX)
+                  DW_AT_name	("list")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(66)
+                  DW_AT_type	(cu + 0x02b4 "btstack_linked_list_t*")
+
+0x0000009a:     DW_TAG_variable
+                  DW_AT_location	(0x00000026
+                     0x000000000000001f - 0x000000000000002b: DW_OP_reg1 ECX
+                     0x000000000000002d - 0x000000000000002d: DW_OP_reg1 ECX
+                     0x000000000000002d - 0x0000000000000035: DW_OP_reg0 EAX
+                     0x0000000000000035 - 0x0000000000000049: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("lastItem")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(68)
+                  DW_AT_type	(cu + 0x0027 "btstack_linked_item_t*")
+
+0x000000a9:     DW_TAG_variable
+                  DW_AT_location	(0x0000005b
+                     0x000000000000002d - 0x000000000000003b: DW_OP_reg0 EAX
+                     0x000000000000003b - 0x0000000000000041: DW_OP_breg5 EBP-8
+                     0x0000000000000041 - 0x0000000000000044: DW_OP_reg0 EAX)
+                  DW_AT_name	("it")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(69)
+                  DW_AT_type	(cu + 0x0027 "btstack_linked_item_t*")
+
+0x000000b8:     NULL
+
+0x000000b9:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000049)
+                DW_AT_high_pc	(0x00000000000000bc)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_linked_list_add")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                DW_AT_decl_line	(82)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x000000ca:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000085
+                     0x0000000000000049 - 0x0000000000000060: DW_OP_reg1 ECX
+                     0x0000000000000060 - 0x00000000000000bc: DW_OP_breg5 EBP-8)
+                  DW_AT_name	("list")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(82)
+                  DW_AT_type	(cu + 0x02b4 "btstack_linked_list_t*")
+
+0x000000d9:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000000a4
+                     0x0000000000000049 - 0x000000000000005d: DW_OP_reg0 EAX
+                     0x000000000000005d - 0x00000000000000bc: DW_OP_breg5 EBP-4)
+                  DW_AT_name	("item")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(82)
+                  DW_AT_type	(cu + 0x0027 "btstack_linked_item_t*")
+
+0x000000e8:     DW_TAG_variable
+                  DW_AT_location	(0x000000c3
+                     0x0000000000000057 - 0x0000000000000063: DW_OP_reg2 EDX
+                     0x0000000000000063 - 0x0000000000000079: DW_OP_breg5 EBP-12
+                     0x0000000000000079 - 0x000000000000007f: DW_OP_reg1 ECX
+                     0x000000000000007f - 0x0000000000000085: DW_OP_breg5 EBP-16
+                     0x0000000000000085 - 0x000000000000009b: DW_OP_breg5 EBP-12
+                     0x000000000000009b - 0x000000000000009b: DW_OP_reg1 ECX
+                     0x000000000000009b - 0x00000000000000bc: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("it")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(85)
+                  DW_AT_type	(cu + 0x0027 "btstack_linked_item_t*")
+
+0x000000f7:     NULL
+
+0x000000f8:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000000bc)
+                DW_AT_high_pc	(0x0000000000000115)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_linked_list_add_tail")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                DW_AT_decl_line	(96)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000109:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000011c
+                     0x00000000000000bc - 0x00000000000000d3: DW_OP_reg1 ECX)
+                  DW_AT_name	("list")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(96)
+                  DW_AT_type	(cu + 0x02b4 "btstack_linked_list_t*")
+
+0x00000118:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000012f
+                     0x00000000000000bc - 0x00000000000000cb: DW_OP_reg0 EAX
+                     0x00000000000000cb - 0x0000000000000115: DW_OP_breg5 EBP-4)
+                  DW_AT_name	("item")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(96)
+                  DW_AT_type	(cu + 0x0027 "btstack_linked_item_t*")
+
+0x00000127:     DW_TAG_variable
+                  DW_AT_location	(0x0000014e
+                     0x00000000000000c8 - 0x00000000000000d1: DW_OP_reg1 ECX
+                     0x00000000000000d1 - 0x00000000000000d9: DW_OP_reg0 EAX
+                     0x00000000000000d9 - 0x0000000000000115: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("it")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(99)
+                  DW_AT_type	(cu + 0x0027 "btstack_linked_item_t*")
+
+0x00000136:     NULL
+
+0x00000137:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000115)
+                DW_AT_high_pc	(0x000000000000018b)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_linked_list_remove")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                DW_AT_decl_line	(109)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x02ad "int")
+                DW_AT_external	(true)
+
+0x0000014c:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000178
+                     0x0000000000000115 - 0x0000000000000130: DW_OP_reg1 ECX
+                     0x0000000000000130 - 0x000000000000018b: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("list")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(109)
+                  DW_AT_type	(cu + 0x02b4 "btstack_linked_list_t*")
+
+0x0000015b:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000197
+                     0x0000000000000115 - 0x000000000000012d: DW_OP_reg0 EAX
+                     0x000000000000012d - 0x000000000000018b: DW_OP_breg5 EBP-8)
+                  DW_AT_name	("item")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(109)
+                  DW_AT_type	(cu + 0x0027 "btstack_linked_item_t*")
+
+0x0000016a:     DW_TAG_variable
+                  DW_AT_location	(0x000001b6
+                     0x000000000000013c - 0x000000000000013f: DW_OP_reg0 EAX
+                     0x000000000000013f - 0x000000000000013f: DW_OP_breg5 EBP-20
+                     0x000000000000013f - 0x000000000000013f: DW_OP_breg5 EBP-24
+                     0x000000000000013f - 0x0000000000000148: DW_OP_reg0 EAX
+                     0x0000000000000148 - 0x000000000000018b: DW_OP_breg5 EBP-24)
+                  DW_AT_name	("it")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(114)
+                  DW_AT_type	(cu + 0x0027 "btstack_linked_item_t*")
+
+0x00000179:     NULL
+
+0x0000017a:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000018b)
+                DW_AT_high_pc	(0x00000000000001c3)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_linked_list_count")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                DW_AT_decl_line	(127)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x02ad "int")
+                DW_AT_external	(true)
+
+0x0000018f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000001f8
+                     0x000000000000018b - 0x000000000000019f: DW_OP_reg0 EAX)
+                  DW_AT_name	("list")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(127)
+                  DW_AT_type	(cu + 0x02b4 "btstack_linked_list_t*")
+
+0x0000019e:     DW_TAG_variable
+                  DW_AT_location	(0x0000020b
+                     0x0000000000000196 - 0x00000000000001a2: DW_OP_consts +0, DW_OP_stack_value
+                     0x00000000000001a2 - 0x00000000000001a9: DW_OP_reg0 EAX
+                     0x00000000000001a9 - 0x00000000000001af: DW_OP_reg2 EDX
+                     0x00000000000001af - 0x00000000000001c3: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("counter")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(130)
+                  DW_AT_type	(cu + 0x02ad "int")
+
+0x000001ad:     DW_TAG_variable
+                  DW_AT_location	(0x00000242
+                     0x0000000000000196 - 0x000000000000019f: DW_OP_reg0 EAX
+                     0x00000000000001a2 - 0x00000000000001a4: DW_OP_reg1 ECX
+                     0x00000000000001a9 - 0x00000000000001b2: DW_OP_reg1 ECX
+                     0x00000000000001b2 - 0x00000000000001bb: DW_OP_breg5 EBP-4
+                     0x00000000000001bb - 0x00000000000001c3: DW_OP_reg1 ECX)
+                  DW_AT_name	("it")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(129)
+                  DW_AT_type	(cu + 0x0027 "btstack_linked_item_t*")
+
+0x000001bc:     NULL
+
+0x000001bd:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000001c3)
+                DW_AT_high_pc	(0x00000000000001cd)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_linked_list_get_first_item")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                DW_AT_decl_line	(138)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0027 "btstack_linked_item_t*")
+                DW_AT_external	(true)
+
+0x000001d2:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000282
+                     0x00000000000001c3 - 0x00000000000001cb: DW_OP_reg0 EAX)
+                  DW_AT_name	("list")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(138)
+                  DW_AT_type	(cu + 0x02b4 "btstack_linked_list_t*")
+
+0x000001e1:     NULL
+
+0x000001e2:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000001cd)
+                DW_AT_high_pc	(0x0000000000000201)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_linked_list_pop")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                DW_AT_decl_line	(144)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0027 "btstack_linked_item_t*")
+                DW_AT_external	(true)
+
+0x000001f7:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000295
+                     0x00000000000001cd - 0x00000000000001e0: DW_OP_reg0 EAX
+                     0x00000000000001e0 - 0x0000000000000201: DW_OP_breg5 EBP-4)
+                  DW_AT_name	("list")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(144)
+                  DW_AT_type	(cu + 0x02b4 "btstack_linked_list_t*")
+
+0x00000206:     DW_TAG_variable
+                  DW_AT_location	(0x000002b4
+                     0x00000000000001da - 0x00000000000001e3: DW_OP_reg2 EDX
+                     0x00000000000001e3 - 0x0000000000000201: DW_OP_breg5 EBP-8)
+                  DW_AT_name	("item")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(146)
+                  DW_AT_type	(cu + 0x0027 "btstack_linked_item_t*")
+
+0x00000215:     NULL
+
+0x00000216:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000201)
+                DW_AT_high_pc	(0x000000000000021a)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_linked_list_iterator_init")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                DW_AT_decl_line	(159)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x00000227:     DW_TAG_formal_parameter
+                  DW_AT_location	(DW_OP_reg1 ECX)
+                  DW_AT_name	("it")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(159)
+                  DW_AT_type	(cu + 0x02c4 "btstack_linked_list_iterator_t*")
+
+0x00000234:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000002d3
+                     0x0000000000000201 - 0x0000000000000215: DW_OP_reg0 EAX)
+                  DW_AT_name	("head")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(159)
+                  DW_AT_type	(cu + 0x02b4 "btstack_linked_list_t*")
+
+0x00000243:     NULL
+
+0x00000244:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000021a)
+                DW_AT_high_pc	(0x0000000000000278)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_linked_list_iterator_has_next")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                DW_AT_decl_line	(166)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x02ad "int")
+                DW_AT_external	(true)
+
+0x00000259:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000002e6
+                     0x000000000000021a - 0x0000000000000229: DW_OP_reg0 EAX
+                     0x0000000000000229 - 0x0000000000000278: DW_OP_breg5 EBP-4)
+                  DW_AT_name	("it")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(166)
+                  DW_AT_type	(cu + 0x02c4 "btstack_linked_list_iterator_t*")
+
+0x00000268:     NULL
+
+0x00000269:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000278)
+                DW_AT_high_pc	(0x00000000000002f0)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_linked_list_iterator_next")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                DW_AT_decl_line	(180)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0027 "btstack_linked_item_t*")
+                DW_AT_external	(true)
+
+0x0000027e:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000305
+                     0x0000000000000278 - 0x0000000000000289: DW_OP_reg0 EAX
+                     0x0000000000000289 - 0x00000000000002f0: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("it")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(180)
+                  DW_AT_type	(cu + 0x02c4 "btstack_linked_list_iterator_t*")
+
+0x0000028d:     NULL
+
+0x0000028e:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000002f0)
+                DW_AT_high_pc	(0x000000000000030b)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("btstack_linked_list_iterator_remove")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                DW_AT_decl_line	(196)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x0000029f:     DW_TAG_formal_parameter
+                  DW_AT_location	(DW_OP_reg0 EAX)
+                  DW_AT_name	("it")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btcommon/btstack_linked_list.c")
+                  DW_AT_decl_line	(196)
+                  DW_AT_type	(cu + 0x02c4 "btstack_linked_list_iterator_t*")
+
+0x000002ac:     NULL
+
+0x000002ad:   DW_TAG_base_type
+                DW_AT_name	("int")
+                DW_AT_encoding	(DW_ATE_signed)
+                DW_AT_byte_size	(0x04)
+
+0x000002b4:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x02b9 "btstack_linked_list_t")
+
+0x000002b9:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0027 "btstack_linked_item_t*")
+                DW_AT_name	("btstack_linked_list_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_linked_list.h")
+                DW_AT_decl_line	(58)
+
+0x000002c4:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x02c9 "btstack_linked_list_iterator_t")
+
+0x000002c9:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x02d4 "structure ")
+                DW_AT_name	("btstack_linked_list_iterator_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_linked_list.h")
+                DW_AT_decl_line	(65)
+
+0x000002d4:   DW_TAG_structure_type
+                DW_AT_byte_size	(0x0c)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_linked_list.h")
+                DW_AT_decl_line	(61)
+
+0x000002d8:     DW_TAG_member
+                  DW_AT_name	("advance_on_next")
+                  DW_AT_type	(cu + 0x02ad "int")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_linked_list.h")
+                  DW_AT_decl_line	(62)
+                  DW_AT_data_member_location	(0x00)
+
+0x000002e4:     DW_TAG_member
+                  DW_AT_name	("prev")
+                  DW_AT_type	(cu + 0x0027 "btstack_linked_item_t*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_linked_list.h")
+                  DW_AT_decl_line	(63)
+                  DW_AT_data_member_location	(0x04)
+
+0x000002f0:     DW_TAG_member
+                  DW_AT_name	("curr")
+                  DW_AT_type	(cu + 0x0027 "btstack_linked_item_t*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/btstack_linked_list.h")
+                  DW_AT_decl_line	(64)
+                  DW_AT_data_member_location	(0x08)
+
+0x000002fc:     NULL
+
+0x000002fd:   NULL

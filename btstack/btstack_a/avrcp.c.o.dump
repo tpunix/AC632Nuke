@@ -1,0 +1,2673 @@
+temp.o:	file format ELF32-i386
+
+.debug_info contents:
+0x00000000: Compile Unit: length = 0x0000121f version = 0x0004 abbr_offset = 0x0000 addr_size = 0x04 (next unit at 0x00001223)
+
+0x0000000b: DW_TAG_compile_unit
+              DW_AT_producer	("clang version 4.0.1 (git@192.168.8.109:huangzhenyu/clang.git d97b416c061747718623e97046d5e7dcb4c75555) (git@192.168.8.109:huangzhenyu/llvm.git 64c6917899f78226b6d3cf2b78db54d02abf7c85)")
+              DW_AT_language	(DW_LANG_C99)
+              DW_AT_name	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+              DW_AT_stmt_list	(0x00000000)
+              DW_AT_comp_dir	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make")
+              DW_AT_GNU_pubnames	(true)
+              DW_AT_low_pc	(0x0000000000000000)
+              DW_AT_high_pc	(0x0000000000001971)
+
+0x00000026:   DW_TAG_variable
+                DW_AT_name	("app_info_debug_enable")
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/profile_stack_debug.h")
+                DW_AT_decl_line	(190)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x00000037:   DW_TAG_base_type
+                DW_AT_name	("int")
+                DW_AT_encoding	(DW_ATE_signed)
+                DW_AT_byte_size	(0x04)
+
+0x0000003e:   DW_TAG_variable
+                DW_AT_name	("arp_deal_respone_handlers")
+                DW_AT_type	(cu + 0x0050 "const respone_pdu_handler[]")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(779)
+                DW_AT_location	(DW_OP_addr 0x0)
+
+0x00000050:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x005c "const respone_pdu_handler")
+
+0x00000055:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0138 "sizetype")
+                  DW_AT_count	(0x08)
+
+0x0000005b:     NULL
+
+0x0000005c:   DW_TAG_const_type
+                DW_AT_type	(cu + 0x0061 "respone_pdu_handler")
+
+0x00000061:   DW_TAG_structure_type
+                DW_AT_name	("respone_pdu_handler")
+                DW_AT_byte_size	(0x08)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                DW_AT_decl_line	(252)
+
+0x00000069:     DW_TAG_member
+                  DW_AT_name	("pdu_id")
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(253)
+                  DW_AT_data_member_location	(0x00)
+
+0x00000075:     DW_TAG_member
+                  DW_AT_name	("code")
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(254)
+                  DW_AT_data_member_location	(0x01)
+
+0x00000081:     DW_TAG_member
+                  DW_AT_name	("func")
+                  DW_AT_type	(cu + 0x00a0 "subroutine uint8_t*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(255)
+                  DW_AT_data_member_location	(0x04)
+
+0x0000008d:     NULL
+
+0x0000008e:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0099 "unsigned char")
+                DW_AT_name	("uint8_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(44)
+
+0x00000099:   DW_TAG_base_type
+                DW_AT_name	("unsigned char")
+                DW_AT_encoding	(DW_ATE_unsigned_char)
+                DW_AT_byte_size	(0x01)
+
+0x000000a0:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x00a5 "subroutine uint8_t")
+
+0x000000a5:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x008e "uint8_t")
+                DW_AT_prototyped	(true)
+
+0x000000aa:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x000000af:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x000000b4:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x000000b9:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x041e "uint8_t*")
+
+0x000000be:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x000000c3:     NULL
+
+0x000000c4:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x00c9 "avctp")
+
+0x000000c9:   DW_TAG_structure_type
+                DW_AT_name	("avctp")
+                DW_AT_byte_size	(0x40)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                DW_AT_decl_line	(296)
+
+0x000000d2:     DW_TAG_member
+                  DW_AT_name	("dev_addr")
+                  DW_AT_type	(cu + 0x0121 "bd_addr_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(297)
+                  DW_AT_data_member_location	(0x00)
+
+0x000000df:     DW_TAG_member
+                  DW_AT_name	("control_cid")
+                  DW_AT_type	(cu + 0x013f "u16")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(298)
+                  DW_AT_data_member_location	(0x06)
+
+0x000000ec:     DW_TAG_member
+                  DW_AT_name	("avctp_conn_cnt")
+                  DW_AT_type	(cu + 0x0151 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(299)
+                  DW_AT_data_member_location	(0x08)
+
+0x000000f9:     DW_TAG_member
+                  DW_AT_name	("arp_control_handlers")
+                  DW_AT_type	(cu + 0x015c "const control_pdu_handler*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(300)
+                  DW_AT_data_member_location	(0x0c)
+
+0x00000106:     DW_TAG_member
+                  DW_AT_name	("arp_respone_handlers")
+                  DW_AT_type	(cu + 0x022c "const respone_pdu_handler*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(301)
+                  DW_AT_data_member_location	(0x10)
+
+0x00000113:     DW_TAG_member
+                  DW_AT_name	("acp_core_data")
+                  DW_AT_type	(cu + 0x0231 "avrcp_core_data_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(306)
+                  DW_AT_data_member_location	(0x14)
+
+0x00000120:     NULL
+
+0x00000121:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x012c "uint8_t[]")
+                DW_AT_name	("bd_addr_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/utils.h")
+                DW_AT_decl_line	(66)
+
+0x0000012c:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000131:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0138 "sizetype")
+                  DW_AT_count	(0x06)
+
+0x00000137:     NULL
+
+0x00000138:   DW_TAG_base_type
+                DW_AT_name	("sizetype")
+                DW_AT_byte_size	(0x08)
+                DW_AT_encoding	(DW_ATE_unsigned)
+
+0x0000013f:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x014a "unsigned short")
+                DW_AT_name	("u16")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(46)
+
+0x0000014a:   DW_TAG_base_type
+                DW_AT_name	("unsigned short")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x02)
+
+0x00000151:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0099 "unsigned char")
+                DW_AT_name	("u8")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(44)
+
+0x0000015c:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0161 "const control_pdu_handler")
+
+0x00000161:   DW_TAG_const_type
+                DW_AT_type	(cu + 0x0166 "control_pdu_handler")
+
+0x00000166:   DW_TAG_structure_type
+                DW_AT_name	("control_pdu_handler")
+                DW_AT_byte_size	(0x08)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                DW_AT_decl_line	(246)
+
+0x0000016e:     DW_TAG_member
+                  DW_AT_name	("pdu_id")
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(247)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000017a:     DW_TAG_member
+                  DW_AT_name	("code")
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(248)
+                  DW_AT_data_member_location	(0x01)
+
+0x00000186:     DW_TAG_member
+                  DW_AT_name	("func")
+                  DW_AT_type	(cu + 0x0193 "subroutine uint8_t*")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(249)
+                  DW_AT_data_member_location	(0x04)
+
+0x00000192:     NULL
+
+0x00000193:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0198 "subroutine uint8_t")
+
+0x00000198:   DW_TAG_subroutine_type
+                DW_AT_type	(cu + 0x008e "uint8_t")
+                DW_AT_prototyped	(true)
+
+0x0000019d:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x000001a2:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x000001a7:     DW_TAG_formal_parameter
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x000001ac:     NULL
+
+0x000001ad:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x01b2 "avrcp_header")
+
+0x000001b2:   DW_TAG_structure_type
+                DW_AT_name	("avrcp_header")
+                DW_AT_byte_size	(0x07)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(95)
+
+0x000001ba:     DW_TAG_member
+                  DW_AT_name	("company_id")
+                  DW_AT_type	(cu + 0x0209 "uint8_t[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(96)
+                  DW_AT_data_member_location	(0x00)
+
+0x000001c6:     DW_TAG_member
+                  DW_AT_name	("pdu_id")
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(97)
+                  DW_AT_data_member_location	(0x03)
+
+0x000001d2:     DW_TAG_member
+                  DW_AT_name	("packet_type")
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(98)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x02)
+                  DW_AT_bit_offset	(0x06)
+                  DW_AT_data_member_location	(0x04)
+
+0x000001e1:     DW_TAG_member
+                  DW_AT_name	("rsvd")
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(99)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x06)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x04)
+
+0x000001f0:     DW_TAG_member
+                  DW_AT_name	("params_len")
+                  DW_AT_type	(cu + 0x0215 "uint16_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(100)
+                  DW_AT_data_member_location	(0x05)
+
+0x000001fc:     DW_TAG_member
+                  DW_AT_name	("params")
+                  DW_AT_type	(cu + 0x0220 "uint8_t[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(101)
+                  DW_AT_data_member_location	(0x07)
+
+0x00000208:     NULL
+
+0x00000209:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x0000020e:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0138 "sizetype")
+                  DW_AT_count	(0x03)
+
+0x00000214:     NULL
+
+0x00000215:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x014a "unsigned short")
+                DW_AT_name	("uint16_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(46)
+
+0x00000220:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000225:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0138 "sizetype")
+                  DW_AT_count	(0x00)
+
+0x0000022b:     NULL
+
+0x0000022c:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x005c "const respone_pdu_handler")
+
+0x00000231:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x023d "structure ")
+                DW_AT_name	("avrcp_core_data_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                DW_AT_decl_line	(294)
+
+0x0000023d:   DW_TAG_structure_type
+                DW_AT_byte_size	(0x2c)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                DW_AT_decl_line	(274)
+
+0x00000242:     DW_TAG_member
+                  DW_AT_name	("pending_cmd")
+                  DW_AT_type	(cu + 0x0355 "u32")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(275)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000024f:     DW_TAG_member
+                  DW_AT_name	("pending_release_cnt")
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(276)
+                  DW_AT_data_member_location	(0x04)
+
+0x0000025c:     DW_TAG_member
+                  DW_AT_name	("pending_release_cmd")
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(277)
+                  DW_AT_data_member_location	(0x05)
+
+0x00000269:     DW_TAG_member
+                  DW_AT_name	("remote_player_setting_attr_value")
+                  DW_AT_type	(cu + 0x0367 "uint8_t[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(278)
+                  DW_AT_data_member_location	(0x06)
+
+0x00000276:     DW_TAG_member
+                  DW_AT_name	("remote_player_setting_cnt")
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(279)
+                  DW_AT_data_member_location	(0x0b)
+
+0x00000283:     DW_TAG_member
+                  DW_AT_name	("remote_player_setting_attr")
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(280)
+                  DW_AT_data_member_location	(0x0c)
+
+0x00000290:     DW_TAG_member
+                  DW_AT_name	("remote_transaction")
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(281)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x04)
+                  DW_AT_data_member_location	(0x0d)
+
+0x000002a0:     DW_TAG_member
+                  DW_AT_name	("state")
+                  DW_AT_type	(cu + 0x0373 "avctp_state_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(282)
+                  DW_AT_byte_size	(0x04)
+                  DW_AT_bit_size	(0x03)
+                  DW_AT_bit_offset	(0x11)
+                  DW_AT_data_member_location	(0x0c)
+
+0x000002b0:     DW_TAG_member
+                  DW_AT_name	("initiator")
+                  DW_AT_type	(cu + 0x03a1 "bool")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(283)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x0d)
+
+0x000002c0:     DW_TAG_member
+                  DW_AT_name	("pre_sta")
+                  DW_AT_type	(cu + 0x0151 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(284)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x03)
+                  DW_AT_bit_offset	(0x05)
+                  DW_AT_data_member_location	(0x0e)
+
+0x000002d0:     DW_TAG_member
+                  DW_AT_name	("a2dp_play_sta")
+                  DW_AT_type	(cu + 0x0151 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(285)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x03)
+                  DW_AT_bit_offset	(0x02)
+                  DW_AT_data_member_location	(0x0e)
+
+0x000002e0:     DW_TAG_member
+                  DW_AT_name	("is_play_have_sent")
+                  DW_AT_type	(cu + 0x03a1 "bool")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(286)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x01)
+                  DW_AT_data_member_location	(0x0e)
+
+0x000002f0:     DW_TAG_member
+                  DW_AT_name	("is_inuse")
+                  DW_AT_type	(cu + 0x03a1 "bool")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(287)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x0e)
+
+0x00000300:     DW_TAG_member
+                  DW_AT_name	("pos_read")
+                  DW_AT_type	(cu + 0x0151 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(288)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x04)
+                  DW_AT_data_member_location	(0x0f)
+
+0x00000310:     DW_TAG_member
+                  DW_AT_name	("pos_write")
+                  DW_AT_type	(cu + 0x0151 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(289)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x0f)
+
+0x00000320:     DW_TAG_member
+                  DW_AT_name	("avrcp_volume")
+                  DW_AT_type	(cu + 0x0151 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(290)
+                  DW_AT_data_member_location	(0x10)
+
+0x0000032d:     DW_TAG_member
+                  DW_AT_name	("avctp_send_buf_len")
+                  DW_AT_type	(cu + 0x0151 "u8")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(291)
+                  DW_AT_data_member_location	(0x11)
+
+0x0000033a:     DW_TAG_member
+                  DW_AT_name	("avctp_opid_buf")
+                  DW_AT_type	(cu + 0x03ac "u8[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(292)
+                  DW_AT_data_member_location	(0x12)
+
+0x00000347:     DW_TAG_member
+                  DW_AT_name	("avrcp_event")
+                  DW_AT_type	(cu + 0x03b8 "avrcp_event_info[]")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(293)
+                  DW_AT_data_member_location	(0x1b)
+
+0x00000354:     NULL
+
+0x00000355:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0360 "unsigned int")
+                DW_AT_name	("u32")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(48)
+
+0x00000360:   DW_TAG_base_type
+                DW_AT_name	("unsigned int")
+                DW_AT_encoding	(DW_ATE_unsigned)
+                DW_AT_byte_size	(0x04)
+
+0x00000367:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x0000036c:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0138 "sizetype")
+                  DW_AT_count	(0x05)
+
+0x00000372:     NULL
+
+0x00000373:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x037e "enumeration ")
+                DW_AT_name	("avctp_state_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                DW_AT_decl_line	(215)
+
+0x0000037e:   DW_TAG_enumeration_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                DW_AT_decl_line	(209)
+
+0x00000382:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_STATE_DISCONNECTED")
+                  DW_AT_const_value	(0)
+
+0x00000388:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_STATE_CONNECTING")
+                  DW_AT_const_value	(1)
+
+0x0000038e:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_STATE_CONNECTED")
+                  DW_AT_const_value	(2)
+
+0x00000394:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_STATE_BROWSING_CONNECTING")
+                  DW_AT_const_value	(3)
+
+0x0000039a:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_STATE_BROWSING_CONNECTED")
+                  DW_AT_const_value	(4)
+
+0x000003a0:     NULL
+
+0x000003a1:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0099 "unsigned char")
+                DW_AT_name	("bool")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(44)
+
+0x000003ac:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x0151 "u8")
+
+0x000003b1:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0138 "sizetype")
+                  DW_AT_count	(0x09)
+
+0x000003b7:     NULL
+
+0x000003b8:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x03c4 "avrcp_event_info")
+
+0x000003bd:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0138 "sizetype")
+                  DW_AT_count	(0x0e)
+
+0x000003c3:     NULL
+
+0x000003c4:   DW_TAG_structure_type
+                DW_AT_name	("avrcp_event_info")
+                DW_AT_byte_size	(0x01)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                DW_AT_decl_line	(263)
+
+0x000003cd:     DW_TAG_member
+                  DW_AT_name	("supported_events")
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(264)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x07)
+                  DW_AT_data_member_location	(0x00)
+
+0x000003dd:     DW_TAG_member
+                  DW_AT_name	("registered_events")
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(265)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x06)
+                  DW_AT_data_member_location	(0x00)
+
+0x000003ed:     DW_TAG_member
+                  DW_AT_name	("remote_supported_events")
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(266)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x05)
+                  DW_AT_data_member_location	(0x00)
+
+0x000003fd:     DW_TAG_member
+                  DW_AT_name	("remote_registered_events")
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(267)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x01)
+                  DW_AT_bit_offset	(0x04)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000040d:     DW_TAG_member
+                  DW_AT_name	("transaction_events")
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                  DW_AT_decl_line	(268)
+                  DW_AT_byte_size	(0x01)
+                  DW_AT_bit_size	(0x04)
+                  DW_AT_bit_offset	(0x00)
+                  DW_AT_data_member_location	(0x00)
+
+0x0000041d:     NULL
+
+0x0000041e:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000423:   DW_TAG_variable
+                DW_AT_name	("arp_control_handlers")
+                DW_AT_type	(cu + 0x0435 "const control_pdu_handler[]")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(1084)
+                DW_AT_location	(DW_OP_addr 0x40)
+
+0x00000435:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x0161 "const control_pdu_handler")
+
+0x0000043a:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0138 "sizetype")
+                  DW_AT_count	(0x07)
+
+0x00000440:     NULL
+
+0x00000441:   DW_TAG_variable
+                DW_AT_name	("arp_company_ids")
+                DW_AT_type	(cu + 0x044d "uint32_t[]")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(955)
+
+0x0000044d:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x0459 "uint32_t")
+
+0x00000452:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0138 "sizetype")
+                  DW_AT_count	(0x01)
+
+0x00000458:     NULL
+
+0x00000459:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x0360 "unsigned int")
+                DW_AT_name	("uint32_t")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btcommon/typedef.h")
+                DW_AT_decl_line	(48)
+
+0x00000464:   DW_TAG_enumeration_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/avctp.h")
+                DW_AT_decl_line	(217)
+
+0x00000468:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_CMD_GET_CAPABILITIES")
+                  DW_AT_const_value	(0)
+
+0x0000046e:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_CMD_REGISTER_EVENT_STATUS")
+                  DW_AT_const_value	(1)
+
+0x00000474:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_CMD_REGISTER_EVENT_TRACK")
+                  DW_AT_const_value	(2)
+
+0x0000047a:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_CMD_REGISTER_EVENT_SETTING")
+                  DW_AT_const_value	(3)
+
+0x00000480:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_CMD_REGISTER_EVENT_LIST_ATTR")
+                  DW_AT_const_value	(4)
+
+0x00000486:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_CMD_REGISTER_EVENT_SET_REP")
+                  DW_AT_const_value	(5)
+
+0x0000048c:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_CMD_REGISTER_EVENT_SET_SHUFFLE")
+                  DW_AT_const_value	(6)
+
+0x00000492:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_CMD_REGISTER_EVENT_VOL_CHANGED")
+                  DW_AT_const_value	(7)
+
+0x00000498:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_CMD_REGISTER_EVENT_STATUS_CHANGED")
+                  DW_AT_const_value	(8)
+
+0x0000049e:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_CMD_REGISTER_EVENT_PLAYBACK_POS")
+                  DW_AT_const_value	(9)
+
+0x000004a4:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_CMD_REGISTER_SEEK_RELEASE")
+                  DW_AT_const_value	(10)
+
+0x000004aa:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_CMD_REGISTER_GET_PLAY_STATUS")
+                  DW_AT_const_value	(11)
+
+0x000004b0:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_CMD_REGISTER_GET_MUSIC_INFO")
+                  DW_AT_const_value	(12)
+
+0x000004b6:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_CMD_REGISTER_BQB_VOL_CHANGED")
+                  DW_AT_const_value	(13)
+
+0x000004bc:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_CMD_CONNECT_A2DP_MEDIA")
+                  DW_AT_const_value	(14)
+
+0x000004c2:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_RESPONSE_ERROR_TYPE_1")
+                  DW_AT_const_value	(15)
+
+0x000004c8:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_CMD_MAX_OP_VALUE")
+                  DW_AT_const_value	(16)
+
+0x000004ce:     NULL
+
+0x000004cf:   DW_TAG_enumeration_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                DW_AT_decl_line	(157)
+
+0x000004d3:     DW_TAG_enumerator
+                  DW_AT_name	("A2DP_STATUS_IDLE")
+                  DW_AT_const_value	(0)
+
+0x000004d9:     DW_TAG_enumerator
+                  DW_AT_name	("A2DP_STATUS_STARTING")
+                  DW_AT_const_value	(1)
+
+0x000004df:     DW_TAG_enumerator
+                  DW_AT_name	("A2DP_STATUS_SUSPENDING")
+                  DW_AT_const_value	(2)
+
+0x000004e5:     DW_TAG_enumerator
+                  DW_AT_name	("A2DP_STATUS_FWD_SEEK")
+                  DW_AT_const_value	(3)
+
+0x000004eb:     DW_TAG_enumerator
+                  DW_AT_name	("A2DP_STATUS_REV_SEEK")
+                  DW_AT_const_value	(4)
+
+0x000004f1:     NULL
+
+0x000004f2:   DW_TAG_enumeration_type
+                DW_AT_byte_size	(0x04)
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/profile_common.h")
+                DW_AT_decl_line	(65)
+
+0x000004f6:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_INDSTA_CTRL_STA_CHANGED")
+                  DW_AT_const_value	(16)
+
+0x000004fc:     DW_TAG_enumerator
+                  DW_AT_name	("AVCTP_INDSTA_MAX")
+                  DW_AT_const_value	(17)
+
+0x00000502:     NULL
+
+0x00000503:   DW_TAG_pointer_type
+
+0x00000504:   DW_TAG_subprogram
+                DW_AT_name	("set_company_id")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(146)
+                DW_AT_prototyped	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x0000050c:     DW_TAG_formal_parameter
+                  DW_AT_name	("cid")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(146)
+                  DW_AT_type	(cu + 0x041e "uint8_t*")
+
+0x00000517:     DW_TAG_formal_parameter
+                  DW_AT_name	("cid_in")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(146)
+                  DW_AT_type	(cu + 0x0523 "const uint32_t")
+
+0x00000522:     NULL
+
+0x00000523:   DW_TAG_const_type
+                DW_AT_type	(cu + 0x0459 "uint32_t")
+
+0x00000528:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000000)
+                DW_AT_high_pc	(0x000000000000015a)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("avrcp_player_event")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(156)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x0000053d:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000000
+                     0x0000000000000000 - 0x000000000000001d: DW_OP_reg1 ECX
+                     0x000000000000001d - 0x000000000000015a: DW_OP_breg5 EBP-36)
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(156)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x0000054c:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000001f
+                     0x0000000000000000 - 0x000000000000001a: DW_OP_reg0 EAX
+                     0x000000000000001a - 0x000000000000015a: DW_OP_breg5 EBP-29)
+                  DW_AT_name	("id")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(156)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x0000055b:     DW_TAG_formal_parameter
+                  DW_AT_name	("data")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(157)
+                  DW_AT_type	(cu + 0x11d7 "const u8*")
+
+0x00000566:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -28)
+                  DW_AT_name	("buf")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(159)
+                  DW_AT_type	(cu + 0x11cb "uint8_t[]")
+
+0x00000574:     DW_TAG_variable
+                  DW_AT_location	(0x0000003e
+                     0x0000000000000014 - 0x000000000000010b: DW_OP_consts +0, DW_OP_stack_value
+                     0x000000000000010b - 0x000000000000011b: DW_OP_reg0 EAX
+                     0x000000000000011b - 0x000000000000015a: DW_OP_breg5 EBP-44)
+                  DW_AT_name	("err")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(162)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000583:     DW_TAG_variable
+                  DW_AT_location	(0x0000006a
+                     0x0000000000000085 - 0x000000000000015a: DW_OP_constu 0x2, DW_OP_stack_value)
+                  DW_AT_name	("size")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(161)
+                  DW_AT_type	(cu + 0x0215 "uint16_t")
+
+0x00000592:     DW_TAG_variable
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(160)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x0000059d:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0504 "set_company_id")
+                  DW_AT_low_pc	(0x0000000000000055)
+                  DW_AT_high_pc	(0x000000000000006d)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_call_line	(173)
+
+0x000005ac:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg -40)
+                    DW_AT_abstract_origin	(cu + 0x050c "cid")
+
+0x000005b4:       DW_TAG_formal_parameter
+                    DW_AT_const_value	(6488)
+                    DW_AT_abstract_origin	(cu + 0x0517 "cid_in")
+
+0x000005bb:       NULL
+
+0x000005bc:     NULL
+
+0x000005bd:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000015a)
+                DW_AT_high_pc	(0x0000000000000279)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("avrcp_register_notification")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(216)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x000005d2:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000007f
+                     0x000000000000015a - 0x000000000000019d: DW_OP_reg1 ECX
+                     0x000000000000019d - 0x0000000000000279: DW_OP_breg5 EBP-32)
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(216)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x000005e1:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000009e
+                     0x000000000000015a - 0x00000000000001ae: DW_OP_reg0 EAX)
+                  DW_AT_name	("event")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(216)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x000005f0:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -24)
+                  DW_AT_name	("buf")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(218)
+                  DW_AT_type	(cu + 0x0d60 "uint8_t[]")
+
+0x000005fe:     DW_TAG_variable
+                  DW_AT_const_value	(0)
+                  DW_AT_name	("length")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(220)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x0000060a:     DW_TAG_variable
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(219)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x00000615:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0504 "set_company_id")
+                  DW_AT_low_pc	(0x000000000000016c)
+                  DW_AT_high_pc	(0x000000000000017e)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_call_line	(224)
+
+0x00000624:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x000000b1
+                       0x000000000000016c - 0x00000000000001a0: DW_OP_reg2 EDX
+                       0x00000000000001a0 - 0x0000000000000279: DW_OP_breg5 EBP-36)
+                    DW_AT_abstract_origin	(cu + 0x050c "cid")
+
+0x0000062d:       DW_TAG_formal_parameter
+                    DW_AT_const_value	(6488)
+                    DW_AT_abstract_origin	(cu + 0x0517 "cid_in")
+
+0x00000634:       NULL
+
+0x00000635:     DW_TAG_lexical_block
+                  DW_AT_low_pc	(0x00000000000001ae)
+                  DW_AT_high_pc	(0x00000000000001cc)
+
+0x0000063e:       DW_TAG_variable
+                    DW_AT_const_value	(1)
+                    DW_AT_name	("music_interval")
+                    DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                    DW_AT_decl_line	(235)
+                    DW_AT_type	(cu + 0x0355 "u32")
+
+0x0000064a:       NULL
+
+0x0000064b:     NULL
+
+0x0000064c:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000279)
+                DW_AT_high_pc	(0x00000000000002e8)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("avrcp_get_capabilities")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(250)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x00000661:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000000d0
+                     0x0000000000000279 - 0x00000000000002e1: DW_OP_reg0 EAX)
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(250)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x00000670:     DW_TAG_variable
+                  DW_AT_location	(0x000000f6
+                     0x00000000000002b4 - 0x00000000000002e8: DW_OP_constu 0x8, DW_OP_stack_value)
+                  DW_AT_name	("length")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(254)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x0000067f:     DW_TAG_variable
+                  DW_AT_name	("buf")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(252)
+                  DW_AT_type	(cu + 0x11e1 "uint8_t[]")
+
+0x0000068a:     DW_TAG_variable
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(253)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x00000695:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0504 "set_company_id")
+                  DW_AT_low_pc	(0x0000000000000296)
+                  DW_AT_high_pc	(0x00000000000002a2)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_call_line	(258)
+
+0x000006a5:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x000000e3
+                       0x0000000000000296 - 0x00000000000002e6: DW_OP_reg7 EDI)
+                    DW_AT_abstract_origin	(cu + 0x050c "cid")
+
+0x000006ae:       DW_TAG_formal_parameter
+                    DW_AT_const_value	(6488)
+                    DW_AT_abstract_origin	(cu + 0x0517 "cid_in")
+
+0x000006b5:       NULL
+
+0x000006b6:     NULL
+
+0x000006b7:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000002e8)
+                DW_AT_high_pc	(0x0000000000000359)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("avrcp_list_player_attributes")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(271)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x000006cd:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000010b
+                     0x00000000000002e8 - 0x0000000000000352: DW_OP_reg0 EAX)
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(271)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x000006dd:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -15)
+                  DW_AT_name	("buf")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(273)
+                  DW_AT_type	(cu + 0x11ed "uint8_t[]")
+
+0x000006ec:     DW_TAG_variable
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(274)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x000006f8:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0504 "set_company_id")
+                  DW_AT_low_pc	(0x0000000000000305)
+                  DW_AT_high_pc	(0x000000000000031d)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_call_line	(278)
+
+0x00000708:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x0000011e
+                       0x0000000000000305 - 0x0000000000000357: DW_OP_reg7 EDI)
+                    DW_AT_abstract_origin	(cu + 0x050c "cid")
+
+0x00000711:       DW_TAG_formal_parameter
+                    DW_AT_const_value	(6488)
+                    DW_AT_abstract_origin	(cu + 0x0517 "cid_in")
+
+0x00000718:       NULL
+
+0x00000719:     NULL
+
+0x0000071a:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000359)
+                DW_AT_high_pc	(0x00000000000003de)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("avrcp_set_player_value")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(287)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x03a1 "bool")
+                DW_AT_external	(true)
+
+0x00000730:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000131
+                     0x0000000000000359 - 0x00000000000003d1: DW_OP_reg2 EDX)
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(287)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x00000740:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000144
+                     0x0000000000000359 - 0x000000000000039b: DW_OP_reg1 ECX)
+                  DW_AT_name	("attr")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(287)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000750:     DW_TAG_formal_parameter
+                  DW_AT_location	(DW_OP_fbreg -23)
+                  DW_AT_name	("val")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(287)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x0000075f:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -22)
+                  DW_AT_name	("buf")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(289)
+                  DW_AT_type	(cu + 0x11f9 "uint8_t[]")
+
+0x0000076e:     DW_TAG_variable
+                  DW_AT_location	(0x0000016a
+                     0x00000000000003a4 - 0x00000000000003de: DW_OP_constu 0xa, DW_OP_stack_value)
+                  DW_AT_name	("length")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(291)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x0000077e:     DW_TAG_variable
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(290)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x0000078a:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0504 "set_company_id")
+                  DW_AT_low_pc	(0x000000000000037d)
+                  DW_AT_high_pc	(0x0000000000000389)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_call_line	(295)
+
+0x0000079a:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000157
+                       0x000000000000037d - 0x00000000000003d1: DW_OP_reg0 EAX)
+                    DW_AT_abstract_origin	(cu + 0x050c "cid")
+
+0x000007a3:       DW_TAG_formal_parameter
+                    DW_AT_const_value	(6488)
+                    DW_AT_abstract_origin	(cu + 0x0517 "cid_in")
+
+0x000007aa:       NULL
+
+0x000007ab:     NULL
+
+0x000007ac:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000003de)
+                DW_AT_high_pc	(0x00000000000004ba)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("avrcp_send_absolute_volume_cmd")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(309)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x000007c2:     DW_TAG_formal_parameter
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(309)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x000007ce:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -24)
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(313)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x000007dd:     DW_TAG_variable
+                  DW_AT_location	(0x0000017f
+                     0x000000000000047f - 0x00000000000004ba: DW_OP_constu 0x8, DW_OP_stack_value)
+                  DW_AT_name	("length")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(314)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x000007ed:     DW_TAG_variable
+                  DW_AT_name	("buf")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(312)
+                  DW_AT_type	(cu + 0x11e1 "uint8_t[]")
+
+0x000007f9:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0504 "set_company_id")
+                  DW_AT_low_pc	(0x0000000000000423)
+                  DW_AT_high_pc	(0x0000000000000431)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_call_line	(318)
+
+0x00000809:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg -36)
+                    DW_AT_abstract_origin	(cu + 0x050c "cid")
+
+0x00000811:       DW_TAG_formal_parameter
+                    DW_AT_const_value	(6488)
+                    DW_AT_abstract_origin	(cu + 0x0517 "cid_in")
+
+0x00000818:       NULL
+
+0x00000819:     NULL
+
+0x0000081a:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000004ba)
+                DW_AT_high_pc	(0x00000000000004bf)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("emitter_rx_vol_change")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(336)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x0000082c:     DW_TAG_formal_parameter
+                  DW_AT_name	("vol")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(336)
+                  DW_AT_type	(cu + 0x0151 "u8")
+
+0x00000838:     NULL
+
+0x00000839:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000004bf)
+                DW_AT_high_pc	(0x00000000000004c4)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("avrcp_element_attr_rsp_ext_process")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(436)
+                DW_AT_prototyped	(true)
+                DW_AT_external	(true)
+
+0x0000084b:     DW_TAG_formal_parameter
+                  DW_AT_name	("type")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(436)
+                  DW_AT_type	(cu + 0x0151 "u8")
+
+0x00000857:     DW_TAG_formal_parameter
+                  DW_AT_name	("time")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(436)
+                  DW_AT_type	(cu + 0x0355 "u32")
+
+0x00000863:     DW_TAG_formal_parameter
+                  DW_AT_name	("info")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(436)
+                  DW_AT_type	(cu + 0x1205 "u8*")
+
+0x0000086f:     DW_TAG_formal_parameter
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(436)
+                  DW_AT_type	(cu + 0x013f "u16")
+
+0x0000087b:     NULL
+
+0x0000087c:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000004c4)
+                DW_AT_high_pc	(0x00000000000004d0)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("bt_music_total_time")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(498)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0151 "u8")
+                DW_AT_external	(true)
+
+0x00000892:     DW_TAG_formal_parameter
+                  DW_AT_name	("time")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(498)
+                  DW_AT_type	(cu + 0x0355 "u32")
+
+0x0000089e:     NULL
+
+0x0000089f:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000004d0)
+                DW_AT_high_pc	(0x0000000000000541)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("avrcp_get_play_status")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(566)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x000008b5:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000194
+                     0x00000000000004d0 - 0x000000000000053a: DW_OP_reg0 EAX)
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(566)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x000008c5:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -15)
+                  DW_AT_name	("buf")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(568)
+                  DW_AT_type	(cu + 0x11ed "uint8_t[]")
+
+0x000008d4:     DW_TAG_variable
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(569)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x000008e0:     DW_TAG_variable
+                  DW_AT_name	("length")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(570)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x000008ec:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0504 "set_company_id")
+                  DW_AT_low_pc	(0x00000000000004ed)
+                  DW_AT_high_pc	(0x0000000000000505)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_call_line	(574)
+
+0x000008fc:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x000001a7
+                       0x00000000000004ed - 0x000000000000053f: DW_OP_reg7 EDI)
+                    DW_AT_abstract_origin	(cu + 0x050c "cid")
+
+0x00000905:       DW_TAG_formal_parameter
+                    DW_AT_const_value	(6488)
+                    DW_AT_abstract_origin	(cu + 0x0517 "cid_in")
+
+0x0000090c:       NULL
+
+0x0000090d:     NULL
+
+0x0000090e:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000541)
+                DW_AT_high_pc	(0x0000000000000605)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("avrcp_get_element_attributes")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(587)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x00000924:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000001ba
+                     0x0000000000000541 - 0x000000000000056d: DW_OP_reg0 EAX
+                     0x000000000000056d - 0x0000000000000605: DW_OP_breg5 EBP-60)
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(587)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x00000934:     DW_TAG_variable
+                  DW_AT_location	(DW_OP_fbreg -56)
+                  DW_AT_name	("buf")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(589)
+                  DW_AT_type	(cu + 0x120a "uint8_t[]")
+
+0x00000943:     DW_TAG_variable
+                  DW_AT_location	(0x000001d9
+                     0x00000000000005cd - 0x0000000000000605: DW_OP_constu 0x10, DW_OP_stack_value)
+                  DW_AT_name	("length")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(591)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000953:     DW_TAG_variable
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(590)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x0000095f:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0504 "set_company_id")
+                  DW_AT_low_pc	(0x00000000000005ad)
+                  DW_AT_high_pc	(0x00000000000005bb)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_call_line	(595)
+
+0x0000096f:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg -72)
+                    DW_AT_abstract_origin	(cu + 0x050c "cid")
+
+0x00000978:       DW_TAG_formal_parameter
+                    DW_AT_const_value	(6488)
+                    DW_AT_abstract_origin	(cu + 0x0517 "cid_in")
+
+0x0000097f:       NULL
+
+0x00000980:     NULL
+
+0x00000981:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000605)
+                DW_AT_high_pc	(0x0000000000000610)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("get_arp_deal_respone_handlers")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(812)
+                DW_AT_type	(cu + 0x022c "const respone_pdu_handler*")
+                DW_AT_external	(true)
+
+0x00000997:   DW_TAG_subprogram
+                DW_AT_name	("get_company_id")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(136)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0459 "uint32_t")
+                DW_AT_inline	(DW_INL_inlined)
+
+0x000009a3:     DW_TAG_formal_parameter
+                  DW_AT_name	("cid")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(136)
+                  DW_AT_type	(cu + 0x09af "const uint8_t*")
+
+0x000009ae:     NULL
+
+0x000009af:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x09b4 "const uint8_t")
+
+0x000009b4:   DW_TAG_const_type
+                DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x000009b9:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000610)
+                DW_AT_high_pc	(0x0000000000000782)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("handle_vendordep_pdu_res")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(817)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x000009cf:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000001ee
+                     0x0000000000000610 - 0x000000000000063d: DW_OP_reg7 EDI
+                     0x000000000000063d - 0x0000000000000782: DW_OP_breg5 EBP-32)
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(817)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x000009df:     DW_TAG_formal_parameter
+                  DW_AT_name	("transaction")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(817)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x000009eb:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000020d
+                     0x0000000000000610 - 0x0000000000000655: DW_OP_reg6 ESI)
+                  DW_AT_name	("code")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(818)
+                  DW_AT_type	(cu + 0x041e "uint8_t*")
+
+0x000009fb:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000220
+                     0x0000000000000610 - 0x000000000000063a: DW_OP_reg2 EDX
+                     0x000000000000063a - 0x0000000000000782: DW_OP_breg5 EBP-28)
+                  DW_AT_name	("subunit")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(818)
+                  DW_AT_type	(cu + 0x041e "uint8_t*")
+
+0x00000a0b:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000023f
+                     0x0000000000000610 - 0x0000000000000637: DW_OP_reg1 ECX
+                     0x0000000000000637 - 0x0000000000000782: DW_OP_breg5 EBP-24)
+                  DW_AT_name	("operands")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(819)
+                  DW_AT_type	(cu + 0x041e "uint8_t*")
+
+0x00000a1b:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000025e
+                     0x0000000000000610 - 0x000000000000062d: DW_OP_reg0 EAX
+                     0x000000000000062d - 0x0000000000000782: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("operand_count")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(819)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000a2b:     DW_TAG_variable
+                  DW_AT_location	(0x0000029c
+                     0x0000000000000691 - 0x000000000000069b: DW_OP_reg1 ECX
+                     0x000000000000069b - 0x00000000000006e4: DW_OP_breg5 EBP-40
+                     0x00000000000006e4 - 0x00000000000006f2: DW_OP_reg0 EAX
+                     0x00000000000006f2 - 0x0000000000000703: DW_OP_breg5 EBP-68
+                     0x0000000000000703 - 0x0000000000000782: DW_OP_breg5 EBP-40)
+                  DW_AT_name	("handler")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(821)
+                  DW_AT_type	(cu + 0x022c "const respone_pdu_handler*")
+
+0x00000a3b:     DW_TAG_variable
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(822)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x00000a47:     DW_TAG_variable
+                  DW_AT_name	("company_id")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(823)
+                  DW_AT_type	(cu + 0x0459 "uint32_t")
+
+0x00000a53:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0997 "get_company_id")
+                  DW_AT_low_pc	(0x0000000000000648)
+                  DW_AT_high_pc	(0x0000000000000660)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_call_line	(823)
+
+0x00000a63:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x0000027d
+                       0x000000000000062a - 0x0000000000000637: DW_OP_reg1 ECX
+                       0x0000000000000637 - 0x0000000000000782: DW_OP_breg5 EBP-24)
+                    DW_AT_abstract_origin	(cu + 0x09a3 "cid")
+
+0x00000a6c:       NULL
+
+0x00000a6d:     NULL
+
+0x00000a6e:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000782)
+                DW_AT_high_pc	(0x000000000000078d)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("get_arp_control_pdu_handlers")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(1118)
+                DW_AT_type	(cu + 0x015c "const control_pdu_handler*")
+                DW_AT_external	(true)
+
+0x00000a84:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x000000000000078d)
+                DW_AT_high_pc	(0x0000000000000944)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("handle_vendordep_pdu")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(1125)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x0037 "int")
+                DW_AT_external	(true)
+
+0x00000a9a:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000002df
+                     0x000000000000078d - 0x00000000000007d6: DW_OP_reg6 ESI
+                     0x00000000000007d6 - 0x0000000000000944: DW_OP_breg5 EBP-32)
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(1125)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x00000aaa:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000002fe
+                     0x000000000000078d - 0x00000000000007dc: DW_OP_reg3 EBX
+                     0x00000000000007dc - 0x0000000000000944: DW_OP_breg5 EBP-37)
+                  DW_AT_name	("transaction")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(1125)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000aba:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000031d
+                     0x000000000000078d - 0x00000000000007d9: DW_OP_reg2 EDX
+                     0x00000000000007d9 - 0x0000000000000944: DW_OP_breg5 EBP-36)
+                  DW_AT_name	("code")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(1126)
+                  DW_AT_type	(cu + 0x041e "uint8_t*")
+
+0x00000aca:     DW_TAG_formal_parameter
+                  DW_AT_name	("subunit")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(1126)
+                  DW_AT_type	(cu + 0x041e "uint8_t*")
+
+0x00000ad6:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000033c
+                     0x000000000000078d - 0x00000000000007bd: DW_OP_reg1 ECX
+                     0x00000000000007bd - 0x0000000000000944: DW_OP_breg5 EBP-24)
+                  DW_AT_name	("operands")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(1127)
+                  DW_AT_type	(cu + 0x041e "uint8_t*")
+
+0x00000ae6:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000035b
+                     0x000000000000078d - 0x00000000000007aa: DW_OP_reg0 EAX
+                     0x00000000000007aa - 0x0000000000000944: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("operand_count")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(1127)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000af6:     DW_TAG_variable
+                  DW_AT_location	(0x0000037a
+                     0x00000000000007a7 - 0x00000000000007d3: DW_OP_reg7 EDI
+                     0x00000000000007d3 - 0x0000000000000944: DW_OP_breg5 EBP-28)
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(1131)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x00000b06:     DW_TAG_variable
+                  DW_AT_location	(0x000003b8
+                     0x00000000000007cb - 0x00000000000007e4: DW_OP_reg0 EAX
+                     0x00000000000007f2 - 0x00000000000007f4: DW_OP_reg0 EAX)
+                  DW_AT_name	("company_id")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(1132)
+                  DW_AT_type	(cu + 0x0459 "uint32_t")
+
+0x00000b16:     DW_TAG_variable
+                  DW_AT_location	(0x000003d6
+                     0x0000000000000812 - 0x000000000000081c: DW_OP_reg1 ECX
+                     0x000000000000081c - 0x0000000000000857: DW_OP_breg5 EBP-52
+                     0x0000000000000857 - 0x0000000000000865: DW_OP_reg0 EAX
+                     0x0000000000000865 - 0x0000000000000876: DW_OP_breg5 EBP-76
+                     0x0000000000000876 - 0x0000000000000944: DW_OP_breg5 EBP-52)
+                  DW_AT_name	("handler")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(1130)
+                  DW_AT_type	(cu + 0x015c "const control_pdu_handler*")
+
+0x00000b26:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0997 "get_company_id")
+                  DW_AT_low_pc	(0x00000000000007a7)
+                  DW_AT_high_pc	(0x00000000000007cb)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_call_line	(1132)
+
+0x00000b36:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000399
+                       0x00000000000007a7 - 0x00000000000007bd: DW_OP_reg1 ECX
+                       0x00000000000007bd - 0x0000000000000944: DW_OP_breg5 EBP-24)
+                    DW_AT_abstract_origin	(cu + 0x09a3 "cid")
+
+0x00000b3f:       NULL
+
+0x00000b40:     NULL
+
+0x00000b41:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000944)
+                DW_AT_high_pc	(0x0000000000000aff)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("avrcp_get_capabilities_resp")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(633)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x03a1 "bool")
+
+0x00000b57:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000419
+                     0x0000000000000944 - 0x000000000000095c: DW_OP_reg1 ECX
+                     0x000000000000095c - 0x0000000000000aff: DW_OP_breg5 EBP-20)
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(633)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x00000b67:     DW_TAG_formal_parameter
+                  DW_AT_name	("code")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(634)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000b73:     DW_TAG_formal_parameter
+                  DW_AT_name	("subunit")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(634)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000b7f:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000438
+                     0x0000000000000944 - 0x0000000000000959: DW_OP_reg0 EAX
+                     0x0000000000000959 - 0x0000000000000aff: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("operands")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(635)
+                  DW_AT_type	(cu + 0x041e "uint8_t*")
+
+0x00000b8f:     DW_TAG_formal_parameter
+                  DW_AT_name	("operand_count")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(635)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000b9b:     DW_TAG_variable
+                  DW_AT_const_value	(0)
+                  DW_AT_name	("events")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(638)
+                  DW_AT_type	(cu + 0x0215 "uint16_t")
+
+0x00000ba8:     DW_TAG_variable
+                  DW_AT_location	(0x00000457
+                     0x0000000000000999 - 0x000000000000099f: DW_OP_reg2 EDX
+                     0x000000000000099f - 0x0000000000000aff: DW_OP_breg5 EBP-29)
+                  DW_AT_name	("count")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(639)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000bb8:     DW_TAG_variable
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(637)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x00000bc4:     DW_TAG_lexical_block
+                  DW_AT_low_pc	(0x00000000000009be)
+                  DW_AT_high_pc	(0x0000000000000ad7)
+
+0x00000bcd:       DW_TAG_variable
+                    DW_AT_location	(0x00000476
+                       0x00000000000009ca - 0x00000000000009e5: DW_OP_reg1 ECX
+                       0x00000000000009e5 - 0x0000000000000aff: DW_OP_breg5 EBP-41)
+                    DW_AT_name	("event")
+                    DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                    DW_AT_decl_line	(656)
+                    DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000bdd:       NULL
+
+0x00000bde:     NULL
+
+0x00000bdf:   DW_TAG_subprogram
+                DW_AT_name	("avrcp_volume_changed")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(341)
+                DW_AT_prototyped	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000be8:     DW_TAG_formal_parameter
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(341)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x00000bf4:     DW_TAG_formal_parameter
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(342)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x00000c00:     DW_TAG_variable
+                  DW_AT_name	("volume")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(344)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000c0c:     NULL
+
+0x00000c0d:   DW_TAG_subprogram
+                DW_AT_name	("avrcp_status_changed")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(351)
+                DW_AT_prototyped	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000c16:     DW_TAG_formal_parameter
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(351)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x00000c22:     DW_TAG_formal_parameter
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(352)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x00000c2e:     DW_TAG_variable
+                  DW_AT_name	("sta")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(355)
+                  DW_AT_type	(cu + 0x0c47 "A2DP_STATE")
+
+0x00000c3a:     DW_TAG_variable
+                  DW_AT_name	("value")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(354)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000c46:     NULL
+
+0x00000c47:   DW_TAG_typedef
+                DW_AT_type	(cu + 0x04cf "enumeration ")
+                DW_AT_name	("A2DP_STATE")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/make/../btstack/Profile/include/bredr/a2dp.h")
+                DW_AT_decl_line	(163)
+
+0x00000c52:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000aff)
+                DW_AT_high_pc	(0x0000000000000f09)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("avrcp_handle_event")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(701)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x03a1 "bool")
+
+0x00000c68:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000004b4
+                     0x0000000000000aff - 0x0000000000000b1f: DW_OP_reg2 EDX
+                     0x0000000000000b1f - 0x0000000000000f09: DW_OP_breg5 EBP-24)
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(701)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x00000c78:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000004d3
+                     0x0000000000000aff - 0x0000000000000b1c: DW_OP_reg1 ECX
+                     0x0000000000000b1c - 0x0000000000000f09: DW_OP_breg5 EBP-17)
+                  DW_AT_name	("code")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(702)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000c88:     DW_TAG_formal_parameter
+                  DW_AT_name	("subunit")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(702)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000c94:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000004f2
+                     0x0000000000000aff - 0x0000000000000b19: DW_OP_reg0 EAX
+                     0x0000000000000b19 - 0x0000000000000f09: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("operands")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(703)
+                  DW_AT_type	(cu + 0x041e "uint8_t*")
+
+0x00000ca4:     DW_TAG_formal_parameter
+                  DW_AT_name	("operand_count")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(703)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000cb0:     DW_TAG_variable
+                  DW_AT_location	(0x00000511
+                     0x0000000000000b13 - 0x0000000000000b22: DW_OP_reg6 ESI
+                     0x0000000000000b22 - 0x0000000000000f09: DW_OP_breg5 EBP-28)
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(705)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x00000cc0:     DW_TAG_variable
+                  DW_AT_location	(0x00000530
+                     0x0000000000000b74 - 0x0000000000000b91: DW_OP_reg3 EBX
+                     0x0000000000000b91 - 0x0000000000000f09: DW_OP_breg5 EBP-37)
+                  DW_AT_name	("event")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(706)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000cd0:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0bdf "avrcp_volume_changed")
+                  DW_AT_low_pc	(0x0000000000000d50)
+                  DW_AT_high_pc	(0x0000000000000d94)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_call_line	(747)
+
+0x00000ce0:       DW_TAG_variable
+                    DW_AT_location	(0x0000054f
+                       0x0000000000000d59 - 0x0000000000000d63: DW_OP_reg1 ECX
+                       0x0000000000000d63 - 0x0000000000000f09: DW_OP_breg5 EBP-71)
+                    DW_AT_abstract_origin	(cu + 0x0c00 "volume")
+
+0x00000ce9:       NULL
+
+0x00000cea:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0c0d "avrcp_status_changed")
+                  DW_AT_low_pc	(0x0000000000000d9e)
+                  DW_AT_high_pc	(0x0000000000000e9d)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_call_line	(751)
+
+0x00000cfa:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x00000495
+                       0x0000000000000b11 - 0x0000000000000b1f: DW_OP_reg2 EDX
+                       0x0000000000000b1f - 0x0000000000000f09: DW_OP_breg5 EBP-24)
+                    DW_AT_abstract_origin	(cu + 0x0c16 "conn")
+
+0x00000d03:       DW_TAG_variable
+                    DW_AT_location	(0x0000056f
+                       0x0000000000000d9c - 0x0000000000000dbd: DW_OP_constu 0x2, DW_OP_stack_value
+                       0x0000000000000dbd - 0x0000000000000de6: DW_OP_reg7 EDI
+                       0x0000000000000de6 - 0x0000000000000f09: DW_OP_breg5 EBP-88)
+                    DW_AT_abstract_origin	(cu + 0x0c2e "sta")
+
+0x00000d0c:       NULL
+
+0x00000d0d:     NULL
+
+0x00000d0e:   DW_TAG_subprogram
+                DW_AT_name	("avrcp_get_current_player_value")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(543)
+                DW_AT_prototyped	(true)
+                DW_AT_inline	(DW_INL_inlined)
+
+0x00000d17:     DW_TAG_formal_parameter
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(543)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x00000d23:     DW_TAG_formal_parameter
+                  DW_AT_name	("attrs")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(544)
+                  DW_AT_type	(cu + 0x041e "uint8_t*")
+
+0x00000d2f:     DW_TAG_formal_parameter
+                  DW_AT_name	("count")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(544)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000d3b:     DW_TAG_variable
+                  DW_AT_name	("buf")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(546)
+                  DW_AT_type	(cu + 0x0d60 "uint8_t[]")
+
+0x00000d47:     DW_TAG_variable
+                  DW_AT_name	("i")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(548)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000d53:     DW_TAG_variable
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(547)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x00000d5f:     NULL
+
+0x00000d60:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000d65:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0138 "sizetype")
+                  DW_AT_count	(0x0c)
+
+0x00000d6b:     NULL
+
+0x00000d6c:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000000f09)
+                DW_AT_high_pc	(0x0000000000001029)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("avrcp_list_player_attributes_rsp")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(606)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x03a1 "bool")
+
+0x00000d82:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000059c
+                     0x0000000000000f09 - 0x0000000000000f36: DW_OP_reg2 EDX
+                     0x0000000000000f36 - 0x0000000000001029: DW_OP_breg5 EBP-32)
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(606)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x00000d92:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000005bb
+                     0x0000000000000f09 - 0x0000000000000f2b: DW_OP_reg1 ECX)
+                  DW_AT_name	("code")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(607)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000da2:     DW_TAG_formal_parameter
+                  DW_AT_name	("subunit")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(607)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000dae:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000005ce
+                     0x0000000000000f09 - 0x0000000000000f33: DW_OP_reg0 EAX
+                     0x0000000000000f33 - 0x0000000000001029: DW_OP_breg5 EBP-28)
+                  DW_AT_name	("operands")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(608)
+                  DW_AT_type	(cu + 0x041e "uint8_t*")
+
+0x00000dbe:     DW_TAG_formal_parameter
+                  DW_AT_name	("operand_count")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(608)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000dca:     DW_TAG_variable
+                  DW_AT_location	(0x000005ed
+                     0x0000000000000f42 - 0x0000000000000f5e: DW_OP_reg1 ECX
+                     0x0000000000000f5e - 0x0000000000001029: DW_OP_breg5 EBP-33)
+                  DW_AT_name	("count")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(611)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000dda:     DW_TAG_variable
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(610)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x00000de6:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0d0e "avrcp_get_current_player_value")
+                  DW_AT_ranges	(0x00000000
+                     [0x00000f6a - 0x00000fad)
+                     [0x00000fb6 - 0x0000101a))
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_call_line	(626)
+
+0x00000df2:       DW_TAG_formal_parameter
+                    DW_AT_location	(DW_OP_fbreg -32)
+                    DW_AT_abstract_origin	(cu + 0x0d17 "conn")
+
+0x00000dfa:       DW_TAG_formal_parameter
+                    DW_AT_location	(0x0000060c
+                       0x0000000000000f6a - 0x0000000000000fa1: DW_OP_breg5 EBP-33
+                       0x0000000000000fa1 - 0x000000000000101a: DW_OP_reg3 EBX)
+                    DW_AT_abstract_origin	(cu + 0x0d2f "count")
+
+0x00000e03:       DW_TAG_variable
+                    DW_AT_location	(DW_OP_fbreg -24)
+                    DW_AT_abstract_origin	(cu + 0x0d3b "buf")
+
+0x00000e0b:       DW_TAG_variable
+                    DW_AT_location	(0x0000064a
+                       0x0000000000000fa1 - 0x0000000000001029: DW_OP_consts +0, DW_OP_stack_value)
+                    DW_AT_abstract_origin	(cu + 0x0d47 "i")
+
+0x00000e14:       DW_TAG_inlined_subroutine
+                    DW_AT_abstract_origin	(cu + 0x0504 "set_company_id")
+                    DW_AT_low_pc	(0x0000000000000f6a)
+                    DW_AT_high_pc	(0x0000000000000f7c)
+                    DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                    DW_AT_call_line	(552)
+
+0x00000e24:         DW_TAG_formal_parameter
+                      DW_AT_location	(0x0000062b
+                         0x0000000000000f6a - 0x0000000000000fa7: DW_OP_reg0 EAX
+                         0x0000000000000fa7 - 0x0000000000001029: DW_OP_breg5 EBP-44)
+                      DW_AT_abstract_origin	(cu + 0x050c "cid")
+
+0x00000e2d:         DW_TAG_formal_parameter
+                      DW_AT_const_value	(6488)
+                      DW_AT_abstract_origin	(cu + 0x0517 "cid_in")
+
+0x00000e34:         NULL
+
+0x00000e35:       NULL
+
+0x00000e36:     NULL
+
+0x00000e37:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000001029)
+                DW_AT_high_pc	(0x0000000000001097)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("avrcp_player_value_rsp")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(415)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x03a1 "bool")
+
+0x00000e4d:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000065f
+                     0x0000000000001029 - 0x0000000000001060: DW_OP_reg2 EDX
+                     0x0000000000001060 - 0x0000000000001097: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(415)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x00000e5d:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000067e
+                     0x0000000000001029 - 0x0000000000001055: DW_OP_reg1 ECX)
+                  DW_AT_name	("code")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(416)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000e6d:     DW_TAG_formal_parameter
+                  DW_AT_name	("subunit")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(416)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000e79:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000691
+                     0x0000000000001029 - 0x000000000000105d: DW_OP_reg0 EAX
+                     0x000000000000105d - 0x0000000000001097: DW_OP_breg5 EBP-8)
+                  DW_AT_name	("operands")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(417)
+                  DW_AT_type	(cu + 0x041e "uint8_t*")
+
+0x00000e89:     DW_TAG_formal_parameter
+                  DW_AT_name	("operand_count")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(417)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000e95:     DW_TAG_variable
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(419)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x00000ea1:     NULL
+
+0x00000ea2:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000001097)
+                DW_AT_high_pc	(0x0000000000001263)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("avrcp_get_play_status_rsp")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(504)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x03a1 "bool")
+
+0x00000eb8:     DW_TAG_formal_parameter
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(504)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x00000ec4:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000006b0
+                     0x0000000000001097 - 0x00000000000010be: DW_OP_reg1 ECX)
+                  DW_AT_name	("code")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(505)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000ed4:     DW_TAG_formal_parameter
+                  DW_AT_name	("subunit")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(505)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000ee0:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000006c3
+                     0x0000000000001097 - 0x00000000000010c6: DW_OP_reg0 EAX
+                     0x00000000000010c6 - 0x0000000000001263: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("operands")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(506)
+                  DW_AT_type	(cu + 0x041e "uint8_t*")
+
+0x00000ef0:     DW_TAG_formal_parameter
+                  DW_AT_name	("operand_count")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(506)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000efc:     DW_TAG_variable
+                  DW_AT_const_value	(0)
+                  DW_AT_name	("info")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(510)
+                  DW_AT_type	(cu + 0x1216 "u8[]")
+
+0x00000f09:     DW_TAG_variable
+                  DW_AT_location	(0x000006e2
+                     0x00000000000010ee - 0x000000000000111a: DW_OP_reg2 EDX
+                     0x000000000000111a - 0x0000000000001263: DW_OP_breg5 EBP-20)
+                  DW_AT_name	("song_length")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(509)
+                  DW_AT_type	(cu + 0x0355 "u32")
+
+0x00000f19:     DW_TAG_variable
+                  DW_AT_location	(0x00000701
+                     0x000000000000110d - 0x000000000000111d: DW_OP_reg6 ESI
+                     0x000000000000111d - 0x0000000000001263: DW_OP_breg5 EBP-24)
+                  DW_AT_name	("song_position")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(509)
+                  DW_AT_type	(cu + 0x0355 "u32")
+
+0x00000f29:     DW_TAG_variable
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(508)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x00000f35:     DW_TAG_variable
+                  DW_AT_name	("play_status")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(511)
+                  DW_AT_type	(cu + 0x0151 "u8")
+
+0x00000f41:     DW_TAG_variable
+                  DW_AT_name	("min")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(512)
+                  DW_AT_type	(cu + 0x0151 "u8")
+
+0x00000f4d:     DW_TAG_variable
+                  DW_AT_name	("sec")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(512)
+                  DW_AT_type	(cu + 0x0151 "u8")
+
+0x00000f59:     NULL
+
+0x00000f5a:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000001263)
+                DW_AT_high_pc	(0x00000000000013dc)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("avrcp_get_element_attributes_rsp")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(442)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x03a1 "bool")
+
+0x00000f70:     DW_TAG_formal_parameter
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(442)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x00000f7c:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000720
+                     0x0000000000001263 - 0x000000000000128a: DW_OP_reg1 ECX)
+                  DW_AT_name	("code")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(443)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000f8c:     DW_TAG_formal_parameter
+                  DW_AT_name	("subunit")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(443)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00000f98:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000733
+                     0x0000000000001263 - 0x0000000000001292: DW_OP_reg0 EAX
+                     0x0000000000001292 - 0x00000000000013dc: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("operands")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(444)
+                  DW_AT_type	(cu + 0x041e "uint8_t*")
+
+0x00000fa8:     DW_TAG_formal_parameter
+                  DW_AT_name	("operand_count")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(444)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00000fb4:     DW_TAG_variable
+                  DW_AT_location	(0x00000752
+                     0x00000000000012b0 - 0x00000000000012b9: DW_OP_reg3 EBX
+                     0x00000000000012b9 - 0x00000000000012b9: DW_OP_breg5 EBP-25
+                     0x00000000000012b9 - 0x00000000000012b9: DW_OP_breg5 EBP-26
+                     0x00000000000012b9 - 0x00000000000012bf: DW_OP_reg3 EBX
+                     0x00000000000012bf - 0x00000000000012cf: DW_OP_reg0 EAX
+                     0x00000000000012cf - 0x00000000000013b9: DW_OP_breg5 EBP-26
+                     0x00000000000013b9 - 0x00000000000013c2: DW_OP_reg3 EBX
+                     0x00000000000013c2 - 0x00000000000013c8: DW_OP_breg5 EBP-25
+                     0x00000000000013c8 - 0x00000000000013dc: DW_OP_breg5 EBP-26)
+                  DW_AT_name	("number_of_attributes")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(452)
+                  DW_AT_type	(cu + 0x0151 "u8")
+
+0x00000fc4:     DW_TAG_variable
+                  DW_AT_location	(0x000007c2
+                     0x00000000000012b0 - 0x00000000000013dc: DW_OP_constu 0x8, DW_OP_stack_value)
+                  DW_AT_name	("pos_beg")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(448)
+                  DW_AT_type	(cu + 0x013f "u16")
+
+0x00000fd4:     DW_TAG_variable
+                  DW_AT_location	(0x000007d7
+                     0x0000000000001304 - 0x000000000000131b: DW_OP_reg6 ESI
+                     0x000000000000131b - 0x00000000000013dc: DW_OP_breg5 EBP-44)
+                  DW_AT_name	("attribute_len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(451)
+                  DW_AT_type	(cu + 0x013f "u16")
+
+0x00000fe4:     DW_TAG_variable
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(446)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x00000ff0:     DW_TAG_variable
+                  DW_AT_name	("info_len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(447)
+                  DW_AT_type	(cu + 0x013f "u16")
+
+0x00000ffc:     DW_TAG_variable
+                  DW_AT_name	("pos_end")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(448)
+                  DW_AT_type	(cu + 0x013f "u16")
+
+0x00001008:     DW_TAG_variable
+                  DW_AT_name	("attribute_id")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(449)
+                  DW_AT_type	(cu + 0x0355 "u32")
+
+0x00001014:     DW_TAG_variable
+                  DW_AT_name	("character_set_id")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(450)
+                  DW_AT_type	(cu + 0x013f "u16")
+
+0x00001020:     NULL
+
+0x00001021:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000013dc)
+                DW_AT_high_pc	(0x0000000000001529)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("set_remote_player_value")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(394)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x03a1 "bool")
+
+0x00001037:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000007f6
+                     0x00000000000013dc - 0x000000000000140f: DW_OP_reg1 ECX
+                     0x000000000000140f - 0x0000000000001529: DW_OP_breg5 EBP-20)
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(394)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x00001047:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000815
+                     0x00000000000013dc - 0x000000000000141d: DW_OP_reg2 EDX
+                     0x000000000000141d - 0x0000000000001529: DW_OP_breg5 EBP-28)
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(394)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x00001057:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000834
+                     0x00000000000013dc - 0x00000000000013f3: DW_OP_reg0 EAX)
+                  DW_AT_name	("count_index")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(394)
+                  DW_AT_type	(cu + 0x0151 "u8")
+
+0x00001067:     DW_TAG_variable
+                  DW_AT_location	(0x00000847
+                     0x00000000000013f3 - 0x00000000000013f6: DW_OP_reg0 EAX
+                     0x00000000000013f6 - 0x00000000000014fc: DW_OP_breg5 EBP-13
+                     0x00000000000014fc - 0x000000000000150b: DW_OP_reg1 ECX
+                     0x000000000000150b - 0x0000000000001511: DW_OP_breg5 EBP-41
+                     0x0000000000001511 - 0x0000000000001511: DW_OP_reg1 ECX
+                     0x0000000000001511 - 0x0000000000001529: DW_OP_breg5 EBP-13)
+                  DW_AT_name	("count")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(396)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00001077:     DW_TAG_variable
+                  DW_AT_location	(0x00000894
+                     0x0000000000001502 - 0x0000000000001508: DW_OP_reg0 EAX
+                     0x0000000000001508 - 0x0000000000001511: DW_OP_breg5 EBP-40
+                     0x0000000000001511 - 0x0000000000001513: DW_OP_reg0 EAX)
+                  DW_AT_name	("i")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(397)
+                  DW_AT_type	(cu + 0x0037 "int")
+
+0x00001087:     NULL
+
+0x00001088:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000001529)
+                DW_AT_high_pc	(0x00000000000016af)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("avrcp_handle_get_capabilities")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(960)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x0000109e:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000008be
+                     0x0000000000001529 - 0x000000000000155a: DW_OP_reg1 ECX
+                     0x000000000000155a - 0x00000000000016af: DW_OP_breg5 EBP-20)
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(960)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x000010ae:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000008dd
+                     0x0000000000001529 - 0x0000000000001557: DW_OP_reg0 EAX
+                     0x0000000000001557 - 0x00000000000016af: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(961)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x000010be:     DW_TAG_formal_parameter
+                  DW_AT_name	("transaction")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(962)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x000010ca:     DW_TAG_variable
+                  DW_AT_location	(0x000008fc
+                     0x00000000000015cb - 0x00000000000015da: DW_OP_constu 0x0, DW_OP_stack_value
+                     0x00000000000015da - 0x000000000000165c: DW_OP_constu 0x1, DW_OP_stack_value
+                     0x000000000000165c - 0x0000000000001662: DW_OP_reg0 EAX
+                     0x0000000000001662 - 0x0000000000001668: DW_OP_breg5 EBP-44
+                     0x0000000000001668 - 0x000000000000166a: DW_OP_reg0 EAX)
+                  DW_AT_name	("i")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(965)
+                  DW_AT_type	(cu + 0x0360 "unsigned int")
+
+0x000010da:     DW_TAG_variable
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(964)
+                  DW_AT_type	(cu + 0x0215 "uint16_t")
+
+0x000010e6:     DW_TAG_inlined_subroutine
+                  DW_AT_abstract_origin	(cu + 0x0504 "set_company_id")
+                  DW_AT_low_pc	(0x00000000000015cb)
+                  DW_AT_high_pc	(0x00000000000015da)
+                  DW_AT_call_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_call_line	(974)
+
+0x000010f6:       DW_TAG_formal_parameter
+                    DW_AT_const_value	(6488)
+                    DW_AT_abstract_origin	(cu + 0x0517 "cid_in")
+
+0x000010fd:       NULL
+
+0x000010fe:     NULL
+
+0x000010ff:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x00000000000016af)
+                DW_AT_high_pc	(0x0000000000001896)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("avrcp_handle_register_notification")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(876)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00001115:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x00000940
+                     0x00000000000016af - 0x00000000000016f0: DW_OP_reg2 EDX
+                     0x00000000000016f0 - 0x0000000000001896: DW_OP_breg5 EBP-28)
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(876)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x00001125:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000095f
+                     0x00000000000016af - 0x00000000000016ed: DW_OP_reg1 ECX
+                     0x00000000000016ed - 0x0000000000001896: DW_OP_breg5 EBP-24)
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(877)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x00001135:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x0000097e
+                     0x00000000000016af - 0x00000000000016df: DW_OP_reg0 EAX
+                     0x00000000000016df - 0x0000000000001896: DW_OP_breg5 EBP-13)
+                  DW_AT_name	("transaction")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(878)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00001145:     DW_TAG_variable
+                  DW_AT_location	(0x0000099d
+                     0x0000000000001767 - 0x0000000000001896: DW_OP_constu 0x2, DW_OP_stack_value)
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(880)
+                  DW_AT_type	(cu + 0x0215 "uint16_t")
+
+0x00001155:     NULL
+
+0x00001156:   DW_TAG_subprogram
+                DW_AT_low_pc	(0x0000000000001896)
+                DW_AT_high_pc	(0x0000000000001971)
+                DW_AT_frame_base	(DW_OP_reg5 EBP)
+                DW_AT_name	("avrcp_handle_set_absolute_volume")
+                DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                DW_AT_decl_line	(1001)
+                DW_AT_prototyped	(true)
+                DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x0000116c:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000009b2
+                     0x0000000000001896 - 0x00000000000018c6: DW_OP_reg1 ECX
+                     0x00000000000018c6 - 0x0000000000001971: DW_OP_breg5 EBP-16)
+                  DW_AT_name	("conn")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(1001)
+                  DW_AT_type	(cu + 0x00c4 "avctp*")
+
+0x0000117c:     DW_TAG_formal_parameter
+                  DW_AT_location	(0x000009d1
+                     0x0000000000001896 - 0x00000000000018c3: DW_OP_reg0 EAX
+                     0x00000000000018c3 - 0x0000000000001971: DW_OP_breg5 EBP-12)
+                  DW_AT_name	("pdu")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(1002)
+                  DW_AT_type	(cu + 0x01ad "avrcp_header*")
+
+0x0000118c:     DW_TAG_formal_parameter
+                  DW_AT_name	("transaction")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(1003)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x00001198:     DW_TAG_variable
+                  DW_AT_location	(0x000009f0
+                     0x00000000000018da - 0x00000000000018ec: DW_OP_reg2 EDX
+                     0x00000000000018ec - 0x0000000000001971: DW_OP_breg5 EBP-25)
+                  DW_AT_name	("volume")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(1007)
+                  DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x000011a8:     DW_TAG_variable
+                  DW_AT_name	("len")
+                  DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                  DW_AT_decl_line	(1006)
+                  DW_AT_type	(cu + 0x0215 "uint16_t")
+
+0x000011b4:     DW_TAG_lexical_block
+                  DW_AT_low_pc	(0x00000000000018f5)
+                  DW_AT_high_pc	(0x0000000000001950)
+
+0x000011bd:       DW_TAG_variable
+                    DW_AT_name	("temp_result")
+                    DW_AT_decl_file	("/jks/jenkins/workspace/data_trans_sdk_export_gitlab/data_trans_sdk/lib/bt_protocol/btstack/Profile/BR_EDR/avrcp.c")
+                    DW_AT_decl_line	(1019)
+                    DW_AT_type	(cu + 0x0037 "int")
+
+0x000011c9:       NULL
+
+0x000011ca:     NULL
+
+0x000011cb:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x000011d0:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0138 "sizetype")
+                  DW_AT_count	(0x10)
+
+0x000011d6:     NULL
+
+0x000011d7:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x11dc "const u8")
+
+0x000011dc:   DW_TAG_const_type
+                DW_AT_type	(cu + 0x0151 "u8")
+
+0x000011e1:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x000011e6:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0138 "sizetype")
+                  DW_AT_count	(0x08)
+
+0x000011ec:     NULL
+
+0x000011ed:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x000011f2:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0138 "sizetype")
+                  DW_AT_count	(0x07)
+
+0x000011f8:     NULL
+
+0x000011f9:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x000011fe:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0138 "sizetype")
+                  DW_AT_count	(0x0a)
+
+0x00001204:     NULL
+
+0x00001205:   DW_TAG_pointer_type
+                DW_AT_type	(cu + 0x0151 "u8")
+
+0x0000120a:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x008e "uint8_t")
+
+0x0000120f:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0138 "sizetype")
+                  DW_AT_count	(0x2c)
+
+0x00001215:     NULL
+
+0x00001216:   DW_TAG_array_type
+                DW_AT_type	(cu + 0x0151 "u8")
+
+0x0000121b:     DW_TAG_subrange_type
+                  DW_AT_type	(cu + 0x0138 "sizetype")
+                  DW_AT_count	(0x02)
+
+0x00001221:     NULL
+
+0x00001222:   NULL
