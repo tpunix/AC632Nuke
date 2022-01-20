@@ -27,6 +27,7 @@ typedef struct {
 	u8 io_capabilities: 3;
 	u8 authentication_req: 3;
 	u8 oob_data: 2;
+	u8 host_mode;
 	void *profile_data;
 } edr_init_cfg_t;
 
@@ -78,6 +79,8 @@ typedef struct {
 	int report_size;
 }hid_cfg_t;
 
+
+void edr_hidh_init(hid_cfg_t *cfg);
 
 void edr_hidd_init(hid_cfg_t *cfg);
 int edr_hid_send_data(u8 *buf, u32 len);

@@ -23,7 +23,7 @@ const struct btif_item btif_table[] = {
 const int vm_max_size_config = VM_MAX_SIZE_CONFIG; //该宏在app_cfg中配置
 //======================================================================================//
 
-static u8 bt_mac_addr[] = {0x56, 0x44, 0x33, 0x22, 0x11, 0x00};
+static u8 bt_mac_addr[] = {0x59, 0x44, 0x33, 0x22, 0x11, 0x00};
 static char bt_edr_name[] = "JL_HID_DEBUG";
 
 u8 *bt_get_mac_addr()

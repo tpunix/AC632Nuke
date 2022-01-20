@@ -66,6 +66,7 @@ static int edr_hid_send_msg(int channel, u8 *buf, int len)
 	if (channel==0) {
 		return -1;
 	}
+	//printf("user_send_cmd_prepare: ch=%02x msg=%02x len=%d\n", channel, buf[0], len);
 
 	s_par.chl_id = channel;
 	s_par.data_len = len;
@@ -123,6 +124,7 @@ int __attribute__((weak)) user_hidd_get_report(int type, u8 *buf, int len)
 
 void __attribute__((weak)) user_hidd_set_output(u8 *buf, int len)
 {
+	printf("user_hidd_set_output! len=%d\n", len);
 }
 
 
@@ -145,7 +147,7 @@ static void edr_hidd_msg_handler(u32 msg, u8 *packet, u32 packet_size)
 	case 1:
 		hid_ctrl_ch = *(u16*)(packet+0);
 		hid_data_ch = *(u16*)(packet+2);
-		printf("########  hid connect! ctrl_ch:%d data_ch:%d\n", hid_ctrl_ch, hid_data_ch);
+		printf("########  hid connect! ctrl_ch:%02x data_ch:%02x\n", hid_ctrl_ch, hid_data_ch);
 		break;
 	case 2:
 		printf("########  hid disconnect!\n");
@@ -154,12 +156,9 @@ static void edr_hidd_msg_handler(u32 msg, u8 *packet, u32 packet_size)
 		break;
 	case 3:
 		int ch = *(u16*)(packet+0);
-		if(ch == hid_data_ch){
-			printf("######## hid send ok!\n");
-		}
+		printf("######## hid send ok! ch=%02x\n", ch);
 		break;
 	default:
-		printf("######## hid unknow msg: %08x\n", msg);
 		break;
 	}
 }
@@ -184,9 +183,9 @@ static void edr_hidd_output_handler(u8 *packet, u16 size, u16 channel)
 			edr_hid_handshake(HS_OK);
 			printf("**** HID_SET_PROTOCOL %d\n", packet[1]);
 		}else if(msg==HID_SET_REPORT){
-			printf("**** HID_SET_REPORT %d %02x\n", type, packet[1]);
 			user_hidd_set_report(type, packet+1, size-1);
 			edr_hid_handshake(HS_OK);
+			printf("**** HID_SET_REPORT %d %02x\n", type, packet[1]);
 		}else if(msg==HID_GET_IDLE){
 			hid_cbuf[0] = HID_DATA;
 			hid_cbuf[1] = user_hidd_get_idle();
@@ -215,7 +214,7 @@ static void edr_hidd_output_handler(u8 *packet, u16 size, u16 channel)
 			int len = user_hidd_get_report(type, hid_cbuf+1, buffer_size);
 			if(len){
 				hid_cbuf[0] = HID_DATA | type;
-				edr_hid_send_msg(hid_ctrl_ch, hid_cbuf, len);
+				edr_hid_send_msg(hid_ctrl_ch, hid_cbuf, len+1);
 			}else{
 				edr_hid_handshake(HS_INV_ID);
 			}
@@ -230,6 +229,8 @@ static void edr_hidd_output_handler(u8 *packet, u16 size, u16 channel)
 
 /*************************************************************************************************/
 
+u8 l2cap_debug_enable = 0xf0;
+u8 profile_debug_enable = 0xff;
 
 u8 hid_profile_support = 1;
 u8 hid_conn_depend_on_dev_company = 2; // 注意: 置2之后，默认不断开HID连接
@@ -401,9 +402,20 @@ void edr_hidd_init(hid_cfg_t *cfg)
 
 	hid_cfg = cfg;
 
-    __change_hci_class_type(cfg->class_type);//default icon
+	__change_hci_class_type(cfg->class_type);//default icon
 	hid_diy_regiest_callback(edr_hidd_msg_handler, edr_hidd_output_handler);
 	hid_sdp_init(cfg->report_map, cfg->report_size);
+}
+
+
+void edr_hidh_init(hid_cfg_t *cfg)
+{
+	printf("edr_hidh_start ...\n");
+
+	hid_cfg = cfg;
+
+	__change_hci_class_type(0);
+	hid_diy_regiest_callback(edr_hidd_msg_handler, edr_hidd_output_handler);
 }
 
 

@@ -26,6 +26,10 @@ const struct task_info task_info_table[] = {
 };
 
 
+u16 update_result_get(void)
+{
+    return 0;
+}
 
 __attribute__((weak)) u8 get_charge_online_flag(void)
 {

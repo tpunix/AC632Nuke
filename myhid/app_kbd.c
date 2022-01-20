@@ -14,12 +14,12 @@
 #include "system/app_core.h"
 #include "system/includes.h"
 #include "server/server_core.h"
+#include "btstack/avctp_user.h"
 #include "os/os_api.h"
 #include "app_config.h"
 
-#include "btstack/avctp_user.h"
-
 #include "bt_common.h"
+#include "hidef.h"
 
 /*************************************************************************************************/
 
@@ -109,39 +109,101 @@ static void key_timer_handle(void)
 }
 
 
+int user_hidd_get_report(int type, u8 *buf, int len)
+{
+	int id = buf[0];
+	printf("user_hidd_get_report: type=%d, id=%d, len=%d\n", type, id, len);
+
+	int i;
+	for(i=0; i<32; i++){
+		buf[i+1] = i;
+	}
+
+	return 17;
+}
+
+
 /*************************************************************************************************/
 
 static u8 kbd_report_map[] = {
-    0x05, 0x0C,        // Usage Page (Consumer)
-    0x09, 0x01,        // Usage (Consumer Control)
-    0xA1, 0x01,        // Collection (Application)
-    0x85, 0x01,        //   Report ID (1)
-    0x09, 0xE9,        //   Usage (Volume Increment)
-    0x09, 0xEA,        //   Usage (Volume Decrement)
-    0x09, 0xCD,        //   Usage (Play/Pause)
-    0x09, 0xE2,        //   Usage (Mute)
-    0x09, 0xB6,        //   Usage (Scan Previous Track)
-    0x09, 0xB5,        //   Usage (Scan Next Track)
-    0x09, 0xB3,        //   Usage (Fast Forward)
-    0x09, 0xB4,        //   Usage (Rewind)
-    0x15, 0x00,        //   Logical Minimum (0)
-    0x25, 0x01,        //   Logical Maximum (1)
-    0x75, 0x01,        //   Report Size (1)
-    0x95, 0x10,        //   Report Count (16)
-    0x81, 0x02,        //   Input (Data,Var,Abs,No Wrap,Linear,Preferred State,No Null Position)
-    0xC0,              // End Collection
-    // 35 bytes
+	HID_UsagePage(HID_USAGE_PAGE_CONSUMER),
+	HID_Usage(HID_USAGE_CONSUMER_CONTROL),
+	HID_Collection(HID_Application),
+		HID_ReportID(1),
+		HID_Usage(0xE9), // Volume+
+		HID_Usage(0xEA), // Volume-
+		HID_Usage(0xCD), // Play/Pause
+		HID_Usage(0xE2), // Mute
+		HID_Usage(0xB6), // Prev
+		HID_Usage(0xB5), // Next
+		HID_Usage(0xB3), // FastForward
+		HID_Usage(0xB4), // Rewind
+		HID_LogicalMin(0),
+		HID_LogicalMax(1),
+		HID_ReportSize(1),
+		HID_ReportCount(8),
+		HID_Input(HID_Data|HID_Variable|HID_Absolute),
+		HID_ReportSize(1),
+		HID_ReportCount(8),
+		HID_Input(HID_Constant|HID_Variable|HID_Absolute),
+
+		HID_UsagePage(HID_USAGE_PAGE_LED),
+		HID_UsageMin(1),
+		HID_UsageMax(5),
+		HID_ReportSize(1),
+		HID_ReportCount(5),
+		HID_Output(HID_Data|HID_Variable|HID_Absolute),
+		HID_ReportSize(1),
+		HID_ReportCount(3),
+		HID_Output(HID_Constant|HID_Variable|HID_Absolute),
+
+		HID_UsagePageVendor(0x55),
+		HID_Usage(0x22),
+		HID_ReportSize(8),
+		HID_ReportCount(16),
+		HID_Feature(HID_Data|HID_Variable|HID_Absolute),
+	HID_EndCollection,
+
+	HID_UsagePage(HID_USAGE_PAGE_GENERIC),
+	HID_Usage(HID_USAGE_GENERIC_KEYBOARD),
+	HID_Collection(HID_Application),
+		HID_ReportID(2),
+		HID_UsagePage(HID_USAGE_PAGE_KEYBOARD),
+			// 按键组1
+			HID_Usage(0x28), // Enter
+			HID_Usage(0x29), // ESC
+			HID_Usage(0x2A), // BackSpace
+			HID_Usage(0x2B), // Tab
+			HID_Usage(0xE0), // L_CTRL
+			HID_Usage(0xE1), // L_SHIFT
+			HID_Usage(0xE4), // R_CTRL
+			HID_Usage(0xE5), // R_SHIFT
+		HID_LogicalMin(0),
+		HID_LogicalMax(1),
+		HID_ReportSize(1),
+		HID_ReportCount(8),
+		HID_Input(HID_Data|HID_Variable|HID_Absolute),
+
+		HID_UsagePageVendor(0x55),
+		HID_Usage(0x26),
+		HID_ReportSize(8),
+		HID_ReportCount(63),
+		HID_Output(HID_Data|HID_Variable|HID_Absolute),
+	HID_EndCollection,
 };
 
-static const hid_cfg_t kbd_hid_config = {
+
+static hid_cfg_t kbd_hid_config = {
 	.class_type = BD_CLASS_KEYBOARD,
+	.has_report_id = 1,
 	.report_map = kbd_report_map,
 	.report_size = sizeof(kbd_report_map),
 };
 
 
 
-static const edr_init_cfg_t kbd_edr_config = {
+static edr_init_cfg_t kbd_edr_config = {
+	.host_mode = 0,
 	.page_timeout = 80000,
 	.super_timeout = 80000,
 	.io_capabilities = 3,
@@ -170,6 +232,13 @@ static void kbd_app_start()
 	u32 sys_clk =  clk_get("sys");
 	bt_pll_para(TCFG_CLOCK_OSC_HZ, sys_clk, 0, 0);
 
+	if((JL_PORTA->IN)&(1<<7)){
+		kbd_edr_config.host_mode = 0;
+	}else{
+		// MUTE按下, host模式
+		kbd_edr_config.host_mode = 1;
+	}
+
 	bt_edr_start(&kbd_edr_config, 0);
 
 	sys_timer_add(NULL, key_timer_handle, 10);
@@ -191,27 +260,24 @@ static int kbd_common_event_handler(struct bt_event *bt)
 // app 线程事件处理
 static int kbd_event_handler(struct application *app, struct sys_event *event)
 {
-	printf("\nkbd_event: %08x  arg=%08x\n", event->type, event->arg);
 
 	switch (event->type) {
 	case SYS_BT_EVENT:
 		if ((u32)event->arg == SYS_BT_EVENT_TYPE_CON_STATUS) {
-			if(event->u.bt.event == BT_STATUS_INIT_OK){
-				printf("BT_STATUS_INIT_OK\n");
-				bt_edr_start_post();
-
-			}else{
-				bt_comm_edr_status_event_handler(&event->u.bt);
-			}
+			bt_comm_edr_status_event_handler(&event->u.bt);
 		} else if ((u32)event->arg == SYS_BT_EVENT_TYPE_HCI_STATUS) {
 			bt_comm_edr_hci_event_handler(&event->u.bt);
 		} else if ((u32)event->arg == SYS_BT_EVENT_FORM_COMMON) {
 			return kbd_common_event_handler(&event->u.dev);
+		} else {
+			printf("\nkbd_event: unknow bt event! arg=%08x\n", event->arg);
 		}
 		return 0;
 	case SYS_DEVICE_EVENT:
+		printf("\nkbd_event: sys_dev event! arg=%08x\n", event->arg);
 		return 0;
 	default:
+		printf("\nkbd_event: unknow event! type=%08x arg=%08x\n", event->type, event->arg);
 		return 0;
 	}
 

@@ -162,13 +162,13 @@ c_SRC_FILES := \
 	$(APP_DIR)/config/lib_update_config.c \
 	$(APP_DIR)/config/lib_system_config.c \
 	$(APP_DIR)/config/lib_driver_config.c \
-	$(APP_DIR)/common/misc.c \
+	$(APP_DIR)/common/bt_edr.c \
+	$(APP_DIR)/common/hid_profile.c \
+	$(APP_DIR)/common/edr_hid.c \
 	$(APP_DIR)/user_cfg.c \
 	$(APP_DIR)/version.c \
 	$(APP_DIR)/app_main.c \
 	$(APP_DIR)/app_kbd.c \
-	$(APP_DIR)/bt_edr.c \
-	$(APP_DIR)/edr_hid.c \
 	$(APP_DIR)/board_ac6329c.c \
 	$(CPU_DIR)/adc_api.c \
 	$(CPU_DIR)/setup.c \
@@ -262,13 +262,13 @@ clean:
 	$(QUITE) $(RM) $(OUT_ELF)
 	$(QUITE) $(RM) $(OBJS)
 	$(QUITE) $(RM) $(DEP_FILES)
-	$(QUITE) $(RM) sdk.s
+	$(QUITE) $(RM) $(BUILD_DIR)/sdk.s
 
 $(OUT_ELF): $(OBJS)
 	@echo +LINK $@
 	$(file >$(OBJ_FILE), $(OBJS))
 	$(QUITE) $(LD) -o $(OUT_ELF) @$(OBJ_FILE) $(LFLAGS) $(LIBPATHS) $(LIBS)
-	$(OBJDUMP) $(DUMPFLAGS) $(OUT_ELF) > sdk.s
+	$(OBJDUMP) $(DUMPFLAGS) $(OUT_ELF) > $(BUILD_DIR)/sdk.s
 
 $(BUILD_DIR)/%.c.o : $(ROOT_DIR)/%.c
 	@echo +CC $<
